@@ -151,8 +151,8 @@ class Whatsapp
         // $wp_scripts->registered[ 'wc-add-to-cart-variation' ]->src = MASWA_URL . '/assets/js/wc-add-to-cart-variation.js';
 
 
-        wp_enqueue_script('maswachatbox', MASWA_URL . '/assets/maswaChatBox.js');
-        wp_enqueue_script('featherpopup', MASWA_URL . '/assets/featherlight.min.js');
+        wp_enqueue_script('maswachatbox', MASWA_URL . '/assets/maswaChatBox.js',array( 'jquery' ));
+        wp_enqueue_script('featherpopup', MASWA_URL . '/assets/featherlight.min.js',array( 'jquery' ));
 
         $is_chat_box_enable = get_option('maswa_chat_box_enable');
         $isUserLogin = false;

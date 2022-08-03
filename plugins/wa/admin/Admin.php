@@ -49,13 +49,13 @@ class Admin
         $meta->show_whatsapp_message();
     }
     public function admin_menu() {
-        add_menu_page(
-            esc_html__( 'Whatsapp Integration Premium', 'maswa' ),
-            esc_html__( 'Whatsapp Integration Premium', 'maswa' ),
-            'manage_options',
-            'maswa_test',
-            [$this, 'test'],   'dashicons-whatsapp', 2
-        );
+//        add_menu_page(
+//            esc_html__( 'Whatsapp Integration Premium', 'maswa' ),
+//            esc_html__( 'Whatsapp Integration Premium', 'maswa' ),
+//            'manage_options',
+//            'maswa_test',
+//            [$this, 'test'],   'dashicons-whatsapp', 2
+//        );
         add_menu_page(
             esc_html__( 'Whatsapp Integration Premium', 'maswa' ),
             esc_html__( 'Whatsapp Integration Premium', 'maswa' ),
