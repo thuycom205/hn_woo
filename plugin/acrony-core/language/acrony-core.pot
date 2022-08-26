@@ -1,0 +1,1196 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: acrony-core\n"
+"POT-Creation-Date: 2019-10-24 14:46+0600\n"
+"PO-Revision-Date: 2019-02-18 13:55+0600\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.2.4\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-KeywordsList: __;_e;esc_html__;esc_html_e;esc_attr__;esc_attr_e\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: language\n"
+"X-Poedit-SearchPathExcluded-1: assets\n"
+
+#: addons/shortcode/big-button.php:16
+msgid "Button Label"
+msgstr ""
+
+#: addons/shortcode/big-button.php:22 addons/shortcode/button.php:27
+msgid "Button Text"
+msgstr ""
+
+#: addons/shortcode/big-button.php:28
+msgid "Display Icon"
+msgstr ""
+
+#: addons/shortcode/big-button.php:33 addons/shortcode/button.php:69
+#: addons/shortcode/counter.php:44
+msgid "Choose Icon"
+msgstr ""
+
+#: addons/shortcode/big-button.php:36
+msgid "Please choose your button icon."
+msgstr ""
+
+#: addons/shortcode/big-button.php:44
+msgid "Button On Event"
+msgstr ""
+
+#: addons/shortcode/big-button.php:51
+msgid "Default event is (link)"
+msgstr ""
+
+#: addons/shortcode/big-button.php:55
+msgid "Button Link (URL)"
+msgstr ""
+
+#: addons/shortcode/big-button.php:64
+msgid "Lightbox Popup URL"
+msgstr ""
+
+#: addons/shortcode/big-button.php:74 addons/shortcode/feature.php:82
+msgid "Custom class"
+msgstr ""
+
+#: addons/shortcode/big-button.php:76
+msgid "Enter button extra class."
+msgstr ""
+
+#: addons/shortcode/blog.php:8
+msgid "Blog"
+msgstr ""
+
+#: addons/shortcode/blog.php:15 addons/shortcode/testimonial.php:15
+msgid "View Type"
+msgstr ""
+
+#: addons/shortcode/blog.php:18 addons/shortcode/testimonial.php:18
+msgid "Grid"
+msgstr ""
+
+#: addons/shortcode/blog.php:19 addons/shortcode/testimonial.php:19
+msgid "Carousel"
+msgstr ""
+
+#: addons/shortcode/blog.php:20
+msgid "Masonry Grid"
+msgstr ""
+
+#: addons/shortcode/blog.php:26
+msgid "Posts Limit"
+msgstr ""
+
+#: addons/shortcode/blog.php:38 addons/shortcode/image-carousel.php:21
+#: addons/shortcode/team.php:21 addons/shortcode/testimonial.php:26
+msgid "Image Size"
+msgstr ""
+
+#: addons/shortcode/blog.php:39 addons/shortcode/team.php:22
+#: addons/shortcode/testimonial.php:27
+msgid ""
+"Set the image size : thumbnail, medium, large, acrony_blog_thumb or full ."
+msgstr ""
+
+#: addons/shortcode/blog.php:41 addons/shortcode/team.php:24
+#: addons/shortcode/testimonial.php:29
+msgid "Thumbnail"
+msgstr ""
+
+#: addons/shortcode/blog.php:42 addons/shortcode/team.php:25
+#: addons/shortcode/testimonial.php:30
+msgid "Medium"
+msgstr ""
+
+#: addons/shortcode/blog.php:43 addons/shortcode/team.php:26
+#: addons/shortcode/testimonial.php:31
+msgid "Large"
+msgstr ""
+
+#: addons/shortcode/blog.php:44 addons/shortcode/team.php:27
+#: addons/shortcode/testimonial.php:32
+msgid "Acrony Blog Thumb "
+msgstr ""
+
+#: addons/shortcode/blog.php:45 addons/shortcode/team.php:28
+#: addons/shortcode/testimonial.php:33
+msgid "Full"
+msgstr ""
+
+#: addons/shortcode/blog.php:51 addons/shortcode/testimonial.php:39
+msgid "Desktop Grid"
+msgstr ""
+
+#: addons/shortcode/blog.php:55 addons/shortcode/blog.php:72
+#: addons/shortcode/testimonial.php:43
+msgid "1 Column"
+msgstr ""
+
+#: addons/shortcode/blog.php:56 addons/shortcode/blog.php:73
+#: addons/shortcode/testimonial.php:44
+msgid "2 Column"
+msgstr ""
+
+#: addons/shortcode/blog.php:57 addons/shortcode/blog.php:74
+#: addons/shortcode/testimonial.php:45
+msgid "3 Column"
+msgstr ""
+
+#: addons/shortcode/blog.php:58 addons/shortcode/blog.php:75
+#: addons/shortcode/testimonial.php:46
+msgid "4 Column"
+msgstr ""
+
+#: addons/shortcode/blog.php:68
+msgid "Tablet Grid"
+msgstr ""
+
+#: addons/shortcode/blog.php:85
+msgid "Content Type"
+msgstr ""
+
+#: addons/shortcode/blog.php:87
+msgid "Choose supported content type such as post, custom post type, etc."
+msgstr ""
+
+#: addons/shortcode/blog.php:91
+msgid "Order by"
+msgstr ""
+
+#: addons/shortcode/blog.php:95
+msgid " Post ID"
+msgstr ""
+
+#: addons/shortcode/blog.php:96
+msgid " Author"
+msgstr ""
+
+#: addons/shortcode/blog.php:97
+msgid " Title"
+msgstr ""
+
+#: addons/shortcode/blog.php:98
+msgid " Post name (post slug)"
+msgstr ""
+
+#: addons/shortcode/blog.php:99
+msgid " Post type (available since Version 4.0)"
+msgstr ""
+
+#: addons/shortcode/blog.php:100
+msgid " Date"
+msgstr ""
+
+#: addons/shortcode/blog.php:101
+msgid " Last modified date"
+msgstr ""
+
+#: addons/shortcode/blog.php:102
+msgid " Random order"
+msgstr ""
+
+#: addons/shortcode/blog.php:103
+msgid " Number of comments"
+msgstr ""
+
+#: addons/shortcode/blog.php:108
+msgid "Order post"
+msgstr ""
+
+#: addons/shortcode/blog.php:112
+msgid " ASC"
+msgstr ""
+
+#: addons/shortcode/blog.php:113
+msgid " DESC"
+msgstr ""
+
+#: addons/shortcode/blog.php:118
+msgid "Title Word Limit."
+msgstr ""
+
+#: addons/shortcode/blog.php:127
+msgid "How many word will be show in the title."
+msgstr ""
+
+#: addons/shortcode/blog.php:131
+msgid "Content Word Limit."
+msgstr ""
+
+#: addons/shortcode/blog.php:140
+msgid "How many word will be show in the description."
+msgstr ""
+
+#: addons/shortcode/blog.php:144 addons/shortcode/image-carousel.php:34
+#: addons/shortcode/testimonial.php:93
+msgid "Items Per Slide"
+msgstr ""
+
+#: addons/shortcode/blog.php:153 addons/shortcode/image-carousel.php:42
+#: addons/shortcode/testimonial.php:101
+msgid ""
+"The number of items displayed per slide (not apply for autoheight). Default "
+"is 3 items and 1 item on mobile."
+msgstr ""
+
+#: addons/shortcode/blog.php:161 addons/shortcode/image-carousel.php:46
+#: addons/shortcode/testimonial.php:109
+msgid "Items On Tablet"
+msgstr ""
+
+#: addons/shortcode/blog.php:170 addons/shortcode/image-carousel.php:54
+#: addons/shortcode/testimonial.php:117
+msgid "Display number of items per each slide (Tablet Screen)"
+msgstr ""
+
+#: addons/shortcode/blog.php:178 addons/shortcode/image-carousel.php:58
+#: addons/shortcode/testimonial.php:125
+msgid "Items On SmartPhone"
+msgstr ""
+
+#: addons/shortcode/blog.php:187 addons/shortcode/image-carousel.php:66
+#: addons/shortcode/testimonial.php:133
+msgid "Display number of items per each slide (Mobile Screen)"
+msgstr ""
+
+#: addons/shortcode/blog.php:195 addons/shortcode/image-carousel.php:70
+#: addons/shortcode/testimonial.php:141
+msgid "Speed"
+msgstr ""
+
+#: addons/shortcode/blog.php:204 addons/shortcode/image-carousel.php:78
+#: addons/shortcode/testimonial.php:149
+msgid ""
+"Set the speed at which auto playing sliders will transition (in second)."
+msgstr ""
+
+#: addons/shortcode/blog.php:212 addons/shortcode/image-carousel.php:82
+#: addons/shortcode/testimonial.php:157
+msgid "Delay Time"
+msgstr ""
+
+#: addons/shortcode/blog.php:221 addons/shortcode/image-carousel.php:90
+#: addons/shortcode/testimonial.php:165
+msgid "The delay time before moving on to a new slide."
+msgstr ""
+
+#: addons/shortcode/blog.php:229 addons/shortcode/image-carousel.php:94
+#: addons/shortcode/testimonial.php:173
+msgid "Navigation"
+msgstr ""
+
+#: addons/shortcode/blog.php:238 addons/shortcode/image-carousel.php:99
+#: addons/shortcode/testimonial.php:182
+msgid "Pagination"
+msgstr ""
+
+#: addons/shortcode/blog.php:240 addons/shortcode/image-carousel.php:101
+#: addons/shortcode/testimonial.php:184
+msgid "Show the pagination."
+msgstr ""
+
+#: addons/shortcode/blog.php:248 addons/shortcode/image-carousel.php:105
+#: addons/shortcode/testimonial.php:192
+msgid "Auto Play"
+msgstr ""
+
+#: addons/shortcode/blog.php:250 addons/shortcode/image-carousel.php:107
+#: addons/shortcode/testimonial.php:194
+msgid ""
+"Add height to div \"owl-wrapper-outer\" so you can use diffrent heights on "
+"slides. Use it only for one item per page setting."
+msgstr ""
+
+#: addons/shortcode/blog.php:258 addons/shortcode/image-carousel.php:111
+msgid "Wrapper Class Name"
+msgstr ""
+
+#: addons/shortcode/blog.php:260 addons/shortcode/counter.php:67
+#: addons/shortcode/image-carousel.php:113
+msgid "Custom class for wrapper of the shortcode widget."
+msgstr ""
+
+#: addons/shortcode/blog.php:301 addons/shortcode/blog.php:316
+#: addons/shortcode/blog.php:332 addons/shortcode/blog.php:350
+#: addons/shortcode/counter.php:94 addons/shortcode/counter.php:112
+#: addons/shortcode/counter.php:128 addons/shortcode/image-carousel.php:167
+#: addons/shortcode/testimonial.php:306
+msgid "Color"
+msgstr ""
+
+#: addons/shortcode/blog.php:302 addons/shortcode/blog.php:318
+#: addons/shortcode/blog.php:334 addons/shortcode/counter.php:114
+#: addons/shortcode/counter.php:130
+msgid "Font Family"
+msgstr ""
+
+#: addons/shortcode/blog.php:303 addons/shortcode/blog.php:319
+#: addons/shortcode/blog.php:335 addons/shortcode/blog.php:348
+#: addons/shortcode/counter.php:98 addons/shortcode/counter.php:115
+#: addons/shortcode/counter.php:131 addons/shortcode/image-carousel.php:165
+#: addons/shortcode/testimonial.php:304
+msgid "Font Size"
+msgstr ""
+
+#: addons/shortcode/blog.php:304 addons/shortcode/blog.php:320
+#: addons/shortcode/blog.php:336 addons/shortcode/counter.php:116
+#: addons/shortcode/counter.php:132
+msgid "Font Weight"
+msgstr ""
+
+#: addons/shortcode/blog.php:305 addons/shortcode/blog.php:321
+#: addons/shortcode/blog.php:337 addons/shortcode/counter.php:117
+#: addons/shortcode/counter.php:133
+msgid "Font Style"
+msgstr ""
+
+#: addons/shortcode/blog.php:306 addons/shortcode/blog.php:322
+#: addons/shortcode/blog.php:338 addons/shortcode/counter.php:118
+#: addons/shortcode/counter.php:134
+msgid "Text Decoration"
+msgstr ""
+
+#: addons/shortcode/blog.php:307 addons/shortcode/blog.php:323
+#: addons/shortcode/blog.php:339 addons/shortcode/counter.php:119
+#: addons/shortcode/counter.php:135
+msgid "Text Shadow"
+msgstr ""
+
+#: addons/shortcode/blog.php:308 addons/shortcode/blog.php:324
+#: addons/shortcode/blog.php:340 addons/shortcode/blog.php:349
+#: addons/shortcode/counter.php:99 addons/shortcode/counter.php:120
+#: addons/shortcode/counter.php:136 addons/shortcode/image-carousel.php:166
+#: addons/shortcode/testimonial.php:305
+msgid "Line Height"
+msgstr ""
+
+#: addons/shortcode/blog.php:309 addons/shortcode/blog.php:325
+#: addons/shortcode/blog.php:341 addons/shortcode/counter.php:121
+#: addons/shortcode/counter.php:137
+msgid "Letter Spacing"
+msgstr ""
+
+#: addons/shortcode/blog.php:310 addons/shortcode/blog.php:326
+#: addons/shortcode/blog.php:342 addons/shortcode/blog.php:354
+#: addons/shortcode/counter.php:81 addons/shortcode/counter.php:100
+#: addons/shortcode/counter.php:122 addons/shortcode/counter.php:138
+#: addons/shortcode/image-carousel.php:160
+#: addons/shortcode/image-carousel.php:171 addons/shortcode/testimonial.php:299
+#: addons/shortcode/testimonial.php:310
+msgid "Border"
+msgstr ""
+
+#: addons/shortcode/blog.php:311 addons/shortcode/blog.php:327
+#: addons/shortcode/blog.php:343 addons/shortcode/counter.php:123
+#: addons/shortcode/counter.php:139
+msgid "Display"
+msgstr ""
+
+#: addons/shortcode/blog.php:312 addons/shortcode/blog.php:328
+#: addons/shortcode/blog.php:344 addons/shortcode/blog.php:357
+#: addons/shortcode/counter.php:87 addons/shortcode/counter.php:105
+#: addons/shortcode/counter.php:124 addons/shortcode/counter.php:140
+#: addons/shortcode/image-carousel.php:158
+#: addons/shortcode/image-carousel.php:174 addons/shortcode/testimonial.php:297
+#: addons/shortcode/testimonial.php:313
+msgid "Margin"
+msgstr ""
+
+#: addons/shortcode/blog.php:313 addons/shortcode/blog.php:329
+#: addons/shortcode/blog.php:345 addons/shortcode/blog.php:358
+#: addons/shortcode/counter.php:88 addons/shortcode/counter.php:106
+#: addons/shortcode/counter.php:125 addons/shortcode/counter.php:141
+#: addons/shortcode/image-carousel.php:159
+#: addons/shortcode/image-carousel.php:175 addons/shortcode/testimonial.php:298
+#: addons/shortcode/testimonial.php:314
+msgid "Padding"
+msgstr ""
+
+#: addons/shortcode/blog.php:317 addons/shortcode/blog.php:333
+#: addons/shortcode/blog.php:351 addons/shortcode/counter.php:95
+#: addons/shortcode/counter.php:113 addons/shortcode/counter.php:129
+#: addons/shortcode/image-carousel.php:168 addons/shortcode/testimonial.php:307
+msgid "Hover Color"
+msgstr ""
+
+#: addons/shortcode/blog.php:352 addons/shortcode/counter.php:78
+#: addons/shortcode/image-carousel.php:169 addons/shortcode/testimonial.php:308
+msgid "Background"
+msgstr ""
+
+#: addons/shortcode/blog.php:353 addons/shortcode/image-carousel.php:170
+#: addons/shortcode/testimonial.php:309
+msgid "Hover Background"
+msgstr ""
+
+#: addons/shortcode/blog.php:355 addons/shortcode/counter.php:82
+#: addons/shortcode/counter.php:102 addons/shortcode/image-carousel.php:161
+#: addons/shortcode/image-carousel.php:172 addons/shortcode/testimonial.php:300
+#: addons/shortcode/testimonial.php:311
+msgid "Border Radius"
+msgstr ""
+
+#: addons/shortcode/blog.php:356 addons/shortcode/counter.php:83
+#: addons/shortcode/counter.php:103 addons/shortcode/image-carousel.php:162
+#: addons/shortcode/image-carousel.php:173 addons/shortcode/testimonial.php:301
+#: addons/shortcode/testimonial.php:312
+msgid "Box Shadow"
+msgstr ""
+
+#: addons/shortcode/blog.php:359 addons/shortcode/counter.php:89
+#: addons/shortcode/counter.php:107 addons/shortcode/image-carousel.php:154
+#: addons/shortcode/image-carousel.php:176 addons/shortcode/testimonial.php:293
+#: addons/shortcode/testimonial.php:315
+msgid "Width"
+msgstr ""
+
+#: addons/shortcode/blog.php:360 addons/shortcode/counter.php:90
+#: addons/shortcode/counter.php:108 addons/shortcode/image-carousel.php:155
+#: addons/shortcode/image-carousel.php:177 addons/shortcode/testimonial.php:294
+#: addons/shortcode/testimonial.php:316
+msgid "Height"
+msgstr ""
+
+#: addons/shortcode/button.php:9
+msgid "Button"
+msgstr ""
+
+#: addons/shortcode/button.php:16 addons/shortcode/price.php:94
+#: addons/shortcode/text-box.php:60
+msgid "Button Template"
+msgstr ""
+
+#: addons/shortcode/button.php:19 addons/shortcode/price.php:97
+#: addons/shortcode/text-box.php:63
+msgid "Normal Button"
+msgstr ""
+
+#: addons/shortcode/button.php:20 addons/shortcode/price.php:98
+#: addons/shortcode/text-box.php:64
+msgid "Transparent Button"
+msgstr ""
+
+#: addons/shortcode/button.php:23 addons/shortcode/price.php:101
+#: addons/shortcode/text-box.php:67
+msgid "Default Select Template: Button 1"
+msgstr ""
+
+#: addons/shortcode/button.php:33
+msgid "Click Event"
+msgstr ""
+
+#: addons/shortcode/button.php:36
+msgid "Open Custom Link"
+msgstr ""
+
+#: addons/shortcode/button.php:37
+msgid "Open In Lightbox"
+msgstr ""
+
+#: addons/shortcode/button.php:39
+msgid "Select the click event when users click on the button."
+msgstr ""
+
+#: addons/shortcode/button.php:43
+msgid "Add Custom Link"
+msgstr ""
+
+#: addons/shortcode/button.php:45
+msgid ""
+"Add your relative URL. Each URL contains link, anchor text and target "
+"attributes."
+msgstr ""
+
+#: addons/shortcode/button.php:54
+msgid "Image or Video URL"
+msgstr ""
+
+#: addons/shortcode/button.php:55
+msgid "It will only supported Image, Youtube and Vimeo URL."
+msgstr ""
+
+#: addons/shortcode/button.php:64
+msgid "Use Icon?"
+msgstr ""
+
+#: addons/shortcode/button.php:75
+msgid "Select icon for button"
+msgstr ""
+
+#: addons/shortcode/button.php:79 addons/shortcode/lightbox.php:56
+msgid "Button Extra Class"
+msgstr ""
+
+#: addons/shortcode/button.php:80
+msgid "Add class name for a tag."
+msgstr ""
+
+#: addons/shortcode/counter.php:7
+msgid "Counter"
+msgstr ""
+
+#: addons/shortcode/counter.php:14
+msgid "Show Icon"
+msgstr ""
+
+#: addons/shortcode/counter.php:16
+msgid "To use check here."
+msgstr ""
+
+#: addons/shortcode/counter.php:20 addons/shortcode/feature.php:29
+#: addons/shortcode/price.php:29
+msgid "Icon Type"
+msgstr ""
+
+#: addons/shortcode/counter.php:23 addons/shortcode/feature.php:32
+#: addons/shortcode/feature.php:48 addons/shortcode/price.php:33
+#: addons/shortcode/price.php:40
+msgid "Image Icon"
+msgstr ""
+
+#: addons/shortcode/counter.php:24 addons/shortcode/feature.php:33
+#: addons/shortcode/feature.php:38 addons/shortcode/price.php:34
+#: addons/shortcode/price.php:49
+msgid "Font Icon"
+msgstr ""
+
+#: addons/shortcode/counter.php:34
+msgid "Select Image"
+msgstr ""
+
+#: addons/shortcode/counter.php:35
+msgid "Please select the image icon form here."
+msgstr ""
+
+#: addons/shortcode/counter.php:45
+msgid "Plase choose the font icon."
+msgstr ""
+
+#: addons/shortcode/counter.php:54
+msgid "Counter Number"
+msgstr ""
+
+#: addons/shortcode/counter.php:55
+msgid "The targeted number to count up to (From zero)."
+msgstr ""
+
+#: addons/shortcode/counter.php:60
+msgid "Counter Label"
+msgstr ""
+
+#: addons/shortcode/counter.php:61
+msgid "The text description of the counter."
+msgstr ""
+
+#: addons/shortcode/counter.php:66
+msgid "Extra Class"
+msgstr ""
+
+#: addons/shortcode/counter.php:79
+msgid "Hover BG"
+msgstr ""
+
+#: addons/shortcode/counter.php:80
+msgid "Text Align"
+msgstr ""
+
+#: addons/shortcode/counter.php:84 addons/shortcode/counter.php:104
+msgid "Hover Box Shadow"
+msgstr ""
+
+#: addons/shortcode/counter.php:85
+msgid "Transform"
+msgstr ""
+
+#: addons/shortcode/counter.php:86
+msgid "Hover Transform"
+msgstr ""
+
+#: addons/shortcode/counter.php:91 addons/shortcode/counter.php:109
+msgid "Overflow"
+msgstr ""
+
+#: addons/shortcode/counter.php:96
+msgid "Background Color"
+msgstr ""
+
+#: addons/shortcode/counter.php:97
+msgid "Hover BG Color"
+msgstr ""
+
+#: addons/shortcode/counter.php:101
+msgid "Float"
+msgstr ""
+
+#: addons/shortcode/feature.php:9
+msgid "Feature Box"
+msgstr ""
+
+#: addons/shortcode/feature.php:16
+msgid "Select Template"
+msgstr ""
+
+#: addons/shortcode/feature.php:19
+msgid "Box Style One"
+msgstr ""
+
+#: addons/shortcode/feature.php:20
+msgid "Box Style Two"
+msgstr ""
+
+#: addons/shortcode/feature.php:21
+msgid "Box Style Three"
+msgstr ""
+
+#: addons/shortcode/feature.php:22
+msgid "Box Style Four"
+msgstr ""
+
+#: addons/shortcode/feature.php:25
+msgid "Default Select Template No: one"
+msgstr ""
+
+#: addons/shortcode/feature.php:44
+msgid "Please choose the font icon form here."
+msgstr ""
+
+#: addons/shortcode/feature.php:54
+msgid "Please select image icon."
+msgstr ""
+
+#: addons/shortcode/feature.php:58 addons/shortcode/text-box.php:21
+#: addons/shortcode/title.php:16
+msgid "Title"
+msgstr ""
+
+#: addons/shortcode/feature.php:63 addons/shortcode/text-box.php:41
+#: addons/shortcode/title.php:36
+msgid "Description"
+msgstr ""
+
+#: addons/shortcode/feature.php:68
+msgid "Use Read More"
+msgstr ""
+
+#: addons/shortcode/feature.php:73
+msgid "Add Read More Link"
+msgstr ""
+
+#: addons/shortcode/feature.php:84
+msgid "Add your extra class."
+msgstr ""
+
+#: addons/shortcode/feature.php:252 addons/shortcode/text-box.php:224
+msgid "Read More"
+msgstr ""
+
+#: addons/shortcode/image-carousel.php:8
+msgid "Image Carousel"
+msgstr ""
+
+#: addons/shortcode/image-carousel.php:15
+msgid "Select Images"
+msgstr ""
+
+#: addons/shortcode/image-carousel.php:17
+msgid "Select images from media library."
+msgstr ""
+
+#: addons/shortcode/image-carousel.php:29
+msgid "Select the image size whice size will show."
+msgstr ""
+
+#: addons/shortcode/image-carousel.php:156 addons/shortcode/testimonial.php:295
+msgid "Dots Background"
+msgstr ""
+
+#: addons/shortcode/image-carousel.php:157 addons/shortcode/testimonial.php:296
+msgid "Active Dot Background"
+msgstr ""
+
+#: addons/shortcode/image-carousel.php:216
+msgid "No images upload"
+msgstr ""
+
+#: addons/shortcode/lightbox.php:8
+msgid "Lightbox"
+msgstr ""
+
+#: addons/shortcode/lightbox.php:15
+msgid "Button click event"
+msgstr ""
+
+#: addons/shortcode/lightbox.php:18
+msgid "Open in lightbox"
+msgstr ""
+
+#: addons/shortcode/lightbox.php:19
+msgid "Open custom link"
+msgstr ""
+
+#: addons/shortcode/lightbox.php:21
+msgid "Select the click event when users click on the button"
+msgstr ""
+
+#: addons/shortcode/lightbox.php:25
+msgid "Image and Video URL"
+msgstr ""
+
+#: addons/shortcode/lightbox.php:27
+msgid "Lightbox will support only video and image url."
+msgstr ""
+
+#: addons/shortcode/lightbox.php:35
+msgid "Enter Custom URL"
+msgstr ""
+
+#: addons/shortcode/lightbox.php:45
+msgid "Choose Button Icon"
+msgstr ""
+
+#: addons/shortcode/lightbox.php:51
+msgid "Select Background Image"
+msgstr ""
+
+#: addons/shortcode/lightbox.php:57
+msgid "Add class name for button tag."
+msgstr ""
+
+#: addons/shortcode/lightbox.php:62 addons/shortcode/team.php:78
+msgid "Wrapper Extra Class"
+msgstr ""
+
+#: addons/shortcode/lightbox.php:63
+msgid ""
+"If you wish to style a particular content element differently, please add a "
+"class name to this field add refer to it in your custom CSS file."
+msgstr ""
+
+#: addons/shortcode/price.php:8
+msgid "Price Table"
+msgstr ""
+
+#: addons/shortcode/price.php:16
+msgid "Use Ribbon"
+msgstr ""
+
+#: addons/shortcode/price.php:21
+msgid "Ribbon Text"
+msgstr ""
+
+#: addons/shortcode/price.php:32
+msgid "None"
+msgstr ""
+
+#: addons/shortcode/price.php:58
+msgid "Price Title"
+msgstr ""
+
+#: addons/shortcode/price.php:63
+msgid "Price rate"
+msgstr ""
+
+#: addons/shortcode/price.php:68
+msgid "Price Time"
+msgstr ""
+
+#: addons/shortcode/price.php:71
+msgid "Per Year/Per Month/Per Day . Default Set Per Month"
+msgstr ""
+
+#: addons/shortcode/price.php:75
+msgid "Price Content"
+msgstr ""
+
+#: addons/shortcode/price.php:80
+msgid "Hide Button"
+msgstr ""
+
+#: addons/shortcode/price.php:85
+msgid "Price Button"
+msgstr ""
+
+#: addons/shortcode/price.php:109
+msgid "Extra Custom Class"
+msgstr ""
+
+#: addons/shortcode/price.php:312
+msgid "Start Using Free"
+msgstr ""
+
+#: addons/shortcode/team.php:8
+msgid "Team"
+msgstr ""
+
+#: addons/shortcode/team.php:16
+msgid "Image"
+msgstr ""
+
+#: addons/shortcode/team.php:34
+msgid "Name"
+msgstr ""
+
+#: addons/shortcode/team.php:39
+msgid "Position"
+msgstr ""
+
+#: addons/shortcode/team.php:44
+msgid "Use Social Menu"
+msgstr ""
+
+#: addons/shortcode/team.php:50
+msgid "Add social menu"
+msgstr ""
+
+#: addons/shortcode/team.php:52
+msgid ""
+"Repeat this fields with each item created, Each item social menu element."
+msgstr ""
+
+#: addons/shortcode/team.php:54
+msgid "Add New Social"
+msgstr ""
+
+#: addons/shortcode/team.php:60
+msgid "Social URL"
+msgstr ""
+
+#: addons/shortcode/team.php:61
+msgid "Enter your social profile link"
+msgstr ""
+
+#: addons/shortcode/team.php:67
+msgid "Choose Social Icon"
+msgstr ""
+
+#: addons/shortcode/team.php:79
+msgid ""
+"If you wish to style a particular content element differently, please add a "
+"class name to this field and refer to it in your custom CSS file."
+msgstr ""
+
+#: addons/shortcode/testimonial.php:8
+msgid "Testimonial"
+msgstr ""
+
+#: addons/shortcode/testimonial.php:56
+msgid "Testimonial Items"
+msgstr ""
+
+#: addons/shortcode/testimonial.php:59
+msgid "Add Testimonial"
+msgstr ""
+
+#: addons/shortcode/testimonial.php:65
+msgid "Client Says"
+msgstr ""
+
+#: addons/shortcode/testimonial.php:66
+msgid "What client sayes about yourself."
+msgstr ""
+
+#: addons/shortcode/testimonial.php:71
+msgid "Client Name"
+msgstr ""
+
+#: addons/shortcode/testimonial.php:76
+msgid "Client Position"
+msgstr ""
+
+#: addons/shortcode/testimonial.php:81
+msgid "Client Photo"
+msgstr ""
+
+#: addons/shortcode/testimonial.php:82
+msgid "You can use extra class."
+msgstr ""
+
+#: addons/shortcode/testimonial.php:89
+msgid "Quote Icon"
+msgstr ""
+
+#: addons/shortcode/testimonial.php:203
+msgid "Extra class"
+msgstr ""
+
+#: addons/shortcode/text-box.php:9
+msgid "Text Box"
+msgstr ""
+
+#: addons/shortcode/text-box.php:16
+msgid "Top Title"
+msgstr ""
+
+#: addons/shortcode/text-box.php:26 addons/shortcode/title.php:20
+msgid "Title Heading Type"
+msgstr ""
+
+#: addons/shortcode/text-box.php:37 addons/shortcode/title.php:31
+msgid "Default Heading type is: H3"
+msgstr ""
+
+#: addons/shortcode/text-box.php:46
+msgid "Show Read More Button"
+msgstr ""
+
+#: addons/shortcode/text-box.php:51
+msgid "Button Link"
+msgstr ""
+
+#: addons/shortcode/text-box.php:75 addons/shortcode/title.php:41
+msgid "Custom Class"
+msgstr ""
+
+#: addons/shortcode/text-box.php:77
+msgid "Enter extra custom class"
+msgstr ""
+
+#: addons/shortcode/title.php:8
+msgid "Page Title"
+msgstr ""
+
+#: addons/shortcode/title.php:42
+msgid "If you want to add a new custom class. Please write here."
+msgstr ""
+
+#: index.php:96
+msgid "You are currently here!"
+msgstr ""
+
+#: index.php:98
+msgid "Home"
+msgstr ""
+
+#: index.php:213
+msgid "Author archive for "
+msgstr ""
+
+#: index.php:251
+msgid "Search query for: "
+msgstr ""
+
+#: index.php:255
+msgid "Error 404"
+msgstr ""
+
+#: index.php:260
+#, php-format
+msgid " ( Page %s )"
+msgstr ""
+
+#: metabox/init.php:9
+msgid "Page Options"
+msgstr ""
+
+#: metabox/init.php:14
+msgid "Transparent Menu:"
+msgstr ""
+
+#: metabox/init.php:17
+msgid "Check this field if you want transparent menu on this page."
+msgstr ""
+
+#: metabox/init.php:21
+msgid "Remove Page Header:"
+msgstr ""
+
+#: metabox/init.php:24
+msgid "Check this field if you want remove page header on this page."
+msgstr ""
+
+#: metabox/init.php:28
+msgid "Onepage Template:"
+msgstr ""
+
+#: metabox/init.php:31
+msgid "Will this page use as a onepage template?"
+msgstr ""
+
+#: metabox/init.php:35
+msgid "Onepage Scroll:"
+msgstr ""
+
+#: metabox/init.php:41
+msgid "Mainmenu Text Color"
+msgstr ""
+
+#: metabox/init.php:50
+msgid "Mainmenu Hover Text Color"
+msgstr ""
+
+#: metabox/init.php:59
+msgid "Mainmenu Background Color"
+msgstr ""
+
+#: metabox/init.php:68
+msgid "Mainmenu Sticky BG Color"
+msgstr ""
+
+#: metabox/init.php:77
+msgid "Remove Footer Widget:"
+msgstr ""
+
+#: metabox/init.php:80
+msgid "Check this field if you want remove footer widgets on this page."
+msgstr ""
+
+#: metabox/init.php:86
+msgid "Additional Fields"
+msgstr ""
+
+#: metabox/init.php:91
+msgid "Photo Gallery"
+msgstr ""
+
+#: metabox/init.php:92
+msgid ""
+"This field for gallery images. This gallery show for select gallery format."
+msgstr ""
+
+#: metabox/init.php:96
+msgid "Add images"
+msgstr ""
+
+#: metabox/init.php:102
+msgid "Embed Video"
+msgstr ""
+
+#: metabox/init.php:103
+msgid ""
+"Enter a youtube, twitter, or instagram URL. Supports services listed at "
+msgstr ""
+
+#: metabox/init.php:103
+msgid "This video show for select video format"
+msgstr ""
+
+#: metabox/init.php:109
+msgid "Embed Audio"
+msgstr ""
+
+#: metabox/init.php:110
+msgid ""
+"Enter a SoundCloud, Mixcloud, or ReverbNation etc URL. Supports services "
+"listed at "
+msgstr ""
+
+#: metabox/init.php:110
+msgid "This audio show for select audio format"
+msgstr ""
+
+#: metabox/init.php:118
+msgid "Portfolio Entry Details"
+msgstr ""
+
+#: metabox/init.php:123
+msgid "Live link:"
+msgstr ""
+
+#: metabox/init.php:129
+msgid "Author"
+msgstr ""
+
+#: metabox/init.php:135
+msgid "Date"
+msgstr ""
+
+#: post-share/index.php:21
+msgid "Facebook"
+msgstr ""
+
+#: post-share/index.php:24
+msgid "Twitter"
+msgstr ""
+
+#: post-share/index.php:27
+msgid "Linkedin"
+msgstr ""
+
+#: post-share/index.php:30
+msgid "Pinterest"
+msgstr ""
+
+#: widget/address-info.php:12
+msgid "Acrony Address Widget"
+msgstr ""
+
+#: widget/address-info.php:15
+msgid "Acrony Address Information"
+msgstr ""
+
+#: widget/address-info.php:77 widget/instagram.php:100
+#: widget/populer-post.php:72
+msgid "Title:"
+msgstr ""
+
+#: widget/address-info.php:81
+msgid "Location:"
+msgstr ""
+
+#: widget/address-info.php:85
+msgid "Mail:"
+msgstr ""
+
+#: widget/address-info.php:89
+msgid "Phone:"
+msgstr ""
+
+#: widget/address-info.php:93
+msgid "Website:"
+msgstr ""
+
+#: widget/instagram.php:14
+msgid "Instagram Feed"
+msgstr ""
+
+#: widget/instagram.php:15
+msgid "Show Instagram feed to adding this widget."
+msgstr ""
+
+#: widget/instagram.php:77
+msgid "Instagram"
+msgstr ""
+
+#: widget/instagram.php:109
+#, php-format
+msgid "Instagram <a target=\"_blank\" href=\"%s\">User ID</a>:"
+msgstr ""
+
+#: widget/instagram.php:118
+#, php-format
+msgid "Instagram <a target=\"_blank\" href=\"%s\">Access Token</a>:"
+msgstr ""
+
+#: widget/instagram.php:128
+msgid "Total Photo Show:"
+msgstr ""
+
+#: widget/populer-post.php:8
+msgid "Acrony Popular Posts"
+msgstr ""
+
+#: widget/populer-post.php:10
+msgid "Acrony Popular posts widget."
+msgstr ""
+
+#: widget/populer-post.php:78
+msgid "Post Title Length:"
+msgstr ""
+
+#: widget/populer-post.php:83
+msgid "Number of posts to show:"
+msgstr ""
+
+#: widget/populer-post.php:89
+msgid "Display Post Meta?"
+msgstr ""
+
+#: widget/populer-post.php:95
+msgid "Display Post Thumbnail?"
+msgstr ""

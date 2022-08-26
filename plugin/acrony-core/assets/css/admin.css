@@ -1,0 +1,57 @@
+.acrony_icon {
+    background-image: url('../images/addons.png') !important;
+    background-repeat: no-repeat !important;
+    background-size: auto 100px !important;
+}
+
+.acrony_icon.icon_button {
+    background-position: left -30px center !important;
+}
+
+.acrony_icon.icon_page_title {
+    background-position: left -135px center !important;
+}
+
+.acrony_icon.icon_feature {
+    background-position: left -235px center !important;
+}
+
+.acrony_icon.icon_feature_list {
+    background-position: left -335px center !important;
+}
+
+.acrony_icon.icon_counter {
+    background-position: left -435px center !important;
+}
+
+.acrony_icon.icon_testimonial {
+    background-position: left -535px center !important;
+}
+
+.acrony_icon.icon_team {
+    background-position: left -635px center !important;
+}
+
+.acrony_icon.icon_blog {
+    background-position: left -735px center !important;
+}
+
+.acrony_icon.icon_price {
+    background-position: left -835px center !important;
+}
+
+.acrony_icon.icon_info {
+    background-position: left -1035px center !important;
+}
+
+.acrony_icon.icon_text_box {
+    background-position: left -1335px center !important;
+}
+
+.acrony_icon.carousel_icon {
+    background-position: left -1135px center !important;
+}
+
+.acrony_icon.icon_lightbox {
+    background-position: left -1235px center !important;
+}
