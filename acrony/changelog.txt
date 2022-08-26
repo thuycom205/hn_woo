@@ -1,0 +1,15 @@
+Version: 1.0.0
+---------------------
+* Initial Realease.
+
+Version: 2.0.0
+---------------------
+* Update Importer.
+* Fixed Importer Missing Content.
+* Fixed Style.
+* Fixed Backgound Missing.
+* Added Backword Compitibility.
+* Update Required Plugins.
+* Imporove Performence.
+* Remove Unwanted Plugins & Extensions.
+* Update Templates.

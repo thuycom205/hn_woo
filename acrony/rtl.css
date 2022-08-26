@@ -1,0 +1,95 @@
+/*
+Theme Name: Acrony
+
+Adding support for languages written in a Right To Left (RTL) direction is easy -
+it's just a matter of overwriting all the horizontal positioning attributes
+of your CSS stylesheet in a separate stylesheet file named rtl.css.
+
+https://codex.wordpress.org/Right-to-Left_Language_Support
+
+*/
+
+body {
+    direction: rtl;
+    unicode-bidi: embed;
+}
+
+.widget.widget_recent_entries > ul > li:before,
+.widget.widget_recent_comments > ul > li:before,
+.widget.widget_nav_menu > ul > li:before,
+.widget.widget_pages > ul > li:before,
+.widget.widget_product_categories > ul > li:before,
+.widget.widget_categories > ul > li:before,
+.widget.widget_archive > ul > li:before {
+    left: auto;
+    right: 0;
+    margin-right: 0;
+}
+
+.widget.widget_recent_entries ul li,
+.widget.widget_recent_comments ul li,
+.widget.widget_nav_menu ul li,
+.widget.widget_pages ul li,
+.widget.widget_product_categories ul li,
+.widget.widget_categories ul li,
+.widget.widget_archive ul li {
+    padding-left: 0;
+    padding-right: 25px;
+}
+
+.post-footer-meta .meta-item i,
+.post-meta .meta-item i {
+    margin-right: 0;
+    margin-left: 10px;
+}
+
+.widget_acrony_popular_posts .popular-post .item.has-post-thumbnail {
+    padding-left: 0;
+    padding-right: 110px;
+}
+
+.widget_acrony_popular_posts .popular-post .item .post-thumb {
+    left: auto;
+    right: 0;
+}
+
+.widget.widget_recent_entries .post-date:before {
+    margin-right: 0;
+    margin-left: 5px;
+}
+
+.widget_acrony_popular_posts .popular-post .item .popular-post-meta i {
+    margin-right: 0;
+    margin-left: 6px;
+}
+
+.footer-widget.widget_nav_menu ul li a:hover:before {
+    margin-right: 0;
+    margin-left: 10px;
+}
+
+.widget_acrony_address_widget .icon-list li .icon {
+    margin-right: 0;
+    margin-left: 10px;
+}
+
+.share-menu a i {
+    margin-right: 0;
+    margin-left: 10px;
+}
+
+.comment-list .comment-body {
+    padding-left: auto;
+    padding-right: 110px;
+}
+
+.comment-list .comment-body .comment-author img {
+    left: auto;
+    right: 10px;
+}
+
+.comment-list .comment-body .comment-reply-link:before {
+    -webkit-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+    margin-left: 5px;
+}
