@@ -1,0 +1,576 @@
+# Copyright (C) 2022 DroitThemes
+# This file is distributed under the GPLv3.
+msgid ""
+msgstr ""
+"Project-Id-Version: Droit Dark Mode 1.0.7\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/droit-dark-mode\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2022-04-12T05:46:50+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.5.0\n"
+"X-Domain: droit-dark-mode\n"
+
+#. Plugin Name of the plugin
+msgid "Droit Dark Mode"
+msgstr ""
+
+#. Plugin URI of the plugin
+msgid "https://droitthemes.com/droit-dark-mode/"
+msgstr ""
+
+#. Description of the plugin
+msgid "Droit Dark Mode plugin to create dark version of your website base on your browser."
+msgstr ""
+
+#. Author of the plugin
+msgid "DroitThemes"
+msgstr ""
+
+#. Author URI of the plugin
+msgid "https://droitthemes.com/"
+msgstr ""
+
+#: controller.php:39
+msgid "<b>Droit dark</b> requires PHP version %1$s+, which is currently NOT RUNNING on this server."
+msgstr ""
+
+#: controller.php:91
+msgid "Settings"
+msgstr ""
+
+#: controller.php:94
+#: templates/admin/view/active-pro.php:8
+msgid "License"
+msgstr ""
+
+#: controller.php:103
+msgid "View Demo for Dark Mode"
+msgstr ""
+
+#: controller.php:103
+msgid "View Demo"
+msgstr ""
+
+#: controller.php:104
+msgid "Support"
+msgstr ""
+
+#: controller.php:104
+#: templates/admin/settings.php:108
+msgid "Get Support"
+msgstr ""
+
+#: controller.php:107
+msgid "Get Dark Mode PRO"
+msgstr ""
+
+#: controller.php:107
+#: templates/admin/pro-alert.php:17
+msgid "Get Pro"
+msgstr ""
+
+#: includes/load.php:111
+#: includes/load.php:121
+msgid "No"
+msgstr ""
+
+#: includes/load.php:112
+msgid "Bottom Right"
+msgstr ""
+
+#: includes/load.php:113
+msgid "Bottom Center"
+msgstr ""
+
+#: includes/load.php:114
+msgid "Bottom Left"
+msgstr ""
+
+#: includes/load.php:115
+msgid "Top Left"
+msgstr ""
+
+#: includes/load.php:116
+msgid "Top Right"
+msgstr ""
+
+#: includes/load.php:117
+msgid "Center Center"
+msgstr ""
+
+#: includes/load.php:122
+msgid "Before Content"
+msgstr ""
+
+#: includes/load.php:123
+msgid "After Content"
+msgstr ""
+
+#: includes/load.php:128
+msgid "No Select"
+msgstr ""
+
+#: includes/load.php:217
+msgid "Color 1"
+msgstr ""
+
+#: includes/load.php:218
+msgid "Color 2"
+msgstr ""
+
+#: includes/load.php:219
+msgid "Color 3"
+msgstr ""
+
+#: includes/load.php:220
+msgid "Color 4"
+msgstr ""
+
+#: includes/load.php:221
+msgid "Color 5"
+msgstr ""
+
+#: includes/load.php:222
+msgid "Color 6"
+msgstr ""
+
+#: includes/load.php:223
+msgid "Color 7"
+msgstr ""
+
+#: includes/load.php:224
+msgid "Color 8"
+msgstr ""
+
+#: includes/load.php:225
+#: templates/admin/view/preset.php:38
+msgid "Custom Color"
+msgstr ""
+
+#: includes/load.php:244
+msgid "Moon"
+msgstr ""
+
+#: includes/load.php:245
+msgid "Switcher"
+msgstr ""
+
+#: includes/load.php:246
+msgid "Sun 1"
+msgstr ""
+
+#: includes/load.php:247
+msgid "Sun 2"
+msgstr ""
+
+#: includes/load.php:248
+msgid "Sun 3"
+msgstr ""
+
+#: templates/admin/pro-alert.php:12
+msgid "65% OFF"
+msgstr ""
+
+#: templates/admin/pro-alert.php:15
+msgid "Go Premium"
+msgstr ""
+
+#: templates/admin/pro-alert.php:16
+msgid "Purchase our premium version to unlock these features"
+msgstr ""
+
+#: templates/admin/settings.php:18
+msgid "Active License"
+msgstr ""
+
+#: templates/admin/settings.php:19
+msgid "Enter license key"
+msgstr ""
+
+#: templates/admin/settings.php:32
+#: templates/admin/view/general.php:2
+msgid "General Settings"
+msgstr ""
+
+#: templates/admin/settings.php:33
+msgid "Basic settings for dark mode"
+msgstr ""
+
+#: templates/admin/settings.php:45
+#: templates/admin/view/display.php:3
+msgid "Display Settings"
+msgstr ""
+
+#: templates/admin/settings.php:46
+msgid "Display settings for dark mode"
+msgstr ""
+
+#: templates/admin/settings.php:58
+#: templates/admin/view/advance.php:2
+msgid "Advance Settings"
+msgstr ""
+
+#: templates/admin/settings.php:59
+msgid "Advanced settings for dark mode"
+msgstr ""
+
+#: templates/admin/settings.php:71
+#: templates/admin/view/preset.php:3
+msgid "Preset Color"
+msgstr ""
+
+#: templates/admin/settings.php:72
+msgid "By default preset design for dark mode"
+msgstr ""
+
+#: templates/admin/settings.php:84
+msgid "Dark Image"
+msgstr ""
+
+#: templates/admin/settings.php:85
+msgid "Replace image when dark mode"
+msgstr ""
+
+#: templates/admin/settings.php:97
+msgid "Time Base"
+msgstr ""
+
+#: templates/admin/settings.php:99
+msgid "Set time base dark mode"
+msgstr ""
+
+#: templates/admin/settings.php:116
+#: templates/admin/settings.php:149
+msgid "Save Settings"
+msgstr ""
+
+#: templates/admin/view/active-pro.php:7
+msgid "Login to your"
+msgstr ""
+
+#: templates/admin/view/active-pro.php:7
+msgid "DroitThemes Account"
+msgstr ""
+
+#: templates/admin/view/active-pro.php:8
+msgid "Go to the "
+msgstr ""
+
+#: templates/admin/view/active-pro.php:8
+msgid " tab, you will see a list of your purchases."
+msgstr ""
+
+#: templates/admin/view/active-pro.php:9
+msgid "Click <strong>Licenses</strong> link, you will be asked to enter the domain address where you want to use this license."
+msgstr ""
+
+#: templates/admin/view/active-pro.php:10
+msgid "After adding the domain you will get the license key."
+msgstr ""
+
+#: templates/admin/view/active-pro.php:11
+msgid "Copy the license key and paste it here in the following field. Click \"Active License\" button."
+msgstr ""
+
+#: templates/admin/view/active-pro.php:28
+msgid "If you face any issue generating the license key or activating the license key please contact our support."
+msgstr ""
+
+#: templates/admin/view/advance.php:5
+msgid "Add Dark Switch In Menu"
+msgstr ""
+
+#: templates/admin/view/advance.php:13
+msgid "Display the dark mode switch in the main menu."
+msgstr ""
+
+#: templates/admin/view/advance.php:17
+msgid "Menu Location"
+msgstr ""
+
+#: templates/admin/view/advance.php:34
+msgid "Image Quality"
+msgstr ""
+
+#: templates/admin/view/advance.php:42
+msgid "Set brightness, contrast and opacity of images in the dark mode."
+msgstr ""
+
+#: templates/admin/view/advance.php:47
+msgid "Brightness"
+msgstr ""
+
+#: templates/admin/view/advance.php:55
+msgid "Set brightness for all images on the dark mode."
+msgstr ""
+
+#: templates/admin/view/advance.php:59
+msgid "Contrast"
+msgstr ""
+
+#: templates/admin/view/advance.php:67
+msgid "Set contrast for all images on the dark mode."
+msgstr ""
+
+#: templates/admin/view/advance.php:71
+msgid "Opacity"
+msgstr ""
+
+#: templates/admin/view/advance.php:79
+msgid "Set opacity for all images on the dark mode."
+msgstr ""
+
+#: templates/admin/view/advance.php:83
+msgid " - Page settings : "
+msgstr ""
+
+#: templates/admin/view/advance.php:86
+msgid "Page Wise Dark Mode"
+msgstr ""
+
+#: templates/admin/view/advance.php:94
+msgid "Turn on to enable Dark Mode Palette on the page setting.<br/> You will find it as a widget on the Classic editor and as a setting under <b>Settings > Page</b> on the Gutenberg editor."
+msgstr ""
+
+#: templates/admin/view/advance.php:99
+msgid " Exclude Pages"
+msgstr ""
+
+#: templates/admin/view/advance.php:121
+msgid "Select the pages you want to exclude from dark mode."
+msgstr ""
+
+#: templates/admin/view/advance.php:125
+msgid " - Blog settings : "
+msgstr ""
+
+#: templates/admin/view/advance.php:128
+msgid " Categories Base Dark Mode"
+msgstr ""
+
+#: templates/admin/view/advance.php:136
+msgid "Turn on to set dark mode options on specific categories. "
+msgstr ""
+
+#: templates/admin/view/advance.php:140
+msgid "  Select Categories"
+msgstr ""
+
+#: templates/admin/view/advance.php:162
+msgid "Select categories for dark mode"
+msgstr ""
+
+#: templates/admin/view/advance.php:166
+#: templates/admin/view/general.php:47
+msgid "  Select Color Palette"
+msgstr ""
+
+#: templates/admin/view/advance.php:187
+msgid "Select color palette for the selected categories"
+msgstr ""
+
+#: templates/admin/view/advance.php:191
+msgid " Single Post Dark Mode "
+msgstr ""
+
+#: templates/admin/view/advance.php:199
+msgid "Turn on to set dark mode options on specific single posts"
+msgstr ""
+
+#: templates/admin/view/advance.php:204
+msgid " Select Posts"
+msgstr ""
+
+#: templates/admin/view/advance.php:226
+msgid " Select posts for dark mode"
+msgstr ""
+
+#: templates/admin/view/advance.php:231
+#: templates/admin/view/advance.php:297
+#: templates/admin/view/advance.php:360
+msgid " Select Color Palette"
+msgstr ""
+
+#: templates/admin/view/advance.php:252
+msgid "Select color palette for the selected posts"
+msgstr ""
+
+#: templates/admin/view/advance.php:256
+msgid " - WooCommerce settings : "
+msgstr ""
+
+#: templates/admin/view/advance.php:259
+msgid "  Product Category Base Dark Mode "
+msgstr ""
+
+#: templates/admin/view/advance.php:267
+msgid "Turn on to set dark mode options on specific product categories."
+msgstr ""
+
+#: templates/admin/view/advance.php:271
+msgid " Select Categories"
+msgstr ""
+
+#: templates/admin/view/advance.php:293
+msgid "Select product categories for dark mode"
+msgstr ""
+
+#: templates/admin/view/advance.php:318
+msgid "Select color palette for the selected product categories"
+msgstr ""
+
+#: templates/admin/view/advance.php:322
+msgid " Single Product Dark Mode "
+msgstr ""
+
+#: templates/admin/view/advance.php:330
+msgid "Turn on to set dark mode options on specific single products."
+msgstr ""
+
+#: templates/admin/view/advance.php:334
+msgid "  Select Products"
+msgstr ""
+
+#: templates/admin/view/advance.php:356
+msgid "Select single products for dark mode"
+msgstr ""
+
+#: templates/admin/view/advance.php:381
+msgid "Select color palette for the selected single products."
+msgstr ""
+
+#: templates/admin/view/display.php:6
+msgid "Switch Style"
+msgstr ""
+
+#: templates/admin/view/display.php:30
+msgid "Select the switch button style for the front-end."
+msgstr ""
+
+#: templates/admin/view/display.php:34
+msgid " - Conditional settings: "
+msgstr ""
+
+#: templates/admin/view/display.php:37
+msgid " Body Position"
+msgstr ""
+
+#: templates/admin/view/display.php:51
+msgid "Set the switch position in the body of your website."
+msgstr ""
+
+#: templates/admin/view/display.php:56
+msgid " Content (Page, Post) Position"
+msgstr ""
+
+#: templates/admin/view/display.php:70
+msgid "Set the switch position on a page or post, you can set it before or after page/post."
+msgstr ""
+
+#: templates/admin/view/display.php:75
+msgid " Exclude Elements"
+msgstr ""
+
+#: templates/admin/view/display.php:80
+msgid "Add CSS selectors (ids, classes) to ignore the dark mode. For multiple elements separate them by comma. Ex: #footer, .class1"
+msgstr ""
+
+#: templates/admin/view/display.php:85
+msgid " Custom CSS "
+msgstr ""
+
+#: templates/admin/view/display.php:90
+msgid "Add custom CSS, you can use selectors (ids, classes). Ex. .class1{color: #000;}"
+msgstr ""
+
+#: templates/admin/view/general.php:4
+msgid " - Front-End Options"
+msgstr ""
+
+#: templates/admin/view/general.php:6
+msgid "Enable Frontend Darkmode"
+msgstr ""
+
+#: templates/admin/view/general.php:14
+msgid "Turn on to enable the dark mode (i.e. show the dark mode switch) in the front-end."
+msgstr ""
+
+#: templates/admin/view/general.php:19
+msgid "Enable Default Dark Mode"
+msgstr ""
+
+#: templates/admin/view/general.php:27
+msgid "Turn on to show dark version of your website by default."
+msgstr ""
+
+#: templates/admin/view/general.php:31
+msgid " - Backend Options"
+msgstr ""
+
+#: templates/admin/view/general.php:34
+msgid " Enable Backend Dark Mode"
+msgstr ""
+
+#: templates/admin/view/general.php:42
+msgid "Turn on to display a dark mode switch button in your WordPress admin panel."
+msgstr ""
+
+#: templates/admin/view/general.php:68
+msgid "Select a color palette"
+msgstr ""
+
+#: templates/admin/view/image.php:2
+msgid "Image Settings"
+msgstr ""
+
+#: templates/admin/view/image.php:5
+msgid " Image URL for Light and Dark Mode"
+msgstr ""
+
+#: templates/admin/view/image.php:33
+msgid "Open WordPress<b> Media > Library</b>, click the image to open details, copy the File URL and paste it here."
+msgstr ""
+
+#: templates/admin/view/preset.php:6
+msgid "Color Palettes"
+msgstr ""
+
+#: templates/admin/view/preset.php:31
+msgid "Select a color palette for the front-end of your website"
+msgstr ""
+
+#: templates/admin/view/preset.php:68
+msgid "Select the custom color for the frontend."
+msgstr ""
+
+#: templates/admin/view/time.php:2
+msgid "Time Settings"
+msgstr ""
+
+#: templates/admin/view/time.php:6
+msgid "Time Based Dark Mode"
+msgstr ""
+
+#: templates/admin/view/time.php:14
+msgid "Turn on to enable dark mode between a time range."
+msgstr ""
+
+#: templates/admin/view/time.php:19
+msgid "  Start time "
+msgstr ""
+
+#: templates/admin/view/time.php:25
+msgid "Set start time of dark mode."
+msgstr ""
+
+#: templates/admin/view/time.php:29
+msgid "  End time "
+msgstr ""
+
+#: templates/admin/view/time.php:36
+msgid "Set end time of dark mode"
+msgstr ""

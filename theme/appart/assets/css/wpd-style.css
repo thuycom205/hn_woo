@@ -1,0 +1,738 @@
+/*** 1. General Styling & Typography
+-------------------------------------------*/
+a {
+    color: #000000;
+}
+
+.blog_single_area img, img.aligncenter {
+    max-width: 100%;
+    height: auto;
+}
+
+img.size-full {
+    width: auto;
+}
+
+/*--------------------------------------------------------------
+# Content
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+## Posts and pages
+--------------------------------------------------------------*/
+.sticky .col-sm-6 {
+    display: block;
+    background: #eee;
+}
+
+.hentry {
+    margin: 0 0 1.5em;
+}
+
+.byline,
+.updated:not(.published) {
+    display: none;
+}
+
+.single .byline,
+.group-blog .byline {
+    display: inline;
+}
+
+
+.page-links {
+    clear: both;
+    margin: 0 0 1.5em;
+}
+
+/*--------------------------------------------------------------
+## Comments
+--------------------------------------------------------------*/
+.comment-content a {
+    word-wrap: break-word;
+}
+
+.bypostauthor {
+    display: block;
+}
+
+/*--------------------------------------------------------------
+# Infinite scroll
+--------------------------------------------------------------*/
+/* Globally hidden elements when Infinite Scroll is supported and in use. */
+.infinite-scroll .posts-navigation, /* Older / Newer Posts Navigation (always hidden) */
+.infinite-scroll.neverending .site-footer { /* Theme Footer (when set to scrolling) */
+    display: none;
+}
+
+/* When Infinite Scroll has reached its end we need to re-display elements that were hidden (via .neverending) before. */
+.infinity-end.neverending .site-footer {
+    display: block;
+}
+
+
+
+/* Make sure embeds and iframes fit their containers. */
+embed,
+iframe,
+object {
+    max-width: 100%;
+}
+
+/*--------------------------------------------------------------
+## Captions
+--------------------------------------------------------------*/
+.wp-caption {
+    margin-bottom: 1.5em;
+    max-width: 100%;
+}
+
+
+.wp-caption img[class*="wp-image-"] {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+    width: 100%;
+}
+.wp-caption .wp-caption-text {
+    margin: 0.5em 0;
+    font-size: 14px;
+}
+
+.wp-caption-text {
+    text-align: left;
+}
+
+/*--------------------------------------------------------------
+## Galleries
+--------------------------------------------------------------*/
+.gallery {
+    margin-bottom: 1.5em
+}
+
+.gallery-item {
+    display: inline-block;
+    text-align: left;
+    vertical-align: top;
+    width: 100%
+}
+
+.gallery-columns-2 .gallery-item {
+    max-width: 50%
+}
+
+.gallery-columns-3 .gallery-item {
+    max-width: 33.33%
+}
+
+.gallery-columns-4 .gallery-item {
+    max-width: 25%
+}
+
+.gallery-columns-5 .gallery-item {
+    max-width: 15.2%;
+    margin-right: 10px;
+}
+
+.gallery-columns-6 .gallery-item {
+    max-width: 14.8%;
+    margin-right: 10px;
+}
+
+.gallery-columns-7 .gallery-item {
+    max-width: 13.6%;
+    margin-right: 5px;
+    margin-bottom: 5px;
+}
+
+.gallery-columns-8 .gallery-item {
+    max-width: 11.8%;
+    margin-right: 5px;
+    margin-bottom: 5px;
+}
+
+.gallery-columns-9 .gallery-item {
+    max-width: 10.5%;
+    margin-right: 5px;
+    margin-bottom: 5px;
+}
+
+.gallery-columns-9 .gallery-item .gallery-caption,
+.gallery-columns-8 .gallery-item .gallery-caption,
+.gallery-columns-7 .gallery-item .gallery-caption {
+    display: none;
+}
+
+.gallery-caption {
+    display: block;
+    color: #707070;
+    color: rgba(51, 51, 51, .7);
+    display: block;
+    font-family: "Noto Sans", sans-serif;
+    font-size: 12px;
+    font-size: 12px;
+    line-height: 1.5;
+    padding: .5em 0
+}
+
+.gallery {
+    width: 100%
+}
+
+figure.gallery-item {
+    margin-bottom: 10px;
+    display: inline-block
+}
+
+
+/*--------------------------------------------------------------
+# Accessibility
+--------------------------------------------------------------*/
+/* Text meant only for screen readers. */
+.screen-reader-text {
+    clip: rect(1px, 1px, 1px, 1px);
+    position: absolute !important;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+}
+
+.screen-reader-text:focus {
+    background-color: #f1f1f1;
+    border-radius: 3px;
+    box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+    clip: auto !important;
+    color: #21759b;
+    display: block;
+    font-size: 14px;
+    font-size: 0.875rem;
+    font-weight: bold;
+    height: auto;
+    left: 5px;
+    line-height: normal;
+    padding: 15px 23px 14px;
+    text-decoration: none;
+    top: 5px;
+    width: auto;
+    z-index: 100000; /* Above WP toolbar. */
+}
+
+/* Do not show the outline on the skip link target. */
+#content[tabindex="-1"]:focus {
+    outline: 0;
+}
+
+/*--------------------------------------------------------------
+# Alignments
+--------------------------------------------------------------*/
+.alignleft {
+    display: inline;
+    float: left;
+    margin-right: 1.5em;
+    margin-bottom: 10px;
+}
+
+.alignright {
+    display: inline;
+    float: right;
+    margin-left: 1.5em;
+    margin-right: 1em;
+    margin-bottom: 10px;
+}
+
+.aligncenter {
+    clear: both;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+/*--------------------------------------------------------------
+# Clearings
+--------------------------------------------------------------*/
+.clear:before,
+.clear:after,
+.entry-content:before,
+.entry-content:after,
+.comment-content:before,
+.comment-content:after,
+.site-header:before,
+.site-header:after,
+.site-content:before,
+.site-content:after,
+.site-footer:before,
+.site-footer:after {
+    content: "";
+    display: table;
+    table-layout: fixed;
+}
+
+.clear:after,
+.entry-content:after,
+.comment-content:after,
+.site-header:after,
+.site-content:after,
+.site-footer:after {
+    clear: both;
+}
+
+
+.post-content img {
+    max-width: 100%;
+    height: auto;
+}
+
+.media-left img {
+    max-width: none;
+}
+
+pre {
+    background: #f5f5f5;
+    color: #666;
+    font-family: monospace;
+    font-size: 14px;
+    margin: 20px 0;
+    overflow: auto;
+    padding: 20px;
+    white-space: pre;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+
+/* Table style */
+table {
+    margin: 0 0 1.5em;
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+th {
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: left;
+    padding-right: 10px !important;
+}
+
+td, th {
+    border-top: 1px solid #ededed;
+    padding: 10px 10px 10px 0;
+}
+
+/*** Input field style ***/
+input {
+    font: 300 16px "Poppins", sans-serif;
+    color: #aaaaaa;
+    border-width: 2px;
+    border-color: #d3e0fe;
+    border-style: solid;
+    background-color: rgba(255, 255, 255, 0.502);
+    height: 50px;
+    border-radius: 45px;
+    padding-left: 35px;
+    display: inline;
+}
+
+input[type="submit"] {
+    font: 500 14px "Poppins", sans-serif;
+    color: #00bade;
+    text-transform: capitalize;
+    border: 2px solid #00bade;
+    border-radius: 45px;
+    padding: 0px 38px;
+    -webkit-transition: all 0.4s linear;
+    -o-transition: all 0.4s linear;
+    transition: all 0.4s linear;
+    margin-left: 10px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+input[type="submit"]:hover {
+    background: #00bade;
+    color: #fff;
+    cursor: pointer;
+}
+
+.article-content ol li {
+    list-style-type: decimal;
+    margin-left: 2em;
+    padding: 5px;
+}
+
+.search-no-results h1.page-title {
+    padding-top: 10px;
+    padding-left: 5px;
+    padding-bottom: 10px;
+}
+
+.no-results .page-content input.form-control {
+    width: 100%;
+}
+
+
+/******************* 404 page ********************/
+.error-text h1 {
+    color: #f60d2b;
+    font-size: 42px;
+    line-height: 1.7;
+}
+
+.error-text h4 {
+    margin-top: 15px;
+}
+
+.error404 button.btn.btn-style {
+    margin-top: 10px;
+}
+
+
+/***************************** Widget styles ******************************/
+
+.widget img {
+    max-width: 100%;
+    height: auto;
+}
+
+.widget ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.widget select {
+    width: 100% !important;
+    height: 40px;
+    color: #8C8C8C;
+    margin: 0 auto;
+    display: table;
+    margin-top: 30px;
+    padding: 5px;
+}
+
+.widget ul li:last-child {
+    border-bottom: none;
+}
+
+.widget.widget_nav_menu ul li a,
+.widget.widget_meta ul li a,
+.widget.widget_pages ul li a,
+.widget.widget_archive ul li a,
+.widget.widget_categories ul li a {
+    font: 400 14px/34px "Poppins", sans-serif;
+    color: #666666;
+    display: inline-block;
+}
+
+.widget.widget_nav_menu ul li a i,
+.widget.widget_meta ul li a i,
+.widget.widget_pages ul li a i,
+.widget.widget_archive ul li a i,
+.widget.widget_categories ul li a i {
+    font-size: 15px;
+    vertical-align: middle;
+    padding-right: 14px;
+}
+
+.widget.widget_recent_entries li a {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 30px;
+    margin-bottom: 5px;
+}
+
+.widget.widget_recent_entries li {
+    border-top: 1px solid rgba(0,0,0,0.06);
+    padding: 13px 0 17px 0;
+}
+
+.widget span.post-date {
+    display: block;
+}
+
+li.recentcomments {
+    padding-bottom: 10px;
+}
+
+ul li.recentcomments>a {
+    padding-left: 0;
+    line-height: normal;
+}
+
+.widget_recent_comments ul li span{
+    color: #666;
+    font-weight: 500
+}
+
+.widget_recent_comments ul li a{
+    color: #666;
+    font-weight: 500;
+    line-height: 20px;
+}
+
+#wp-calendar{
+    width: 100%;
+}
+
+caption {
+    caption-side: top;
+    text-align: left;
+}
+
+#wp-calendar tfoot tr td a{
+    color: #666;
+}
+
+.widget-inner {
+    padding: 30px;
+}
+img.alignnone.wp-image-907 {
+    height: auto;
+    width: 100%;
+}
+
+.footer-widget.widget {
+    margin-top: 65px;
+}
+
+.footer-widget .tagcloud a {
+    color: #666666;
+}
+
+.footer-widget.widget:first-child,
+.footer-widget.widget:nth-child(2),
+.footer-widget.widget:nth-child(3),
+.footer-widget.widget:nth-child(4){
+    margin-top: 0;
+}
+
+/** page pagination links style **/
+.page-links > .page-links-title {
+    border: 0;
+    color: #707070;
+    color: rgba(51, 51, 51, 0.7);
+    height: auto;
+    margin: 0;
+    padding-right: 0.5em;
+    width: auto;
+}
+
+@media screen and (min-width: 77.5em) {
+    .page-links a, .page-links > span {
+        margin: 0 0.25em 0.25em 0;
+    }
+}
+
+@media screen and (min-width: 77.5em) {
+    .page-links a, .page-links > span {
+        margin: 0 0.25em 0.25em 0;
+    }
+}
+
+.page-links a {
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0.3);
+    background-color: #333;
+    border-color: #333;
+    color: #fff;
+}
+
+.page-links a, .page-links > span {
+    border: 1px solid #eaeaea;
+    border: 1px solid rgba(51, 51, 51, 0.1);
+    display: inline-block;
+    font-size: 12px;
+    height: 2em;
+    line-height: 2;
+    margin: 0 0.3333em 0.3333em 0;
+    text-align: center;
+    width: 2em;
+}
+
+.sticky {
+    background: #eee;
+}
+
+input.search-field {
+    width: 95%;
+    height: 40px;
+    background: #f7f7f7;
+}
+
+input.search-submit {
+    width: 60px;
+    height: 40px;
+    background: transparent;
+    padding: 5px;
+    font-size: 14px !important;
+    margin-left: -12px;
+    margin-top: -1px;
+}
+
+.tagcloud a {
+    font: 400 14px/34px "Poppins", sans-serif !important;
+    color: #404040;
+    border: 1px solid #e0e0e0;
+    padding: 0px 20px;
+    display: inline-block;
+    margin: 0px 5px 10px 0;
+    -webkit-transition: all 0.1s linear;
+    -o-transition: all 0.1s linear;
+    transition: all 0.1s linear;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    border-radius: 50px;
+}
+
+.tagcloud a:hover {
+    background: #404040;
+    color: #fff;
+}
+
+.sidebar-box .tagcloud a:hover {
+    color: #ffffff !important;
+    background: linear-gradient( -160deg, rgb(26,192,237) 0%, rgb(31,242,255) 100%);
+}
+
+.widgets ul {
+    margin: 0;
+    padding: 0;
+}
+
+.sidebar_widgets h3 {
+    font-weight: 600;
+    margin-bottom: 38px;
+    font-size: 26px;
+}
+
+.widget_rss ul li {
+    margin-top: 15px;
+}
+
+.widget_nav_menu ul.sub-menu li, .widget_categories ul.children li {
+    margin-left: 15px;
+    border: none;
+    padding-bottom: 0;
+    font-weight: 300;
+}
+
+.widgets img {
+    height: auto;
+}
+
+a.rsswidget {
+    color: #666;
+    font-weight: 700;
+}
+
+.widget ul ul.children {
+    margin-left: 15px;
+}
+
+.post_tag_info {
+    clear: both;
+}
+
+.post .featured_post {
+    padding: 5px 10px;
+    background: gray;
+    display: inline-block;
+    color: #ffffff;
+    right: 0;
+    top: 0;
+    position: absolute;
+}
+
+.blog-section .blog-items .blog-content h2 {
+    margin: 0;
+}
+
+.widget_rss span.rss-date {
+    display: block;
+    padding-bottom: 5px;
+}
+
+.widget_nav_menu .menu li {
+    margin-right: 0;
+}
+
+.logged-in .comment_text {
+    padding-bottom: 0;
+}
+
+.blog-content blockquote:after {
+    content: "\f10d";
+    width: 40px;
+    height: 100%;
+    position: absolute;
+    left: 16px;
+    color: #eae9e9;
+    font: normal normal normal 60px/1 FontAwesome;
+    top: 6px;
+    z-index: 0;
+}
+
+.page-content h1,
+.page-content h2,
+.page-content h3,
+.page-content h4,
+.page-content h5,
+.page-content h6,
+.blog-content h1,
+.blog-content h2,
+.blog-content h3,
+.blog-content h4,
+.blog-content h5,
+.blog-content h6 {
+    color: #333333;
+    padding-bottom: 10px;
+}
+
+.comments .media-body ul,
+.page-template-default .page-content ul,
+.single .blog-content ul {
+    list-style: disc;
+    padding-left: 40px;
+}
+
+.comments>h2 {
+    color: #333333;
+    font-weight: 500;
+}
+
+.blog-content p,
+.page-content p {
+    margin-bottom: 1rem;
+}
+
+#wp-calendar td#next {
+    text-align: right;
+}
+
+.page-links a:hover {
+    background: #fff;
+    color: #6f7982;
+}
+
+td#today {
+    color: #6f7982;
+    font-weight: 600;
+}
+
+footer {
+    clear: both;
+}
+
+.widget.widget_recent_comments > ul > li:before {
+    content: "\f0e5";
+    font-family: 'FontAwesome';
+    font-size: 16px;
+    padding-right: 10px;
+    position: absolute;
+    left: 35px;
+}
+
+.widget.widget_recent_comments > ul > li {
+    padding-left: 25px;
+}

@@ -1,0 +1,135 @@
+------ 3.0.1 ( 14 March 2021 ) ------
+Tweak: WooCommerce template outdated files updated
+Fixed: Shop page Payment Function Updated
+Fixed: Sticky menu background color & Text Color issue Fixing
+
+
+------ 3.0 ( 02 March 2021 ) ------
+New: Droit Dark Mode plugin included
+
+------ 2.9 ( 15 May 2019 ) ------
+New: Droit Elementor Addons added
+Updated: Compatibility with latest WordPress version
+Fixed: Console error
+
+------ 2.8 ( 15 May 2019 ) ------
+Tweak: Widget In Plugin Teritory
+New: Gutenburg Optimization
+
+------ 2.7 ( 01 May 2019 ) ------
+Tweak: Features and FAQ section (image icon spacing)
+Tweak: Some unnecessary theme settings removed
+Tweak: Screen Feature section
+New: 404 Error Page settings under Theme Settings page
+
+------ 2.6 ( 18 November 2018 ) ------
+Tweak: Page Title-bar overlay color option
+Tweak: 404 page's search form
+Updated: The theme's language file
+
+------ 2.5 ( 18 November 2018 ) ------
+Fixed: Some styling options for Screen Features, Call to Action and Hero Section
+Tweak: WooCommerce template outdated files updated
+
+------ 2.4 ( 01 November 2018 ) ------
+Fixed: Pricing Table section and Single info box
+Fixed: Product Page Title-bar banner
+Updated: Multi-page Demo contents
+
+------ 2.3 ( 10 October 2018 ) ------
+Updated: Demo contents
+Fixed: Hero Section's svg shape support on 4K display
+Tweak: Hero Section's Background Circle Shapes hide/show options
+Tweak: Style improvement of Blog widgets style (Recent comments, Recent Posts)
+
+------ 2.2 ( 19 September 2018 ) ------
+Tweak: Hero section (style two svg color change options added)
+Fixed: Some PHP errors on the theme activation
+
+------ 2.1 ( 02 September 2018 ) ------
+Fixed: Some WooCommerce issues
+Fixed: Product wishlist button and pagination
+Fixed: Some styling issues
+Fixed: Menu action button on Header full width mode
+Tweak: Menu action button styling settings (Theme Settings > Header Settings > Menu Action Button)
+Tweak: Color Settings
+New: Shop homepage (included with multipage demo) with new four sections
+
+------ 2.0.1 ( 27 August 2018 ) ------
+Fixed: syntax error in Appart_hero.php on line 488
+
+------ 2.0 ( 26 July 2018 ) ------
+Fixed: Screens Features section button color issue
+Fixed: Team section member column count choose issue
+Fixed: Comment system on blog single comment form
+New: WooCommerce integrated (product archive, product single, cart, checkout page) integrated
+
+------ 1.7 ( 21 June 2018 ) ------
+Fixed: MailChimp Subscribe form section
+Fixed: Team two column layout
+Fixed: Some CSS issues
+Fixed: Some Elementor widget's settings
+Updated: Theme name changed to AppArt from Appart
+
+------ 1.6.1 (12 June 2018 ) ------
+Improved: Features Section font size and individual icon color change option added.
+Fixed: Some CSS issues
+
+------ 1.6 ( 10 June 2018) ------
+New: Hero Section Style Five
+New: Interactive Screens Section
+New: Client Logo Carousel Section
+New: Demo Six added to one click demo importer.
+Improved: Features Section icon alignment
+Improved: Screens Features Section customize-ability
+Fixed: Some CSS issues
+
+------ 1.5 ( 06 June 2018) ------
+New: Hero Section style four
+New: Call to Action style three
+New: Screenshots Carousel
+New: Screens Features
+New: Demo five in one click importer
+New: Custom JavaScript and CSS code editor added in the Theme Settings page
+New: Particle background effect in Hero Section support
+Improved: Features section
+Improved: Call to Action
+Improved: Download section two
+Fixed: Some CSS issues
+
+------ 1.4 (03 June 2018) ------
+Fixed: Some responsive issues
+Fixed: Some styling issues
+Improved: Dropdown menu styling
+New: Custom logo size in Theme Settings > Header > Logo
+New: Contact page
+New: WPML support
+New: Multi-page demo in oneClick importer
+
+------ 1.3 (29 May 2018) ------
+Improved: Some shortcodes settings
+Improved: Subscribe form
+Improved: Dropdown menu
+New: Testimonial style three
+New: Single Video style two (popup video)
+New: Hero section Style three (Background circle shapes)
+Fixed: Some responsive issues
+Fixed: Some styling issues
+Updated: Demo contents
+
+------ 1.2 (24 May 2018) ------
+New: RTL support
+New: Demo four
+New: Hero background image slide-show
+Improved: Some shortcodes settings
+Fixed: Some responsive issues
+
+------ 1.1 (17 May 2018) ------
+Added: Two other demo (saas demo and demo three)
+Fixed: Some CSS issues
+Fixed: Some Elementor widgets settings
+Updated: Demo contents
+Improved: Some Elementor widgets settings
+Improved: Search result no found page
+Improved: Some design issues
+Improved: Color settings

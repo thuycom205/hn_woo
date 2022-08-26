@@ -1,0 +1,32 @@
+<wpml-config>
+    <custom-fields>
+        <custom-field action="translate">page_metaboxes</custom-field>
+        <custom-field action="translate">post_metas</custom-field>
+    </custom-fields>
+    <admin-texts>
+        <key name="appart_opt">
+
+            <key name="blog_page" />
+            <key name="blog_title" />
+            <key name="blog_subtitle" />
+            <key name="blog_meta_opt" />
+            <key name="blog_excerpt" />
+            <key name="blog_single_opt" />
+            <key name="related_posts_title" />
+            <key name="related_posts_count" />
+
+            <key name="appart_footer" />
+            <key name="copyright_txt" />
+
+            <key name="information_boxes" />
+
+            <key name="navbar_styling" />
+            <key name="menu_item_margin" />
+            <key name="sticky_menu_start" />
+            <key name="sticky_menu_end" />
+            <key name="nav_layout" />
+            <key name="menu_action_btn_opt" />
+            <key name="menu_btn_label" />
+        </key>
+    </admin-texts>
+</wpml-config>

@@ -1,0 +1,16 @@
+<svg 
+ xmlns="http://www.w3.org/2000/svg"
+ xmlns:xlink="http://www.w3.org/1999/xlink"
+ width="54px" height="54px">
+<defs>
+<linearGradient id="PSgrad_0" x1="0%" x2="100%" y1="0%" y2="0%">
+  <stop offset="0%" stop-color="rgb(255,255,255)" stop-opacity="1" />
+  <stop offset="100%" stop-color="rgb(16,139,234)" stop-opacity="1" />
+</linearGradient>
+
+</defs>
+<path class="wow fadeInUp animated" fill-rule="evenodd"  opacity="0.502" fill="rgb(255, 255, 255)"
+ d="M51.648,0.937 L0.938,51.648 L2.352,53.062 L53.062,2.351 L51.648,0.937 Z"/>
+<path fill="url(#PSgrad_0)"
+ d="M51.648,0.937 L0.938,51.648 L2.352,53.062 L53.062,2.351 L51.648,0.937 Z"/>
+</svg>

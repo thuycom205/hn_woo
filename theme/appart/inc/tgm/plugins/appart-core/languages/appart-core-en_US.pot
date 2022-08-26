@@ -1,0 +1,2683 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: 2018-10-09 12:55+0600\n"
+"PO-Revision-Date: 2018-05-16 21:19+0600\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.0.8\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-KeywordsList: __;_e;esc_html_e;esc_html__;esc_attr__;esc_attr_e;_x;"
+"_n;esc_html_x\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: appart-core.php:104 appart-core.php:120
+msgid "Cheatin&#8217; huh?"
+msgstr ""
+
+#: appart-core.php:242
+#, php-format
+msgid "\"%1$s\" requires \"%2$s\" to be installed and activated."
+msgstr ""
+
+#: appart-core.php:243
+msgid "Appart core"
+msgstr ""
+
+#: appart-core.php:244 appart-core.php:264
+msgid "Elementor"
+msgstr ""
+
+#: appart-core.php:262 appart-core.php:280
+#, php-format
+msgid "\"%1$s\" requires \"%2$s\" version %3$s or greater."
+msgstr ""
+
+#: appart-core.php:263 appart-core.php:281
+msgid "Appart Core"
+msgstr ""
+
+#: appart-core.php:282
+msgid "PHP"
+msgstr ""
+
+#: appart-core.php:297
+msgid "Appart Elements"
+msgstr ""
+
+#: fields/icons.php:6
+msgid "Wand"
+msgstr ""
+
+#: fields/icons.php:7
+msgid "Volume"
+msgstr ""
+
+#: fields/icons.php:8
+msgid "User"
+msgstr ""
+
+#: fields/icons.php:9
+msgid "Unlock"
+msgstr ""
+
+#: fields/icons.php:10
+msgid "Unlink"
+msgstr ""
+
+#: fields/icons.php:11
+msgid "Trash"
+msgstr ""
+
+#: fields/icons.php:12
+msgid "Thought"
+msgstr ""
+
+#: fields/icons.php:13
+msgid "Target"
+msgstr ""
+
+#: fields/icons.php:14
+msgid "Tag"
+msgstr ""
+
+#: fields/icons.php:15
+msgid "Tablet"
+msgstr ""
+
+#: fields/icons.php:16
+msgid "Star"
+msgstr ""
+
+#: fields/icons.php:17
+msgid "Spray"
+msgstr ""
+
+#: fields/icons.php:18
+msgid "Shopping Cart Full"
+msgstr ""
+
+#: fields/icons.php:19
+msgid "Shopping Cart"
+msgstr ""
+
+#: fields/icons.php:20 widgets/twitter/twitter-widget-settings.php:12
+msgid "Settings"
+msgstr ""
+
+#: fields/icons.php:21
+msgid "Search"
+msgstr ""
+
+#: fields/icons.php:22
+msgid "Zoom In"
+msgstr ""
+
+#: fields/icons.php:23
+msgid "Zoom Out"
+msgstr ""
+
+#: fields/icons.php:24
+msgid "Cut"
+msgstr ""
+
+#: fields/icons.php:25
+msgid "Ruler"
+msgstr ""
+
+#: fields/icons.php:26
+msgid "Ruler Pencil"
+msgstr ""
+
+#: fields/icons.php:27
+msgid "Ruler alt"
+msgstr ""
+
+#: fields/icons.php:28
+msgid "Bookmark"
+msgstr ""
+
+#: fields/icons.php:29
+msgid "Bookmark Alt"
+msgstr ""
+
+#: fields/icons.php:30
+msgid "Reload"
+msgstr ""
+
+#: fields/icons.php:31
+msgid "Plus"
+msgstr ""
+
+#: fields/icons.php:32
+msgid "Pin"
+msgstr ""
+
+#: fields/icons.php:33
+msgid "Pencil"
+msgstr ""
+
+#: fields/icons.php:34
+msgid "Pencil Alt"
+msgstr ""
+
+#: fields/icons.php:35
+msgid "Paint Roller"
+msgstr ""
+
+#: fields/icons.php:36
+msgid "Paint Bucket"
+msgstr ""
+
+#: fields/icons.php:37
+msgid "Na"
+msgstr ""
+
+#: fields/icons.php:38
+msgid "Mobile"
+msgstr ""
+
+#: fields/icons.php:39
+msgid "Minus"
+msgstr ""
+
+#: fields/icons.php:40
+msgid "Medall"
+msgstr ""
+
+#: fields/icons.php:41
+msgid "Medall Alt"
+msgstr ""
+
+#: fields/icons.php:42
+msgid "Marker"
+msgstr ""
+
+#: fields/icons.php:43
+msgid "Marker Alt"
+msgstr ""
+
+#: fields/icons.php:44
+msgid "Arrow Up"
+msgstr ""
+
+#: fields/icons.php:45
+msgid "Arrow Right"
+msgstr ""
+
+#: fields/icons.php:46
+msgid "Arrow Left"
+msgstr ""
+
+#: fields/icons.php:47
+msgid "Arrow Down"
+msgstr ""
+
+#: fields/icons.php:48
+msgid "Lock"
+msgstr ""
+
+#: fields/icons.php:49
+msgid "Location Arrow"
+msgstr ""
+
+#: fields/icons.php:50
+msgid "Link"
+msgstr ""
+
+#: fields/icons.php:51
+msgid "Layout"
+msgstr ""
+
+#: fields/icons.php:52
+msgid "Layers"
+msgstr ""
+
+#: fields/icons.php:53
+msgid "Layers Alt"
+msgstr ""
+
+#: fields/icons.php:54
+msgid "Key"
+msgstr ""
+
+#: fields/icons.php:55
+msgid "Import"
+msgstr ""
+
+#: fields/icons.php:56 widgets/Appart_interactive_screens.php:85
+#: widgets/Appart_screens_features.php:83
+msgid "Image"
+msgstr ""
+
+#: fields/icons.php:57
+msgid "Heart"
+msgstr ""
+
+#: fields/icons.php:58
+msgid "Heart Broken"
+msgstr ""
+
+#: fields/icons.php:59
+msgid "Hand Stop"
+msgstr ""
+
+#: fields/icons.php:60
+msgid "Hand Open"
+msgstr ""
+
+#: fields/icons.php:61
+msgid "Hand Drag"
+msgstr ""
+
+#: fields/icons.php:62
+msgid "Folder"
+msgstr ""
+
+#: fields/icons.php:63
+msgid "Flag"
+msgstr ""
+
+#: fields/icons.php:64
+msgid "Flag Alt"
+msgstr ""
+
+#: fields/icons.php:65
+msgid "Flag Alt 2"
+msgstr ""
+
+#: fields/icons.php:66
+msgid "Eye"
+msgstr ""
+
+#: fields/icons.php:67
+msgid "Export"
+msgstr ""
+
+#: fields/icons.php:68
+msgid "Exchange Vertical"
+msgstr ""
+
+#: fields/icons.php:69
+msgid "Desktop"
+msgstr ""
+
+#: fields/icons.php:70
+msgid "Cup"
+msgstr ""
+
+#: fields/icons.php:71
+msgid "Crown"
+msgstr ""
+
+#: fields/icons.php:72
+msgid "Comments"
+msgstr ""
+
+#: fields/icons.php:73
+msgid "Comment"
+msgstr ""
+
+#: fields/icons.php:74
+msgid "Comment Alt"
+msgstr ""
+
+#: fields/icons.php:75
+msgid "Close"
+msgstr ""
+
+#: fields/icons.php:76
+msgid "Clip"
+msgstr ""
+
+#: fields/icons.php:77
+msgid "Angle Up"
+msgstr ""
+
+#: fields/icons.php:78
+msgid "Angle Right"
+msgstr ""
+
+#: fields/icons.php:79
+msgid "Angle Left"
+msgstr ""
+
+#: fields/icons.php:80
+msgid "Angle Down"
+msgstr ""
+
+#: fields/icons.php:81
+msgid "Check"
+msgstr ""
+
+#: fields/icons.php:82
+msgid "Check Box"
+msgstr ""
+
+#: fields/icons.php:83
+msgid "Camera"
+msgstr ""
+
+#: fields/icons.php:84
+msgid "Announcement"
+msgstr ""
+
+#: fields/icons.php:85
+msgid "Brush"
+msgstr ""
+
+#: fields/icons.php:86
+msgid "Briefcase"
+msgstr ""
+
+#: fields/icons.php:87
+msgid "Bolt"
+msgstr ""
+
+#: fields/icons.php:88
+msgid "Bolt Alt"
+msgstr ""
+
+#: fields/icons.php:89
+msgid "Blackboard"
+msgstr ""
+
+#: fields/icons.php:90
+msgid "Bag"
+msgstr ""
+
+#: fields/icons.php:91
+msgid "Move"
+msgstr ""
+
+#: fields/icons.php:92
+msgid "Arrows Vertical"
+msgstr ""
+
+#: fields/icons.php:93
+msgid "Arrows Horizontal"
+msgstr ""
+
+#: fields/icons.php:94
+msgid "Fullscreen"
+msgstr ""
+
+#: fields/icons.php:95
+msgid "Arrow Top Right"
+msgstr ""
+
+#: fields/icons.php:96
+msgid "Arrow Top Left"
+msgstr ""
+
+#: fields/icons.php:97
+msgid "Arrow Circle Up"
+msgstr ""
+
+#: fields/icons.php:98
+msgid "Arrow Circle Right"
+msgstr ""
+
+#: fields/icons.php:99
+msgid "Arrow Circle Left"
+msgstr ""
+
+#: fields/icons.php:100
+msgid "Arrow Circle Down"
+msgstr ""
+
+#: fields/icons.php:101
+msgid "Angle Double Up"
+msgstr ""
+
+#: fields/icons.php:102
+msgid "Angle Double Right"
+msgstr ""
+
+#: fields/icons.php:103
+msgid "Angle Double Left"
+msgstr ""
+
+#: fields/icons.php:104
+msgid "Angle Double Down"
+msgstr ""
+
+#: fields/icons.php:105
+msgid "Zip"
+msgstr ""
+
+#: fields/icons.php:106
+msgid "World"
+msgstr ""
+
+#: fields/icons.php:107
+msgid "Wheelchair"
+msgstr ""
+
+#: fields/icons.php:108
+msgid "View List"
+msgstr ""
+
+#: fields/icons.php:109
+msgid "View List Alt"
+msgstr ""
+
+#: fields/icons.php:110
+msgid "View Grid"
+msgstr ""
+
+#: fields/icons.php:111
+msgid "Uppercase"
+msgstr ""
+
+#: fields/icons.php:112
+msgid "Upload"
+msgstr ""
+
+#: fields/icons.php:113
+msgid "Underline"
+msgstr ""
+
+#: fields/icons.php:114
+msgid "Truck"
+msgstr ""
+
+#: fields/icons.php:115
+msgid "Timer"
+msgstr ""
+
+#: fields/icons.php:116
+msgid "Ticket"
+msgstr ""
+
+#: fields/icons.php:117
+msgid "Thumb Up"
+msgstr ""
+
+#: fields/icons.php:118
+msgid "Thumb Down"
+msgstr ""
+
+#: fields/icons.php:119
+msgid "Text"
+msgstr ""
+
+#: fields/icons.php:120
+msgid "Stats Up"
+msgstr ""
+
+#: fields/icons.php:121
+msgid "Stats Down"
+msgstr ""
+
+#: fields/icons.php:122
+msgid "Split V"
+msgstr ""
+
+#: fields/icons.php:123
+msgid "Split-h"
+msgstr ""
+
+#: fields/icons.php:124
+msgid "Smallcap"
+msgstr ""
+
+#: fields/icons.php:125
+msgid "Shine"
+msgstr ""
+
+#: fields/icons.php:126
+msgid "Shift Right"
+msgstr ""
+
+#: fields/icons.php:127
+msgid "Shift Left"
+msgstr ""
+
+#: fields/icons.php:128
+msgid "Shield"
+msgstr ""
+
+#: fields/icons.php:129
+msgid "Notepad"
+msgstr ""
+
+#: fields/icons.php:130
+msgid "Server"
+msgstr ""
+
+#: fields/icons.php:131
+msgid "Quote Right"
+msgstr ""
+
+#: fields/icons.php:132
+msgid "Quote Left"
+msgstr ""
+
+#: fields/icons.php:133
+msgid "Pulse"
+msgstr ""
+
+#: fields/icons.php:134
+msgid "Printer"
+msgstr ""
+
+#: fields/icons.php:135
+msgid "Power Off"
+msgstr ""
+
+#: fields/icons.php:136
+msgid "Plug"
+msgstr ""
+
+#: fields/icons.php:137
+msgid "Pie Chart"
+msgstr ""
+
+#: fields/icons.php:138
+msgid "Paragraph"
+msgstr ""
+
+#: fields/icons.php:139
+msgid "Panel"
+msgstr ""
+
+#: fields/icons.php:140
+msgid "Package"
+msgstr ""
+
+#: fields/icons.php:141
+msgid "Music"
+msgstr ""
+
+#: fields/icons.php:142
+msgid "Music Alt"
+msgstr ""
+
+#: fields/icons.php:143
+msgid "Mouse"
+msgstr ""
+
+#: fields/icons.php:144
+msgid "Mouse Alt"
+msgstr ""
+
+#: fields/icons.php:145
+msgid "Money"
+msgstr ""
+
+#: fields/icons.php:146
+msgid "Microphone"
+msgstr ""
+
+#: fields/icons.php:147
+msgid "Menu"
+msgstr ""
+
+#: fields/icons.php:148
+msgid "Menu Alt"
+msgstr ""
+
+#: fields/icons.php:149
+msgid "Map"
+msgstr ""
+
+#: fields/icons.php:150
+msgid "Map Alt"
+msgstr ""
+
+#: fields/icons.php:151
+msgid "Loop"
+msgstr ""
+
+#: fields/icons.php:152
+msgid "Location Pin"
+msgstr ""
+
+#: fields/icons.php:153
+msgid "List"
+msgstr ""
+
+#: fields/icons.php:154
+msgid "Light Bulb"
+msgstr ""
+
+#: fields/icons.php:155
+msgid "Italic"
+msgstr ""
+
+#: fields/icons.php:156
+msgid "Info"
+msgstr ""
+
+#: fields/icons.php:157
+msgid "Infinite"
+msgstr ""
+
+#: fields/icons.php:158
+msgid "Badge"
+msgstr ""
+
+#: fields/icons.php:159
+msgid "Hummer"
+msgstr ""
+
+#: fields/icons.php:160
+msgid "Home"
+msgstr ""
+
+#: fields/icons.php:161
+msgid "Help"
+msgstr ""
+
+#: fields/icons.php:162
+msgid "Headphone"
+msgstr ""
+
+#: fields/icons.php:163
+msgid "Harddrives"
+msgstr ""
+
+#: fields/icons.php:164
+msgid "Harddrive"
+msgstr ""
+
+#: fields/icons.php:165
+msgid "Gift"
+msgstr ""
+
+#: fields/icons.php:166
+msgid "Game"
+msgstr ""
+
+#: fields/icons.php:167 widgets/Appart_products.php:48
+#: widgets/Appart_shop_categories.php:49
+msgid "Filter"
+msgstr ""
+
+#: fields/icons.php:168
+msgid "Files"
+msgstr ""
+
+#: fields/icons.php:169
+msgid "File"
+msgstr ""
+
+#: fields/icons.php:170
+msgid "Eraser"
+msgstr ""
+
+#: fields/icons.php:171
+msgid "Envelope"
+msgstr ""
+
+#: fields/icons.php:172
+msgid "Download"
+msgstr ""
+
+#: fields/icons.php:173
+msgid "Direction"
+msgstr ""
+
+#: fields/icons.php:174
+msgid "Direction Alt"
+msgstr ""
+
+#: fields/icons.php:175
+msgid "Dashboard"
+msgstr ""
+
+#: fields/icons.php:176
+msgid "Control Stop"
+msgstr ""
+
+#: fields/icons.php:177
+msgid "Control Shuffle"
+msgstr ""
+
+#: fields/icons.php:178
+msgid "Control Play"
+msgstr ""
+
+#: fields/icons.php:179
+msgid "Control Pause"
+msgstr ""
+
+#: fields/icons.php:180
+msgid "Control Forward"
+msgstr ""
+
+#: fields/icons.php:181
+msgid "Control Backward"
+msgstr ""
+
+#: fields/icons.php:182
+msgid "Cloud"
+msgstr ""
+
+#: fields/icons.php:183
+msgid "Cloud-up"
+msgstr ""
+
+#: fields/icons.php:184
+msgid "Cloud Down"
+msgstr ""
+
+#: fields/icons.php:185
+msgid "Clipboard"
+msgstr ""
+
+#: fields/icons.php:186
+msgid "Car"
+msgstr ""
+
+#: fields/icons.php:187
+msgid "Calendar"
+msgstr ""
+
+#: fields/icons.php:188
+msgid "Book"
+msgstr ""
+
+#: fields/icons.php:189
+msgid "Bell"
+msgstr ""
+
+#: fields/icons.php:190
+msgid "Basketball"
+msgstr ""
+
+#: fields/icons.php:191
+msgid "Bar Chart"
+msgstr ""
+
+#: fields/icons.php:192
+msgid "Bar Chart Alt"
+msgstr ""
+
+#: fields/icons.php:193
+msgid "Back Right"
+msgstr ""
+
+#: fields/icons.php:194
+msgid "Back Left"
+msgstr ""
+
+#: fields/icons.php:195
+msgid "Arrows Corner"
+msgstr ""
+
+#: fields/icons.php:196
+msgid "Archive"
+msgstr ""
+
+#: fields/icons.php:197
+msgid "Anchor"
+msgstr ""
+
+#: fields/icons.php:198
+msgid "Align Right"
+msgstr ""
+
+#: fields/icons.php:199
+msgid "Align Left"
+msgstr ""
+
+#: fields/icons.php:200
+msgid "Align Justify"
+msgstr ""
+
+#: fields/icons.php:201
+msgid "Align Center"
+msgstr ""
+
+#: fields/icons.php:202
+msgid "Alert"
+msgstr ""
+
+#: fields/icons.php:203
+msgid "Alarm Clock"
+msgstr ""
+
+#: fields/icons.php:204
+msgid "Agenda"
+msgstr ""
+
+#: fields/icons.php:205
+msgid "Write"
+msgstr ""
+
+#: fields/icons.php:206
+msgid "Window"
+msgstr ""
+
+#: fields/icons.php:207
+msgid "Widgetized"
+msgstr ""
+
+#: fields/icons.php:208
+msgid "Widget"
+msgstr ""
+
+#: fields/icons.php:209
+msgid "Widget Alt"
+msgstr ""
+
+#: fields/icons.php:210
+msgid "Wallet"
+msgstr ""
+
+#: fields/icons.php:211
+msgid "Video Clapper"
+msgstr ""
+
+#: fields/icons.php:212
+msgid "Video Camera"
+msgstr ""
+
+#: fields/icons.php:213
+msgid "Vector"
+msgstr ""
+
+#: fields/icons.php:214
+msgid "Themify Logo"
+msgstr ""
+
+#: fields/icons.php:215
+msgid "Themify Favicon"
+msgstr ""
+
+#: fields/icons.php:216
+msgid "Themify Favicon Alt"
+msgstr ""
+
+#: fields/icons.php:217
+msgid "Support"
+msgstr ""
+
+#: fields/icons.php:218
+msgid "Stamp"
+msgstr ""
+
+#: fields/icons.php:219
+msgid "Split V Alt"
+msgstr ""
+
+#: fields/icons.php:220
+msgid "Slice"
+msgstr ""
+
+#: fields/icons.php:221
+msgid "Shortcode"
+msgstr ""
+
+#: fields/icons.php:222
+msgid "Shift Right Alt"
+msgstr ""
+
+#: fields/icons.php:223
+msgid "Shift Left Alt"
+msgstr ""
+
+#: fields/icons.php:224
+msgid "Ruler Alt 2"
+msgstr ""
+
+#: fields/icons.php:225
+msgid "Receipt"
+msgstr ""
+
+#: fields/icons.php:226
+msgid "Pin2"
+msgstr ""
+
+#: fields/icons.php:227
+msgid "Pin Alt"
+msgstr ""
+
+#: fields/icons.php:228
+msgid "Pencil Alt2"
+msgstr ""
+
+#: fields/icons.php:229
+msgid "Palette"
+msgstr ""
+
+#: fields/icons.php:230
+msgid "More"
+msgstr ""
+
+#: fields/icons.php:231
+msgid "More Alt"
+msgstr ""
+
+#: fields/icons.php:232
+msgid "Microphone Alt"
+msgstr ""
+
+#: fields/icons.php:233
+msgid "Magnet"
+msgstr ""
+
+#: fields/icons.php:234
+msgid "Line Double"
+msgstr ""
+
+#: fields/icons.php:235
+msgid "Line Dotted"
+msgstr ""
+
+#: fields/icons.php:236
+msgid "Line Dashed"
+msgstr ""
+
+#: fields/icons.php:237
+msgid "Layout Width Full"
+msgstr ""
+
+#: fields/icons.php:238
+msgid "Layout Width Default"
+msgstr ""
+
+#: fields/icons.php:239
+msgid "Layout Width Default Alt"
+msgstr ""
+
+#: fields/icons.php:240
+msgid "Layout Tab"
+msgstr ""
+
+#: fields/icons.php:241
+msgid "Layout Tab Window"
+msgstr ""
+
+#: fields/icons.php:242
+msgid "Layout Tab V"
+msgstr ""
+
+#: fields/icons.php:243
+msgid "Layout Tab Min"
+msgstr ""
+
+#: fields/icons.php:244
+msgid "Layout Slider"
+msgstr ""
+
+#: fields/icons.php:245
+msgid "Layout Slider Alt"
+msgstr ""
+
+#: fields/icons.php:246
+msgid "Layout Sidebar Right"
+msgstr ""
+
+#: fields/icons.php:247
+msgid "Layout Sidebar None"
+msgstr ""
+
+#: fields/icons.php:248
+msgid "Layout Sidebar Left"
+msgstr ""
+
+#: fields/icons.php:249
+msgid "Layout Placeholder"
+msgstr ""
+
+#: fields/icons.php:250
+msgid "Layout Menu"
+msgstr ""
+
+#: fields/icons.php:251
+msgid "layout Menu V"
+msgstr ""
+
+#: fields/icons.php:252
+msgid "Layout Menu Separated"
+msgstr ""
+
+#: fields/icons.php:253
+msgid "Layout Menu Full"
+msgstr ""
+
+#: fields/icons.php:254
+msgid "Layout Media Right Alt"
+msgstr ""
+
+#: fields/icons.php:255
+msgid "Layout Media Right"
+msgstr ""
+
+#: fields/icons.php:256
+msgid "Layout Media Overlay"
+msgstr ""
+
+#: fields/icons.php:257
+msgid "Layout Media Overlay Alt"
+msgstr ""
+
+#: fields/icons.php:258
+msgid "Layout Media Overlay Alt 2"
+msgstr ""
+
+#: fields/icons.php:259
+msgid "Layout Media Left Alt"
+msgstr ""
+
+#: fields/icons.php:260
+msgid "Layout Media Left"
+msgstr ""
+
+#: fields/icons.php:261
+msgid "Layout Media Center Alt"
+msgstr ""
+
+#: fields/icons.php:262
+msgid "Layout Media Center"
+msgstr ""
+
+#: fields/icons.php:263
+msgid "Layout List Thumb"
+msgstr ""
+
+#: fields/icons.php:264
+msgid "Layout List Thumb Alt"
+msgstr ""
+
+#: fields/icons.php:265
+msgid "Layout List Post"
+msgstr ""
+
+#: fields/icons.php:266
+msgid "Layout List Large Image"
+msgstr ""
+
+#: fields/icons.php:267
+msgid "Layout Line Solid"
+msgstr ""
+
+#: fields/icons.php:268
+msgid "Layout Grid4"
+msgstr ""
+
+#: fields/icons.php:269
+msgid "Layout Grid3"
+msgstr ""
+
+#: fields/icons.php:270
+msgid "Layout Grid2"
+msgstr ""
+
+#: fields/icons.php:271
+msgid "Layout Grid2 Thumb"
+msgstr ""
+
+#: fields/icons.php:272
+msgid "Layout Cta Right"
+msgstr ""
+
+#: fields/icons.php:273
+msgid "Layout Cta Left"
+msgstr ""
+
+#: fields/icons.php:274
+msgid "Layout Cta Center"
+msgstr ""
+
+#: fields/icons.php:275
+msgid "Layout Cta Btn Right"
+msgstr ""
+
+#: fields/icons.php:276
+msgid "Layout Cta Btn Left"
+msgstr ""
+
+#: fields/icons.php:277
+msgid "Layout Column4"
+msgstr ""
+
+#: fields/icons.php:278
+msgid "Layout Column3"
+msgstr ""
+
+#: fields/icons.php:279
+msgid "Layout Column2"
+msgstr ""
+
+#: fields/icons.php:280
+msgid "Layout Accordion Separated"
+msgstr ""
+
+#: fields/icons.php:281
+msgid "Layout Accordion Merged"
+msgstr ""
+
+#: fields/icons.php:282
+msgid "Layout Accordion List"
+msgstr ""
+
+#: fields/icons.php:283
+msgid "Ink Pen"
+msgstr ""
+
+#: fields/icons.php:284
+msgid "Info Alt"
+msgstr ""
+
+#: fields/icons.php:285
+msgid "Help Alt"
+msgstr ""
+
+#: fields/icons.php:286
+msgid "Headphone Alt"
+msgstr ""
+
+#: fields/icons.php:287
+msgid "Hand Point Up"
+msgstr ""
+
+#: fields/icons.php:288
+msgid "Hand Point Right"
+msgstr ""
+
+#: fields/icons.php:289
+msgid "Hand Point Left"
+msgstr ""
+
+#: fields/icons.php:290
+msgid "Hand Point Down"
+msgstr ""
+
+#: fields/icons.php:291
+msgid "Gallery"
+msgstr ""
+
+#: fields/icons.php:292
+msgid "Face Smile"
+msgstr ""
+
+#: fields/icons.php:293
+msgid "Face Sad"
+msgstr ""
+
+#: fields/icons.php:294
+msgid "Credit Card"
+msgstr ""
+
+#: fields/icons.php:295
+msgid "Control Skip Forward"
+msgstr ""
+
+#: fields/icons.php:296
+msgid "Control Record"
+msgstr ""
+
+#: fields/icons.php:297
+msgid "Control Eject"
+msgstr ""
+
+#: fields/icons.php:298
+msgid "Comments Smiley"
+msgstr ""
+
+#: fields/icons.php:299
+msgid "Brush Alt"
+msgstr ""
+
+#: fields/icons.php:300
+msgid "Youtube"
+msgstr ""
+
+#: fields/icons.php:301
+msgid "Vimeo"
+msgstr ""
+
+#: fields/icons.php:302
+msgid "Twitter"
+msgstr ""
+
+#: fields/icons.php:303
+msgid "Time"
+msgstr ""
+
+#: fields/icons.php:304
+msgid "Tumblr"
+msgstr ""
+
+#: fields/icons.php:305
+msgid "Skype"
+msgstr ""
+
+#: fields/icons.php:306
+msgid "Share"
+msgstr ""
+
+#: fields/icons.php:307
+msgid "Share Alt"
+msgstr ""
+
+#: fields/icons.php:308
+msgid "Rocket"
+msgstr ""
+
+#: fields/icons.php:309
+msgid "Pinterest"
+msgstr ""
+
+#: fields/icons.php:310
+msgid "New Window"
+msgstr ""
+
+#: fields/icons.php:311
+msgid "Microsoft"
+msgstr ""
+
+#: fields/icons.php:312
+msgid "List Ol"
+msgstr ""
+
+#: fields/icons.php:313
+msgid "Linkedin"
+msgstr ""
+
+#: fields/icons.php:314
+msgid "Layout Sidebar-2"
+msgstr ""
+
+#: fields/icons.php:315
+msgid "Layout Grid4 Alt"
+msgstr ""
+
+#: fields/icons.php:316
+msgid "Layout Grid3 Alt"
+msgstr ""
+
+#: fields/icons.php:317
+msgid "Layout Grid2 Alt"
+msgstr ""
+
+#: fields/icons.php:318
+msgid "Layout Column4 Alt"
+msgstr ""
+
+#: fields/icons.php:319
+msgid "Layout Column3 Alt"
+msgstr ""
+
+#: fields/icons.php:320
+msgid "Layout Column2 Alt"
+msgstr ""
+
+#: fields/icons.php:321
+msgid "Instagram"
+msgstr ""
+
+#: fields/icons.php:322
+msgid "Google"
+msgstr ""
+
+#: fields/icons.php:323
+msgid "Github"
+msgstr ""
+
+#: fields/icons.php:324
+msgid "Flickr"
+msgstr ""
+
+#: fields/icons.php:325
+msgid "Facebook"
+msgstr ""
+
+#: fields/icons.php:326
+msgid "Dropbox"
+msgstr ""
+
+#: fields/icons.php:327
+msgid "Dribbble"
+msgstr ""
+
+#: fields/icons.php:328
+msgid "Apple"
+msgstr ""
+
+#: fields/icons.php:329
+msgid "Android"
+msgstr ""
+
+#: fields/icons.php:330
+msgid "Save"
+msgstr ""
+
+#: fields/icons.php:331
+msgid "Save Alt"
+msgstr ""
+
+#: fields/icons.php:332
+msgid "Yahoo"
+msgstr ""
+
+#: fields/icons.php:333
+msgid "Wordpress"
+msgstr ""
+
+#: fields/icons.php:334
+msgid "Vimeo Alt"
+msgstr ""
+
+#: fields/icons.php:335
+msgid "Twitter Alt"
+msgstr ""
+
+#: fields/icons.php:336
+msgid "Tumblr Alt"
+msgstr ""
+
+#: fields/icons.php:337
+msgid "Trello"
+msgstr ""
+
+#: fields/icons.php:338
+msgid "Stack Overflow"
+msgstr ""
+
+#: fields/icons.php:339
+msgid "Soundcloud"
+msgstr ""
+
+#: fields/icons.php:340
+msgid "Sharethis"
+msgstr ""
+
+#: fields/icons.php:341
+msgid "Sharethis Alt"
+msgstr ""
+
+#: fields/icons.php:342
+msgid "Reddit"
+msgstr ""
+
+#: fields/icons.php:343
+msgid "Pinterest Alt"
+msgstr ""
+
+#: fields/icons.php:344
+msgid "Microsoft Alt"
+msgstr ""
+
+#: fields/icons.php:345
+msgid "Linux"
+msgstr ""
+
+#: fields/icons.php:346
+msgid "Jsfiddle"
+msgstr ""
+
+#: fields/icons.php:347
+msgid "Joomla"
+msgstr ""
+
+#: fields/icons.php:348
+msgid "Html5"
+msgstr ""
+
+#: fields/icons.php:349
+msgid "Flickr Alt"
+msgstr ""
+
+#: fields/icons.php:350
+msgid "Email"
+msgstr ""
+
+#: fields/icons.php:351
+msgid "Drupal"
+msgstr ""
+
+#: fields/icons.php:352
+msgid "Dropbox Alt"
+msgstr ""
+
+#: fields/icons.php:353
+msgid "Css3"
+msgstr ""
+
+#: fields/icons.php:354
+msgid "Rss"
+msgstr ""
+
+#: fields/icons.php:355
+msgid "Rss-alt"
+msgstr ""
+
+#: inc/cp.php:10
+msgid "Portfolio"
+msgstr ""
+
+#: inc/cp.php:11
+msgid "Add Portfolio Item"
+msgstr ""
+
+#: inc/cp.php:12
+msgid "Add Item"
+msgstr ""
+
+#: inc/cp.php:31
+msgid "Portfolio Categories"
+msgstr ""
+
+#: widgets/Appart_app_info.php:34 widgets/Appart_app_info.php:79
+msgid "App info"
+msgstr ""
+
+#: widgets/Appart_app_info.php:50 widgets/Appart_call2action.php:50
+#: widgets/Appart_download_buttons.php:50 widgets/Appart_download_sec2.php:50
+#: widgets/Appart_features.php:51 widgets/Appart_interactive_screens.php:50
+#: widgets/Appart_logo_carousel.php:51 widgets/Appart_parallax_hero.php:51
+#: widgets/Appart_pricing_table.php:50 widgets/Appart_screen_features.php:51
+#: widgets/Appart_screens_features.php:50 widgets/Appart_screenshots.php:50
+#: widgets/Appart_single_video.php:50
+#: widgets/Appart_targeted_screen_features.php:51 widgets/Appart_team.php:48
+#: widgets/Appart_testimonials.php:49
+msgid "Title section"
+msgstr ""
+
+#: widgets/Appart_app_info.php:55 widgets/Appart_call2action.php:55
+#: widgets/Appart_download_buttons.php:55 widgets/Appart_download_sec2.php:55
+#: widgets/Appart_features.php:57 widgets/Appart_hero.php:59
+#: widgets/Appart_logo_carousel.php:57 widgets/Appart_parallax_hero.php:57
+#: widgets/Appart_pricing_table.php:55 widgets/Appart_screen_features.php:57
+#: widgets/Appart_screens_features.php:55 widgets/Appart_screenshots.php:55
+#: widgets/Appart_single_info_with_icon.php:55
+#: widgets/Appart_single_video.php:55 widgets/Appart_subscribe.php:55
+#: widgets/Appart_tab.php:54 widgets/Appart_targeted_screen_features.php:57
+#: widgets/Appart_team.php:53 widgets/Appart_testimonials.php:57
+msgid "Title text"
+msgstr ""
+
+#: widgets/Appart_app_info.php:63 widgets/Appart_call2action.php:64
+#: widgets/Appart_download_buttons.php:63 widgets/Appart_download_sec2.php:63
+#: widgets/Appart_features.php:66 widgets/Appart_hero.php:68
+#: widgets/Appart_logo_carousel.php:66 widgets/Appart_parallax_hero.php:66
+#: widgets/Appart_pricing_table.php:63 widgets/Appart_screen_features.php:65
+#: widgets/Appart_screenshots.php:63
+#: widgets/Appart_single_info_with_icon.php:96
+#: widgets/Appart_single_video.php:63 widgets/Appart_subscribe.php:63
+#: widgets/Appart_tab.php:62 widgets/Appart_targeted_screen_features.php:66
+#: widgets/Appart_team.php:90 widgets/Appart_testimonials.php:65
+msgid "Subtitle text"
+msgstr ""
+
+#: widgets/Appart_app_info.php:74
+msgid "Info columns"
+msgstr ""
+
+#: widgets/Appart_app_info.php:85 widgets/Appart_single_info_with_icon.php:49
+#: widgets/Appart_tab.php:87
+msgid "Title"
+msgstr ""
+
+#: widgets/Appart_app_info.php:91 widgets/Appart_features.php:123
+#: widgets/Appart_screen_features.php:129
+#: widgets/Appart_screens_features.php:127
+#: widgets/Appart_single_info_with_icon.php:135
+msgid "Icon type"
+msgstr ""
+
+#: widgets/Appart_app_info.php:94 widgets/Appart_app_info.php:100
+#: widgets/Appart_features.php:126 widgets/Appart_screen_features.php:133
+msgid "Font icon"
+msgstr ""
+
+#: widgets/Appart_app_info.php:95 widgets/Appart_app_info.php:111
+#: widgets/Appart_features.php:127 widgets/Appart_features.php:157
+#: widgets/Appart_pricing_table.php:136 widgets/Appart_screen_features.php:134
+#: widgets/Appart_screen_features.php:150
+#: widgets/Appart_screens_features.php:132
+#: widgets/Appart_screens_features.php:159
+msgid "Image icon"
+msgstr ""
+
+#: widgets/Appart_app_info.php:122
+msgid "Star rating"
+msgstr ""
+
+#: widgets/Appart_app_info.php:123
+msgid "Select the star rating of your app out of five star rating."
+msgstr ""
+
+#: widgets/Appart_app_info.php:139
+msgid "Rating label"
+msgstr ""
+
+#: widgets/Appart_app_info.php:145
+msgid "Info items"
+msgstr ""
+
+#: widgets/Appart_app_info.php:146
+msgid "Input the info based on <tr><td>Key</td></tr> <tr><td>Value</td></tr>"
+msgstr ""
+
+#: widgets/Appart_app_info.php:181 widgets/Appart_app_info.php:186
+#: widgets/Appart_call2action.php:100 widgets/Appart_call2action.php:105
+#: widgets/Appart_download_buttons.php:140
+#: widgets/Appart_download_buttons.php:145 widgets/Appart_download_sec2.php:113
+#: widgets/Appart_download_sec2.php:118 widgets/Appart_hero.php:80
+#: widgets/Appart_screen_features.php:76 widgets/Appart_screen_features.php:81
+#: widgets/Appart_targeted_screen_features.php:78
+#: widgets/Appart_targeted_screen_features.php:84
+msgid "Featured image"
+msgstr ""
+
+#: widgets/Appart_app_info.php:187 widgets/Appart_call2action.php:106
+#: widgets/Appart_download_buttons.php:146 widgets/Appart_download_sec2.php:119
+#: widgets/Appart_hero.php:85 widgets/Appart_screen_features.php:82
+#: widgets/Appart_targeted_screen_features.php:85
+msgid "Upload the featured image"
+msgstr ""
+
+#: widgets/Appart_app_info.php:199 widgets/Appart_call2action.php:120
+#: widgets/Appart_download_buttons.php:178 widgets/Appart_download_sec2.php:131
+#: widgets/Appart_pricing_table.php:222 widgets/Appart_subscribe.php:108
+#: widgets/Appart_tab.php:118 widgets/Appart_testimonials.php:127
+msgid "Style title"
+msgstr ""
+
+#: widgets/Appart_app_info.php:205 widgets/Appart_app_info.php:237
+#: widgets/Appart_call2action.php:126 widgets/Appart_call2action.php:157
+#: widgets/Appart_download_buttons.php:184
+#: widgets/Appart_download_buttons.php:215 widgets/Appart_download_sec2.php:137
+#: widgets/Appart_download_sec2.php:169 widgets/Appart_features.php:182
+#: widgets/Appart_features.php:214 widgets/Appart_hero.php:253
+#: widgets/Appart_hero.php:290 widgets/Appart_logo_carousel.php:139
+#: widgets/Appart_logo_carousel.php:171 widgets/Appart_parallax_hero.php:130
+#: widgets/Appart_parallax_hero.php:161 widgets/Appart_pricing_table.php:228
+#: widgets/Appart_pricing_table.php:259 widgets/Appart_screen_features.php:175
+#: widgets/Appart_screen_features.php:206
+#: widgets/Appart_screens_features.php:291 widgets/Appart_screenshots.php:99
+#: widgets/Appart_screenshots.php:130
+#: widgets/Appart_single_info_with_icon.php:64
+#: widgets/Appart_single_info_with_icon.php:104
+#: widgets/Appart_single_video.php:117 widgets/Appart_single_video.php:148
+#: widgets/Appart_subscribe.php:114 widgets/Appart_subscribe.php:146
+#: widgets/Appart_tab.php:124 widgets/Appart_tab.php:155
+#: widgets/Appart_targeted_screen_features.php:160
+#: widgets/Appart_targeted_screen_features.php:192 widgets/Appart_team.php:61
+#: widgets/Appart_team.php:98 widgets/Appart_testimonials.php:133
+#: widgets/Appart_testimonials.php:164
+msgid "Text Color"
+msgstr ""
+
+#: widgets/Appart_app_info.php:230 widgets/Appart_call2action.php:151
+#: widgets/Appart_download_buttons.php:209 widgets/Appart_download_sec2.php:163
+#: widgets/Appart_hero.php:284 widgets/Appart_parallax_hero.php:155
+#: widgets/Appart_pricing_table.php:253 widgets/Appart_screen_features.php:200
+#: widgets/Appart_screenshots.php:124 widgets/Appart_single_video.php:142
+#: widgets/Appart_subscribe.php:139 widgets/Appart_tab.php:149
+#: widgets/Appart_targeted_screen_features.php:185
+#: widgets/Appart_testimonials.php:158
+msgid "Style subtitle"
+msgstr ""
+
+#: widgets/Appart_app_info.php:262 widgets/Appart_call2action.php:252
+#: widgets/Appart_download_buttons.php:241 widgets/Appart_download_sec2.php:193
+#: widgets/Appart_features.php:355 widgets/Appart_pricing_table.php:284
+#: widgets/Appart_screen_features.php:290
+#: widgets/Appart_screens_features.php:362 widgets/Appart_subscribe.php:171
+#: widgets/Appart_targeted_screen_features.php:218 widgets/Appart_team.php:195
+#: widgets/Appart_testimonials.php:189
+msgid "Style section"
+msgstr ""
+
+#: widgets/Appart_app_info.php:268 widgets/Appart_download_sec2.php:199
+msgid "Background shape image"
+msgstr ""
+
+#: widgets/Appart_app_info.php:277 widgets/Appart_call2action.php:279
+#: widgets/Appart_download_buttons.php:265 widgets/Appart_download_sec2.php:208
+#: widgets/Appart_features.php:361 widgets/Appart_pricing_table.php:302
+#: widgets/Appart_screen_features.php:317 widgets/Appart_subscribe.php:186
+#: widgets/Appart_targeted_screen_features.php:224 widgets/Appart_team.php:214
+#: widgets/Appart_testimonials.php:219
+msgid "Section padding"
+msgstr ""
+
+#: widgets/Appart_call2action.php:34
+msgid "Call to Action"
+msgstr ""
+
+#: widgets/Appart_call2action.php:56 widgets/Appart_download_buttons.php:86
+#: widgets/Appart_parallax_hero.php:58 widgets/Appart_parallax_hero.php:67
+msgid "Use <br> tag for line breaking."
+msgstr ""
+
+#: widgets/Appart_call2action.php:75 widgets/Appart_parallax_hero.php:78
+#: widgets/Appart_products.php:85
+msgid "Button"
+msgstr ""
+
+#: widgets/Appart_call2action.php:80 widgets/Appart_download_buttons.php:85
+#: widgets/Appart_parallax_hero.php:83 widgets/Appart_products.php:90
+msgid "Button label"
+msgstr ""
+
+#: widgets/Appart_call2action.php:88 widgets/Appart_download_buttons.php:93
+#: widgets/Appart_download_sec2.php:90 widgets/Appart_hero.php:161
+#: widgets/Appart_interactive_screens.php:167
+#: widgets/Appart_parallax_hero.php:91 widgets/Appart_products.php:98
+#: widgets/Appart_screens_features.php:200
+msgid "Button URL"
+msgstr ""
+
+#: widgets/Appart_call2action.php:182 widgets/Appart_parallax_hero.php:186
+#: widgets/Appart_products.php:111
+msgid "Style button"
+msgstr ""
+
+#: widgets/Appart_call2action.php:188 widgets/Appart_download_buttons.php:115
+#: widgets/Appart_hero.php:198 widgets/Appart_parallax_hero.php:192
+#: widgets/Appart_products.php:118
+msgid "Background color"
+msgstr ""
+
+#: widgets/Appart_call2action.php:202 widgets/Appart_parallax_hero.php:206
+#: widgets/Appart_products.php:132
+msgid "Text color"
+msgstr ""
+
+#: widgets/Appart_call2action.php:216
+msgid "Box shadow"
+msgstr ""
+
+#: widgets/Appart_call2action.php:219 widgets/Appart_features.php:381
+#: widgets/Appart_screen_features.php:338
+#: widgets/Appart_screen_features.php:368
+msgid "Show"
+msgstr ""
+
+#: widgets/Appart_call2action.php:220 widgets/Appart_features.php:382
+#: widgets/Appart_screen_features.php:339
+#: widgets/Appart_screen_features.php:369
+msgid "Hide"
+msgstr ""
+
+#: widgets/Appart_call2action.php:226
+msgid "Apply Box Shadow"
+msgstr ""
+
+#: widgets/Appart_call2action.php:258 widgets/Appart_download_buttons.php:248
+#: widgets/Appart_pricing_table.php:291 widgets/Appart_screen_features.php:296
+#: widgets/Appart_screens_features.php:377 widgets/Appart_single_video.php:180
+#: widgets/Appart_testimonials.php:195
+msgid "Style"
+msgstr ""
+
+#: widgets/Appart_call2action.php:261 widgets/Appart_download_buttons.php:251
+#: widgets/Appart_pricing_table.php:294 widgets/Appart_screen_features.php:299
+#: widgets/Appart_testimonials.php:198
+msgid "Style one "
+msgstr ""
+
+#: widgets/Appart_call2action.php:262 widgets/Appart_download_buttons.php:252
+#: widgets/Appart_pricing_table.php:295 widgets/Appart_screen_features.php:300
+#: widgets/Appart_testimonials.php:199
+msgid "Style two "
+msgstr ""
+
+#: widgets/Appart_call2action.php:263 widgets/Appart_screen_features.php:301
+msgid "Style three "
+msgstr ""
+
+#: widgets/Appart_call2action.php:270
+msgid "Background animation?"
+msgstr ""
+
+#: widgets/Appart_download_buttons.php:34
+msgid "Download section"
+msgstr ""
+
+#: widgets/Appart_download_buttons.php:74 widgets/Appart_download_sec2.php:73
+msgid "Download Buttons"
+msgstr ""
+
+#: widgets/Appart_download_buttons.php:79 widgets/Appart_download_sec2.php:78
+#: widgets/Appart_hero.php:148 widgets/Appart_interactive_screens.php:154
+#: widgets/Appart_screens_features.php:187
+msgid "Create buttons"
+msgstr ""
+
+#: widgets/Appart_download_buttons.php:103 widgets/Appart_download_sec2.php:100
+#: widgets/Appart_interactive_screens.php:181
+msgid "Button icon"
+msgstr ""
+
+#: widgets/Appart_download_buttons.php:109
+#: widgets/Appart_download_buttons.php:299 widgets/Appart_hero.php:180
+#: widgets/Appart_screens_features.php:323
+#: widgets/Appart_single_info_with_icon.php:170
+#: widgets/Appart_single_video.php:211
+#: widgets/Appart_targeted_screen_features.php:264
+msgid "Color"
+msgstr ""
+
+#: widgets/Appart_download_buttons.php:121 widgets/Appart_hero.php:207
+msgid "Background hover color"
+msgstr ""
+
+#: widgets/Appart_download_buttons.php:127 widgets/Appart_hero.php:216
+#: widgets/Appart_screens_features.php:255
+msgid "Button border color"
+msgstr ""
+
+#: widgets/Appart_download_buttons.php:152
+#: widgets/Appart_interactive_screens.php:90
+msgid "Image position"
+msgstr ""
+
+#: widgets/Appart_download_buttons.php:259 widgets/Appart_hero.php:429
+#: widgets/Appart_subscribe.php:177
+#: widgets/Appart_targeted_screen_features.php:242
+#: widgets/Appart_testimonials.php:207
+msgid "Background image"
+msgstr ""
+
+#: widgets/Appart_download_buttons.php:283
+#: widgets/Appart_targeted_screen_features.php:248
+msgid "Background overlay type"
+msgstr ""
+
+#: widgets/Appart_download_buttons.php:302 widgets/Appart_single_video.php:214
+#: widgets/Appart_targeted_screen_features.php:267
+msgid "Background Color"
+msgstr ""
+
+#: widgets/Appart_download_buttons.php:313 widgets/Appart_single_video.php:226
+#: widgets/Appart_targeted_screen_features.php:278
+msgid "Second Color"
+msgstr ""
+
+#: widgets/Appart_download_buttons.php:325 widgets/Appart_single_video.php:239
+#: widgets/Appart_targeted_screen_features.php:290
+msgid "Angle"
+msgstr ""
+
+#: widgets/Appart_download_sec2.php:34
+msgid "Download section two"
+msgstr ""
+
+#: widgets/Appart_download_sec2.php:84 widgets/Appart_hero.php:154
+#: widgets/Appart_interactive_screens.php:160
+#: widgets/Appart_screens_features.php:193
+msgid "Button name"
+msgstr ""
+
+#: widgets/Appart_features.php:34
+msgid "Features section"
+msgstr ""
+
+#: widgets/Appart_features.php:75 widgets/Appart_logo_carousel.php:75
+#: widgets/Appart_screen_features.php:265
+msgid "Margin"
+msgstr ""
+
+#: widgets/Appart_features.php:76 widgets/Appart_logo_carousel.php:76
+msgid "Margin around title section"
+msgstr ""
+
+#: widgets/Appart_features.php:99 widgets/Appart_screen_features.php:104
+#: widgets/Appart_screens_features.php:108
+#: widgets/Appart_targeted_screen_features.php:95
+msgid "Feature list"
+msgstr ""
+
+#: widgets/Appart_features.php:104
+msgid "Features"
+msgstr ""
+
+#: widgets/Appart_features.php:110 widgets/Appart_screen_features.php:115
+#: widgets/Appart_targeted_screen_features.php:106
+msgid "Feature name"
+msgstr ""
+
+#: widgets/Appart_features.php:117 widgets/Appart_screen_features.php:122
+msgid "Feature description"
+msgstr ""
+
+#: widgets/Appart_features.php:133 widgets/Appart_screen_features.php:139
+#: widgets/Appart_screens_features.php:149
+msgid "Social icon"
+msgstr ""
+
+#: widgets/Appart_features.php:144
+msgid "Icon Color"
+msgstr ""
+
+#: widgets/Appart_features.php:145
+msgid "Leave the field blank to use the accent color as icon the color."
+msgstr ""
+
+#: widgets/Appart_features.php:176 widgets/Appart_logo_carousel.php:133
+msgid "Style Section Title"
+msgstr ""
+
+#: widgets/Appart_features.php:208 widgets/Appart_logo_carousel.php:165
+msgid "Style Subtitle"
+msgstr ""
+
+#: widgets/Appart_features.php:236 widgets/Appart_logo_carousel.php:193
+msgid "Margin around the subtitle"
+msgstr ""
+
+#: widgets/Appart_features.php:256 widgets/Appart_screen_features.php:231
+#: widgets/Appart_screens_features.php:317
+msgid "Style Feature List"
+msgstr ""
+
+#: widgets/Appart_features.php:262
+msgid "Show in column"
+msgstr ""
+
+#: widgets/Appart_features.php:275 widgets/Appart_screen_features.php:240
+msgid "Title Color"
+msgstr ""
+
+#: widgets/Appart_features.php:289
+msgid "Icon size"
+msgstr ""
+
+#: widgets/Appart_features.php:314
+msgid "Title Typography"
+msgstr ""
+
+#: widgets/Appart_features.php:322
+msgid "Subtitle Typography"
+msgstr ""
+
+#: widgets/Appart_features.php:330
+msgid "Alignment"
+msgstr ""
+
+#: widgets/Appart_features.php:334
+msgid "Left align"
+msgstr ""
+
+#: widgets/Appart_features.php:338
+msgid "Left icon"
+msgstr ""
+
+#: widgets/Appart_features.php:342
+msgid "Center align"
+msgstr ""
+
+#: widgets/Appart_features.php:379
+msgid "Show/hide circles"
+msgstr ""
+
+#: widgets/Appart_features.php:388
+msgid "Left circle color"
+msgstr ""
+
+#: widgets/Appart_features.php:405
+msgid "Left circle size"
+msgstr ""
+
+#: widgets/Appart_features.php:406
+msgid "Left circle size in pixel (px)"
+msgstr ""
+
+#: widgets/Appart_features.php:416
+msgid "Right circle color"
+msgstr ""
+
+#: widgets/Appart_features.php:433
+msgid "Right circle size"
+msgstr ""
+
+#: widgets/Appart_features.php:434
+msgid "Right circle size in pixel (px)"
+msgstr ""
+
+#: widgets/Appart_hero.php:34
+msgid "Hero Section"
+msgstr ""
+
+#: widgets/Appart_hero.php:53
+msgid "Hero content"
+msgstr ""
+
+#: widgets/Appart_hero.php:91
+msgid "Image width"
+msgstr ""
+
+#: widgets/Appart_hero.php:92
+msgid ""
+"Default image width is 100% and height is auto. Input the size in pixel unit."
+msgstr ""
+
+#: widgets/Appart_hero.php:98 widgets/Appart_hero.php:128
+#: widgets/Appart_targeted_screen_features.php:120
+msgid "Position"
+msgstr ""
+
+#: widgets/Appart_hero.php:114
+msgid "Second Featured image"
+msgstr ""
+
+#: widgets/Appart_hero.php:122
+msgid "Upload the image"
+msgstr ""
+
+#: widgets/Appart_hero.php:143 widgets/Appart_interactive_screens.php:141
+#: widgets/Appart_screens_features.php:174
+msgid "Buttons"
+msgstr ""
+
+#: widgets/Appart_hero.php:169 widgets/Appart_screens_features.php:208
+msgid "Button style"
+msgstr ""
+
+#: widgets/Appart_hero.php:189
+msgid "Hover color"
+msgstr ""
+
+#: widgets/Appart_hero.php:225 widgets/Appart_screens_features.php:264
+msgid "Button border hover color"
+msgstr ""
+
+#: widgets/Appart_hero.php:246
+msgid "Style Title"
+msgstr ""
+
+#: widgets/Appart_hero.php:320
+msgid "Style Background"
+msgstr ""
+
+#: widgets/Appart_hero.php:326
+msgid "Background Style"
+msgstr ""
+
+#: widgets/Appart_hero.php:330
+msgid "Style one (Static background)"
+msgstr ""
+
+#: widgets/Appart_hero.php:331
+msgid "Style two (Parallax animation)"
+msgstr ""
+
+#: widgets/Appart_hero.php:332
+msgid "Style three (Background circle shapes)"
+msgstr ""
+
+#: widgets/Appart_hero.php:333
+msgid "Style four (All centered)"
+msgstr ""
+
+#: widgets/Appart_hero.php:334
+msgid "Style five (Two featured image)"
+msgstr ""
+
+#: widgets/Appart_hero.php:341
+msgid "Particle effect"
+msgstr ""
+
+#: widgets/Appart_hero.php:343 widgets/Appart_screen_features.php:310
+#: widgets/Appart_screens_features.php:370 widgets/Appart_tab.php:101
+msgid "Yes"
+msgstr ""
+
+#: widgets/Appart_hero.php:344 widgets/Appart_screen_features.php:311
+#: widgets/Appart_screens_features.php:371 widgets/Appart_tab.php:102
+msgid "No"
+msgstr ""
+
+#: widgets/Appart_hero.php:353
+msgid "First circle color"
+msgstr ""
+
+#: widgets/Appart_hero.php:370
+msgid "Second circle color"
+msgstr ""
+
+#: widgets/Appart_hero.php:387
+msgid "Third circle color"
+msgstr ""
+
+#: widgets/Appart_hero.php:404
+msgid "Background type"
+msgstr ""
+
+#: widgets/Appart_hero.php:419
+msgid "Background images"
+msgstr ""
+
+#: widgets/Appart_hero.php:441
+msgid "Background video url"
+msgstr ""
+
+#: widgets/Appart_hero.php:442
+msgid ".mp4, .webm, youtube video supported."
+msgstr ""
+
+#: widgets/Appart_hero.php:454
+msgid "Background Color Left"
+msgstr ""
+
+#: widgets/Appart_hero.php:463
+msgid "Background Color Right"
+msgstr ""
+
+#: widgets/Appart_hero.php:474
+msgid "Bottom Shape First Color"
+msgstr ""
+
+#: widgets/Appart_hero.php:487
+msgid "Bottom Shape Second Color"
+msgstr ""
+
+#: widgets/Appart_interactive_screens.php:34
+msgid "Interactive Screens"
+msgstr ""
+
+#: widgets/Appart_interactive_screens.php:55
+msgid "Title contents"
+msgstr ""
+
+#: widgets/Appart_interactive_screens.php:68
+#: widgets/Appart_parallax_hero.php:104 widgets/Appart_screens_features.php:66
+msgid "Featured images"
+msgstr ""
+
+#: widgets/Appart_interactive_screens.php:73
+#: widgets/Appart_parallax_hero.php:109 widgets/Appart_screens_features.php:71
+#: widgets/Appart_screenshots.php:74
+msgid "Images"
+msgstr ""
+
+#: widgets/Appart_interactive_screens.php:79
+#: widgets/Appart_screens_features.php:77
+msgid "Image title"
+msgstr ""
+
+#: widgets/Appart_interactive_screens.php:99
+msgid "Scroll position"
+msgstr ""
+
+#: widgets/Appart_interactive_screens.php:110
+msgid "Top horizontal scroll position"
+msgstr ""
+
+#: widgets/Appart_interactive_screens.php:116
+msgid "Top vertical scroll position"
+msgstr ""
+
+#: widgets/Appart_interactive_screens.php:122
+msgid "Bottom horizontal scroll position"
+msgstr ""
+
+#: widgets/Appart_interactive_screens.php:128
+msgid "Bottom vertical scroll position"
+msgstr ""
+
+#: widgets/Appart_interactive_screens.php:146
+#: widgets/Appart_screens_features.php:179
+msgid "Button font properties"
+msgstr ""
+
+#: widgets/Appart_interactive_screens.php:175
+msgid "Button color"
+msgstr ""
+
+#: widgets/Appart_logo_carousel.php:34
+msgid "Logo Carousel"
+msgstr ""
+
+#: widgets/Appart_logo_carousel.php:99
+msgid "Logos"
+msgstr ""
+
+#: widgets/Appart_logo_carousel.php:104
+msgid "Add Logos"
+msgstr ""
+
+#: widgets/Appart_logo_carousel.php:110
+msgid "Logo title"
+msgstr ""
+
+#: widgets/Appart_logo_carousel.php:117
+msgid "Logo"
+msgstr ""
+
+#: widgets/Appart_parallax_hero.php:34
+msgid "Hero (Parallax Images)"
+msgstr ""
+
+#: widgets/Appart_parallax_hero.php:110
+msgid "Upload the featured images"
+msgstr ""
+
+#: widgets/Appart_parallax_hero.php:124 widgets/Appart_screen_features.php:169
+#: widgets/Appart_screens_features.php:285 widgets/Appart_screenshots.php:93
+#: widgets/Appart_single_video.php:111
+#: widgets/Appart_targeted_screen_features.php:154
+msgid "Style section title"
+msgstr ""
+
+#: widgets/Appart_pricing_table.php:34
+msgid "Pricing table"
+msgstr ""
+
+#: widgets/Appart_pricing_table.php:74
+msgid "Pricing Table"
+msgstr ""
+
+#: widgets/Appart_pricing_table.php:79
+msgid "Pricing Tables"
+msgstr ""
+
+#: widgets/Appart_pricing_table.php:85
+msgid "Table name"
+msgstr ""
+
+#: widgets/Appart_pricing_table.php:92
+msgid "Select Style"
+msgstr ""
+
+#: widgets/Appart_pricing_table.php:95
+msgid "Style One"
+msgstr ""
+
+#: widgets/Appart_pricing_table.php:96
+msgid "Style Two"
+msgstr ""
+
+#: widgets/Appart_pricing_table.php:101
+msgid "Table Sub title"
+msgstr ""
+
+#: widgets/Appart_pricing_table.php:110
+msgid "Icon Type"
+msgstr ""
+
+#: widgets/Appart_pricing_table.php:113
+msgid "Font Icon"
+msgstr ""
+
+#: widgets/Appart_pricing_table.php:114
+msgid "Image Icon"
+msgstr ""
+
+#: widgets/Appart_pricing_table.php:123
+msgid "Social Icon"
+msgstr ""
+
+#: widgets/Appart_pricing_table.php:146
+msgid "Currency"
+msgstr ""
+
+#: widgets/Appart_pricing_table.php:152
+msgid "Price"
+msgstr ""
+
+#: widgets/Appart_pricing_table.php:158
+msgid "Duration"
+msgstr ""
+
+#: widgets/Appart_pricing_table.php:167
+msgid "List items"
+msgstr ""
+
+#: widgets/Appart_pricing_table.php:176
+msgid "Try button label"
+msgstr ""
+
+#: widgets/Appart_pricing_table.php:183
+msgid "Try button URL"
+msgstr ""
+
+#: widgets/Appart_pricing_table.php:193
+msgid "Purchase button label"
+msgstr ""
+
+#: widgets/Appart_pricing_table.php:200
+msgid "Purchase button URL"
+msgstr ""
+
+#: widgets/Appart_products.php:34
+msgid "Products (Grid View)"
+msgstr ""
+
+#: widgets/Appart_products.php:53
+msgid "Show products"
+msgstr ""
+
+#: widgets/Appart_products.php:54
+msgid "How much featured products do you want to show in this section?"
+msgstr ""
+
+#: widgets/Appart_products.php:62
+msgid "Order"
+msgstr ""
+
+#: widgets/Appart_products.php:73
+msgid "Excerpt Limit"
+msgstr ""
+
+#: widgets/Appart_screen_features.php:34
+msgid "Screen Features"
+msgstr ""
+
+#: widgets/Appart_screen_features.php:88
+msgid "Padding"
+msgstr ""
+
+#: widgets/Appart_screen_features.php:89
+msgid "Padding around the featured image"
+msgstr ""
+
+#: widgets/Appart_screen_features.php:109
+#: widgets/Appart_screens_features.php:113
+#: widgets/Appart_targeted_screen_features.php:100
+msgid "Features list"
+msgstr ""
+
+#: widgets/Appart_screen_features.php:266
+msgid "Margin around the each feature list."
+msgstr ""
+
+#: widgets/Appart_screen_features.php:308
+#: widgets/Appart_screens_features.php:368
+msgid "Reverse column"
+msgstr ""
+
+#: widgets/Appart_screen_features.php:335
+msgid "Show/hide background shape"
+msgstr ""
+
+#: widgets/Appart_screen_features.php:348
+msgid "Background shape color"
+msgstr ""
+
+#: widgets/Appart_screen_features.php:365
+msgid "Show/hide background animation"
+msgstr ""
+
+#: widgets/Appart_screens_features.php:34
+msgid "Screens Features"
+msgstr ""
+
+#: widgets/Appart_screens_features.php:88
+msgid "Animation"
+msgstr ""
+
+#: widgets/Appart_screens_features.php:94
+msgid "Animation duration"
+msgstr ""
+
+#: widgets/Appart_screens_features.php:95
+msgid "Animation duration in second"
+msgstr ""
+
+#: widgets/Appart_screens_features.php:119
+msgid "Feature title"
+msgstr ""
+
+#: widgets/Appart_screens_features.php:120
+msgid "Wrap up text with span tag (<span>Bold Text</span>) for bold text."
+msgstr ""
+
+#: widgets/Appart_screens_features.php:130
+#: widgets/Appart_screens_features.php:138
+msgid "Thimify icon"
+msgstr ""
+
+#: widgets/Appart_screens_features.php:131
+msgid "Font-awesome icon"
+msgstr ""
+
+#: widgets/Appart_screens_features.php:219
+msgid "Button background color"
+msgstr ""
+
+#: widgets/Appart_screens_features.php:228
+msgid "Button background hover color"
+msgstr ""
+
+#: widgets/Appart_screens_features.php:237
+msgid "Button font color"
+msgstr ""
+
+#: widgets/Appart_screens_features.php:246
+msgid "Button font hover color"
+msgstr ""
+
+#: widgets/Appart_screens_features.php:337
+msgid "Icon border color"
+msgstr ""
+
+#: widgets/Appart_screenshots.php:34
+msgid "Screenshots Carousel"
+msgstr ""
+
+#: widgets/Appart_screenshots.php:79
+msgid "Add images"
+msgstr ""
+
+#: widgets/Appart_shop_categories.php:34
+msgid "Shop Categories"
+msgstr ""
+
+#: widgets/Appart_shop_categories.php:54
+msgid "Show category count"
+msgstr ""
+
+#: widgets/Appart_single_info_with_icon.php:33
+msgid "Single info with icon"
+msgstr ""
+
+#: widgets/Appart_single_info_with_icon.php:90
+msgid "Content"
+msgstr ""
+
+#: widgets/Appart_single_info_with_icon.php:129
+msgid "Icon"
+msgstr ""
+
+#: widgets/Appart_single_info_with_icon.php:139
+#: widgets/Appart_single_info_with_icon.php:147
+msgid "Themify Icon"
+msgstr ""
+
+#: widgets/Appart_single_info_with_icon.php:140
+msgid "Fontawesome Icon"
+msgstr ""
+
+#: widgets/Appart_single_info_with_icon.php:160
+msgid "FlatIcon"
+msgstr ""
+
+#: widgets/Appart_single_video.php:34
+msgid "Single Video"
+msgstr ""
+
+#: widgets/Appart_single_video.php:74
+msgid "Video"
+msgstr ""
+
+#: widgets/Appart_single_video.php:79
+msgid "Video url"
+msgstr ""
+
+#: widgets/Appart_single_video.php:86
+msgid "Video poster"
+msgstr ""
+
+#: widgets/Appart_single_video.php:87
+msgid "Upload here the video poster image"
+msgstr ""
+
+#: widgets/Appart_single_video.php:93
+msgid "Play button label"
+msgstr ""
+
+#: widgets/Appart_single_video.php:174
+msgid "Style video"
+msgstr ""
+
+#: widgets/Appart_single_video.php:184
+msgid "Style one"
+msgstr ""
+
+#: widgets/Appart_single_video.php:185
+msgid "Style two"
+msgstr ""
+
+#: widgets/Appart_single_video.php:192
+msgid "Video overlay type"
+msgstr ""
+
+#: widgets/Appart_subscribe.php:34
+msgid "Subscribe form"
+msgstr ""
+
+#: widgets/Appart_subscribe.php:50
+msgid "Contents"
+msgstr ""
+
+#: widgets/Appart_subscribe.php:74
+msgid "Form settings"
+msgstr ""
+
+#: widgets/Appart_subscribe.php:79
+msgid "Submit button label"
+msgstr ""
+
+#: widgets/Appart_subscribe.php:87
+msgid "Email filed placeholder"
+msgstr ""
+
+#: widgets/Appart_subscribe.php:95
+msgid "Action URL"
+msgstr ""
+
+#: widgets/Appart_subscribe.php:96
+msgid ""
+"Enter here your MailChimp action URL. <a href=\"https://goo.gl/JedUPV\" "
+"target=\"_blank\"> How to </a>"
+msgstr ""
+
+#: widgets/Appart_tab.php:33 widgets/Appart_tab.php:49
+msgid "AppArt Tab"
+msgstr ""
+
+#: widgets/Appart_tab.php:73
+msgid "Tabs"
+msgstr ""
+
+#: widgets/Appart_tab.php:78
+msgid "Tab items"
+msgstr ""
+
+#: widgets/Appart_tab.php:94
+msgid "Tab Content"
+msgstr ""
+
+#: widgets/Appart_tab.php:99
+msgid "Is image box shadow?"
+msgstr ""
+
+#: widgets/Appart_tab.php:100
+msgid "Enable/Disable image box shadow in tab content."
+msgstr ""
+
+#: widgets/Appart_targeted_screen_features.php:34
+msgid "Targeted screen features"
+msgstr ""
+
+#: widgets/Appart_targeted_screen_features.php:113
+msgid "Width"
+msgstr ""
+
+#: widgets/Appart_targeted_screen_features.php:114
+msgid "Indicator line width in pixel"
+msgstr ""
+
+#: widgets/Appart_targeted_screen_features.php:133
+msgid "Alignment position"
+msgstr ""
+
+#: widgets/Appart_team.php:34 widgets/Appart_team.php:123
+msgid "Team"
+msgstr ""
+
+#: widgets/Appart_team.php:85
+msgid "Subtitle section"
+msgstr ""
+
+#: widgets/Appart_team.php:128
+msgid "Team Members"
+msgstr ""
+
+#: widgets/Appart_team.php:134
+msgid "Member Name"
+msgstr ""
+
+#: widgets/Appart_team.php:141
+msgid "Profile picture"
+msgstr ""
+
+#: widgets/Appart_team.php:146
+msgid "Designation"
+msgstr ""
+
+#: widgets/Appart_team.php:152
+msgid "About text"
+msgstr ""
+
+#: widgets/Appart_team.php:158
+msgid "Facebook URL"
+msgstr ""
+
+#: widgets/Appart_team.php:166
+msgid "Twitter URL"
+msgstr ""
+
+#: widgets/Appart_team.php:174
+msgid "Linkedin URL"
+msgstr ""
+
+#: widgets/Appart_team.php:182
+msgid "Pinterest URL"
+msgstr ""
+
+#: widgets/Appart_team.php:201
+msgid "Columns"
+msgstr ""
+
+#: widgets/Appart_testimonials.php:33 widgets/Appart_testimonials.php:81
+msgid "Testimonials"
+msgstr ""
+
+#: widgets/Appart_testimonials.php:76
+msgid "Testimonial items"
+msgstr ""
+
+#: widgets/Appart_testimonials.php:87
+msgid "Quote Author Name"
+msgstr ""
+
+#: widgets/Appart_testimonials.php:94
+msgid "Quote Author URL"
+msgstr ""
+
+#: widgets/Appart_testimonials.php:100
+msgid "Author Designation"
+msgstr ""
+
+#: widgets/Appart_testimonials.php:106
+msgid "Quote Text"
+msgstr ""
+
+#: widgets/Appart_testimonials.php:112
+msgid "Quote Author image"
+msgstr ""
+
+#: widgets/Appart_testimonials.php:200
+msgid "Style three"
+msgstr ""
+
+#: widgets/Appart_testimonials.php:387
+msgid "quot icon"
+msgstr ""
+
+#: widgets/twitter/twitter-slider-widget.php:22
+msgid "(Theme) Twitter widget"
+msgstr ""
+
+#: widgets/twitter/twitter-slider-widget.php:25
+msgid "Displays twits from your twitter account."
+msgstr ""
+
+#: widgets/twitter/twitter-slider-widget.php:30
+msgid "Twitter Feed"
+msgstr ""
+
+#: widgets/twitter/twitter-slider-widget.php:130
+msgid "Title:"
+msgstr ""
+
+#: widgets/twitter/twitter-slider-widget.php:135
+msgid "Twitter Username:"
+msgstr ""
+
+#: widgets/twitter/twitter-slider-widget.php:140
+msgid "# of Tweets Shown:"
+msgstr ""
+
+#: widgets/twitter/twitter-slider-widget.php:146
+msgid "Switch style"
+msgstr ""
+
+#: widgets/twitter/twitter-slider-widget.php:151
+msgid "Show Timestamp"
+msgstr ""
+
+#: widgets/twitter/twitter-slider-widget.php:156
+msgid " Display Follow me button"
+msgstr ""
+
+#: widgets/twitter/twitter-slider-widget.php:161
+msgid " Show follower count? "
+msgstr ""
+
+#: widgets/twitter/twitter-slider-widget.php:216
+msgid "Follow &commat;"
+msgstr ""
+
+#: widgets/twitter/twitter-slider-widget.php:238
+msgid "Twitter Widget: Non-existent username."
+msgstr ""
+
+#: widgets/twitter/twitter-slider-widget.php:242
+#, php-format
+msgid ""
+"Twitter Widget misconfigured, check <a href=\"%1$s\" target=\"_blank"
+"\">settings page</a> and <a href=\"%2$s\" target=\"_blank\">read "
+"instructions</a>. Error code: %3$s."
+msgstr ""
+
+#: widgets/twitter/twitter-slider-widget.php:323
+#, php-format
+msgid "%1$s ago"
+msgstr ""
+
+#: widgets/twitter/twitter-widget-settings.php:23
+#: widgets/twitter/twitter-widget-settings.php:49
+msgid "Twitter Widget by Financo"
+msgstr ""
+
+#: widgets/twitter/twitter-widget-settings.php:24
+msgid "Twitter Widget"
+msgstr ""
+
+#: widgets/twitter/twitter-widget-settings.php:57
+#, php-format
+msgid ""
+"Bad Authentification Data. Please <a href=\"%1$s\" target=\"_blank\">read "
+"instructions</a> and provide correct credentials."
+msgstr ""
+
+#: widgets/twitter/twitter-widget-settings.php:67
+msgid ""
+"Display your most recent thoughts from twitter. First you need to setup API "
+"keys in order for widget to be able to display your tweets."
+msgstr ""
+
+#: widgets/twitter/twitter-widget-settings.php:73
+#, php-format
+msgid ""
+"Navigate to documentation page and <a href=\"%1$s\" target=\"_blank\">read "
+"instructions</a>."
+msgstr ""

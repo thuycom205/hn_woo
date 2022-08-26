@@ -1,0 +1,24 @@
+.elementor-section.dl-animated-gradient-bg-yes,
+.elementor-section.dl-animated-gradient-bg-yes .dl-animated-gradient-bg {
+    background-size: 400% 400%;
+    animation: animated-gradient 15s ease-in-out infinite;
+
+}
+.dl-animated-gradient-bg {
+	position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+@keyframes animated-gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
