@@ -1,0 +1,196 @@
+
+.menuitem >span{
+    font-size: 14px;
+    font-weight: 600;
+    color: black;
+}
+.o_form_view
+{
+    background: #E5E5E5 !important;
+}
+
+.o_field_boolean {
+    border:none !important;
+}
+.btn > span {
+    margin-top : 10px !important;
+}
+
+.mab_left_title_section {
+    padding-left: 50px;
+    padding-top: 20px;
+}
+
+.row {
+    border-bottom: silver 1px solid;
+    padding-bottom: 15px;
+
+}
+
+.o_filter_menu {
+    animation: 0s ease 0s 1 normal none running none;
+    appearance: none;
+    background: none 0% 0% / auto repeat scroll padding-box border-box rgba(0, 0, 0, 0);
+    border: 0px none rgb(76, 76, 76);
+    clear: none;
+    clip: auto;
+    color: rgb(76, 76, 76);
+    columns: auto auto;
+    contain: none;
+    content: normal;
+    cursor: pointer;
+    cx: 0px;
+    cy: 0px;
+    d: none;
+    direction: ltr;
+    display: block;
+    fill: rgb(0, 0, 0);
+    filter: none;
+    flex: 0 1 auto;
+    float: none;
+    font: 13px / 19.5px Inter;
+    gap: normal;
+    height: 30.9954px;
+    hyphens: manual;
+    inset: 0px;
+    isolation: auto;
+    margin: 0px;
+    marker: none;
+    mask: none;
+    offset: none 0px auto 0deg;
+    opacity: 1;
+    order: 0;
+    orphans: 2;
+    outline: rgb(76, 76, 76) none 0px;
+    overflow: visible;
+    padding: 0px;
+    page: auto;
+    perspective: none;
+    position: relative;
+    quotes: auto;
+    r: 0px;
+    resize: none;
+    rx: auto;
+    ry: auto;
+    speak: normal;
+    stroke: none;
+    transform: none;
+    transition: all 0s ease 0s;
+    visibility: visible;
+    widows: 2;
+    width: 89.9884px;
+    x: 0px;
+    y: 0px;
+    zoom: 1;
+}
+.o_dropdown_toggler_btn {
+    animation: 0s ease 0s 1 normal none running none;
+    appearance: none;
+    background: none 0% 0% / auto repeat scroll padding-box border-box rgb(255, 255, 255);
+    border: 0.983796px solid rgb(223, 227, 232);
+    clear: none;
+    clip: auto;
+    color: rgb(0, 0, 0);
+    columns: auto auto;
+    contain: none;
+    content: normal;
+    cursor: pointer;
+    cx: 0px;
+    cy: 0px;
+    d: none;
+    direction: ltr;
+    display: inline-block;
+    fill: rgb(0, 0, 0);
+    filter: none;
+    flex: 1 1 auto;
+    float: none;
+    font: 13px / 19.5px Inter;
+    gap: normal;
+    height: 30.2315px;
+    hyphens: manual;
+    inset: 0px;
+    isolation: auto;
+    margin: 0px 15px 0px 0px;
+    marker: none;
+    mask: none;
+    offset: none 0px auto 0deg;
+    opacity: 1;
+    order: 0;
+    orphans: 2;
+    outline: rgb(0, 0, 0) none 0px;
+    overflow: visible;
+    padding: 4.5px 9px;
+    page: auto;
+    perspective: none;
+    position: relative;
+    quotes: auto;
+    r: 0px;
+    resize: none;
+    rx: auto;
+    ry: auto;
+    speak: normal;
+    stroke: none;
+    transform: none;
+    transition: color 0.15s ease-in-out 0s, background-color 0.15s ease-in-out 0s, border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s;
+    visibility: visible;
+    widows: 2;
+    width: 74.9884px;
+    x: 0px;
+    y: 0px;
+    zoom: 1;
+}
+i {
+    appearance: none;
+    background: none 0% 0% / auto repeat scroll padding-box border-box rgba(0, 0, 0, 0);
+    border: 0px none rgb(0, 0, 0);
+    clear: none;
+    clip: auto;
+    color: rgb(0, 0, 0);
+    columns: auto auto;
+    contain: none;
+    content: normal;
+    cursor: pointer;
+    cx: 0px;
+    cy: 0px;
+    d: none;
+    direction: ltr;
+    display: inline-block;
+    fill: rgb(0, 0, 0);
+    filter: none;
+    flex: 0 1 auto;
+    float: none;
+    font: 13px / 13px FontAwesome;
+    gap: normal;
+    height: 12.5926px;
+    hyphens: manual;
+    inset: auto;
+    isolation: auto;
+    margin: 0px;
+    marker: none;
+    mask: none;
+    offset: none 0px auto 0deg;
+    opacity: 1;
+    order: 0;
+    orphans: 2;
+    outline: rgb(0, 0, 0) none 0px;
+    overflow: visible;
+    padding: 0px;
+    page: auto;
+    perspective: none;
+    position: static;
+    quotes: auto;
+    r: 0px;
+    resize: none;
+    rx: auto;
+    ry: auto;
+    speak: normal;
+    stroke: none;
+    transform: none;
+    transition: all 0s ease 0s;
+    visibility: visible;
+    widows: 2;
+    width: 10.1968px;
+    x: 0px;
+    y: 0px;
+    zoom: 1;
+}

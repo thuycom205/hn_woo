@@ -1,0 +1,51 @@
+<odoo>
+    <data>
+        <!-- explicit list view definition -->
+        <!--
+            <record model="ir.ui.view" id="mas_lookbook.list">
+              <field name="name">mas_lookbook list</field>
+              <field name="model">mas_lookbook.mas_lookbook</field>
+              <field name="arch" type="xml">
+                <tree>
+                  <field name="name"/>
+                  <field name="value"/>
+                  <field name="value2"/>
+                </tree>
+              </field>
+            </record>
+        -->
+
+        <!-- actions opening views on models -->
+        <!--    <record model="ir.actions.act_window" id="mas_lookbook.action_window">-->
+        <!--      <field name="name">mas_lookbook window</field>-->
+        <!--      <field name="res_model">mas_lookbook.mas_lookbook</field>-->
+        <!--      <field name="view_mode">tree,form</field>-->
+        <!--    </record>-->
+        <record id="mas_lookbook_action_setting" model="ir.actions.act_url">
+            <field name="name">Setting</field>
+            <field name="target">self</field>
+            <field name="url">/lookbook/setting</field>
+        </record>
+        <record id="mas_lookbook_action_lookbook_list" model="ir.actions.act_url">
+            <field name="name">Look book</field>
+            <field name="target">self</field>
+            <field name="url">/lookbook/index2</field>
+        </record>
+        <record id="mas_lookbook_user_guide" model="ir.actions.act_url">
+            <field name="name">User guide</field>
+            <field name="target">self</field>
+            <field name="url">/lookbook/userguide</field>
+        </record>
+
+        <!-- Top menu item -->
+        <menuitem name="mas_lookbook" id="mas_lookbook.menu_root"/>
+        <menuitem name="User guide" id="mas_lookbook.user_guide" parent="mas_lookbook.menu_root"
+                  action="mas_lookbook_user_guide" sequence="100"/>
+
+<!--        <menuitem name="Setting" id="mas_lookbook.menu_setting" parent="mas_lookbook.menu_root"-->
+<!--                  action="mas_lookbook_action_setting" sequence="200"/>-->
+        <menuitem name="Look book list" id="mas_lookbook.lookbook_list" parent="mas_lookbook.menu_root"
+                  action="mas_lookbook_action_lookbook_list"/>
+
+    </data>
+</odoo>

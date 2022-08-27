@@ -1,0 +1,793 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-10-25 01:48+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: \n"
+"Language: \n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/"
+
+#: D:/git/woocommerce-lookbook/woocommerce-lookbook/admin/settings.php:597
+msgid " to Facebook Login > Settings > Valid OAuth Redirect URIs"
+msgstr ""
+
+#: D:/git/woocommerce-lookbook/woocommerce-lookbook/admin/lookbook.php:268
+msgid ")"
+msgstr ""
+
+#: D:/git/woocommerce-lookbook/woocommerce-lookbook/admin/settings.php:759
+msgid "1 hour"
+msgstr ""
+
+#: D:/git/woocommerce-lookbook/woocommerce-lookbook/admin/settings.php:769
+msgid "1 week"
+msgstr ""
+
+#: D:/git/woocommerce-lookbook/woocommerce-lookbook/admin/settings.php:590
+msgid "1. Create Facebook App at "
+msgstr ""
+
+#: D:/git/woocommerce-lookbook/woocommerce-lookbook/admin/settings.php:763
+msgid "12 hours"
+msgstr ""
+
+#: D:/git/woocommerce-lookbook/woocommerce-lookbook/admin/settings.php:593
+msgid "2. Add Facebook login & Instagram module"
+msgstr ""
+
+#: D:/git/woocommerce-lookbook/woocommerce-lookbook/admin/settings.php:765
+msgid "24 hours"
+msgstr ""
+
+#: D:/git/woocommerce-lookbook/woocommerce-lookbook/admin/settings.php:708
+msgid "3"
+msgstr ""
+
+#: D:/git/woocommerce-lookbook/woocommerce-lookbook/admin/settings.php:595
+msgid "3. Copy "
+msgstr ""
+
+#: D:/git/woocommerce-lookbook/woocommerce-lookbook/admin/settings.php:710
+msgid "4"
+msgstr ""
+
+#: D:/git/woocommerce-lookbook/woocommerce-lookbook/admin/settings.php:712
+msgid "5"
+msgstr ""
+
+#: D:/git/woocommerce-lookbook/woocommerce-lookbook/admin/settings.php:761
+msgid "6 hours"
+msgstr ""
+
+#: D:/git/woocommerce-lookbook/woocommerce-lookbook/admin/settings.php:767
+msgid "72 hours"
+msgstr ""
+
+#: D:/git/woocommerce-lookbook/woocommerce-lookbook/admin/product.php:53
+msgid "Above Description Tab"
+msgstr ""
+
+#: D:/git/woocommerce-lookbook/woocommerce-lookbook/admin/settings.php:645
+msgid "Access Token"
+msgstr ""
+
+#: D:/git/woocommerce-lookbook/woocommerce-lookbook/includes/instagram.php:204
+msgid "Access token is expired"
+msgstr ""
+
+#: D:/git/woocommerce-lookbook/woocommerce-lookbook/includes/instagram.php:171
+msgid "Access token is not exist"
+msgstr ""
+
+#: D:/git/woocommerce-lookbook/woocommerce-lookbook/admin/lookbook.php:435
+msgid "Add Image"
+msgstr ""
+
+#: D:/git/woocommerce-lookbook/woocommerce-lookbook/admin/admin.php:119
+msgid "Add New Lookbook"
+msgstr ""
+
+#: D:/git/woocommerce-lookbook/woocommerce-lookbook/admin/lookbook.php:383
+msgid "Add node"
+msgstr ""
+
+#: D:/git/woocommerce-lookbook/woocommerce-lookbook/admin/settings.php:276
+msgid "Add to cart"
+msgstr ""
+
+#: D:/git/woocommerce-lookbook/woocommerce-lookbook/admin/product.php:89
+msgid "Align"
+msgstr ""
+
+#: D:/git/woocommerce-lookbook/woocommerce-lookbook/admin/admin.php:123
+msgid "All Lookbooks"
+msgstr ""
+
+#: D:/git/woocommerce-lookbook/woocommerce-lookbook/admin/system.php:65
+msgid "Allow URL Open"
+msgstr ""
+
+#. Description of the plugin
+msgid ""
+"Allows you to create realistic lookbooks of your products. Help your "
+"customers visualize what they purchase from you."
+msgstr ""
+
+#: D:/git/woocommerce-lookbook/woocommerce-lookbook/admin/settings.php:70
+msgid "Alphabet"
+msgstr ""
+
+#: D:/git/woocommerce-lookbook/woocommerce-lookbook/admin/settings.php:457
+msgid "Auto play"
+msgstr ""
+
+#: D:/git/woocommerce-lookbook/woocommerce-lookbook/admin/settings.php:835
+msgid "Auto Update Key"
+msgstr ""
+
+#: D:/git/woocommerce-lookbook/woocommerce-lookbook/admin/settings.php:216
+msgid "Background Color"
+msgstr ""
+
+#: D:/git/woocommerce-lookbook/woocommerce-lookbook/admin/settings.php:89
+msgid "Background color"
+msgstr ""
+
+#: D:/git/woocommerce-lookbook/woocommerce-lookbook/admin/product.php:54
+msgid "Below Description Tab"
+msgstr ""
+
+#: D:/git/woocommerce-lookbook/woocommerce-lookbook/admin/settings.php:100
+msgid "Border color"
+msgstr ""
+
+#: D:/git/woocommerce-lookbook/woocommerce-lookbook/admin/settings.php:227
+msgid "Border radius"
+msgstr ""
+
+#: D:/git/woocommerce-lookbook/woocommerce-lookbook/admin/settings.php:306
+msgid "Bottom"
+msgstr ""
+
+#: D:/git/woocommerce-lookbook/woocommerce-lookbook/admin/settings.php:163
+msgid "Box"
+msgstr ""
+
+#: D:/git/woocommerce-lookbook/woocommerce-lookbook/admin/settings.php:695
+#: D:/git/woocommerce-lookbook/woocommerce-lookbook/includes/elementor/widget.php:103
+msgid "Carousel"
+msgstr ""
+
+#: D:/git/woocommerce-lookbook/woocommerce-lookbook/includes/elementor/widget.php:64
+msgid "Carousel/Gallery"
+msgstr ""
+
+#: D:/git/woocommerce-lookbook/woocommerce-lookbook/admin/settings.php:285
+msgid "Cart page"
+msgstr ""
+
+#: D:/git/woocommerce-lookbook/woocommerce-lookbook/admin/product.php:92
+#: D:/git/woocommerce-lookbook/woocommerce-lookbook/admin/settings.php:326
+msgid "Center"
+msgstr ""
+
+#: D:/git/woocommerce-lookbook/woocommerce-lookbook/admin/settings.php:510
+msgid "Change to slide on mobile"
+msgstr ""
+
+#: D:/git/woocommerce-lookbook/woocommerce-lookbook/admin/settings.php:189
+msgid "Chasing dots"
+msgstr ""
+
+#: D:/git/woocommerce-lookbook/woocommerce-lookbook/admin/settings.php:287
+msgid "Checkout page"
+msgstr ""
+
+#: D:/git/woocommerce-lookbook/woocommerce-lookbook/admin/settings.php:193
+msgid "Circle"
+msgstr ""
+
+#: D:/git/woocommerce-lookbook/woocommerce-lookbook/admin/settings.php:577
+msgid ""
+"Click on Nodes will redirect the page to the external link instead of the "
+"single product page. Working only with External/Affiliate products."
+msgstr ""
+
+#: D:/git/woocommerce-lookbook/woocommerce-lookbook/admin/settings.php:560
+msgid "Click on Nodes will redirect the page to the single product page."
+msgstr ""
+
+#: D:/git/woocommerce-lookbook/woocommerce-lookbook/admin/settings.php:614
+msgid "Client ID"
+msgstr ""
+
+#: D:/git/woocommerce-lookbook/woocommerce-lookbook/admin/settings.php:626
+msgid "Client Secret"
+msgstr ""
+
+#: D:/git/woocommerce-lookbook/woocommerce-lookbook/admin/settings.php:78
+msgid "Color"
+msgstr ""
+
+#: D:/git/woocommerce-lookbook/woocommerce-lookbook/admin/settings.php:195
+msgid "Cube grid"
+msgstr ""
+
+#: D:/git/woocommerce-lookbook/woocommerce-lookbook/admin/settings.php:532
+msgid "Custom CSS"
+msgstr ""
+
+#: D:/git/woocommerce-lookbook/woocommerce-lookbook/admin/settings.php:527
+msgid "Custom Script"
+msgstr ""
+
+#: D:/git/woocommerce-lookbook/woocommerce-lookbook/admin/settings.php:796
+msgid "Data Update"
+msgstr ""
+
+#: D:/git/woocommerce-lookbook/woocommerce-lookbook/admin/settings.php:64
+#: D:/git/woocommerce-lookbook/woocommerce-lookbook/admin/settings.php:179
+#: D:/git/woocommerce-lookbook/woocommerce-lookbook/admin/settings.php:283
+#: D:/git/woocommerce-lookbook/woocommerce-lookbook/admin/settings.php:302
+msgid "Default"
+msgstr ""
+
+#: D:/git/woocommerce-lookbook/woocommerce-lookbook/admin/admin.php:132
+msgid "Description."
+msgstr ""
+
+#: D:/git/woocommerce-lookbook/woocommerce-lookbook/admin/settings.php:37
+msgid "Design"
+msgstr ""
+
+#: D:/git/woocommerce-lookbook/woocommerce-lookbook/admin/settings.php:686
+msgid "Display"
+msgstr ""
+
+#: D:/git/woocommerce-lookbook/woocommerce-lookbook/admin/settings.php:718
+msgid "Display limit"
+msgstr ""
+
+#: D:/git/woocommerce-lookbook/woocommerce-lookbook/admin/settings.php:181
+msgid "Double Bounce"
+msgstr ""
+
+#: D:/git/woocommerce-lookbook/woocommerce-lookbook/admin/lookbook.php:115
+#: D:/git/woocommerce-lookbook/woocommerce-lookbook/admin/settings.php:788
+msgid "Draft"
+msgstr ""
+
+#: D:/git/woocommerce-lookbook/woocommerce-lookbook/admin/settings.php:805
+msgid "Duplicate"
+msgstr ""
+
+#: D:/git/woocommerce-lookbook/woocommerce-lookbook/admin/settings.php:473
+msgid "Duration"
+msgstr ""
+
+#: D:/git/woocommerce-lookbook/woocommerce-lookbook/admin/admin.php:121
+msgid "Edit Lookbook"
+msgstr ""
+
+#: D:/git/woocommerce-lookbook/woocommerce-lookbook/admin/settings.php:407
+msgid "Effect"
+msgstr ""
+
+#: D:/git/woocommerce-lookbook/woocommerce-lookbook/admin/product.php:43
+msgid "Enable"
+msgstr ""
+
+#: D:/git/woocommerce-lookbook/woocommerce-lookbook/admin/product.php:46
+msgid "Enable to display Lookbook on the single product page"
+msgstr ""
+
+#: D:/git/woocommerce-lookbook/woocommerce-lookbook/admin/settings.php:566
+msgid "External Link"
+msgstr ""
+
+#: D:/git/woocommerce-lookbook/woocommerce-lookbook/admin/settings.php:416
+msgid "Fade"
+msgstr ""
+
+#: D:/git/woocommerce-lookbook/woocommerce-lookbook/admin/settings.php:197
+msgid "Fading Circle"
+msgstr ""
+
+#: D:/git/woocommerce-lookbook/woocommerce-lookbook/admin/settings.php:199
+msgid "Folding cube"
+msgstr ""
+
+#: D:/git/woocommerce-lookbook/woocommerce-lookbook/admin/settings.php:165
+msgid "Full width"
+msgstr ""
+
+#: D:/git/woocommerce-lookbook/woocommerce-lookbook/admin/settings.php:693
+#: D:/git/woocommerce-lookbook/woocommerce-lookbook/includes/elementor/widget.php:104
+msgid "Gallery"
+msgstr ""
+
+#: D:/git/woocommerce-lookbook/woocommerce-lookbook/admin/settings.php:489
+msgid "Gallery Options"
+msgstr ""
+
+#: D:/git/woocommerce-lookbook/woocommerce-lookbook/includes/elementor/widget.php:50
+msgid "General"
+msgstr ""
+
+#: D:/git/woocommerce-lookbook/woocommerce-lookbook/admin/lookbook.php:209
+#: D:/git/woocommerce-lookbook/woocommerce-lookbook/admin/settings.php:678
+msgid "Get Access Token"
+msgstr ""
+
+#: D:/git/woocommerce-lookbook/woocommerce-lookbook/admin/settings.php:848
+msgid "Get Key"
+msgstr ""
+
+#: D:/git/woocommerce-lookbook/woocommerce-lookbook/admin/settings.php:377
+msgid "Height"
+msgstr ""
+
+#: D:/git/woocommerce-lookbook/woocommerce-lookbook/admin/settings.php:242
+msgid "Hide Close Button"
+msgstr ""
+
+#: D:/git/woocommerce-lookbook/woocommerce-lookbook/admin/settings.php:259
+msgid "Hide See More Button"
+msgstr ""
+
+#: D:/git/woocommerce-lookbook/woocommerce-lookbook/admin/settings.php:112
+msgid "Hide Title"
+msgstr ""
+
+#. URI of the plugin
+#. Author URI of the plugin
+msgid "http://villatheme.com"
+msgstr ""
+
+#: D:/git/woocommerce-lookbook/woocommerce-lookbook/admin/settings.php:58
+msgid "Icon"
+msgstr ""
+
+#: D:/git/woocommerce-lookbook/woocommerce-lookbook/admin/lookbook.php:156
+#: D:/git/woocommerce-lookbook/woocommerce-lookbook/admin/lookbook.php:321
+msgid "Image"
+msgstr ""
+
+#: D:/git/woocommerce-lookbook/woocommerce-lookbook/admin/settings.php:814
+msgid "Image Quantity"
+msgstr ""
+
+#: D:/git/woocommerce-lookbook/woocommerce-lookbook/admin/settings.php:777
+msgid "Image Status"
+msgstr ""
+
+#: D:/git/woocommerce-lookbook/woocommerce-lookbook/admin/lookbook.php:155
+#: D:/git/woocommerce-lookbook/woocommerce-lookbook/admin/settings.php:43
+#: D:/git/woocommerce-lookbook/woocommerce-lookbook/includes/elementor/widget.php:65
+msgid "Instagram"
+msgstr ""
+
+#: D:/git/woocommerce-lookbook/woocommerce-lookbook/includes/instagram.php:180
+msgid "Instagram id is not exist"
+msgstr ""
+
+#: D:/git/woocommerce-lookbook/woocommerce-lookbook/admin/settings.php:502
+msgid "items"
+msgstr ""
+
+#: D:/git/woocommerce-lookbook/woocommerce-lookbook/includes/elementor/widget.php:98
+msgid "Layout"
+msgstr ""
+
+#: D:/git/woocommerce-lookbook/woocommerce-lookbook/admin/product.php:93
+#: D:/git/woocommerce-lookbook/woocommerce-lookbook/admin/settings.php:324
+msgid "Left"
+msgstr ""
+
+#: D:/git/woocommerce-lookbook/woocommerce-lookbook/admin/settings.php:549
+msgid "Link Redirect"
+msgstr ""
+
+#: D:/git/woocommerce-lookbook/woocommerce-lookbook/admin/settings.php:728
+msgid "Link to Instagram"
+msgstr ""
+
+#: D:/git/woocommerce-lookbook/woocommerce-lookbook/admin/settings.php:821
+msgid ""
+"List images are get from API. The fewer quantity sync faster. Maximum:12"
+msgstr ""
+
+#: D:/git/woocommerce-lookbook/woocommerce-lookbook/admin/lookbook.php:309
+msgid "Loading"
+msgstr ""
+
+#: D:/git/woocommerce-lookbook/woocommerce-lookbook/admin/settings.php:172
+msgid "Loading Icon"
+msgstr ""
+
+#: D:/git/woocommerce-lookbook/woocommerce-lookbook/admin/product.php:115
+msgid "LookBook"
+msgstr ""
+
+#: D:/git/woocommerce-lookbook/woocommerce-lookbook/admin/admin.php:117
+msgctxt "Lookbook"
+msgid "WC Lookbook"
+msgstr ""
+
+#: D:/git/woocommerce-lookbook/woocommerce-lookbook/admin/product.php:71
+msgid "Lookbooks"
+msgstr ""
+
+#: D:/git/woocommerce-lookbook/woocommerce-lookbook/admin/admin.php:116
+msgctxt "Lookbooks"
+msgid "WC Lookbooks"
+msgstr ""
+
+#: D:/git/woocommerce-lookbook/woocommerce-lookbook/admin/settings.php:790
+msgid "Lookbooks status after images are imported."
+msgstr ""
+
+#: D:/git/woocommerce-lookbook/woocommerce-lookbook/admin/settings.php:68
+msgid "Marker"
+msgstr ""
+
+#: D:/git/woocommerce-lookbook/woocommerce-lookbook/admin/system.php:60
+msgid "Memory Limit"
+msgstr ""
+
+#: D:/git/woocommerce-lookbook/woocommerce-lookbook/admin/settings.php:480
+msgid "milliseconds"
+msgstr ""
+
+#: D:/git/woocommerce-lookbook/woocommerce-lookbook/admin/settings.php:156
+msgid "Modal style"
+msgstr ""
+
+#: D:/git/woocommerce-lookbook/woocommerce-lookbook/admin/settings.php:317
+msgid "Navigation alignment"
+msgstr ""
+
+#: D:/git/woocommerce-lookbook/woocommerce-lookbook/admin/settings.php:337
+msgid "Navigation icon"
+msgstr ""
+
+#: D:/git/woocommerce-lookbook/woocommerce-lookbook/admin/settings.php:295
+msgid "Navigation position"
+msgstr ""
+
+#: D:/git/woocommerce-lookbook/woocommerce-lookbook/admin/settings.php:757
+msgid "Never"
+msgstr ""
+
+#: D:/git/woocommerce-lookbook/woocommerce-lookbook/admin/admin.php:120
+msgid "New Lookbook"
+msgstr ""
+
+#: D:/git/woocommerce-lookbook/woocommerce-lookbook/admin/admin.php:127
+msgid "No books found in Trash."
+msgstr ""
+
+#: D:/git/woocommerce-lookbook/woocommerce-lookbook/admin/admin.php:126
+msgid "No books found."
+msgstr ""
+
+#: D:/git/woocommerce-lookbook/woocommerce-lookbook/admin/lookbook.php:329
+msgid "Node"
+msgstr ""
+
+#: D:/git/woocommerce-lookbook/woocommerce-lookbook/admin/settings.php:52
+msgid "Node Options"
+msgstr ""
+
+#: D:/git/woocommerce-lookbook/woocommerce-lookbook/admin/settings.php:66
+msgid "Number"
+msgstr ""
+
+#: D:/git/woocommerce-lookbook/woocommerce-lookbook/admin/settings.php:391
+#: D:/git/woocommerce-lookbook/woocommerce-lookbook/admin/settings.php:494
+#: D:/git/woocommerce-lookbook/woocommerce-lookbook/admin/settings.php:702
+msgid "Number items per row"
+msgstr ""
+
+#: D:/git/woocommerce-lookbook/woocommerce-lookbook/admin/admin.php:125
+msgid "Parent Lookbooks:"
+msgstr ""
+
+#: D:/git/woocommerce-lookbook/woocommerce-lookbook/admin/lookbook.php:113
+#: D:/git/woocommerce-lookbook/woocommerce-lookbook/admin/settings.php:784
+msgid "Pending"
+msgstr ""
+
+#: D:/git/woocommerce-lookbook/woocommerce-lookbook/admin/system.php:55
+msgid "PHP Max Input Vars"
+msgstr ""
+
+#: D:/git/woocommerce-lookbook/woocommerce-lookbook/admin/system.php:51
+msgid "PHP Time Limit"
+msgstr ""
+
+#: D:/git/woocommerce-lookbook/woocommerce-lookbook/admin/settings.php:854
+msgid ""
+"Please fill your key what you get from <a target=\"_blank\" href=\"https:"
+"//villatheme.com/my-download\">Villatheme</a>. You can automatically update "
+"WooCommerce Lookbook plugin. See guide <a target=\"_blank\" href=\"https:"
+"//villatheme.com/knowledge-base/how-to-use-auto-update-feature/\">here</a>"
+msgstr ""
+
+#: D:/git/woocommerce-lookbook/woocommerce-lookbook/woocommerce-lookbook.php:55
+msgid ""
+"Please install and active WooCommerce. WooCommerce Multi Currency is going "
+"to working."
+msgstr ""
+
+#: D:/git/woocommerce-lookbook/woocommerce-lookbook/admin/settings.php:954
+msgid "Please save Settings and get access token again."
+msgstr ""
+
+#: D:/git/woocommerce-lookbook/woocommerce-lookbook/admin/product.php:50
+msgid "Position"
+msgstr ""
+
+#: D:/git/woocommerce-lookbook/woocommerce-lookbook/admin/settings.php:72
+msgid "Price"
+msgstr ""
+
+#: D:/git/woocommerce-lookbook/woocommerce-lookbook/admin/settings.php:40
+msgid "Product"
+msgstr ""
+
+#: D:/git/woocommerce-lookbook/woocommerce-lookbook/frontend/shortcode.php:308
+msgid "Product added successful"
+msgstr ""
+
+#: D:/git/woocommerce-lookbook/woocommerce-lookbook/admin/settings.php:786
+msgid "Public"
+msgstr ""
+
+#: D:/git/woocommerce-lookbook/woocommerce-lookbook/admin/lookbook.php:111
+msgid "Publish"
+msgstr ""
+
+#: D:/git/woocommerce-lookbook/woocommerce-lookbook/admin/settings.php:187
+msgid "Pulse"
+msgstr ""
+
+#: D:/git/woocommerce-lookbook/woocommerce-lookbook/admin/settings.php:234
+#: D:/git/woocommerce-lookbook/woocommerce-lookbook/admin/settings.php:370
+#: D:/git/woocommerce-lookbook/woocommerce-lookbook/admin/settings.php:384
+msgid "px"
+msgstr ""
+
+#: D:/git/woocommerce-lookbook/woocommerce-lookbook/admin/settings.php:150
+msgid "Quick view"
+msgstr ""
+
+#: D:/git/woocommerce-lookbook/woocommerce-lookbook/admin/lookbook.php:440
+msgid "Remove this image"
+msgstr ""
+
+#: D:/git/woocommerce-lookbook/woocommerce-lookbook/admin/product.php:94
+#: D:/git/woocommerce-lookbook/woocommerce-lookbook/admin/settings.php:328
+msgid "Right"
+msgstr ""
+
+#: D:/git/woocommerce-lookbook/woocommerce-lookbook/admin/settings.php:864
+msgid "Save"
+msgstr ""
+
+#: D:/git/woocommerce-lookbook/woocommerce-lookbook/admin/settings.php:750
+msgid "Schedule"
+msgstr ""
+
+#: D:/git/woocommerce-lookbook/woocommerce-lookbook/admin/admin.php:124
+msgid "Search Lookbooks"
+msgstr ""
+
+#: D:/git/woocommerce-lookbook/woocommerce-lookbook/admin/lookbook.php:360
+msgid "Search your product"
+msgstr ""
+
+#: D:/git/woocommerce-lookbook/woocommerce-lookbook/frontend/shortcode.php:128
+msgid "See more"
+msgstr ""
+
+#: D:/git/woocommerce-lookbook/woocommerce-lookbook/admin/product.php:68
+msgid "Select how lookbooks should be played."
+msgstr ""
+
+#: D:/git/woocommerce-lookbook/woocommerce-lookbook/includes/elementor/widget.php:74
+msgid "Select id"
+msgstr ""
+
+#: D:/git/woocommerce-lookbook/woocommerce-lookbook/includes/elementor/widget.php:86
+msgid "Select ids"
+msgstr ""
+
+#: D:/git/woocommerce-lookbook/woocommerce-lookbook/admin/product.php:56
+msgid "Select lookbook position."
+msgstr ""
+
+#: D:/git/woocommerce-lookbook/woocommerce-lookbook/admin/product.php:85
+msgid "Select lookbooks to display."
+msgstr ""
+
+#: D:/git/woocommerce-lookbook/woocommerce-lookbook/includes/elementor/widget.php:58
+msgid "Select shortcode type"
+msgstr ""
+
+#: D:/git/woocommerce-lookbook/woocommerce-lookbook/admin/admin.php:92
+#: D:/git/woocommerce-lookbook/woocommerce-lookbook/admin/admin.php:167
+msgid "Settings"
+msgstr ""
+
+#: D:/git/woocommerce-lookbook/woocommerce-lookbook/admin/lookbook.php:157
+#: D:/git/woocommerce-lookbook/woocommerce-lookbook/admin/lookbook.php:226
+msgid "Shortcode"
+msgstr ""
+
+#: D:/git/woocommerce-lookbook/woocommerce-lookbook/admin/product.php:61
+msgid "Shortcode type"
+msgstr ""
+
+#: D:/git/woocommerce-lookbook/woocommerce-lookbook/includes/elementor/widget.php:63
+msgid "Single"
+msgstr ""
+
+#: D:/git/woocommerce-lookbook/woocommerce-lookbook/admin/product.php:64
+msgid "Single Image"
+msgstr ""
+
+#: D:/git/woocommerce-lookbook/woocommerce-lookbook/admin/settings.php:803
+msgid "Skip"
+msgstr ""
+
+#: D:/git/woocommerce-lookbook/woocommerce-lookbook/admin/settings.php:414
+msgid "Slide"
+msgstr ""
+
+#: D:/git/woocommerce-lookbook/woocommerce-lookbook/admin/settings.php:440
+msgid "Slide Navigation"
+msgstr ""
+
+#: D:/git/woocommerce-lookbook/woocommerce-lookbook/admin/settings.php:358
+msgid "Slide Options"
+msgstr ""
+
+#: D:/git/woocommerce-lookbook/woocommerce-lookbook/admin/settings.php:423
+msgid "Slide Pagination"
+msgstr ""
+
+#: D:/git/woocommerce-lookbook/woocommerce-lookbook/admin/product.php:65
+msgid "Slides"
+msgstr ""
+
+#: D:/git/woocommerce-lookbook/woocommerce-lookbook/admin/settings.php:483
+msgid "Specify a time to advance to the next lookbook."
+msgstr ""
+
+#: D:/git/woocommerce-lookbook/woocommerce-lookbook/admin/lookbook.php:158
+msgid "Status"
+msgstr ""
+
+#: D:/git/woocommerce-lookbook/woocommerce-lookbook/admin/lookbook.php:191
+#: D:/git/woocommerce-lookbook/woocommerce-lookbook/admin/lookbook.php:308
+msgid "Sync Instagram"
+msgstr ""
+
+#: D:/git/woocommerce-lookbook/woocommerce-lookbook/admin/settings.php:744
+msgid "Synchronize"
+msgstr ""
+
+#: D:/git/woocommerce-lookbook/woocommerce-lookbook/admin/system.php:21
+#: D:/git/woocommerce-lookbook/woocommerce-lookbook/admin/system.php:84
+#: D:/git/woocommerce-lookbook/woocommerce-lookbook/admin/system.php:84
+msgid "System Status"
+msgstr ""
+
+#: D:/git/woocommerce-lookbook/woocommerce-lookbook/admin/settings.php:205
+msgid "Text Color"
+msgstr ""
+
+#: D:/git/woocommerce-lookbook/woocommerce-lookbook/admin/settings.php:771
+msgid "The action will trigger when someone visits your WordPress site."
+msgstr ""
+
+#: D:/git/woocommerce-lookbook/woocommerce-lookbook/admin/settings.php:191
+msgid "Three Bounce"
+msgstr ""
+
+#: D:/git/woocommerce-lookbook/woocommerce-lookbook/admin/settings.php:139
+msgid "Title Background Color"
+msgstr ""
+
+#: D:/git/woocommerce-lookbook/woocommerce-lookbook/admin/settings.php:128
+msgid "Title Color"
+msgstr ""
+
+#: D:/git/woocommerce-lookbook/woocommerce-lookbook/admin/settings.php:304
+msgid "Top"
+msgstr ""
+
+#: D:/git/woocommerce-lookbook/woocommerce-lookbook/admin/settings.php:46
+msgid "Update"
+msgstr ""
+
+#: D:/git/woocommerce-lookbook/woocommerce-lookbook/admin/settings.php:807
+msgid "Update Likes, Comments"
+msgstr ""
+
+#: D:/git/woocommerce-lookbook/woocommerce-lookbook/admin/admin.php:122
+msgid "View Lookbook"
+msgstr ""
+
+#: D:/git/woocommerce-lookbook/woocommerce-lookbook/frontend/shortcode.php:165
+msgid "View on Instagram"
+msgstr ""
+
+#. Author of the plugin
+msgid "VillaTheme"
+msgstr ""
+
+#: D:/git/woocommerce-lookbook/woocommerce-lookbook/admin/settings.php:185
+msgid "Wandering Cubes"
+msgstr ""
+
+#: D:/git/woocommerce-lookbook/woocommerce-lookbook/admin/settings.php:183
+msgid "Wave"
+msgstr ""
+
+#: D:/git/woocommerce-lookbook/woocommerce-lookbook/includes/elementor/widget.php:35
+msgid "WC Lookbooks"
+msgstr ""
+
+#: D:/git/woocommerce-lookbook/woocommerce-lookbook/admin/settings.php:289
+msgid ""
+"When add to cart on quick view, Customer will redirect to cart or checkout "
+"page"
+msgstr ""
+
+#: D:/git/woocommerce-lookbook/woocommerce-lookbook/admin/settings.php:363
+msgid "Width"
+msgstr ""
+
+#. Name of the plugin
+msgid "WooCommerce Lookbook Premium"
+msgstr ""
+
+#: D:/git/woocommerce-lookbook/woocommerce-lookbook/admin/admin.php:166
+msgid "WooCommerce Lookbook Setting page"
+msgstr ""
+
+#: D:/git/woocommerce-lookbook/woocommerce-lookbook/admin/settings.php:31
+msgid "WooCommerce Lookbook Settings"
+msgstr ""
+
+#: D:/git/woocommerce-lookbook/woocommerce-lookbook/admin/admin.php:118
+msgctxt "woocommerce-lookbook"
+msgid "Add New"
+msgstr ""
+
+#: D:/git/woocommerce-lookbook/woocommerce-lookbook/admin/admin.php:115
+msgctxt "woocommerce-lookbook"
+msgid "WC Lookbook"
+msgstr ""
+
+#: D:/git/woocommerce-lookbook/woocommerce-lookbook/admin/admin.php:114
+msgctxt "woocommerce-lookbook"
+msgid "WC Lookbooks"
+msgstr ""
+
+#: D:/git/woocommerce-lookbook/woocommerce-lookbook/admin/lookbook.php:367
+msgid "X"
+msgstr ""
+
+#: D:/git/woocommerce-lookbook/woocommerce-lookbook/admin/lookbook.php:370
+msgid "Y"
+msgstr ""

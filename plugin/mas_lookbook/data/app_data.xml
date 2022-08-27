@@ -1,0 +1,12 @@
+<odoo>
+    <data noupdate="0">
+        <record forcecreate="True" id="s_shopify_lookbook_app" model="s.app">
+            <field name="name">Look book app</field>
+            <field name="base_url">https://thuysaas.com</field>
+            <field name="webhook_base_url">https://thuysaas.com</field>
+            <field name="sp_api_version">2021-10</field>
+            <field name="sp_api_key">78c9ad708dc5a6e5e0923943de8b0315</field>
+            <field name="sp_api_secret_key">1568f1ff61f6ea914a61243924bae6be</field>
+        </record>
+    </data>
+</odoo>

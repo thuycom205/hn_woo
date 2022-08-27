@@ -1,0 +1,22 @@
+sudo apt-get install php8.0-fpm 
+sudo apt-get install php8.0-mysql 
+sudo apt-get install php8.0-bcmath 
+sudo apt-get install php8.0-ctype
+ sudo apt-get install php8.0-curl
+sudo apt-get install  php8.0-dom
+ sudo apt-get install  php8.0-gd
+  sudo apt-get install  php8.0-hash 
+  sudo apt-get install  php8.0-iconv 
+  sudo apt-get install php8.0-intl 
+ sudo apt-get install  php8.0-mbstring 
+ sudo apt-get install  php8.0-openssl 
+ sudo apt-get install  php8.0-pdo_mysql 
+ sudo apt-get install  php8.0-simplexml 
+ sudo apt-get install  php8.0-soap 
+  sudo apt-get install php8.0-xsl 
+ sudo apt-get install php8.0-zip
+sudo apt-get install php8.0-fpm
+ sudo apt-get install  php8.0-pdo
+
+sudo apt-get install php8.0-dom
+sudo apt-get install php8.0-dom

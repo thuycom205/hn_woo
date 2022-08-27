@@ -1,0 +1,22 @@
+<odoo>
+    <data noupdate="0">
+        <record forcecreate="True" id="s_shopify_registry_event_data" model="s_shopify_registry.s_shopify_registry_event">
+            <field name="name">sample event</field>
+            <field name="title">Wedding</field>
+            <field name="code">wedding</field>
+            <field name="description">Wedding event</field>
+        </record>
+       <record forcecreate="True" id="s_shopify_registry_event_birthday" model="s_shopify_registry.s_shopify_registry_event">
+            <field name="name">sample event</field>
+            <field name="title">Birthday</field>
+            <field name="code">birth_day</field>
+            <field name="description">Birthday event</field>
+        </record>
+       <record forcecreate="True" id="s_shopify_registry_event_baby" model="s_shopify_registry.s_shopify_registry_event">
+            <field name="name">sample event</field>
+            <field name="title">Baby gift registry</field>
+            <field name="code">baby</field>
+            <field name="description">Baby event</field>
+        </record>
+    </data>
+</odoo>
