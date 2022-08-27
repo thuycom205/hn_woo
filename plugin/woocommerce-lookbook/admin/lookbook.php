@@ -229,7 +229,7 @@ class WOO_LOOKBOOK_Admin_Lookbook {
 					<?php echo esc_html__( 'Url of lookbook', 'woocommerce-lookbook' ) ?>
                     <input type="text" size="30" value='https://<?php echo $shop_name?>/apps/lookbook/<?php echo $post->ID ?>'
                            readonly/>
-                    <a src="https://<?php echo $shop_name?>/apps/lookbook/<?php echo $post->ID ?>">View lookbook</a>
+                    <a href="https://<?php echo $shop_name?>/apps/lookbook/<?php echo $post->ID ?>">View lookbook</a>
                 </label>
             </div>
 		<?php }
@@ -363,7 +363,7 @@ class WOO_LOOKBOOK_Admin_Lookbook {
 
                         <div class="wlb-field">
 
-                         <input  class="wlb-product" name="wlb_param[product_info][]"  value="<?php echo $product_info[$k] ?>" />
+                         <input style="display: none" class="wlb-product" name="wlb_param[product_info][]"  value="<?php echo $product_info[$k] ?>" />
                         </div>
                         <strong>Type product name to search for your product</strong>
                         <select class="s_product_id s_product_id_updated wlb-product" data-productid="<?php echo $product_id ?>" data-productname="<?php echo $product_info[$k] ?>" name="wlb_params[product_id][]">
@@ -477,6 +477,8 @@ class WOO_LOOKBOOK_Admin_Lookbook {
 	 * @return null
 	 */
 	public function save_metabox( $post_id, $post ) {
+
+
 		// Add nonce for security and authentication.
 		$nonce_name   = isset( $_POST['_wlb_nonce'] ) ? $_POST['_wlb_nonce'] : '';
 		$nonce_action = 'wlb_metabox_save';

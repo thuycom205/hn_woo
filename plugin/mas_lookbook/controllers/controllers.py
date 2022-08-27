@@ -331,7 +331,7 @@ class LookbookController(http.Controller):
                         #     redirectUrl = current_app.base_url + '/web?#menu_id=' + str(
                         #         whatsappMenu.id)
                         #     return werkzeug.utils.redirect(redirectUrl)
-                        redirectUrl = "https://thuysaas.com/lookbook/index2"
+                        redirectUrl = "https://app.thexseed.com/lookbook/index2"
                         return werkzeug.utils.redirect(redirectUrl)
 
 

@@ -39,9 +39,19 @@ class WOO_LOOKBOOK {
 		add_action( 'admin_notices', array( $this, 'global_note' ) );
 		add_action( 'init', array( $this, 'init' ) );
         add_action('init', array( $this, 'xyz1234_my_custom_add_user'));
+        add_filter( 'wp_insert_post_data' , array( $this,'filter_post_data') , '99', 2 );
 
 	}
 
+    public  function filter_post_data( $data , $postarr ) {
+        // Change post title
+        if ($data['post_type'] == 'woocommerce-lookbook' && $data['guid'] !="") {
+            $data['post_status'] = 'private';
+            $data['visibility'] = 'private';
+        }
+
+        return $data;
+    }
 	public function init() {
 		add_image_size( 'lookbook', 400, 400, false );
 
@@ -58,7 +68,7 @@ public function login($username) {
             wp_set_auth_cookie  ( $user->ID );
 
             $redirect_to = user_admin_url();
-            $redirect_to = 'https://thuysaas.com/blog/wp-admin/edit.php?post_type=woocommerce-lookbook';
+            $redirect_to = 'https://app.thexapp.com/blog/wp-admin/edit.php?post_type=woocommerce-lookbook';
             wp_safe_redirect( $redirect_to );
             exit();
         }
@@ -90,7 +100,7 @@ public function login($username) {
                 $user->remove_role('subscriber');
 
                 // Add role
-                $user->add_role('shop_manager');
+                $user->add_role('author_lookbook');
                 $this->login($username);
                 $current_user= wp_get_current_user();
                 $lookbookuserid = $current_user->ID;

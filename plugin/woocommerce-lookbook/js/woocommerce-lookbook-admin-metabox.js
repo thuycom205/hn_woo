@@ -23,7 +23,7 @@ jQuery(document).ready(function () {
 		var u_id = Date.now();
 		var data = '<div class="wlb-data wlb-item-' + u_id + '" data-id="' + u_id + '">'
 			+ '<div class="wlb-field">'
-			+ '<input class="wlb-productx wlb-product-search" name="wlb_params[product_info][]" data-placeholder="Search your product"> </input>'
+			+ '<input style="display: none" class="wlb-productx wlb-product-search" name="wlb_params[product_info][]" data-placeholder="Search your product"> </input>'
 			+ '</div> <select class="wlb-product s_product_id" name="wlb_params[product_id][]"></select>'
 			+ '<div class="wlb-field">'
 			+ 'X <input class="wlb-x" type="number" name="wlb_params[x][]" value="0" min="0" max="100" step="0.01" />'
