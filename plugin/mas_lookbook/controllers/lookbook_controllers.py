@@ -53,7 +53,7 @@ class LookbookController(http.Controller):
         ])
         return response
     @http.route('/lookbook/view/<string:id>', auth='public')
-    def lookbook_view(self,**kw):
+    def lookbook_view(self,id,**kw):
         context = ssl._create_unverified_context()
         url = "https://app.thexseed.com/blog/wp-admin/admin-ajax.php?action=wlb_get_lookbook_saas&id=%s" %(id)
         fp = urllib.request.urlopen(url,context=context)
@@ -71,6 +71,6 @@ class LookbookController(http.Controller):
         response = request.make_response(body, [
             # this method must specify a content-type application/json instead of using the default text/html set because
             # the type of the route is set to HTTP, but the rpc is made with a get and expects JSON
-            ('Content-Type', 'text/html')
+            ('Content-Type', 'application/liquid')
         ])
         return response
