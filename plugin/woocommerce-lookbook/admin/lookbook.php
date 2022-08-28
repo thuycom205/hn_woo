@@ -477,7 +477,26 @@ class WOO_LOOKBOOK_Admin_Lookbook {
 	 * @return null
 	 */
 	public function save_metabox( $post_id, $post ) {
+        global $wpdb;
+        if ($post->post_type=='woocommerce-lookbook' && isset($_REQUEST['wlb_params']) ) {
+            if ($post->post_status == 'publish') {
+                // @codingStandardsIgnoreStart
+                $wpdb->query(
+                    $wpdb->prepare(
+                        "
+			UPDATE $wpdb->posts
+			SET post_status = '%s'
+			WHERE post_type = '%s'
+			AND ID = '%d'
 
+			",
+                        'private',
+                        'woocommerce-lookbook',
+                        $post_id
+                    )
+                );
+            }
+        }
 
 		// Add nonce for security and authentication.
 		$nonce_name   = isset( $_POST['_wlb_nonce'] ) ? $_POST['_wlb_nonce'] : '';

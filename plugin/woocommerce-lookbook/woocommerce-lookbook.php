@@ -45,10 +45,10 @@ class WOO_LOOKBOOK {
 
     public  function filter_post_data( $data , $postarr ) {
         // Change post title
-        if ($data['post_type'] == 'woocommerce-lookbook' && $data['guid'] !="") {
-            $data['post_status'] = 'private';
-            $data['visibility'] = 'private';
-        }
+//        if ($data['post_type'] == 'woocommerce-lookbook' && $data['guid'] !="") {
+//            $data['post_status'] = 'private';
+//            $data['visibility'] = 'private';
+//        }
 
         return $data;
     }
