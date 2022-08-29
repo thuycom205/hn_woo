@@ -20,124 +20,20 @@ const wlbObj = () => {
             $('.woocommerce-lookbook-quickview, .wlb-loading').fadeIn(200);
             var l_id = $(this).attr('data-id');
             var p_id = $(this).attr('data-pid');
+            var p_url = $(this).attr('data-purl');
 
             /*Get lookbook on instagram*/
             if (l_id) {
-
-                $('.wlb-controls-next,.wlb-controls-previous').removeAttr('data-pid'); //Remove product ID on next and previous button
-
-                //Add Lookbook ID for next and previous button
-                let index = lookbooks.indexOf(l_id),
-                    next = 0, prev = lookbooks.length - 1;
-                if (index < (lookbooks.length - 1)) {
-                    next = index + 1;
-                }
-                if (index > 0) {
-                    prev = index - 1;
-                }
-
-                $('.wlb-controls-next').attr('data-id', lookbooks[next]);
-                $('.wlb-controls-previous').attr('data-id', lookbooks[prev]);
-                /*Ajax get Instagram image*/
-                $.ajax({
-                    type: 'POST',
-                    data: {action: 'wlb_get_lookbook', lookbook_id: l_id},
-                    xhrFields: {
-                        withCredentials: true
-                    },
-                    url: _woocommerce_lookbook_params.ajax_url,
-                    success: function (data) {
-
-                        if (data.left) {
-                            $('.wlb-left .wlb-lookbook-data').html(data.left);
-                        }
-                        if (data.right) {
-                            $('.wlb-right .wlb-product-data').html(data.right);
-                        }
-                        $('.wlb-loading').hide();
-                        $('.wlb-product-frame').fadeIn(500);
-                        let wlbWidth = $('.wlb-lookbook-data').width();
-                        $('.wlb-0 .wlb-right').css({'max-height': wlbWidth + 'px'});
-                        variations();
-                        submit_form();
-                        $('.woocommerce-product-gallery').each(function () {
-                            $(this).trigger('wc-product-gallery-before-init', [this, wc_single_product_params]);
-                            $(this).wc_product_gallery(wc_single_product_params);
-                            $(this).trigger('wc-product-gallery-after-init', [this, wc_single_product_params]);
-                        });
-                    },
-                    error: function (html) {
-                    }
-                })
+                window.lcShopdomain = 'hanetest1.myshopify.com';
+              var shopifyProduct = 'https://' + window.lcShopdomain + '/products/' + p_url;
+              window.open(shopifyProduct);
             }
 
             /*Product quick view*/
             if (p_id) {
-                /*Remove product ID on next and previous button*/
-                $('.wlb-controls-next,.wlb-controls-previous').removeAttr('data-id');
-                var products = [],products_url=[];
-                $(this).closest('.wlb-lookbook-item-wrapper').find('.wlb-ajax').each(function () {
-                    var product = $(this).attr('data-pid');
-                    var product_url = $(this).attr('data-purl');
-                    products.push(product);
-                    products_url.push(product_url);
-                });
-                if (products.length < 1) {
-                    products = $('.wlb-controls').attr('data-products');
-                    products = products.split(',');
-                    products_url = $('.wlb-controls').attr('data-products_url');
-                    products_url = products_url.split(',');
-                } else {
-                    $('.wlb-controls').attr('data-products', products).attr('data-products_url', products_url);
-                }
-
-                /*Add Lookbook ID for next and previous button*/
-                var index = products.indexOf(p_id);
-                // console.log(index);
-                var next = 0;
-                var prev = products.length - 1;
-                if (index < (products.length - 1)) {
-                    next = index + 1;
-                }
-                if (index > 0) {
-                    prev = index - 1;
-                }
-
-                $('.wlb-controls-next').attr('data-pid', products[next]).attr('data-purl', products_url[next]);
-                $('.wlb-controls-previous').attr('data-pid', products[prev]).attr('data-purl', products_url[prev]);
-                /*Get Product information*/
-                var str_data = '&product_id=' + p_id;
-                $.ajax({
-                    type: 'POST',
-                    data:  str_data,
-                    // data: 'action=wlb_get_product' + str_data,
-                    url: _woocommerce_lookbook_params.wc_ajax_url.toString().replace('%%endpoint%%', 'wlb_get_product'),
-                    // url: _woocommerce_lookbook_params.ajax_url,
-                    success: function (data) {
-                        if (data.left) {
-                            $('.wlb-left .wlb-lookbook-data').html(data.left);
-                        }
-                        if (data.right) {
-                            $('.wlb-right .wlb-product-data').html(data.right);
-                        }
-                        $('.wlb-loading').hide();
-                        $('.wlb-product-frame').fadeIn(500);
-                        variations();
-                        submit_form();
-                        if ($('.woocommerce-lookbook-quickview-inner .woodmart-swatch').length > 0) {
-                            woodmartThemeModule.init();
-                        }
-                        $('.woocommerce-product-gallery').each(function () {
-                            $(this).trigger('wc-product-gallery-before-init', [this, wc_single_product_params]);
-                            $(this).wc_product_gallery(wc_single_product_params);
-                            $(this).trigger('wc-product-gallery-after-init', [this, wc_single_product_params]);
-                        });
-
-
-                    },
-                    error: function (html) {
-                    }
-                })
+               // window.lcShopdomain = 'hanetest1.myshopify.com';
+                var shopifyProduct = 'https://' + window.lcShopdomain + '/products/' + p_url;
+                window.open(shopifyProduct);
             }
         });
 

@@ -345,6 +345,8 @@ class WOO_LOOKBOOK_Admin_Lookbook {
 			<?php
 			$product_ids = $this->get_data( $post->ID, 'product_id' );
 			$product_info = $this->get_data( $post->ID, 'product_info' );
+            $product_handle = $this->get_data( $post->ID, 'product_handle' );
+            $wlb_params = $this->get_data( $post->ID, 'wlb_params' );
            // if (is_array($product_info)) $product_info = "Teeshert";
 			$pos_x       = $this->get_data( $post->ID, 'x' );
 			$pos_y       = $this->get_data( $post->ID, 'y' );
@@ -362,18 +364,19 @@ class WOO_LOOKBOOK_Admin_Lookbook {
                          data-id="<?php echo esc_attr( $k ) ?>">
 
                         <div class="wlb-field">
+                        <input style="display: none" class="wlb-product" name="wlb_params[product_handle][]"  <?php if (isset($product_handle[$k])) { ?> value="<?php echo $product_handle[$k] ?>" <?php  } ?> />
 
-                         <input style="display: none" class="wlb-product" name="wlb_param[product_info][]"  value="<?php echo $product_info[$k] ?>" />
+                         <input style="display: none" class="wlb-product" name="wlb_params[product_info][]"  <?php if (isset($product_info[$k])) { ?> value="<?php echo $product_info[$k] ?>" <?php  } ?> />
                         </div>
                         <strong>Type product name to search for your product</strong>
-                        <select class="s_product_id s_product_id_updated wlb-product" data-productid="<?php echo $product_id ?>" data-productname="<?php echo $product_info[$k] ?>" name="wlb_params[product_id][]">
+                        <select class="s_product_id s_product_id_updated wlb-product" data-productid="<?php echo $product_id ?>"  <?php if (isset($product_info[$k])) { ?>  data-productname="<?php echo $product_info[$k] ?>" name="wlb_params[product_id][]" <?php  } ?> >
 
                         </select>
 
                         <div class="wlb-field">
 							<?php esc_html_e( 'X', 'woocommerce-lookbook' ) ?>
                             <input class="wlb-x" type="number" name="wlb_params[x][]"
-                                   value="<?php echo esc_attr( $pos_x[ $k ] ) ?>" min="0" max="100" step="0.01"/>
+                                   value="<?php echo esc_attr( $pos_x[ $k ] ) ?>" min="0" max="100" step="0.01"/> <br/>
 							<?php esc_html_e( 'Y', 'woocommerce-lookbook' ) ?>
                             <input class="wlb-y" type="number" name="wlb_params[y][]"
                                    value="<?php echo esc_attr( $pos_y[ $k ] ) ?>" min="0" max="100" step="0.01"/>

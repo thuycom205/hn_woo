@@ -91,6 +91,7 @@ class WOO_LOOKBOOK_Frontend_Shortcode {
 
             $products = $this->get_data( $id, 'product_id' );
             $product_infos = $this->get_data( $id, 'product_info' );
+            $product_handle = $this->get_data( $id, 'product_handle' );
             $pos_x    = $this->get_data( $id, 'x' );
             $pos_y    = $this->get_data( $id, 'y' );
 
@@ -108,7 +109,8 @@ class WOO_LOOKBOOK_Frontend_Shortcode {
                                 continue;
                             }
                             $product_title = $product_infos[$k];
-                            echo $this->get_node( $product,$product_title, $pos_x[ $k ], $pos_y[ $k ] );
+                            $product_url = $product_handle[$k];
+                            echo $this->get_node( $product,$product_title,$product_url, $pos_x[ $k ], $pos_y[ $k ] );
                             ?>
                         <?php }
                     } ?>
@@ -674,6 +676,7 @@ class WOO_LOOKBOOK_Frontend_Shortcode {
 						$src          = wp_get_attachment_image_url( $attachmen_id, 'lookbook' );
 						$products     = $this->get_data( $id, 'product_id' );
 						$product_infos     = $this->get_data( $id, 'product_info' );
+						$product_handle     = $this->get_data( $id, 'product_handle' );
 						if ( $src ) {
 							?>
                             <div class="wlb-lookbook-item-wrapper wlb-lookbook-instagram-item wlb-col-<?php echo esc_attr( $atts['row'] ) ?>">
@@ -683,10 +686,11 @@ class WOO_LOOKBOOK_Frontend_Shortcode {
 									if ( is_array( $products ) && count( $products ) ) {
 										foreach ( $products as $k => $product ) {
                                             $product_title = $product_infos[$k];
+                                            $url = $product_handle[$k];
 											if ( ! $product ) {
 												continue;
 											}
-											echo $this->get_node( $product,$product_title, $pos_x[ $k ], $pos_y[ $k ] );
+											echo $this->get_node( $product,$product_title,$url, $pos_x[ $k ], $pos_y[ $k ] );
 										}
 									} ?>
                                     <div class="wlb-zoom" data-id="<?php echo esc_attr( $id ) ?>"></div>
@@ -717,7 +721,7 @@ class WOO_LOOKBOOK_Frontend_Shortcode {
 	 *
 	 * @return mixed
 	 */
-	private function get_node( $product_id, $title,$pos_x, $pos_y ) {
+	private function get_node( $product_id, $title,$url,$pos_x, $pos_y ) {
 
 		if ( defined( 'ICL_LANGUAGE_CODE' ) ) {
 			$product_id = apply_filters( 'wpml_object_id', $product_id, 'product', false, ICL_LANGUAGE_CODE );
@@ -761,6 +765,7 @@ class WOO_LOOKBOOK_Frontend_Shortcode {
 				?>
                 <div class="wlb-marker wlb-item <?php echo esc_attr( $class ) ?>"
                      data-pid="<?php echo esc_attr( $product_id ) ?>"
+                     data-purl="<?php echo  $url  ?>"
                      style="left: <?php echo esc_attr( $pos_x ); ?>%;top:<?php echo esc_attr( $pos_y ) ?>%;">
 					<?php echo $link ?>
                     <div class="wlb-pulse"></div>

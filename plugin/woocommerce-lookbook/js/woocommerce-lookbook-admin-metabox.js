@@ -23,10 +23,12 @@ jQuery(document).ready(function () {
 		var u_id = Date.now();
 		var data = '<div class="wlb-data wlb-item-' + u_id + '" data-id="' + u_id + '">'
 			+ '<div class="wlb-field">'
-			+ '<input style="display: none" class="wlb-productx wlb-product-search" name="wlb_params[product_info][]" data-placeholder="Search your product"> </input>'
+			+ '<input style="display: none" class="wlb-productx wlb-product-search" name="wlb_params[product_handle][]" data-placeholder="Search your product"/> '
+
+			+ '<input style="display: none" class="wlb-productx wlb-product-search" name="wlb_params[product_info][]" data-placeholder="Search your product"/> '
 			+ '</div> <select class="wlb-product s_product_id" name="wlb_params[product_id][]"></select>'
 			+ '<div class="wlb-field">'
-			+ 'X <input class="wlb-x" type="number" name="wlb_params[x][]" value="0" min="0" max="100" step="0.01" />'
+			+ 'X <input class="wlb-x" type="number" name="wlb_params[x][]" value="0" min="0" max="100" step="0.01" /> <br/>'
 			+ 'Y <input class="wlb-y" type="number" name="wlb_params[y][]" value="0" min="0" max="100" step="0.01" />'
 			+ '</div>'
 			+ '<span class="wlb-remove">x</span>'
@@ -35,7 +37,7 @@ jQuery(document).ready(function () {
 		/*Add node*/
 		var node_data = '<span class="wlb-node wlb-node-' + u_id + '" data-id="' + u_id + '">+</span>';
 		jQuery('.wlb-image-container').append(node_data);
-		jQuery('.s_product_id').selectize({
+		jQuery('.s_product_id').not('.procceeded').selectize({
 			maxItems: null,
 			valueField: 'id',
 			labelField: 'title',
@@ -56,7 +58,7 @@ jQuery(document).ready(function () {
 						'</div>';
 				},
 				'item': function (data, escape) {
-					return '<div class="item" ' + 'data-img="' + data.title + '"' + ' >' + escape(data.title) + '</div>';
+					return '<div class="item" '  + 'data-handle="' + data.handle + '"'  + 'data-img="' + data.title + '"' + ' >' + escape(data.title) + '</div>';
 				}
 			},
 			load: function (query, callback) {
@@ -67,7 +69,7 @@ jQuery(document).ready(function () {
 				}
 				if (!query.length) return callback();
 				jQuery.ajax({
-					url: 'http://localhost:8069/pso/search_productx',
+					url: 'https://app.thexseed.com/lookbook/search_product',
 					type: 'POST',
 					beforeSend: function (xhr) {
 						xhr.setRequestHeader('Content-Type', 'application/json', 'Access-Control-Allow-Origin', '*');
@@ -96,20 +98,25 @@ jQuery(document).ready(function () {
 
 				var inputC = inputDiv.find('.item');
 				var productName = '';
+				var productHandle = '';
 				inputC.each(function (index) {
 					var title = jQuery(this).attr('data-img');
 					var value = jQuery(this).attr('data-value');
-					productsArr.push({'title': title, 'id': value});
+					var handle = jQuery(this).attr('data-handle');
+
+					productsArr.push({'title': title, 'id': value, 'handle' : handle});
 					productName = title;
+					productHandle = handle;
 				});
 				var x = JSON.stringify(productsArr);
 				var wpfield = self.$input.prev();
 				var sel= wpfield.find('input');
 				sel.val(productName);
+				sel.prev().val(productHandle);
 				// core.bus.trigger('shopify_collection_changed', x);
 			}
 		});
-
+		jQuery('.s_product_id').addClass('procceeded');
 		drag();
 
 	});
@@ -275,7 +282,7 @@ jQuery(document).ready(function () {
 	}
 
 	init();
-	jQuery('.s_product_id_updated').each(function (index,element) {
+	jQuery('.s_product_id_updated').not('procceeded').each(function (index,element) {
 		var initvalue =[];
 		var initval=[];
 		var obj = {};
@@ -289,7 +296,7 @@ jQuery(document).ready(function () {
 		} catch (e) {
 
 		}
-
+		jQuery(this).addClass('procceeded');
 		jQuery(this).selectize({
 			maxItems: null,
 			valueField: 'id',
@@ -314,8 +321,9 @@ jQuery(document).ready(function () {
 						'</div>';
 				},
 				'item': function (data, escape) {
-					return '<div class="item" ' + 'data-img="' + data.title + '"' + ' >' + escape(data.title) + '</div>';
+					return '<div  class="item" ' + 'data-handle="' + data.handle + '"'  + 'data-img="' + data.title + '"' + ' >' + escape(data.title) + '</div>';
 				}
+
 			},
 			load: function (query, callback) {
 				var data = {
@@ -325,7 +333,7 @@ jQuery(document).ready(function () {
 				}
 				if (!query.length) return callback();
 				jQuery.ajax({
-					url: 'http://localhost:8069/pso/search_productx',
+					url: 'https://app.thexseed.com/lookbook/search_product',
 					type: 'POST',
 					beforeSend: function (xhr) {
 						xhr.setRequestHeader('Content-Type', 'application/json', 'Access-Control-Allow-Origin', '*');
@@ -354,16 +362,20 @@ jQuery(document).ready(function () {
 
 				var inputC = inputDiv.find('.item');
 				var productName = '';
+				var productHandle = '';
 				inputC.each(function (index) {
 					var title = jQuery(this).attr('data-img');
 					var value = jQuery(this).attr('data-value');
-					productsArr.push({'title': title, 'id': value});
+					var handle = jQuery(this).attr('data-handle');
+					productsArr.push({'title': title, 'id': value , 'handle' : handle});
 					productName = title;
+					productHandle = handle;
 				});
 				var x = JSON.stringify(productsArr);
 				var wpfield = self.$input.prev();
 				var sel= wpfield.find('input');
 				sel.val(productName);
+				sel.prev().val(productHandle);
 				// core.bus.trigger('shopify_collection_changed', x);
 			}
 		});
