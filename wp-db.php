@@ -2005,6 +2005,16 @@ class wpdb {
 	 *                  affected/selected for all other queries. Boolean false on error.
 	 */
 	public function query( $query ) {
+
+		$from_query = "FROM wp_posts";
+        $post_att = "post_type = 'attachment'";
+
+
+        if (strpos($query,$post_att) ) {
+            $x = $query;
+            $query = str_replace($post_att ,$post_att . ' AND post_author = 0', $query);
+        }
+		/////
 		if ( ! $this->ready ) {
 			$this->check_current_query = true;
 			return false;
