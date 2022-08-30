@@ -14,26 +14,37 @@
 .subsubsub .all{
     display: none !important;
 }
-.mine {
+.subsubsub .mine {
     display: none !important;
 
 }
-.publish {
+.subsubsub .publish {
     display: none !important;
-
 }
 
-.draft {
+.subsubsub .draft {
     display: none !important;
-
 }
 
-.private {
+.subsubsub .private {
     display: none !important;
-
 }
-
+.trash {
+    display: none !important;
+}
 .villatheme-dashboard.updated {
     display: none !important;
+}
 
+.button-link.editinline {
+    display: none !important;
+}
+.row-actions {
+    display: none !important;
+}
+.media-sidebar {
+    display: none !important;
+}
+.post-state{
+    display: none !important;
 }
