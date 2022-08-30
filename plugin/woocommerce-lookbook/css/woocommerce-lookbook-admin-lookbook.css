@@ -13,3 +13,6 @@ td.wlb_instagram {
 .wlb_thumbnail img{
 	max-width: 100%;
 }
+.minor-publishing {
+	display: none !important;
+}

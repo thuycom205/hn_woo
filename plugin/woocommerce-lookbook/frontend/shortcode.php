@@ -122,6 +122,8 @@ class WOO_LOOKBOOK_Frontend_Shortcode {
         wp_head();
 
         echo  $html;
+       // wp_send_json($return_arr);
+        wp_die();
     }
 
 	public function product_short_desc() {

@@ -418,6 +418,11 @@ class WOO_LOOKBOOK_Admin_Lookbook {
 		$pos_y        = $this->get_data( $post->ID, 'y' );
 		?>
 
+            <style>
+                .minor-publishing {
+                    display: none !important;
+                }
+            </style>
         <!-- Your image container, which can be manipulated with js -->
         <div class="wlb-image-container">
 			<?php
