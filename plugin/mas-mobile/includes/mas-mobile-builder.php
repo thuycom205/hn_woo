@@ -283,7 +283,7 @@ final class MasMobileBuilder
                 $email = $user.'@thexseedmab.com';
             }
             //because this is 2nd app so
-            $username = $shop_name.'masmb';
+            $username = $user.'masmb';
             //  $email = 'drew@example.com';
 
             // if (username_exists($username) == null && email_exists($email) == false) {
@@ -291,19 +291,24 @@ final class MasMobileBuilder
 
                 // Create the new user
                 $user_id = wp_create_user($username, $password,$email);
-                $query = "UPDATE wp_users SET display_name ="."'".$shop_name. "'". " WHERE user_id=".$user_id;
-                $wpdb->query($query);
-                // Get current user object
-                $user = get_user_by('id', $user_id);
+                if (is_int($user_id)) {
+                    $query = "UPDATE wp_users SET display_name ="."'".$shop_name. "'". " WHERE user_id=".$user_id;
+                    $wpdb->query($query);
+                    // Get current user object
+                    $user = get_user_by('id', $user_id);
 
-                // Remove role
-                $user->remove_role('subscriber');
+                    // Remove role
+                    $user->remove_role('subscriber');
 
-                // Add role
-                $user->add_role('author_mobileapp');
-                $this->login($username);
-                $current_user= wp_get_current_user();
-                $lookbookuserid = $current_user->ID;
+                    // Add role
+                    $user->add_role('author_mobileapp');
+                    $this->login($username);
+                    $current_user= wp_get_current_user();
+                    $lookbookuserid = $current_user->ID;
+                } else {
+                    echo "Please contact admin";
+                }
+
             } else {
                 $this->login($username);
                 $current_user= wp_get_current_user();
