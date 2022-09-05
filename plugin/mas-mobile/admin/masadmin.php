@@ -128,7 +128,7 @@ class MasMobileAdmin
             $redirect_to = $redirect_url;
 
         } else {
-            $redirect_to = 'https://'.$_SERVER['HTTP_HOST'].'/wp-admin/post-new.php?post_type=mas_mobile_x';
+            $redirect_to = 'https://'.$_SERVER['HTTP_HOST'].'/blog/wp-admin/post-new.php?post_type=mas_mobile_x';
         }
 
         wp_safe_redirect($redirect_to);
