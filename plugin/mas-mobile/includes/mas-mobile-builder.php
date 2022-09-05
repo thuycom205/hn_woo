@@ -280,10 +280,11 @@ final class MasMobileBuilder
             $mysPos = strpos($shop_name,'myshopify.com');
             if ($mysPos) {
                 $user =  substr($shop_name,0, $mysPos-1);
-                $email = $user.'@thexseedmab.com';
+                $email = $user.'masmb@thexseedmab.com';
             }
-            //because this is 2nd app so
             $username = $user.'masmb';
+
+            //because this is 2nd app so
             //  $email = 'drew@example.com';
 
             // if (username_exists($username) == null && email_exists($email) == false) {
