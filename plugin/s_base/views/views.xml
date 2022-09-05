@@ -1,0 +1,201 @@
+<odoo>
+    <data>
+        <record id="s_sp_app_tree_view" model="ir.ui.view">
+            <field name="name">s_sp_app_tree_view</field>
+            <field name="model">s.sp.app</field>
+            <field name="priority" eval="10"/>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="sp_shop_id"/>
+                    <field name="s_app_id"/>
+                    <field name="sync_product_ready_status" widget="boolean_toggle"/>
+                    <field name="install_status" widget="boolean_toggle"/>
+                </tree>
+            </field>
+        </record>
+        <record id="s_sp_web_hook_log_tree_view" model="ir.ui.view">
+            <field name="name">s_sp_web_hook_log_tree_view</field>
+            <field name="model">s.sp.web.hook.log</field>
+            <field name="priority" eval="10"/>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="shop_id"/>
+                    <field name="object_name"/>
+                    <field name="action"/>
+                    <field name="data"/>
+                </tree>
+            </field>
+        </record>
+        <record model="ir.actions.act_window" id="s_base.s_app_action_window_tree_form_force_hide_filter_group_by">
+            <field name="name">s_app_action_tree_form</field>
+            <field name="res_model">s.app</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+        <record id="s_app_form_view" model="ir.ui.view">
+            <field name="name">s_app_form_view</field>
+            <field name="model">s.app</field>
+            <field name="priority" eval="10"/>
+            <field name="arch" type="xml">
+                <form>
+                    <header>
+                        <button string="Change CDN Script Tag" name="change_cdn_script_tag" type="object" class="oe_highlight"/>
+                    </header>
+                    <group>
+                        <group>
+                            <field name="name"/>
+                            <field name="sp_api_key"/>
+                            <field name="sp_api_secret_key"/>
+                            <field name="sp_api_version"/>
+                            <field name="base_url"/>
+                            <field name="webhook_base_url"/>
+                            <field name="default_menu"/>
+                            <field name="sp_env"/>
+                            <field name="fake_shopify_always_hide"/>
+                            <field name="fake_shopify_url"/>
+                            <field name="fake_shopify_app_name"/>
+                            <field name="fake_icon"/>
+                            <field name="cdn_script_tag"/>
+                            <field name="cdn_script_tag_status"/>
+                        </group>
+                        <group>
+                            <field name="gg_api_client_id"/>
+                            <field name="gg_api_client_secret"/>
+                            <field name="gg_scope"/>
+                            <field name="gg_service"/>
+                            <field name="gg_api_version"/>
+                            <field name="gg_from_url"/>
+                            <field name="customer_io_site_id"/>
+                            <field name="customer_io_api_key"/>
+                        </group>
+                    </group>
+                    <group>
+                        <field name="web_hook_ids"/>
+                        <field name="notifications"/>
+                    </group>
+                </form>
+            </field>
+        </record>
+        <record model="ir.actions.act_window" id="s_base.s_plan_action_window_tree_form">
+            <field name="name">s_plan_action_tree_form</field>
+            <field name="res_model">s.plan</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+        <record model="ir.actions.act_window" id="s_base.s_sp_app_action_window_tree_form">
+            <field name="name">s_sp_app_action_tree_form</field>
+            <field name="res_model">s.sp.app</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+        <record id="s_sp_app_tree_view" model="ir.ui.view">
+            <field name="name">s_sp_app_tree_view</field>
+            <field name="model">s.sp.app</field>
+            <field name="priority" eval="10"/>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="shop_url"/>
+                    <field name="shop_email"/>
+                    <field name="s_app_id"/>
+                    <field name="install_status"/>
+                </tree>
+            </field>
+        </record>
+        <record model="ir.actions.act_window" id="s_base.s_sp_shop_action_window_tree_form">
+            <field name="name">Shopify Shop</field>
+            <field name="res_model">s.sp.shop</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <record id="s_shop_form" model="ir.ui.view">
+            <field name="name">Shopify Shop</field>
+            <field name="model">s.sp.shop</field>
+            <field name="priority">16</field>
+            <field name="arch" type="xml">
+                <form>
+                    <sheet>
+                        <group>
+                             <group>
+                                <field name="base_url"/>
+                                <field name="base_url_2"/>
+                                <field name="name"/>
+                                <field name="email"/>
+                                <field name="password"/>
+                                <field name="status"/>
+                            </group>
+                            <group>
+                                <field name="currency_code"/>
+                                <field name="currency_id"/>
+                                <field name="last_name"/>
+                                <field name="country"/>
+                                <field name="first_name"/>
+                                <field name="full_name"/>
+                                <field name="shop_owner"/>
+                            </group>
+                        </group>
+                        <group>
+                            <field name="json_data"/>
+                            <field name="current_webhook_json_data"/>
+                        </group>
+                        <label for="user_id" string="Users"/>
+                        <field name="user_id"/>
+                         <label for="s_sp_app_ids" string="Apps"/>
+                        <field name="s_sp_app_ids"/>
+                        <group>
+                            <group>
+                                <field name="money_format"/>
+                                <field name="money_email_format"/>
+                                <field name="money_with_currency_format"/>
+                                <field name="money_currency_email_format"/>
+                                <field name="is_core_shop"/>
+                                <field name="is_web_hook_need"/>
+                            </group>
+                            <group>
+                                <field name="is_insert_collection_theme"/>
+                                <field name="is_lock_product_data_queue"/>
+                                <field name="has_notify"/>
+                                <field name="is_webhook_updated"/>
+                                <field name="is_removed"/>
+                                <field name="timezone"/>
+                            </group>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record id="s_shop_tree" model="ir.ui.view">
+            <field name="name">Shopify Shop</field>
+            <field name="model">s.sp.shop</field>
+            <field name="priority">16</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="base_url"/>
+                    <field name="name"/>
+                    <field name="email"/>
+                </tree>
+            </field>
+        </record>
+
+        <record model="ir.actions.act_window" id="s_base.s_customer_io_queue_action_window_tree_form">
+            <field name="name">s_customer_io_queue_action_tree_form</field>
+            <field name="res_model">s.customer.io.queue</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+        <record model="ir.actions.act_window" id="s_base.s_sp_app_button_log_action_window_tree_form">
+            <field name="name">s_sp_app_button_action_tree_form</field>
+            <field name="res_model">s.sp.app.button.log</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+        <record model="ir.actions.act_window" id="s_base.s_sp_web_hook_log_action_window_tree_form">
+            <field name="name">s_sp_web_hook_log_action_window_tree_form</field>
+            <field name="res_model">s.sp.web.hook.log</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+        <menuitem name="S Base App" id="s_base.menu_root" web_icon="s_base,static/description/icon.png" groups="base.group_system"/>
+        <menuitem name="App" id="s_base.menu_app" parent="s_base.menu_root" sequence="100" action="s_app_action_window_tree_form_force_hide_filter_group_by"/>
+        <menuitem name="Plan" id="s_base.menu_plan" parent="s_base.menu_root" sequence="110" action="s_plan_action_window_tree_form"/>
+        <menuitem name="Shopify App" id="s_base.menu_shop_app" parent="s_base.menu_root" sequence="120" action="s_sp_app_action_window_tree_form"/>
+        <menuitem name="Shopify_shop" id="s_base.menu_shopify_shop" parent="s_base.menu_root" sequence="130" action="s_sp_shop_action_window_tree_form"/>
+        <menuitem name="Customer IO queue" id="s_base.menu_s_customer_io_queue" parent="s_base.menu_root" sequence="140" action="s_customer_io_queue_action_window_tree_form"/>
+        <menuitem name="Button log" id="s_base.menu_s_sp_app_button_log" parent="s_base.menu_root" sequence="150" action="s_sp_app_button_log_action_window_tree_form"/>
+        <menuitem name="Web Hook Log" id="s_base.menu_s_sp_web_hook_log" parent="s_base.menu_root" sequence="160" action="s_sp_web_hook_log_action_window_tree_form"/>
+    </data>
+</odoo>

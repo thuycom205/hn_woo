@@ -1,0 +1,44 @@
+
+
+.s_base_dropzone {
+	position: relative;
+	&:before {
+		display:flex;
+		z-index: 1052;
+		color: gray('700');
+		flex-direction:row;
+		align-items: center;
+		justify-content: center;
+		width: #{"calc(100% - 20px)"};
+		height: #{"calc(100% - 20px)"};
+		border: 2px dashed gray('700');
+		@include gradient-y($white, gray('100'));
+		@include o-position-absolute(10px, 0, 0, 10px);
+	}
+	&:after {
+		display:flex;
+		z-index: 1052;
+		color: gray('700');
+		flex-direction:row;
+		align-items: center;
+		justify-content: center;
+		width: #{"calc(100% - 20px)"};
+		height: #{"calc(100% - 10px)"};
+		@include o-position-absolute(0, 0, 0, 0);
+	}
+	&.s_base_dropzone_file {
+		&:before {
+			font-family: FontAwesome;
+		    text-decoration: inherit;
+		    font-style: normal;
+		    font-weight: normal;
+			font-size: 15rem;
+		    content: "\f0ee";
+		}
+		&:after {
+			padding-top: 18rem;
+			font-size: 3rem;
+		    content: attr(data-dropzone-text);
+		}
+	}
+}

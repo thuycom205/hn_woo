@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <template id="force_hide_filter_group_by" name="force_hide_filter_group_by" inherit_id="web.assets_backend">
+        <xpath expr="//script[last()]" position="after">
+            <script type="text/javascript" src="/s_base/static/src/js/s_base/force_hide_filter_group_by.js"/>
+        </xpath>
+    </template>
+</odoo>

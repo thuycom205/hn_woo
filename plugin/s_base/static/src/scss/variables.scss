@@ -1,0 +1,15 @@
+
+
+$switch-bg: #dee2e6;
+$switch-disabled-bg: #e9ecef;
+$switch-disabled-color: #868e96;
+$switch-height: calc(#{$input-height} * .8) !default;
+$switch-height-sm: calc(#{$input-height-sm} * .8) !default;
+$switch-height-lg: calc(#{$input-height-lg} * .8) !default;
+$switch-checked-bg: map-get($theme-colors, 'primary') !default;
+$switch-thumb-bg: $white !default;
+$switch-thumb-border-radius: 50% !default;
+$switch-thumb-padding: 2px !default;
+$switch-transition: .2s all !default;
+$switch-border-radius: $switch-height;
+$switch-focus-box-shadow: 0 0 0 $input-btn-focus-width rgba(map-get($theme-colors, 'primary'), .25);

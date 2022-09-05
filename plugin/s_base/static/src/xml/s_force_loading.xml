@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates id="template" xml:space="preserve">
+    <t t-extend="Throbber">
+        <t t-jquery="div.oe_blockui_spin" t-operation="replace">
+            <div class="oe_blockui_spin" style="height: 50px">
+                <img src="/s_base/static/src/img/spin.png" style="animation: fa-spin 1s infinite steps(12);" alt="Loading..."/>
+            </div>
+        </t>
+        <t t-jquery="div.oe_throbber_message" t-operation="replace">
+            <div class="oe_throbber_message" style="color: #446ac4"></div>
+        </t>
+    </t>
+</templates>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<templates id="template" xml:space="preserve">
+
+<t t-extend="Notification">
+    <t t-jquery=".o_notification_content" t-operation="after">
+    	<div t-if="widget.progress" class="s_base_notification_progress">
+	        <div class="progress">
+				<div class="progress-bar" t-attf-style="width: #{widget.progress.state}%;">
+					<t t-esc="widget.progress.text"/>
+				</div>
+			</div>
+		</div>
+    </t>
+</t>
+
+</templates>

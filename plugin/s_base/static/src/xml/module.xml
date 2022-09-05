@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<templates id="template" xml:space="preserve">
+
+<t t-name="s_base_utils.MissingModuleDialog">
+    <div class="row" role="status">
+        <div class="col-6">
+            <img class="img-fluid" t-att-src='_s + "/s_base/static/src/img/module.png"' alt="Missing Module" />
+        </div>
+        <div class="col-6">
+            <p><strong>The module could not be found on the server.</strong></p>
+            <p>Click on the download button to be redirected to the store and download the corresponding module.</p>
+        </div>
+    </div>
+</t>
+
+</templates>

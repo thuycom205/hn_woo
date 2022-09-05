@@ -1,0 +1,17 @@
+<odoo>
+    <data>
+        <template id="af_related_apps" name="Apps Preview">
+            <head>
+                <script src='/s_base/static/src/js/s_base/related_apps_render.js' defer="True"/>
+            </head>
+            <body>
+                <div class="s_af_apps_label">Recommended apps by MAS</div>
+                <div id="s_af_related_apps"></div>
+                <div class="s_af_partner_apps_wrapper">
+                    <div class="s_af_apps_label">Popular apps by our partners</div>
+                    <div id="s_af_partner_apps"></div>
+                </div>
+            </body>
+        </template>
+    </data>
+</odoo>

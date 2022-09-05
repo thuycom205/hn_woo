@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<templates id="template" xml:space="preserve">
+
+    <t t-extend="Sidebar">
+	    <t t-jquery="div.btn-group.o_dropdown" t-operation="replace">
+            <t t-if="section.name != 'other'">
+                <div class="btn-group o_dropdown">
+                    <button t-if="section.name != 'buttons'" class="o_dropdown_toggler_btn btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                        <t t-if="section.name == 'files'" t-raw="widget.items[section.name].length || ''"/>
+                        <t t-esc="section.label"/>
+                    </button>
+                    <t t-if="section.name == 'buttons'" t-foreach="widget.items[section.name]" t-as="item" t-att-class="item.classname">
+                        <a t-att-title="item.title or None" t-att-data-section="section.name" t-att-data-index="item_index" t-att-href="item.url or '#'" target="_blank">
+                            <t t-raw="item.label"/>
+                        </a>
+                    </t>
+                    <div class="dropdown-menu o_dropdown_menu" role="menu">
+                        <t t-foreach="widget.items[section.name]" t-as="item">
+                            <t t-if="section.name == 'files'">
+                                <t t-set="item.title">
+                                    <b>Attachment : </b>
+                                    <br/>
+                                    <t t-raw="item.name"/>
+                                </t>
+                                <t t-if="item.create_uid and item.create_uid[0]" t-set="item.title">
+                                    <t t-raw="item.title"/>
+                                    <br/>
+                                    <b>Created by : </b>
+                                    <br/>
+                                    <t t-raw="item.create_uid[1]"/>
+                                    <t t-esc="item.create_date_string"/>
+                                </t>
+                                <t t-if="item.create_uid and item.write_uid and item.create_uid[0] != item.write_uid[0]" t-set="item.title">
+                                    <t t-raw="item.title"/>
+                                    <br/>
+                                    <b>Modified by : </b>
+                                    <br/>
+                                    <t t-raw="item.write_uid[1]"/>
+                                    <t t-esc="item.write_date_string"/>
+                                </t>
+                            </t>
+                            <a t-attf-class="dropdown-item #{item.classname}" role="menuitem" t-att-title="item.title or None" t-att-data-section="section.name" t-att-data-index="item_index" t-att-href="item.url or '#'">
+                                <t t-raw="item.label"/>
+                                <span t-if="section.name == 'files' and widget.options.editable and !item.callback" class="fa fa-trash-o o_sidebar_delete_attachment" t-att-data-id="item.id" title="Delete this attachment" role="img" aria-label="Delete this attachment"/>
+                            </a>
+                        </t>
+                        <div role="menuitem" t-if="section.name == 'files' and widget.options.editable" class="dropdown-item o_sidebar_add_attachment">
+                            <t t-call="HiddenInputFile">
+                                <t t-set="fileupload_id" t-value="widget.fileuploadId"/>
+                                <t t-set="fileupload_action" t-translation="off">/web/binary/upload_attachment</t>
+                                <t t-set="multi_upload" t-value="true"/>
+                                <input type="hidden" name="model" t-att-value="widget.env and widget.env.model"/>
+                                <input type="hidden" name="id" t-att-value="widget.env.activeIds[0]"/>
+                                <span>Add...</span>
+                            </t>
+                        </div>
+                    </div>
+                </div>
+            </t>
+            <t t-if="section.name == 'other'">
+                <div class="s_action_button_list_view">
+                    <t t-foreach="widget.items[section.name]" t-as="item">
+                        <t t-if="section.name == 'other' and item.label !== 'Export' and item.label !== 'Archive' and item.label !== 'Unarchive'">
+                            <t t-set="is_current_action_right" t-value="0"/>
+                            <t t-if="item.action">
+                                <t t-if="item.action.xml_id">
+                                    <t t-set="current_xml_id_length" t-value="0"/>
+                                    <t t-foreach="item.action.xml_id" t-as="xml_id">
+                                        <t t-set="current_xml_id_length" t-value="current_xml_id_length + 1"/>
+                                    </t>
+                                    <t t-if="current_xml_id_length > 13">
+                                        <t t-set="count" t-value="0"/>
+                                        <t t-set="last_12_char" t-value="''"/>
+                                        <t t-foreach="item.action.xml_id" t-as="xml_id">
+                                            <t t-if="count >= current_xml_id_length - 12">
+                                                <t t-set="last_12_char" t-value="last_12_char + item.action.xml_id[count]"/>
+                                            </t>
+                                            <t t-set="count" t-value="count + 1"/>
+                                        </t>
+                                    </t>
+                                    <t t-if="last_12_char == 'right_action'">
+                                        <t t-set="is_current_action_right" t-value="1"/>
+                                    </t>
+                                </t>
+                            </t>
+                            <t t-if="is_current_action_right == 0">
+                                <div class="s_primary_a_background">
+                                    <a t-attf-class="btn btn-secondary s_primary_a dropdown-item #{item.classname}" role="menuitem" t-att-title="item.title or None" t-att-data-section="section.name" t-att-data-index="item_index" t-att-href="item.url or '#'">
+                                        <t t-raw="item.label"/>
+                                        <span t-if="section.name == 'files' and widget.options.editable and !item.callback" class="fa fa-trash-o o_sidebar_delete_attachment" t-att-data-id="item.id" title="Delete this attachment" role="img" aria-label="Delete this attachment"/>
+                                    </a>
+                                </div>
+                            </t>
+                            <t t-if="is_current_action_right == 1">
+                                <div class="s_primary_a_background s_primary_a_background_right">
+                                    <a t-attf-class="btn btn-secondary s_primary_a s_primary_a_right dropdown-item #{item.classname}" role="menuitem" t-att-title="item.title or None" t-att-data-section="section.name" t-att-data-index="item_index" t-att-href="item.url or '#'">
+                                        <t t-raw="item.label"/>
+                                        <span t-if="section.name == 'files' and widget.options.editable and !item.callback" class="fa fa-trash-o o_sidebar_delete_attachment" t-att-data-id="item.id" title="Delete this attachment" role="img" aria-label="Delete this attachment"/>
+                                    </a>
+                                </div>
+                            </t>
+                        </t>
+                    </t>
+                </div>
+            </t>
+        </t>
+	</t>
+
+</templates>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record model="s.sp.web.hook" id="web_hook_product_create">
+            <field name="topic">products/create</field>
+            <field name="is_singleton">True</field>
+        </record>
+        <record model="s.sp.web.hook" id="web_hook_product_update">
+            <field name="topic">products/update</field>
+            <field name="is_singleton">True</field>
+        </record>
+        <record model="s.sp.web.hook" id="web_hook_product_delete">
+            <field name="topic">products/delete</field>
+            <field name="is_singleton">True</field>
+        </record>
+        <record model="s.sp.web.hook" id="web_hook_collection_create">
+            <field name="topic">collections/create</field>
+            <field name="is_singleton">True</field>
+        </record>
+        <record model="s.sp.web.hook" id="web_hook_collection_update">
+            <field name="topic">collections/update</field>
+            <field name="is_singleton">True</field>
+        </record>
+        <record model="s.sp.web.hook" id="web_hook_collection_delete">
+            <field name="topic">collections/delete</field>
+            <field name="is_singleton">True</field>
+        </record>
+
+        <record model="s.sp.web.hook" id="web_hook_app_uninstalled">
+            <field name="topic">app/uninstalled</field>
+            <field name="is_singleton">False</field>
+        </record>
+
+        <record model="s.sp.web.hook" id="web_hook_fulfillment_create">
+            <field name="topic">fulfillments/create</field>
+            <field name="is_singleton">True</field>
+        </record>
+        <record model="s.sp.web.hook" id="web_hook_fulfillment_update">
+            <field name="topic">fulfillments/update</field>
+            <field name="is_singleton">True</field>
+        </record>
+        <record model="s.sp.web.hook" id="web_hook_fulfillment_event_create">
+            <field name="topic">fulfillment_events/create</field>
+            <field name="is_singleton">True</field>
+        </record>
+        <record model="s.sp.web.hook" id="web_hook_fulfillment_event_delete">
+            <field name="topic">fulfillment_events/delete</field>
+            <field name="is_singleton">True</field>
+        </record>
+        <record model="s.sp.web.hook" id="web_hook_orders_create">
+            <field name="topic">orders/create</field>
+            <field name="is_singleton">True</field>
+        </record>
+        <record model="s.sp.web.hook" id="web_hook_orders_update">
+            <field name="topic">orders/updated</field>
+            <field name="is_singleton">True</field>
+        </record>
+    </data>
+</odoo>

@@ -1,0 +1,16 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_s_app,access_s_app,model_s_app,base.group_system,1,1,1,1
+access_s_plan,access_s_plan,model_s_plan,base.group_system,1,1,1,1
+access_s_sp_app,access_s_sp_app,model_s_sp_app,base.group_system,1,1,1,1
+access_s_sp_shop,access_s_sp_shop,model_s_sp_shop,base.group_system,1,1,1,1
+access_s_gg_merchant,access_s_gg_merchant,model_s_gg_merchant,base.group_system,1,1,1,1
+access_s_gg_account,access_s_gg_account,model_s_gg_account,base.group_system,1,1,1,1
+
+access_s_data_preview,s_data_preview.s_data_preview,model_s_data_preview,base.group_system,1,1,1,1
+access_s_customer_io_queue,access_s_customer_io_queue,model_s_customer_io_queue,base.group_system,1,1,1,1
+access_s_sp_app_button_log,access_s_sp_app_button_log,model_s_sp_app_button_log,base.group_system,1,1,1,1
+access_s_sp_web_hook,access_s_sp_web_hook,model_s_sp_web_hook,base.group_system,1,1,1,1
+access_s_sp_web_hook_log,access_s_sp_web_hook_log,model_s_sp_web_hook_log,base.group_system,1,1,1,1
+
+access_s_app_notifications,access_s_app_notifications,model_s_app_notifications,,1,1,1,1
+

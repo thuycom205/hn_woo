@@ -1,0 +1,5 @@
+ShopifyAPI==8.4.*
+xmltodict==0.12.*
+google-api-python-client==2.2.*
+customerio==1.1
+pika==1.2.*

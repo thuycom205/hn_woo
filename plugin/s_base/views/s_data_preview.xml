@@ -1,0 +1,61 @@
+<odoo>
+    <data>
+        <template id="s_shopify_assets_backend_s_data_preview" name="Shopify Asset" inherit_id="web.assets_backend">
+            <xpath expr="." position="inside">
+                <script type="text/javascript" src="/s_base/static/src/js/s_base/s_sp_data_preview.js"></script>
+                <script type="text/javascript" src="/s_base/static/src/js/s_base/s_sp_next_page_button.js"></script>
+                <script type="text/javascript" src="/s_base/static/src/js/s_base/s_custom_view.js"></script>
+                <script type="text/javascript" src="/s_base/static/src/js/s_base/field_dynamic_dropdown.js"></script>
+            </xpath>
+        </template>
+        <record model="ir.ui.view" id="s_data_fetch_preview_form_view_search">
+            <field name="name">s.data.preview</field>
+            <field name="model">s.data.preview</field>
+            <field name="priority">100</field>
+            <field name="arch" type="xml">
+                <form string="Shopify">
+                    <div class="s_search">
+                        <field name="name" class="s_sp_data_search"/>
+                        <span class="fa fa-search-minus" title="Advanced Search..." role="img" aria-label="Search..."></span>
+                    </div>
+                    <div id="s_data_badge" class="s_data_badge"></div>
+                    <div style="display:none">
+                        <field name="record_checked" class="s_record_checked"/>
+                       <group>
+                            <field class="s_sp_data_page" name="page"/>
+                            <field class="s_sp_data_next_page" name="has_next_page"/>
+                        </group>
+                    </div>
+                    <field name="products" widget="s_data_preview_one2many">
+                        <tree edit="true" create="false" delete="false">
+                            <field name="checked" class="s_data_checked"/>
+                            <field name="media_url" widget="external_img" options='{"size": "30"}'/>
+                            <field name="name"/>
+                            <field name="data" invisible="1"/>
+                            <field name="mode" invisible="1"/>
+                            <field name="product_id" invisible="1"/>
+                        </tree>
+                    </field>
+                    <div style="text-align:center;">
+                        <field name="pagination" widget="pagination"/>
+                    </div>
+                    <footer class="float-right">
+                        <button name="add_product" string="Add" type="object" icon="fa-arrow-right"/>
+                        <button string="Close" class="btn-secondary" special="cancel"/>
+                    </footer>
+                </form>
+            </field>
+        </record>
+        <record model="ir.ui.view" id="s_data_fetch_preview_form_view_search_preview">
+            <field name="name">s.data.preview</field>
+            <field name="model">s.data.preview</field>
+            <field name="priority">10</field>
+            <field name="arch" type="xml">
+                <form string="Shopify" create="false" edit="false">
+                    <field name="checked"/>
+                    <footer class="float-right"></footer>
+                </form>
+            </field>
+        </record>
+    </data>
+</odoo>

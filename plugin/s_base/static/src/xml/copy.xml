@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<templates id="template" xml:space="preserve">
+
+<t t-name="s_base_utils.BinaryFieldCopy">
+    <div class="d-inline-block s_base_copy_binary">
+	    <button class="btn btn-sm btn-outline-primary s_base_copy_button" type="button">
+		    <span class="fa fa-clipboard"></span>
+		</button>
+	</div>
+</t>
+
+</templates>

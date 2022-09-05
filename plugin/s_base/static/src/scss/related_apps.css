@@ -1,0 +1,87 @@
+.mgn-app-items {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.mgn-app-items * {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.mgn-app-item {
+    width: 300px;
+    max-width: 100%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-size: 12px;
+    overflow: hidden;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"
+}
+
+.af_slider_apps {
+    overflow: hidden
+}
+
+.mgn-app-item:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.mgn-app-item .mgn-app-photo {
+    display: inline-block;
+    width: 60px;
+    float: left;
+}
+
+.mgn-app-item .mgn-app-photo img {
+    display: block;
+    width: 100%;
+    height: auto;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    -webkit-box-shadow: 0 0 8px 0 rgb(0, 0, 0, 0.3);
+    -moz-box-shadow: 0 0 8px 0 rgb(0, 0, 0, 0.3);
+    box-shadow: 0 0 8px 0 rgb(0, 0, 0, 0.3);
+}
+
+.mgn-app-item .mgn-app-info {
+    width: calc(100% - 60px);
+    padding-left: 12px;
+    float: right;
+}
+
+.mgn-app-item p {
+    margin: 0;
+}
+
+.mgn-app-item .af-star {
+    margin-right: 3px;
+}
+
+.mgn-app-item .mgn-app-title {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+.mgn-app-item .mgn-app-owner {
+    margin-bottom: 2px;
+}
+
+.mgn-app-item .mgn-app-review i {
+    color: #fbd991;
+}
+
+.mgn-app-item .mgn-app-price {
+    font-size: 12px;
+}

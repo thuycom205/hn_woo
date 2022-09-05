@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<templates id="template" xml:space="preserve">
+
+	<t t-name="s_base.RightTopAvatar">
+		<div style="display: inline-flex;">
+ 			 <div id="s_af_alert" title="Notifications" data-toggle="modal" data-target="#s_af_notification">
+				 <svg xmlns="http://www.w3.org/2000/svg" fill="#000000" class="bi bi-bell-fill" viewBox="0 0 16 16" style="" width="20" height="20">
+  					<path d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2zm.995-14.901a1 1 0 1 0-1.99 0A5.002 5.002 0 0 0 3 6c0 1.098-.5 6-2 7h14c-1.5-1-2-5.902-2-7 0-2.42-1.72-4.44-4.005-4.901z"></path>
+				 </svg>
+				 <t t-if="data.notifications.length > 0">
+					<span class="s_af_badge badge badge-danger"><t t-esc="data.notifications.length"/></span>
+				 </t>
+			</div>
+			<t t-if="data.notifications.length > 0">
+				<div id="s_af_notifications_wrapper">
+					<t t-call="s_base.s_af_alert"/>
+				</div>
+			</t>
+            <a target="_blank" t-att-href="data.href" id="s_right_top_avatar"><t t-esc="data.user"/></a>
+		</div>
+
+
+	</t>
+
+	<t t-name="s_base.app_title">
+		<div class="s_form_header">
+			<div class="s_app_header_wrapper" style="width: 100%">
+				<div class="s_app_header_title">
+					<button type="button" class="fa fa-bars float-right o_mobile_menu_toggle" title="Toggle menu" aria-label="Toggle menu"></button>
+					<img id="s_header_app_icon" t-attf-src="{{src}}" width="25" height="25"/>
+					<span id="s_header_app_name" class="s_app_header_app_name"><t t-esc="name"/></span>
+					<span class="s_app_header_app_af">By MAS</span>
+				</div>
+			</div>
+		</div>
+	</t>
+
+    <t t-name="s_base.s_af_alert">
+		<div class="modal fade" id="s_af_notification" tabindex="-1" role="dialog" aria-labelledby="Allfetch" aria-hidden="true">
+		  <div class="modal-dialog" role="document">
+			<div class="modal-content">
+				  <div class="modal-header">
+					<h5 class="modal-title">Notifications</h5>
+					  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					  <span aria-hidden="false">×</span>
+					</button>
+				  </div>
+				  <div class="modal-body">
+					  	<t t-foreach="data.notifications" t-as="obj">
+							<h5 t-esc="obj.title"></h5>
+							<div style="margin-top: 10px">
+								<t t-raw="obj.content"/>
+							</div>
+							<hr/>
+						</t>
+				  </div>
+			</div>
+		  </div>
+		</div>
+	</t>
+
+    <t t-extend="Menu">
+		<t t-jquery=".o_menu_sections" t-operation="replace">
+			<ul class="o_menu_sections s-sm-none" role="menu"/>
+		</t>
+        <t t-jquery=".o_menu_systray" t-operation="after">
+            <button class="s_base_menu_sections_toggle d-md-none" data-toggle="collapse"
+                    data-target=".o_main_navbar > .o_menu_sections">
+                <i class="fa fa-bars"/>
+            </button>
+        </t>
+        <t t-jquery=".o_menu_systray" t-operation="after">
+			<div class="s_base_apps_sidebar_panel" style="display: none">
+			</div>
+        </t>
+    </t>
+
+    <t t-extend="Menu.link">
+		<t t-jquery='a[data-toggle="collapse"]' t-operation="prepend">
+			<t t-if="menu.web_icon_data">
+				<img class="s_base_new_apps_sidebar_icon" t-attf-src="data:image/png;base64,#{menu.web_icon_data}" data-toggle="tooltip" t-att-title="menu.name"/>
+			</t>
+        </t>
+	</t>
+
+    <t t-extend="Menu.link">
+		<t t-jquery='a[data-toggle="collapse"]' t-operation="attributes">
+			<attribute name="t-attf-class">#{inNavbar ? '' : 'dropdown-item '}o_menu_entry_lvl_#{depth} #{menu.web_icon_data ? '' : 's_base_menu_no_icon '} </attribute>
+        </t>
+	</t>
+
+    <!--	<t t-extend="Menu.sections">-->
+    <!--		<t t-jquery='a.o_menu_header_lvl_1' t-operation="prepend">-->
+    <!--			<img class="s_base_new_apps_sidebar_icon" t-attf-src="data:image/png;base64,#{second_level_menu.web_icon_data}"/>-->
+    <!--        </t>-->
+    <!--	</t>-->
+
+    <t t-name="s_base.MobileMenu.link">
+	    <t t-set="depth" t-value="(depth || 0) + 1"/>
+        <t t-if="!menu.children.length">
+	    	<li>
+		        <a role="menuitem" t-attf-class="dropdown-item o_menu_entry_lvl_#{depth}"
+                   t-attf-href="#menu_id=#{menu.id}&amp;action=#{menu.action ? menu.action.split(',')[1] : ''}"
+                   t-att-data-action-model="menu.action ? menu.action.split(',')[0] : ''"
+                   t-att-data-action-id="menu.action ? menu.action.split(',')[1] : ''"
+                   t-att-data-menu="menu.id"
+                   t-att-data-menu-xmlid="menu.xmlid"
+                   data-toggle="collapse" data-target="#o_navbar_collapse.in">
+	                <span>
+	                	<t t-esc="menu.name"/>
+	                </span>
+	            </a>
+            </li>
+	    </t>
+        <t t-else="">
+	   		<li class="s_base_menu_mobile_section clearfix">
+                <a role="button" href="#" t-attf-class="dropdown-toggle o-no-caret o_menu_header_lvl_#{depth}"
+                   t-att-data-menu-xmlid="menu.xmlid" data-toggle="dropdown" aria-expanded="false">
+                    <span>
+	                	<t t-esc="menu.name"/>
+	                </span>
+                    <span class="fa fa-chevron-right float-right"/>
+                    <span class="fa fa-chevron-down float-right" style="display: none;"/>
+                </a>
+                <ul class="dropdown-menu" role="menu">
+                    <t t-foreach="menu.children" t-as="submenu">
+                    	<t t-call="s_base.MobileMenu.link">
+	                        <t t-set="menu" t-value="submenu"/>
+	                    </t>
+                    </t>
+                </ul>
+            </li>
+	    </t>
+	</t>
+
+    <t t-name="s_base.MobileMenu.sections">
+    	<t t-set="isMobile" t-value="true"/>
+        <t t-foreach="menu_data.children" t-as="topmenu">
+	        <section t-att-class="topmenu.id">
+	            <t t-if="topmenu.children.length">
+	                <t t-foreach="topmenu.children" t-as="submenu">
+	                    <t t-call="s_base.MobileMenu.link">
+	                        <t t-set="menu" t-value="submenu"/>
+	                    </t>
+	                </t>
+	            </t>
+	        </section>
+	    </t>
+	</t>
+
+</templates>

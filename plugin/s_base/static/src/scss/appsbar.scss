@@ -1,0 +1,168 @@
+
+.s_base_apps_sidebar_panel {
+    height: calc(100% - #{$o-navbar-height}); 
+	position: fixed; 
+    overflow-y: auto;	
+    top: $o-navbar-height;
+    background-color: $mk-appbar-background;
+    &::-webkit-scrollbar {
+	  display: none;
+	}
+	-ms-overflow-style: none;
+	scrollbar-width: none;
+    .s_base_apps_sidebar {
+	    padding: 0;
+	    white-space: nowrap;
+	    .s_base_apps_sidebar_menu {
+		    list-style: none;
+		    margin: 0;
+		    padding: 0;
+			padding-bottom: 150px;
+		    > li {
+				margin: 0 0 5px;
+				padding: 0;
+		        border: 0px;
+		        display: block;
+		        > a {
+		            margin: 0;
+		            border: 0px;
+		            cursor: pointer;
+		            font-size: 14px;
+		            font-weight: 400;
+		            overflow: hidden;
+					line-height: 25px;
+		            padding: 6px 11px;
+		            position: relative;
+		            text-decoration: none;
+		            color: #212b36;
+		            text-overflow: ellipsis;
+					display: flex;
+					align-items: center;
+		            .s_base_apps_sidebar_icon {
+					    width: 22px;
+					    height: 22px;
+					    margin-right: 7px;
+					}
+		        }
+		    }
+	        > li:hover > a {
+				color: #446ac4;
+				background: #DCE7FF 0% 0% no-repeat padding-box;
+				border-radius: 7px;
+	        }
+	    }
+	}
+}
+
+@include media-breakpoint-up(lg) {
+	.s_base_sidebar_type_large {
+		.s_base_apps_sidebar_panel {
+			width: $mk-sidebar-large-width;
+			border-right: 1px solid #dfe3e8;
+		}
+		//.o_action_manager {
+		//	padding-left: $mk-sidebar-large-width;
+		//}
+	}
+	.s_base_sidebar_type_small {
+		.s_base_apps_sidebar_panel {
+			width: $mk-sidebar-small-width;
+			.s_base_apps_sidebar_name {
+				display: none;
+			}
+			.s_base_apps_sidebar_icon {
+				margin-right: 0 !important;
+			}
+		}
+		.o_action_manager {
+			padding-left: $mk-sidebar-small-width;
+		}
+	}
+
+	.s_base_sidebar_type_invisible {
+		.s_base_apps_sidebar_panel {
+			display: none;
+		}
+	}
+
+	//.sidebar_padding_invisible {
+	//	margin-left: $sidebar-invisible;
+	//}
+	//
+	//.sidebar_padding_small {
+	//	margin-left: $sidebar-small;
+	//}
+	//
+	//.sidebar_padding_large {
+	//	margin-left: $sidebar-large;
+	//}
+
+}
+
+@include media-breakpoint-only(md) {
+	.s_base_sidebar_type_large, .s_base_sidebar_type_small {
+		.s_base_apps_sidebar_panel {
+			width: $mk-sidebar-small-width;
+			.s_base_apps_sidebar_name {
+				display: none;
+			}
+			.s_base_apps_sidebar_icon {
+				margin-right: 0 !important;
+			}
+		}
+		.o_action_manager {
+			padding-left: $mk-sidebar-small-width;
+		}
+	}
+
+	.s_base_sidebar_type_invisible {
+		.s_base_apps_sidebar_panel {
+			display: none;
+		}
+	}
+	//.sidebar_padding_invisible {
+	//	margin-left: $sidebar-invisible;
+	//}
+	//
+	//.sidebar_padding_small {
+	//	margin-left: $sidebar-invisible;
+	//}
+	//
+	//.sidebar_padding_large {
+	//	margin-left: $sidebar-invisible;
+	//}
+}
+
+@include media-breakpoint-down(sm) {
+	.s_base_apps_sidebar_panel {
+		display: none;
+	}
+	.o_action_manager {
+		padding-left: 0;
+	}
+
+	//.sidebar_padding_invisible {
+	//	margin-left: $sidebar-invisible;
+	//}
+	//
+	//.sidebar_padding_small {
+	//	margin-left: $sidebar-invisible;
+	//}
+	//
+	//.sidebar_padding_large {
+	//	margin-left: $sidebar-invisible;
+	//}
+}
+
+.o_fullscreen {
+	.s_base_apps_sidebar_panel {
+		display: none;
+	}
+	.o_action_manager {
+		padding-left: 0;
+	}
+}
+.s_base_new_apps_sidebar_icon{
+    width: 25px;
+    height: 25px;
+}

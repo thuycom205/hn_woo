@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates xml:space="preserve">
+    <t t-name="s_pagination">
+        <nav aria-label="Page navigation example">
+              <ul class="pagination">
+                  <li class="page-item"><a id="s_pre_data" role="button" class="page-link s_pre_data" href="#"><i class="fa fa-angle-left" aria-label="Pre" title="Pre"/></a></li>
+                  <li class="page-item"><a class="page-link" id="current_page">1</a></li>
+                  <li class="page-item"><a id="s_next_data" role="button" class="page-link s_next_data" href="#"><i class="fa fa-angle-right" aria-label="Next" title="Next"/></a></li>
+              </ul>
+        </nav>
+    </t>
+    <!--Next page widget template-->
+    <t t-name="s_next_page">
+       <button id="s_next_page" type="button" class="btn btn-outline-primary">Next</button>
+    </t>
+
+<!--    <t t-name="s_products_badge">-->
+<!--        <t t-foreach="data" t-as="s">-->
+<!--            <span class="badge badge-success"><t t-esc="s.name"/></span>-->
+<!--        </t>-->
+<!--    </t>-->
+     <t t-name="s_tree_img">
+         <img t-att-src="value" width="32" height="32"/>
+     </t>
+</templates>

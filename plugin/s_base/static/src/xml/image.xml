@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<templates id="template" xml:space="preserve">
+
+<t t-extend="FieldBinaryImage">
+	<t t-jquery=".o_form_image_controls" t-operation="after">
+       	<div class="s_base_form_image_controls">
+	    </div>
+    </t>   
+</t>
+
+</templates>
