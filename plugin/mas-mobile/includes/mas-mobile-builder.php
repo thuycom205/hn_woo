@@ -307,6 +307,7 @@ final class MasMobileBuilder
                     $lookbookuserid = $current_user->ID;
                 } else {
                     echo "Please contact admin";
+                    var_dump($user_id);
                 }
 
             } else {
