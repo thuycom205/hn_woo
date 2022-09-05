@@ -185,6 +185,26 @@ class MasMobileAdmin
         global $current_user;
         wp_get_current_user();
         update_post_meta($post_id, 'shop_name', $current_user->user_login);
+        global $wpdb;
+        if ($post->post_type=='mas_mobile_x' && isset($_REQUEST['masmb_params']) ) {
+            if ($post->post_status == 'publish' ) {
+                // @codingStandardsIgnoreStart
+                $wpdb->query(
+                    $wpdb->prepare(
+                        "
+			UPDATE $wpdb->posts
+			SET post_status = '%s'
+			WHERE post_type = '%s'
+			AND ID = '%d'
+
+			",
+                        'private',
+                        'woocommerce-lookbook',
+                        $post_id
+                    )
+                );
+            }
+        }
     }
 
     private function get_data($post_id, $field, $default = '')

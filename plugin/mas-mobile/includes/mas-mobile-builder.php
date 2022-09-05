@@ -157,9 +157,9 @@ final class MasMobileBuilder
         add_action( 'add_meta_boxes', array( $this->admin, 'add_metabox' ) );
         add_action( 'save_post', array( $this->admin, 'save_metabox' ), 10, 2 );
         add_action('init', array( $this, 'xyz1234_my_custom_add_user'));
-        add_action( 'admin_menu', function () {
-            remove_meta_box( 'submitdiv', 'mas_mobile_x', 'side' );
-        } );
+//        add_action( 'admin_menu', function () {
+//            remove_meta_box( 'submitdiv', 'mas_mobile_x', 'side' );
+//        } );
         add_action( 'wp_ajax_masmb_ajax_get_mobile', array( $this,'masmb_ajax_get_mobile' ));
         add_action( 'wp_ajax_nopriv_masmb_ajax_get_mobile',  array( $this,'masmb_ajax_get_mobile'));
 
