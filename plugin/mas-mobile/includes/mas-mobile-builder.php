@@ -271,15 +271,19 @@ final class MasMobileBuilder
     }
     public function xyz1234_my_custom_add_user() {
         global $lookbookuserid;
+        global $wpdb;
+
         if (isset($_REQUEST['mobile_shop_name']) ) {
-            $username = $_REQUEST['mobile_shop_name'];
-            $email = $username;
+            $shop_name = $_REQUEST['mobile_shop_name'];
+            $email = $shop_name;
             $password = 'pasword123';
-            $mysPos = strpos($username,'myshopify.com');
+            $mysPos = strpos($shop_name,'myshopify.com');
             if ($mysPos) {
-                $user =  substr($username,0, $mysPos-1);
+                $user =  substr($shop_name,0, $mysPos-1);
                 $email = $user.'@thexseedmab.com';
             }
+            //because this is 2nd app so
+            $username = $shop_name.'masmb';
             //  $email = 'drew@example.com';
 
             // if (username_exists($username) == null && email_exists($email) == false) {
@@ -287,7 +291,8 @@ final class MasMobileBuilder
 
                 // Create the new user
                 $user_id = wp_create_user($username, $password,$email);
-
+                $query = "UPDATE wp_users SET display_name ="."'".$shop_name. "'". " WHERE user_id=".$user_id;
+                $wpdb->query($query);
                 // Get current user object
                 $user = get_user_by('id', $user_id);
 
