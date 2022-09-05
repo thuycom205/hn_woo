@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="mobile_app_link_access_form" model="ir.ui.view">
+        <field name="name">mobile.app.link.access.token.form</field>
+        <field name="model">mobile.app.link.access.token</field>
+        <field name="arch" type="xml">
+            <form string="link Access_toke Token">
+                <group>
+                    <group col="1">
+                        <p>Please follow these below steps to preview your mobile app before setting it live</p>
+                        <p>
+                            <span style="font-weight: bold;margin-right:5px">Step 1</span>
+                            Download the AllFetch Shopify Preview app to your mobile
+                            <span class="link_access">phone.You can reach it simply by searching in the CH
+                                <br/>
+                            </span>
+                            <span class="link_access">Play store or navigating to the link below from your
+                                <br/>
+                            </span>
+                            <span class="link_access">mobile device</span>
+                        </p>
+                        <a style="border-radius:10px; margin-bottom:15px; padding:10px;" class="btn-primary link_access"
+                           href="https://play.google.com/store/apps/details?id=com.allfetch.shopify.mobile"
+                           target="_blank">Download AllFetch Shopify Preview app
+                        </a>
+                        <p style="margin-top:20px"><span style="font-weight: bold;margin-right:5px">Step 2</span>Open
+                            your AllFetch Shopify Preview app on your mobile
+                            <br/>
+                            <span class="link_access">phone.</span>
+                        </p>
+                        <p>
+                            <span style="font-weight: bold;margin-right:5px">Step 3</span>
+                            <span>Scan the QR code or copy and paste the preview link URL
+                                <br/>
+                            </span>
+                            <span class="link_access">below, then click the Submit button.</span>
+                        </p>
+                        <p>Then, you can preview and check all functions of your app from the user point of view.</p>
+                    </group>
+                    <group col="1">
+                        <field name="custom_design_id" invisible="1" nolabel="1"/>
+                        <p style="margin-left: 240px;font-size: 20px; font-weight: 600;">QRCode</p>
+                        <field style="margin-left: 200px;" name="otp_qrcode" widget="image" readonly="1" nolabel="1"/>
+                        <field style="font-size: 11px; margin-top:20px"
+                               name="link_access" widget="CopyClipboardText" readonly="1" nolabel="1"/>
+                    </group>
+                </group>
+                <footer>
+                    <button string="Close" class="btn-secondary" special="cancel"/>
+                </footer>
+            </form>
+        </field>
+    </record>
+
+    <record id="mobile_link_wizard" model="ir.actions.act_window">
+        <field name="name">Link Access Token</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">mobile.app.link.access.token</field>
+        <field name="view_mode">form</field>
+        <field name="view_id" ref="mobile_app_link_access_form"/>
+        <field name="target">new</field>
+    </record>
+
+    <!--    ################### End Link Access ##########-->
+
+    <record id="mobile_app_request_store_submission_form" model="ir.ui.view">
+        <field name="name">mobile.app.link.access.token.form</field>
+        <field name="model">mobile.app.link.access.token</field>
+        <field name="arch" type="xml">
+            <form string="link Access_toke Token">
+                <p style="font-weight: bold;">Select one of two options below for submitting your app to application
+                    stores
+                </p>
+                <p>Our team will take over the process and follow all the procedures required to publish your app on
+                    application stores.
+                    We will contact you as soon as possible for further steps. If you have any questions,
+                    feel free to contact us via email support@allfetch.com or chat with us via live-chat system inside
+                    the app.
+                </p>
+
+                <p style="font-weight: bold;">Submit with your Google Developer account</p>
+                <p>To publish your app on behalf of your own brand's name,
+                    you need to get a developer account from Google Play store
+                    ($25/one time).It's the way of letting you have full control
+                    of your app.
+                </p>
+                <h4>Note:</h4>
+                <group col="1">
+                    <field name="user_note_gg_account" nolabel="1"/>
+                    <button name="create_shop_gg_account" type="object" style="border-radius:10px" class="btn-primary">
+                        Submit with Google Developer Account
+                    </button>
+                </group>
+                <footer>
+                    <button string="Close" class="btn-secondary" special="cancel"/>
+                </footer>
+            </form>
+        </field>
+    </record>
+
+    <record id="mobile_app_request_store_submission" model="ir.actions.act_window">
+        <field name="name">Request Store Submission</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">mobile.app.link.access.token</field>
+        <field name="view_mode">form</field>
+        <field name="view_id" ref="mobile_app_request_store_submission_form"/>
+        <field name="target">new</field>
+    </record>
+
+</odoo>

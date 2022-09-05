@@ -1,0 +1,410 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <record id="s_shopify_mobile_app_publish_process_view_form" model="ir.ui.view">
+            <field name="name">s_shopify_mobile_app_publish_process_view_form</field>
+            <field name="model">s.shopify.mobile.app.custom.design</field>
+            <field name="arch" type="xml">
+                <form string="Mobile App Builder" name="s_shopify_mobile_app" duplicate="0" delete="false" create="0">
+                    <sheet>
+                        <group>
+                            <field name="is_publish" invisible="1"/>
+                            <field name="google_play_state" invisible="1"/>
+                            <field name="apple_account_state" invisible="1"/>
+                            <field name="is_app_listing_info_text" invisible="1"/>
+                            <field name="is_register_plan" invisible="1"/>
+                        </group>
+                        <div class="row">
+                            <div class="col-xl-6">
+                                <h3>App Publishing Process</h3>
+                                <p class="pt-3 pb-3">Follow below steps to publish your app</p>
+
+                                <!--                                <div class="pl-5 accordion md-accordion" id="af-mobile-publish-steps" role="tablist"-->
+                                <!--                                     aria-multiselectable="true">-->
+                                <!--                                    &lt;!&ndash; Step 1 &ndash;&gt;-->
+                                <!--                                    <div class="card af-mobile-card-step-content">-->
+                                <!--                                        <div class="card-header" role="tab" id="af-mobile-publish-stepOne">-->
+                                <!--                                            <a data-toggle="collapse" data-parent="#af-mobile-publish-steps"-->
+                                <!--                                               href="#af-mobile-publish-stepOne-content" aria-expanded="true"-->
+                                <!--                                               aria-controls="af-mobile-publish-stepOne-content">-->
+                                <!--                                                <h5 class="mb-0">-->
+                                <!--                                                    <i class="fa fa-plus-circle"/> Step 1: Personalize Your App-->
+                                <!--                                                </h5>-->
+                                <!--                                            </a>-->
+                                <!--                                        </div>-->
+                                <!--                                        <div id="af-mobile-publish-stepOne-content" class="collapse show"-->
+                                <!--                                             role="tabpanel" aria-labelledby="af-mobile-publish-stepOne"-->
+                                <!--                                             data-parent="#af-mobile-publish-steps">-->
+                                <!--                                            <div class="card-body">-->
+                                <!--                                                <div>-->
+                                <!--                                                    <ul>-->
+                                <!--                                                        <li class="pb-3">-->
+                                <!--                                                            <div class="pb-3">-->
+                                <!--                                                                <b>Navigation bar: </b>-->
+                                <!--                                                                <span>you have not customized your bar.</span>-->
+                                <!--                                                            </div>-->
+                                <!--                                                            <button string="Customize bar" type="object"-->
+                                <!--                                                                    name="action_open_customization"-->
+                                <!--                                                                    class="oe_highlight"/>-->
+                                <!--                                                        </li>-->
+                                <!--                                                        <li>-->
+                                <!--                                                            <div class="pb-3">-->
+                                <!--                                                                <b>App listing information:</b>-->
+                                <!--                                                                <br/>-->
+                                <!--                                                                <span>You are missing required fields. Please finish it-->
+                                <!--                                                                    before jumping to next steps.-->
+                                <!--                                                                </span>-->
+                                <!--                                                            </div>-->
+                                <!--                                                            <button string="Finish App Listing" type="object"-->
+                                <!--                                                                    name="action_open_customization"-->
+                                <!--                                                                    class="oe_highlight"/>-->
+                                <!--                                                        </li>-->
+                                <!--                                                    </ul>-->
+                                <!--                                                    <div style="text-align:end" class="pr-5">-->
+                                <!--                                                        <button string="Next" type="object" name="action_next_to_step_2"-->
+                                <!--                                                                class="oe_highlight"/>-->
+                                <!--                                                        <a class="btn btn-primary collapsed" data-toggle="collapse" data-parent="#af-mobile-publish-steps" href="#af-mobile-publish-stepTwo-content" aria-expanded="false" aria-controls="af-mobile-publish-stepTwo-content">Next</a>-->
+                                <!--                                                    </div>-->
+                                <!--                                                </div>-->
+                                <!--                                            </div>-->
+                                <!--                                        </div>-->
+                                <!--                                    </div>-->
+                                <!--                                    &lt;!&ndef action_open_custom(self):dash; Step 2 &ndash;&gt;-->
+                                <!--                                    <div class="card af-mobile-card-step-content">-->
+                                <!--                                        <div class="card-header" role="tab" id="af-mobile-publish-stepTwo">-->
+                                <!--                                            <a class="collapsed" data-toggle="collapse"-->
+                                <!--                                               data-parent="#af-mobile-publish-steps"-->
+                                <!--                                               href="#af-mobile-publish-stepTwo-content"-->
+                                <!--                                               aria-expanded="false" aria-controls="af-mobile-publish-stepTwo-content">-->
+                                <!--                                                <h5 class="mb-0">-->
+                                <!--                                                    <i class="fa fa-plus-circle"/> Step 2: Create Your Developer Accounts-->
+                                <!--                                                </h5>-->
+                                <!--                                            </a>-->
+                                <!--                                        </div>-->
+                                <!--                                        <div id="af-mobile-publish-stepTwo-content" class="collapse" role="tabpanel"-->
+                                <!--                                             aria-labelledby="af-mobile-publish-stepTwo"-->
+                                <!--                                             data-parent="#af-mobile-publish-steps">-->
+                                <!--                                            <div class="card-body">-->
+                                <!--                                                <div>-->
+                                <!--                                                    <ul>-->
+                                <!--                                                        <li class="pb-3">-->
+                                <!--                                                            <div class="pb-3">-->
+                                <!--                                                                <b>Apple Developer account</b>-->
+                                <!--                                                            </div>-->
+                                <!--                                                            <button string="Create Account" type="object"-->
+                                <!--                                                                    name="action_open_customization"-->
+                                <!--                                                                    class="oe_highlight"/>-->
+                                <!--                                                        </li>-->
+                                <!--                                                        <li class="pb-3">-->
+                                <!--                                                            <div class="pb-3">-->
+                                <!--                                                                <b>Google Play Console account</b>-->
+                                <!--                                                            </div>-->
+                                <!--                                                            <button string="Create Account" type="object"-->
+                                <!--                                                                    name="action_open_customization"-->
+                                <!--                                                                    class="oe_highlight"/>-->
+                                <!--                                                        </li>-->
+                                <!--                                                        <li>-->
+                                <!--                                                            <div class="pb-3">-->
+                                <!--                                                                <b>Admin access permission</b>-->
+                                <!--                                                            </div>-->
+                                <!--                                                            <button string="Give Us Permission" type="object"-->
+                                <!--                                                                    name="action_open_customization"-->
+                                <!--                                                                    class="oe_highlight"/>-->
+                                <!--                                                        </li>-->
+                                <!--                                                    </ul>-->
+                                <!--                                                    <div class="pb-3">-->
+                                <!--                                                        <p>After creating your developer accounts, please fill your-->
+                                <!--                                                            account names-->
+                                <!--                                                        </p>-->
+                                <!--                                                        <div class="row">-->
+                                <!--                                                            <div class="col-xl-6 col-lg-6 text-center">-->
+                                <!--                                                                <p>Apple account name</p>-->
+                                <!--                                                                <field name="apple_account_name" nolabel="1"/>-->
+                                <!--                                                            </div>-->
+                                <!--                                                            <div class="col-xl-6 col-lg-6 text-center">-->
+                                <!--                                                                <p>Google account name</p>-->
+                                <!--                                                                <field name="google_account_name" nolabel="1"/>-->
+                                <!--                                                            </div>-->
+                                <!--                                                        </div>-->
+                                <!--                                                    </div>-->
+                                <!--                                                    <div style="text-align:end" class="pr-5">-->
+                                <!--                                                        <button string="Back" type="object" name="action_back_to_step_1"-->
+                                <!--                                                                class="oe_highlight mr-2"/>-->
+                                <!--                                                        <button string="Next" type="object" name="action_next_to_step_3"-->
+                                <!--                                                                class="oe_highlight"/>-->
+                                <!--                                                    </div>-->
+                                <!--                                                </div>-->
+                                <!--                                            </div>-->
+                                <!--                                        </div>-->
+                                <!--                                    </div>-->
+                                <!--                                    &lt;!&ndash; Step 3 &ndash;&gt;-->
+                                <!--                                    <div class="card af-mobile-card-step-content">-->
+                                <!--                                        <div class="card-header" role="tab" id="af-mobile-publish-stepThree">-->
+                                <!--                                            <a class="collapsed" data-toggle="collapse"-->
+                                <!--                                               data-parent="#af-mobile-publish-steps"-->
+                                <!--                                               href="#af-mobile-publish-stepThree-content"-->
+                                <!--                                               aria-expanded="false"-->
+                                <!--                                               aria-controls="af-mobile-publish-stepThree-content">-->
+                                <!--                                                <h5 class="mb-0">-->
+                                <!--                                                    <i class="fa fa-plus-circle"/> Step 3: Create Your Google Firebase Account-->
+                                <!--                                                </h5>-->
+                                <!--                                            </a>-->
+                                <!--                                        </div>-->
+                                <!--                                        <div id="af-mobile-publish-stepThree-content" class="collapse" role="tabpanel"-->
+                                <!--                                             aria-labelledby="af-mobile-publish-stepOne"-->
+                                <!--                                             data-parent="#af-mobile-publish-steps">-->
+                                <!--                                            <div class="card-body">-->
+                                <!--                                                <div>-->
+                                <!--                                                    <div class="pb-3">-->
+                                <!--                                                        <p>Only follow this step if you want send notifications to your-->
+                                <!--                                                            customers-->
+                                <!--                                                        </p>-->
+                                <!--                                                    </div>-->
+                                <!--                                                    <div>-->
+                                <!--                                                        <button string="Customize bar" type="object"-->
+                                <!--                                                                name="action_open_customization" class="oe_highlight"/>-->
+                                <!--                                                    </div>-->
+                                <!--                                                    <div style="text-align:end" class="pr-5">-->
+                                <!--                                                        <button string="Back" type="object" name="action_back_to_step_2"-->
+                                <!--                                                                class="oe_highlight mr-2"/>-->
+                                <!--                                                        <button string="Publish" type="object" name="action_publish_app"-->
+                                <!--                                                                class="oe_highlight"/>-->
+                                <!--                                                    </div>-->
+                                <!--                                                </div>-->
+                                <!--                                            </div>-->
+                                <!--                                        </div>-->
+                                <!--                                    </div>-->
+                                <!--                                </div>-->
+
+                                <div class="accordion pl-5" id="af-mobile-publish-steps">
+                                    <div class="card z-depth-0 af-mobile-card-step-content">
+                                        <div class="card-header" id="headingOne">
+                                            <h5 class="mb-0">
+                                                <i class="fa fa-plus-circle"/>
+                                                <a class="btn btn-link" type="button" data-toggle="collapse"
+                                                   data-target="#collapseOne"
+                                                   aria-expanded="true" aria-controls="collapseOne">
+                                                    <h4>Step 1: Personalize Your App</h4>
+                                                </a>
+                                            </h5>
+                                        </div>
+                                        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+                                             data-parent="#af-mobile-publish-steps">
+                                            <div class="card-body">
+                                                <div>
+                                                    <ul>
+                                                        <li class="pb-3">
+                                                            <div class="pb-3">
+                                                                <b>Navigation bar:</b>
+<!--                                                                <span>you have not customized your bar.</span>-->
+                                                            </div>
+                                                            <button string="Customize Bar" type="object" style="width:150px;"
+                                                                    name="action_open_customization"
+                                                                    class="oe_highlight af-mobile-app-style-button"/>
+                                                        </li>
+                                                        <li>
+                                                            <div class="pb-3">
+                                                                <b>App listing information:</b>
+                                                            </div>
+                                                            <field name="app_listing_info_text" style="color:red"/>
+                                                            <button string="Finish App Listing" type="object" style="width:150px;"
+                                                                    name="action_open_app_listing"
+                                                                    class="oe_highlight af-mobile-app-style-button"/>
+                                                        </li>
+                                                    </ul>
+                                                    <div style="text-align:end">
+                                                        <a class="btn btn-primary text-white collapsed af-mobile-app-style-button" type="button"
+                                                           data-toggle="collapse" data-target="#collapseTwo"
+                                                           aria-expanded="false" aria-controls="collapseTwo">
+                                                            Next
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card z-depth-0 af-mobile-card-step-content">
+                                        <div class="card-header" id="headingTwo">
+                                            <h5 class="mb-0">
+                                                <i class="fa fa-plus-circle"/>
+                                                <a class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                                                   data-target="#collapseTwo" aria-expanded="false"
+                                                   aria-controls="collapseTwo">
+                                                    <h4>Step 2: Create Your Developer Accounts</h4>
+                                                </a>
+                                            </h5>
+                                        </div>
+                                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
+                                             data-parent="#af-mobile-publish-steps" attrs="{'invisible': [('is_app_listing_info_text', '=', True)]}">
+                                            <div class="card-body">
+                                                <div>
+                                                    <ul>
+                                                        <li class="pb-3">
+                                                            <div class="pb-3">
+                                                                <b>Apple Developer account</b>
+                                                            </div>
+                                                            <a type="button" style="width:150px;" href="https://support.allfetch.com/kb/how-to-create-your-apple-developer-account/"
+                                                               class="btn btn-primary text-white oe_highlight af-mobile-app-style-button" target="_blank">Create Account</a>
+                                                        </li>
+                                                        <li class="pb-3">
+                                                            <div class="pb-3">
+                                                                <b>Google Play Console account</b>
+                                                            </div>
+                                                            <a type="button" style="width:150px;" href="https://support.allfetch.com/kb/how-to-create-your-google-play-console/"
+                                                               class="btn btn-primary text-white oe_highlight af-mobile-app-style-button" target="_blank">Create Account</a>
+                                                        </li>
+                                                        <li>
+                                                            <div class="pb-3">
+                                                                <b>Admin access permission</b>
+                                                            </div>
+                                                            <a type="button" style="width:150px;" href="https://support.allfetch.com/kb/how-to-grant-developer-account-accesses-apple-developer-google-play-console-to-allfetch/"
+                                                               class="btn btn-primary text-white oe_highlight af-mobile-app-style-button" target="_blank">Give Us Permission</a>
+                                                        </li>
+                                                    </ul>
+                                                    <div class="pb-3">
+                                                        <p>Please choose the app market that you want to publish your app and fill your account name.</p>
+                                                        <field class="pt-2" name="submit_account" widget="radio" attrs="{'readonly': [('is_publish', '=', True)]}"/>
+                                                        <div class="row">
+                                                            <div class="col-xl-6 col-lg-6 text-center" attrs="{'invisible': [('submit_account', '=', 'google_account')]}">
+                                                                <p>Apple account name</p>
+                                                                <field name="apple_account_name" nolabel="1" attrs="{'readonly': [('is_publish', '=', True)]}"/>
+<!--                                                                'required': [('submit_account', '!=', 'google_account')]-->
+                                                            </div>
+                                                            <div class="col-xl-6 col-lg-6 text-center" attrs="{'invisible': [('submit_account', '=', 'apple_account')]}">
+                                                                <p>Google account name</p>
+                                                                <field name="google_account_name" nolabel="1" attrs="{'readonly': [('is_publish', '=', True)]}"/>
+<!--                                                                'required': [('submit_account', '!=', 'apple_account')]-->
+                                                            </div>
+                                                        </div>
+                                                        <p class="pt-2"><b>Note:</b> To remain your account name, please click on the "save" button above</p>
+                                                    </div>
+                                                    <div style="text-align:end">
+                                                        <a class="btn btn-secondary text-dark collapsed af-mobile-app-style-button"
+                                                           type="button" data-toggle="collapse"
+                                                           data-target="#collapseOne" aria-expanded="false"
+                                                           aria-controls="collapseOne">
+                                                            Back
+                                                        </a>
+                                                        <a class="btn btn-primary text-white collapsed af-mobile-app-style-button ml-1" type="button"
+                                                           data-toggle="collapse" data-target="#collapseThree"
+                                                           aria-expanded="false" aria-controls="collapseThree">
+                                                            Next
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card z-depth-0 af-mobile-card-step-content">
+                                        <div class="card-header" id="headingThree">
+                                            <h5 class="mb-0">
+                                                <i class="fa fa-plus-circle"/>
+                                                <a class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                                                   data-target="#collapseThree" aria-expanded="false"
+                                                   aria-controls="collapseThree">
+                                                    <h4>Step 3: Create Your Google Firebase Account</h4>
+                                                </a>
+                                            </h5>
+                                        </div>
+                                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
+                                             data-parent="#af-mobile-publish-steps" attrs="{'invisible': [('is_app_listing_info_text', '=', True)]}">
+                                            <div class="card-body">
+                                                <div>
+                                                    <div class="pb-3">
+                                                        <p>Only follow this step if you want send notifications to your
+                                                            customers
+                                                        </p>
+                                                    </div>
+                                                    <div>
+                                                        <a type="button" style="width:150px;" href="https://support.allfetch.com/kb/how-to-send-the-notifications-to-your-customers-from-allfetch-mobile-app-optional/"
+                                                               class="btn btn-primary text-white oe_highlight af-mobile-app-style-button" target="_blank">Create Account</a>
+                                                    </div>
+                                                    <div style="text-align:end">
+                                                        <div>
+                                                            <a class="btn btn-secondary text-dark collapsed af-mobile-app-style-button"
+                                                               type="button" data-toggle="collapse"
+                                                               data-target="#collapseTwo" aria-expanded="false"
+                                                               aria-controls="collapseTwo">
+                                                                Back
+                                                            </a>
+                                                            <button string="Publish" type="object" name="action_publish_app_success"
+                                                                    class="af-mobile-app-style-button oe_highlight ml-1" attrs="{'invisible': ['|', ('is_publish', '=', True), ('is_register_plan', '=', False)]}"/>
+                                                            <button class="af-mobile-app-style-button oe_highlight ml-1" disabled="1" attrs="{'invisible': [('is_register_plan', '=', True)]}">
+                                                                Publish
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                    <div>
+                                                        <p style="padding-top:5px" attrs="{'invisible': [('is_register_plan', '=', True)]}">
+                                                            Please go to the "Account" section to sign up for a plan before start publishing your app.
+                                                            <button name="open_form_register_plan" type="object" string="Start 14-day free trial" class="btn af-mobile-app-button-customize"/>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="pl-5 col-xl-6 af-mobile-publish-process-note" style="border-left:1px solid">
+                                <div class="af-mobile-publish-process-submission">
+                                    <h5>Submission status</h5>
+                                    <ul style="padding:15px">
+                                        <li style="display:flex">
+                                            <p style="width:175px">Apple App Store</p>
+                                            <span attrs="{'invisible': [('apple_account_state', '!=', 'in_progress')]}">
+                                                <img src="/s_shopify_mobile_app/static/src/img/deadline.png"/>
+                                                <span class="pl-5">In progress</span>
+                                            </span>
+                                            <span attrs="{'invisible': [('apple_account_state', '!=', 'done')]}">
+                                                <img src="/s_shopify_mobile_app/static/src/img/done.png"/>
+                                                <span class="pl-5">Done</span>
+                                            </span>
+
+                                        </li>
+                                        <li style="display:flex">
+                                            <p style="width:175px">Google Play Store</p>
+                                            <span attrs="{'invisible': [('google_play_state', '!=', 'in_progress')]}">
+                                                <img src="/s_shopify_mobile_app/static/src/img/deadline.png"/>
+                                                <span class="pl-5">In progress</span>
+                                            </span>
+                                            <span attrs="{'invisible': [('google_play_state', '!=', 'done')]}">
+                                                <img src="/s_shopify_mobile_app/static/src/img/done.png"/>
+                                                <span class="pl-5">Done</span>
+                                            </span>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="mt-4 mb-4" style="height:1px;width:100%;background-color:black"/>
+                                <div class="af-mobile-publish-process-checklist">
+                                    <h5>Check list:</h5>
+                                    <ul style="padding:15px">
+                                        <li>Apple Developer Account</li>
+                                        <li>Google Play Console Account</li>
+                                        <li>App listing information</li>
+                                        <li>Admin access permission</li>
+                                        <li>Navigation bar customization</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record id="open_s_shopify_mobile_app_publish_process" model="ir.actions.server">
+            <field name="name">Dashboard</field>
+            <field name="model_id" ref="model_s_shopify_mobile_app_custom_design"/>
+            <field name="state">code</field>
+            <field name="code">action = model._open_publish_process_form()</field>
+        </record>
+
+        <menuitem name="PUBLISH APP" id="s_shopify_mobile_app.menu_shopify_mobile_app_publish_process"
+                  sequence="110"
+                  action="open_s_shopify_mobile_app_publish_process"
+                  parent="s_shopify_mobile_app.menu_shopify_mobile_app_root"/>
+
+    </data>
+</odoo>

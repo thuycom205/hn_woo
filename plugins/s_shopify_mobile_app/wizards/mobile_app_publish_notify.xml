@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <record id="af_mobile_app_publish_notify_view_form" model="ir.ui.view">
+            <field name="name">af_mobile_app_publish_notify_view_form</field>
+            <field name="model">mobile.app.publish.notify</field>
+            <field name="arch" type="xml">
+                <form>
+                    <sheet>
+                        <group>
+                            <field name="type_button" invisible="1"/>
+                        </group>
+                        <div style="width:100%">
+                            <p attrs="{'invisible': [('type_button', '=', 'update')]}">
+                                You have successfully submitted your app information to the AllFetch team. Please contact us to speed up the app publishing process.
+                            </p>
+                            <p attrs="{'invisible': [('type_button', '=', 'publish')]}">
+                                You have successfully submitted your new app listing to the AllFetch team. Please contact us to speed up the app listing updating process.
+                            </p>
+                        </div>
+                    </sheet>
+                    <footer>
+                        <button string="Close" special="cancel" class="btn-secondary"/>
+                    </footer>
+                </form>
+            </field>
+        </record>
+
+        <record id="af_mobile_app_delete_notification_view_form" model="ir.ui.view">
+            <field name="name">af_mobile_app_delete_notification_view_form</field>
+            <field name="model">mobile.app.publish.notify</field>
+            <field name="arch" type="xml">
+                <form>
+                    <sheet>
+                        <group>
+                            <p>Do you really want to delete this notification?</p>
+                        </group>
+                    </sheet>
+                    <footer>
+                        <button string="Confirm" name="action_delete_notification" type="object" class="btn-primary"/>
+                        <button string="Cancel" special="cancel" class="btn-secondary"/>
+                    </footer>
+                </form>
+            </field>
+        </record>
+
+        <record id="af_mobile_app_image_popup_view_form" model="ir.ui.view">
+            <field name="name">af_mobile_app_image_popup_view_form</field>
+            <field name="model">mobile.app.publish.notify</field>
+            <field name="arch" type="xml">
+                <form>
+                    <sheet>
+                        <group>
+                            <field name="image_section" invisible="1"/>
+                        </group>
+                        <div class="text-center" attrs="{'invisible': [('image_section', '!=', 'app_name_section')]}">
+                            <img src="s_shopify_mobile_app/static/src/img/app_name.png" style="width:41%;"/>
+                        </div>
+                        <div class="text-center" attrs="{'invisible': [('image_section', '!=', 'tag_line_section')]}">
+                            <img src="s_shopify_mobile_app/static/src/img/tagline.png" style="width:41%;"/>
+                        </div>
+                        <div class="text-center" attrs="{'invisible': [('image_section', '!=', 'category_section')]}">
+                            <img src="s_shopify_mobile_app/static/src/img/category.png" style="width:41%;"/>
+                        </div>
+                        <div class="text-center" attrs="{'invisible': [('image_section', '!=', 'app_icon_section')]}">
+                            <img src="s_shopify_mobile_app/static/src/img/app_icon.png" style="width:41%;"/>
+                        </div>
+                    </sheet>
+                    <footer>
+                        <button string="Cancel" special="cancel" class="btn-secondary"/>
+                    </footer>
+                </form>
+            </field>
+        </record>
+
+        <record model="ir.actions.act_window" id="af_mobile_app_publish_notify_action">
+            <field name="name">af_mobile_app_publish_notify_action</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">mobile.app.publish.notify</field>
+            <field name="view_mode">form</field>
+        </record>
+
+    </data>
+</odoo>

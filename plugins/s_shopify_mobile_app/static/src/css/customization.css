@@ -1,0 +1,41 @@
+html {
+    font-size: 62.5%;
+    font-family: "Open Sans", sans-serif;
+}
+
+body {
+    background-image: url("/s_shopify_mobile_app/static/src/img/lol.png");
+    background-repeat: no-repeat;
+}
+
+.footer-container {
+    margin-top: 385px;
+}
+
+.footer-icon {
+    background-color: rgb(241, 238, 245);
+    max-width: 270px;
+}
+
+.icon-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0;
+    text-align: center;
+}
+
+.footer-icon-memu {
+    list-style-type: none;
+    margin-top: 7px;
+    /* margin-left: -25px; */
+    padding: 5px;
+    display: block;
+
+}
+
+.footer-icon-content {
+    padding: 5px;
+    margin-top: 0px;
+}

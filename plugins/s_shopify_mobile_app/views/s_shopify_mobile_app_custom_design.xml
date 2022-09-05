@@ -1,0 +1,104 @@
+<odoo>
+    <data>
+
+        <record model="ir.ui.view" id="s_shopify_mobile_app_dashboard_form_2">
+            <field name="name">Custom Design</field>
+            <field name="model">s.shopify.mobile.app.custom.design</field>
+            <field name="arch" type="xml">
+                <form string="Mobile App Builder" name="s_shopify_mobile_app" duplicate="0" create="0" delete="false" js_class="customization_onboarding_form">
+                    <sheet>
+                        <span style="font-size: 18px; padding: 15px 15px 15px 24px; border-bottom: 1px solid #DFE3E8; display: block;">
+                            Customization
+                        </span>
+                        <div style="padding-left: 24px; padding-right: 24px;">
+                            <p style="color: #907878;margin-left: 11px;background-color: #dde8b0;border-radius: 7px;padding: 6px;max-width: 40%;margin-top: 5px;">
+                                Customize the bottom navigation bar for your mobile app
+                            </p>
+<!--                            <button style="margin:10px 20px 10px 180px;border-radius: 15px" name="open_form_link_access" string="Link Access" type="object" class="oe_highlight" help="Click this button when your setting up is done."/>-->
+<!--                            <button style="border-radius: 15px;" name="open_form_request_submission" string="Request Submission" type="object" class="oe_highlight" help="Click this button if you want to submit your app."/>-->
+                            <group class="s_group_1">
+                                <group>
+                                    <group col="1">
+                                        <div style="padding-top: 10px; padding-bottom: 10px; display: flex;">
+                                            <button class="fa fa-info-circle" style="margin-top:-15px"
+                                                    help="Select color for unselected tabs on the bottom navigation bar."/>
+                                            <label for="primary_color" style="min-width: 150px;"/>
+                                            <field name="primary_color" widget="color"/>
+                                        </div>
+                                        <div style="padding-top: 10px; padding-bottom: 10px; display: flex;">
+                                            <button class="fa fa-info-circle" style="margin-top:-15px"
+                                                    help="Select color for selected tab on the bottom navigation bar."/>
+                                            <label for="secondary_color" style="min-width: 150px;"/>
+                                            <field name="secondary_color" widget="color"/>
+                                        </div>
+                                        <div style="padding-top: 10px; padding-bottom: 10px; display: flex;">
+                                            <button class="fa fa-info-circle" style="margin-top: -6px; max-height: 2px;"
+                                                    help="The first loading screen that pops up when you open your store app."/>
+                                            <label for="launch_screen" style="min-width: 150px;"/>
+                                            <field name="launch_screen" widget="image" style="max-height: 1000px;"/>
+                                        </div>
+                                        <p style="color:#7d7d7d;margin-left: 158px">Required size: 1,125 x 2,436px</p>
+                                        <group>
+                                            <field name="custom_js" groups="base.group_system" widget="text"/>
+                                            <field name="custom_css" groups="base.group_system" widget="text"/>
+                                        </group>
+                                    </group>
+                                </group>
+                                <group>
+                                    <group>
+                                        <div>
+                                            <span style="font-size: 18px; padding: 5px 15px 15px 24px;margin-top: -124px; display: block">
+                                                Quick Preview
+                                            </span>
+                                            <br/>
+                                            <iframe id="customization_onboarding_iframe"
+                                                    src="/iframe/s_shopify_mobile_app/customization"
+                                                    style="border:none; width: 100%; height: 500px">
+                                            </iframe>
+                                        </div>
+                                    </group>
+                                </group>
+                            </group>
+                            <p style="padding-top: 10px; padding-bottom: 5px; font-size: 14px;">Menu (Configure The Tab
+                                Items For Navigation Bar)
+                            </p>
+                            <field name="menu_list_ids">
+                                <tree editable="bottom">
+                                    <field name="sequence" widget="handle"/>
+                                    <field name="menu_type_id" string="Menu Type"/>
+                                    <field name="title" string="Title"/>
+                                    <field name="icon_id" string="Icon" domain="[('menu_type_id', '=', menu_type_id)]"/>
+                                    <field name="icon_img" string=" " widget="image" style="width:10%" nolable="1"/>
+                                    <field name="svg_img" style="width:10%" invisible="1"/>
+                                </tree>
+                            </field>
+                            <p style="padding-top: 10px; padding-bottom: 5px; font-size: 14px;">Custom links (In Settings)
+                            </p>
+                            <field name="custom_setting_ids">
+                                <tree editable="bottom">
+                                    <field name="sequence" widget="handle"/>
+                                    <field name="title" string="Title"/>
+                                    <field name="url" string="URL"/>
+                                </tree>
+                            </field>
+                            <field name="base_url" groups="base.group_system"/>
+                            <field name="access_token" groups="base.group_system"/>
+                        </div>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+
+        <record id="open_s_shopify_mobile_app_dashboard_form_2" model="ir.actions.server">
+            <field name="name">Dashboard</field>
+            <field name="model_id" ref="s_shopify_mobile_app.model_s_shopify_mobile_app_custom_design"/>
+            <field name="state">code</field>
+            <field name="code">action = model.action_open_custom()</field>
+        </record>
+
+        <menuitem name="Customization" id="s_shopify_mobile_app.menu_shopify_mobile_app_custom_design" sequence="30"
+                  action="open_s_shopify_mobile_app_dashboard_form_2"
+                  parent="s_shopify_mobile_app.menu_shopify_mobile_app_root"/>
+    </data>
+</odoo>

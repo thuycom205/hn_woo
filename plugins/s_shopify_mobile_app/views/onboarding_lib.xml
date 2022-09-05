@@ -1,0 +1,46 @@
+<odoo>
+    <data>
+        <template id="onboarding_app_listing_iframe_template" name="onboarding_app_listing_onboarding_iframe">
+            <head>
+                <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous"/>
+                <link rel="stylesheet" href="/s_shopify_mobile_app/static/src/css/app_listing.css"/>
+                <link rel="stylesheet" href="/s_base/static/src/scss/s_custom_preview.css"/>
+            </head>
+            <body>
+                <div id="app_listing_onboarding_content" style="display: inline-block; box-shadow: 0px 0px 7px 3px #DFE3E8; border-radius: 3px; margin-left: 25px;"></div>
+            </body>
+        </template>
+
+        <template id="onboarding_notification_iframe_template" name="onboarding_notification_onboarding_iframe">
+            <head>
+                <link rel="stylesheet" href="/s_base/static/src/scss/s_custom_preview.css"/>
+                <link rel="stylesheet" href="/s_shopify_mobile_app/static/src/css/notification.css"/>
+            </head>
+            <body>
+                <div id="notification_onboarding_content"></div>
+            </body>
+        </template>
+
+        <template id="onboarding_customization_iframe_template" name="onboarding_customization_onboarding_iframe">
+            <head>
+                <link rel="stylesheet" href="/s_base/static/src/scss/s_custom_preview.css"/>
+                <link rel="stylesheet" href="/s_shopify_mobile_app/static/src/css/customization.css"/>
+            </head>
+            <body>
+                <div id="customization_onboarding_content"></div>
+            </body>
+        </template>
+
+        <template id="onboarding_s_shopify_mobile_app_setting_onboarding" name="Backend Assets" inherit_id="web.assets_backend">
+            <xpath expr="//script[last()]" position="after">
+                <script type="text/javascript" src="/s_shopify_mobile_app/static/src/js/onboarding_app_listing.js"></script>
+                <script type="text/javascript" src="/s_shopify_mobile_app/static/src/js/onboarding_notification.js"></script>
+                <link rel="stylesheet" href="/s_shopify_mobile_app/static/src/css/mobile_app_backend.css"/>
+                <script type="text/javascript" src="/s_shopify_mobile_app/static/src/js/onboarding_customization.js"></script>
+                <link rel="stylesheet" href="/s_shopify_mobile_app/static/src/css/mobile_backend.css"/>
+            </xpath>
+        </template>
+
+    </data>
+</odoo>
+

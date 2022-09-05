@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<odoo>
+
+    <record id="mobile_app_allfetch_submit_tree" model="ir.ui.view">
+        <field name="name">Allfetch Submit</field>
+        <field name="model">s.shopify.mobile.app.allfetch.submit</field>
+        <field name="arch" type="xml">
+            <tree string="Mobile App Builder" name="s_shopify_mobile_app">
+                <field name="allfetch_submit_id"/>
+                <field name="shop_email"/>
+                <field name="user_note_gg_account"/>
+                <field name="user_note_apple_account"/>
+                <field name="user_note_allfetch_account"/>
+                <field name="apple_status_submit"/>
+                <field name="google_status_submit"/>
+                <field name="date_submit"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="mobile_app_allfetch_submit_view_form" model="ir.ui.view">
+        <field name="name">mobile_app_allfetch_submit_view_form</field>
+        <field name="model">s.shopify.mobile.app.allfetch.submit</field>
+        <field name="arch" type="xml">
+            <form string="Mobile App Builder" name="s_shopify_mobile_app">
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="allfetch_submit_id"/>
+                            <field name="user_note_gg_account"/>
+                            <field name="user_note_apple_account"/>
+                            <field name="user_note_allfetch_account"/>
+                        </group>
+                        <group>
+                            <field name="shop_email"/>
+                            <field name="date_submit"/>
+                            <field name="apple_status_submit"/>
+                            <field name="google_status_submit"/>
+                        </group>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_open_allfetch_submit_account" model="ir.actions.act_window">
+            <field name="name">Allfetch Submit</field>
+            <field name="res_model">s.shopify.mobile.app.allfetch.submit</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+    <menuitem name="Allfetch Submit Account" id="s_shopify_mobile_app.menu_shopify_mobile_app_allfetch_submit" sequence="90"
+                  action="action_open_allfetch_submit_account"
+                  parent="s_shopify_mobile_app.menu_shopify_mobile_app_root"/>
+
+</odoo>

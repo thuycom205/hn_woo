@@ -1,0 +1,73 @@
+.s_mobile_plan_form_header_label{
+  margin-left: 20px;
+  line-height: 38px;
+  height: 38px;
+  font-size: 20px;
+  color: #090808;
+}
+.s_mobile_plan_form_header_label span{
+  font-size: 14px;
+  color: #5c646b;
+}
+.s_mobile_plan_wrapper {
+  width: 25%;
+  margin: 0 auto;
+}
+.s_mobile_plan_wrapper .s_mobile_plan_content {
+  list-style-type: none;
+  border: 2px solid #5a85e9;
+  border-radius: 5px;
+  margin: 0;
+  padding: 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  height: 100%;
+  background-color: #fff;
+}
+
+.s_mobile_plan_content li {
+  padding: 20px;
+
+}
+.s_mobile_plan_content .s_mobile_plan_name{
+  font-size: 20px;
+}
+.s_mobile_plan_content .s_mobile_plan_price{
+  font-size: 22px;
+  color: #000;
+}
+.s_mobile_plan_content .s_mobile_plan_text{
+  text-align: left;
+  font-size: 15px;
+  padding-left: 25px
+}
+
+.s_mobile_plan_button_upgrade{
+  background-color: #3a7ad8;
+  width: 100%;
+  border: none;
+  color: white;
+  padding: 10px 25px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 15px;
+  height: auto;
+}
+
+.s_mobile_plan_button_disable {
+  background-color: #bfbfbf;
+  width: 100%;
+  border: none;
+  color: #6b6b6b;
+  padding: 10px 25px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 15px;
+  height: auto;
+}
+
+#af-mobile-publish-steps .af-mobile-card-step-content,
+#af-mobile-publish-steps .af-mobile-card-step-content .card-header {
+  background-color: transparent;
+  border: none;
+}

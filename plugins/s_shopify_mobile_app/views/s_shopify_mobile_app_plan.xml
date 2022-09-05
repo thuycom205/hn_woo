@@ -1,0 +1,177 @@
+<odoo>
+    <data>
+
+        <record id="sp_shop_mobile_app_plan_view_form" model="ir.ui.view">
+            <field name="name">Shopify Mobile App Shop Plan Form</field>
+            <field name="model">s.shopify.mobile.app.plan</field>
+            <field name="arch" type="xml">
+                <form string="Mobile App Builder" name="s_shopify_mobile_app" create="false" delete="false"
+                      edit="false">
+                    <sheet>
+                        <sheet>
+                            <field name="current_plan" invisible="1"/>
+                            <field name="plan_name" invisible="1"/>
+                            <div class="row">
+                                <div class="col-12 col-sm-12 col-md-12 s_af_banner_affiliate">
+                                    <a href="https://apps.shopify.com/instagram-shop-by-allfetch?utm_source=app_backend&amp;utm_medium=banner&amp;utm_campaign=app_recommend"
+                                       target="new">
+                                        <img alt="Banner" src="/s_base/static/src/img/instagram.png"/>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="s_bundle_plan_all_wrapper">
+                                <div class="row">
+                                    <div class="col-12 col-sm-12 col-md-12">
+                                        <div class="s_bundle_plan_form_header">
+                                            <p class="s_bundle_plan_form_header_label">
+                                                <p>Plan</p>
+                                                <p attrs="{'invisible': [('plan_name', '=', 'Essential')]}"
+                                                   style="font-weight:100;font-size:15px">Sign up the plan to start
+                                                    publishing your app.
+                                                </p>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="s_bundle_plan_all_wrapper container">
+                                <div class="row">
+                                    <!--                                <div class="col-6 col-sm-12 col-md-6 s_plan_col">-->
+                                    <!--                                    <div class="s_bundle_plan_wrapper">-->
+                                    <!--                                        <ul class="s_bundle_plan_content s_bundle_plan_current s_bundle_plan_inactive">-->
+                                    <!--                                            <li class="s_bundle_plan_name">Mobile App Builder</li>-->
+                                    <!--                                            <li class="s_bundle_plan_price">Free</li>-->
+                                    <!--                                            <li class="s_bundle_plan_text">-->
+                                    <!--                                                <i class="fa fa-check fa-lg text-success" role="img"/>-->
+                                    <!--                                               Native Android application-->
+                                    <!--                                            </li>-->
+                                    <!--                                            <li class="s_bundle_plan_text">-->
+                                    <!--                                                <i class="fa fa-check fa-lg text-success" role="img"/>-->
+                                    <!--                                                Unlimited and scheduled push notifications-->
+                                    <!--                                            </li>-->
+                                    <!--                                            <li class="s_bundle_plan_text">-->
+                                    <!--                                                <i class="fa fa-check fa-lg text-success" role="img"/>-->
+                                    <!--                                                Support app submission-->
+                                    <!--                                            </li>-->
+                                    <!--                                            <li class="s_bundle_plan_text">-->
+                                    <!--                                                <i class="fa fa-check fa-lg text-success" role="img"/>-->
+                                    <!--                                                Live chat support-->
+                                    <!--                                            </li>-->
+                                    <!--                                            <li class="s_bundle_plan_text_empty"></li>-->
+                                    <!--                                            <br/>-->
+                                    <!--                                            <li class="grey">-->
+                                    <!--                                                <button class="s_bundle_plan_button_disable" disabled="1"-->
+                                    <!--                                                        attrs="{'invisible': [('plan_name', '!=', 'Free')]}">-->
+                                    <!--                                                    Current Plan-->
+                                    <!--                                                </button>-->
+                                    <!--                                                <button name="sign_up_free" class="s_mobile_app_plan_button_upgrade"-->
+                                    <!--                                                        type="object"-->
+                                    <!--                                                        attrs="{'invisible': [('plan_name', '=', 'Free')]}">-->
+                                    <!--                                                    Sign Up-->
+                                    <!--                                                </button>-->
+                                    <!--                                            </li>-->
+                                    <!--                                        </ul>-->
+                                    <!--                                    </div>-->
+                                    <!--                                </div>-->
+                                    <div class="col-6 col-sm-12 col-md-6 s_plan_col m-auto">
+                                        <div class="s_bundle_plan_wrapper">
+                                            <ul class="s_bundle_plan_content s_bundle_plan_current s_bundle_plan_inactive">
+                                                <li class="s_bundle_plan_name">Essential Plan</li>
+                                                <li class="s_bundle_plan_price">$19.99/month</li>
+                                                <li class="s_bundle_plan_text">
+                                                    <i class="fa fa-check fa-lg text-success" role="img"/>
+                                                    Android and iOS application
+                                                </li>
+                                                <li class="s_bundle_plan_text">
+                                                    <i class="fa fa-check fa-lg text-success" role="img"/>
+                                                    Unlimited and scheduled push notifications
+                                                </li>
+                                                <li class="s_bundle_plan_text">
+                                                    <i class="fa fa-check fa-lg text-success" role="img"/>
+                                                    Support app submission
+                                                </li>
+                                                <li class="s_bundle_plan_text">
+                                                    <i class="fa fa-check fa-lg text-success" role="img"/>
+                                                    Navigation bar customization
+                                                </li>
+                                                <li class="s_bundle_plan_text">
+                                                    <i class="fa fa-check fa-lg text-success" role="img"/>
+                                                    Facebook app ads integration
+                                                </li>
+                                                <li class="s_bundle_plan_text">
+                                                    <i class="fa fa-check fa-lg text-success" role="img"/>
+                                                    Remain all your Shopify store extensions
+                                                </li>
+                                                <li class="s_bundle_plan_text">
+                                                    <i class="fa fa-check fa-lg text-success" role="img"/>
+                                                    Live chat support
+                                                </li>
+                                                <!--                                            <li class="s_bundle_plan_text_empty"></li>-->
+                                                <br/>
+                                                <li class="grey">
+                                                    <button class="s_bundle_plan_button_disable" disabled="1"
+                                                            attrs="{'invisible': [('plan_name', '!=', 'Essential')]}">
+                                                        Current Plan
+                                                    </button>
+                                                    <button name="sign_up_essential"
+                                                            class="s_mobile_app_plan_button_upgrade"
+                                                            type="object"
+                                                            attrs="{'invisible': [('plan_name', '=', 'Essential')]}">
+                                                        Start 14-day free trial
+                                                    </button>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="s_account_page_separator"/>
+                            <div class="row">
+                                <div class="col-12 col-sm-12 col-md-12 s_plan_col">
+                                    <iframe id="s_af_related_apps_iframe"
+                                            src="/af/related_apps_preview"
+                                            class="col-12 col-md-12 mb8 mt8">
+                                    </iframe>
+                                </div>
+                            </div>
+                        </sheet>
+                    </sheet>
+
+                </form>
+            </field>
+        </record>
+
+        <record id="sp_shop_mobile_app_plan_view_tree" model="ir.ui.view">
+            <field name="name">Shopify Mobile App Shop Plan Tree</field>
+            <field name="model">s.shopify.mobile.app.plan</field>
+            <field name="arch" type="xml">
+                <tree string="Shopify Mobile App Shop Plan">
+                    <field name="sp_shop_id" string="SP Shop" groups="base.group_system"/>
+                    <field name="display_name"/>
+                    <field name="current_plan"/>
+                    <field name="price"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="sp_shop_mobile_app_plan_action_server_form" model="ir.actions.server">
+            <field name="name">Pricing Plan</field>
+            <field name="model_id" ref="s_shopify_mobile_app.model_s_shopify_mobile_app_plan"/>
+            <field name="binding_view_types">form</field>
+            <field name="state">code</field>
+            <field name="code">action = model.open_mobile_app_shop_plan()</field>
+        </record>
+
+
+        <menuitem name="Account" id="s_shopify_mobile_app.menu_shopify_mobile_app_plan" sequence="3"
+                  action="sp_shop_mobile_app_plan_action_server_form"
+                  parent="s_shopify_mobile_app.menu_shopify_mobile_app_root"/>
+
+        <template id="redirect_top" name="Redirect Top Page">
+            <script>
+                window.top.location.href = '<t t-raw="redirect_url"/>';
+            </script>
+        </template>
+
+    </data>
+</odoo>

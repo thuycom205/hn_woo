@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="s_shopify_mobile_app_notification_log_view" model="ir.ui.view">
+            <field name="name">s_shopify_mobile_app_notification_log_view</field>
+            <field name="model">s.shopify.mobile.app.notification.log</field>
+            <field name="priority" eval="10"/>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="create_date"/>
+                    <field name="user_id"/>
+                    <field name="s_sp_app_id"/>
+                    <field name="success"/>
+                    <field name="failure"/>
+                </tree>
+            </field>
+        </record>
+        <record model="ir.actions.act_window" id="s_shopify_mobile_app.s_shopify_mobile_app_notification_log_view_action">
+            <field name="name">s_shopify_mobile_app_notification_log_view_action</field>
+            <field name="res_model">s.shopify.mobile.app.notification.log</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+        <menuitem name="Notification Log" id="s_shopify_mobile_app.s_shopify_mobile_app_notification_log_view_menu" sequence="70"
+                  action="s_shopify_mobile_app_notification_log_view_action"
+                  groups="base.group_system"
+                  parent="menu_shopify_mobile_app_root"/>
+    </data>
+</odoo>

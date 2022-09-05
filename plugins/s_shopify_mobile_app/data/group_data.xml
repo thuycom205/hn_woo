@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="shopify_mobile_app_data_group" model="res.groups">
+            <field name="name">##Shopify Mobile App group</field>
+            <field name="category_id" ref="s_base.group_s_base"/>
+            <field name="implied_ids" eval="[(4, ref('s_base.shopify_base_group'))]"/>
+        </record>
+        <record id="shopify_mobile_app_data_group_plan" model="res.groups">
+            <field name="name">##Shopify Mobile App group PLAN</field>
+            <field name="category_id" ref="s_base.group_s_base"/>
+            <field name="implied_ids" eval="[(4, ref('s_base.shopify_base_group'))]"/>
+        </record>
+    </data>
+</odoo>

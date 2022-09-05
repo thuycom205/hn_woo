@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <record id="sp_mobile_app_about_action_form" model="ir.actions.act_window">
+            <field name="name">Abouts</field>
+            <field name="res_model">s.shopify.mobile.app.about</field>
+            <field name="view_mode">form</field>
+        </record>
+
+         <record id="sp_bought_together_about_view_form" model="ir.ui.view">
+            <field name="name">Shopify Mobile App about Form</field>
+            <field name="model">s.shopify.mobile.app.about</field>
+            <field name="arch" type="xml">
+                <form string="Mobile App Builder" name="s_shopify_mobile_app" create="false" delete="false" edit="false">
+                    <sheet>
+                        <div class="s_about_wrapper">
+                            <div class="row">
+                                <div class="col-12 col-sm-12 col-md-12">
+                                    <div class="s_about_content">
+                                        <div class="s_about_tab">
+                                            <strong>Howdy!</strong>
+                                            <span>Have any questions or concerns? Our support team is available right at that live chat down below or at support@allfetch.com. For us to assist you better, please be sure to include some screenshots of the issue you’re having!</span>
+                                        </div>
+                                        <div class="s_about_tab">
+                                            <strong>We value your opinion!</strong>
+                                            <span>How is your experience with our app? Your honest feedback helps encourage us and make improvements to our app! Please leave a review on the Shopify App Store.</span>
+                                        </div>
+                                        <div class="s_about_tab">
+                                            <span>Leave a quick review</span>
+                                            <a href="https://apps.shopify.com/native-mobile-app-builder?#modal-show=ReviewListingModal" target="_blank">
+                                                <span>⭐⭐⭐⭐⭐</span>
+                                            </a>
+                                            <button class="s_about_button btn-primary" name="rate_now" type="object">Rate now</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="s_account_page_separator"/>
+                            <div class="row">
+                                <div class="col-12 col-sm-12 col-md-12">
+                                    <div class="s_about_content">
+                                        <div class="s_about_tab">
+                                            <strong>Join our community!</strong>
+                                            <span>We know you are working hard to grow your online store, so let’s become a part of a community of Shopify merchants that actively share business tips and learn how to maximize your business potential.</span>
+                                            <button class="s_about_button btn-primary" name="join_comunity" type="object">Join the community</button>
+                                        </div>
+                                        <div class="s_about_social">
+                                            <span>Follow us on</span>
+                                            <span class="s_about_social">
+                                                <a href="https://www.facebook.com/allfetch/" target="_blank"><img src="/s_base/static/socials/facebook.png"/></a>
+                                                <a href="https://twitter.com/allfetch" target="_blank"><img src="/s_base/static/socials/twitter.png"/></a>
+                                                <a href="https://www.youtube.com/channel/UCd9Kv_uBYcpX2ncAEl7a3BA" target="_blank"><img src="/s_base/static/socials/youtube.png"/></a>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </sheet>
+                </form>
+            </field>
+         </record>
+
+        <menuitem name="Welcome!" id="menu_welcome_mobile_app" sequence="1"
+                  action="sp_mobile_app_about_action_form"
+                  parent="s_shopify_mobile_app.menu_shopify_mobile_app_root"/>
+        <menuitem name="About" id="menu_root_client_shopify_mobile_app_about" sequence="2"
+                  action="sp_mobile_app_about_action_form"
+                  parent="s_shopify_mobile_app.menu_shopify_mobile_app_root"/>
+
+    </data>
+</odoo>

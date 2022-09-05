@@ -1,0 +1,387 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record model="ir.actions.act_window" id="s_shopify_mobile_app_dashboard_action">
+            <field name="name">Dashboard</field>
+            <field name="res_model">s.shopify.mobile.app.custom.design</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <record model="ir.ui.view" id="s_shopify_mobile_app_dashboard_form_1">
+            <field name="name">Dashboard</field>
+            <field name="model">s.shopify.mobile.app.custom.design</field>
+            <field name="priority">1</field>
+            <field name="arch" type="xml">
+                <form string="Mobile App Builder" name="s_shopify_mobile_app" duplicate="0" delete="false"
+                      js_class="app_listing_onboarding_form" create="0">
+                    <sheet>
+                        <group>
+                            <field name="submit_account" invisible="1"/>
+                        </group>
+                        <group>
+                            <div>
+                                <p style="font-size: 18px; padding: 5px 15px 15px 24px; border-bottom: 1px solid #DFE3E8; display: block;">
+                                    App Information
+                                </p>
+                                <p style="color: #907878; margin-left: 33px;background-color: #dde8b0; border-radius: 7px;padding: 6px;">
+                                    Information about your app will be displayed in the application store listing.
+                                </p>
+                                <!--                            <button style="margin:10px 20px 10px 210px;border-radius: 15px;" name="open_form_link_access" string="Link Access" type="object" class="oe_highlight" help="Click this button when your setting up is done."/>-->
+                                <!--                            <button style="border-radius: 15px;" name="open_form_request_submission" string="Request Submission" type="object" class="oe_highlight" help="Click this button if you want to submit your app."/>-->
+                                <div style="padding-left: 24px; padding-right: 24px;">
+                                    <div style="padding-top: 10px; padding-bottom: 10px; display: flex;">
+                                        <button class="fa fa-info-circle" style="margin-top:-8px" type="object" name="open_popup_app_name"
+                                                help="Your app’s name on the application store.
+                                                        It will be displayed under your app icon on the mobile phone's home screen."/>
+                                        <label for="name" style="min-width: 150px;"/>
+                                        <field name="name" String="App Name*" required="1"/>
+                                    </div>
+                                    <div style="padding-top: 10px; padding-bottom: 10px; display: flex;">
+                                        <button class="fa fa-info-circle" style="margin-top:-8px" type="object" name="open_popup_tag_line"
+                                                help="Highlight features or typical uses of your app. Your tagline can be up to 100 characters long."/>
+                                        <label for="app_subtitle" style="min-width: 150px;"/>
+                                        <field name="app_subtitle" String="Tagline*" required="1"/>
+                                    </div>
+
+                                    <group col="2">
+                                        <div style="display:flex">
+                                            <group>
+                                                <div style="padding-top: 10px; display: flex;">
+                                                    <button class="fa fa-info-circle" style="position:relative;margin-top:-6px;height:100%" type="object" name="open_popup_category"
+                                                            help="Assign two categories to mobile app for your app’s discoverability on the App Store."/>
+
+                                                    <label for="category_ios_c1" style="min-width: 150px;"/>
+                                                    <div>
+                                                        <div>
+                                                            <span>Category</span><br/>
+                                                            <field name="category_ios_c1" string="App Store Category" attrs="{'required': [('submit_account', '!=', 'google_account')]}"/>
+                                                        </div>
+                                                        <div style="margin-top: 10px;">
+                                                            <span>Subcategory</span><br/>
+                                                            <field name="category_ios_c2" nolabel="1"/>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </group>
+<!--                                            <group>-->
+<!--                                                <field name="category_ios_c2" nolabel="1"-->
+<!--                                                       style="max-width: 160px;margin-top: 10px;"/>-->
+<!--                                            </group>-->
+                                        </div>
+                                    </group>
+
+                                    <group col="2">
+                                        <div style="display:flex">
+                                            <div>
+                                                <div style="padding-top: 10px; display: flex;">
+                                                    <button class="fa fa-info-circle" style="position:relative;margin-top:-6px;height:100%" type="object" name="open_popup_category"
+                                                            help="Assign two categories to mobile app for your app’s discoverability on the Google Play Store."/>
+<!--                                                    <label for="category_android_c1" style="min-width: 150px;"/>-->
+<!--                                                    <label for="category_android_c1" style="min-width: 150px;margin: auto 0;"/>-->
+
+                                                    <label for="category_android_c1" style="min-width: 150px;"/>
+                                                    <div>
+                                                        <div>
+                                                            <span>Category</span><br/>
+                                                            <field name="category_android_c1" string="Google Play Category" attrs="{'required': [('submit_account', '!=', 'apple_account')]}"/>
+                                                        </div>
+                                                        <div style="margin-top: 10px;">
+                                                            <span>Subcategory</span><br/>
+                                                            <field name="category_android_c2" nolabel="1"/>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+<!--                                            <group>-->
+<!--                                                <field name="category_android_c2" nolabel="1"-->
+<!--                                                       style="max-width: 160px;margin-top: 10px;"/>-->
+<!--                                            </group>-->
+                                        </div>
+                                    </group>
+
+                                    <group>
+                                        <div style="padding-top: 10px; padding-bottom: 10px; display: flex;">
+                                            <button class="fa fa-info-circle" style="margin-top:-6px;height:100%"
+                                                    help="Enter keywords to ensure your app is easily discoverable in the searches you want."/>
+                                            <label for="keyword_ids" style="min-width: 150px;"/>
+                                            <field name="keyword_ids" widget="many2many_tags"/>
+                                        </div>
+                                    </group>
+                                    <group>
+                                        <div style="padding-top: 10px; padding-bottom: 10px; display: flex;">
+                                            <button class="fa fa-info-circle" style="margin-top:-6px;height:100%"
+                                                    help="The body copy that will appear on your app's page in the application store.
+                                                    Here is what our app does and why to download it."/>
+                                            <label for="description" style="min-width: 150px;"/>
+                                            <field name="description" String="Description" required="1" widget="text"
+                                                   line="3"/>
+                                        </div>
+                                    </group>
+                                    <group col="2">
+                                        <group>
+                                            <div style="padding-top: 10px; padding-bottom: 10px; display: flex;">
+                                                <button class="fa fa-info-circle" style="margin-top:-6px;height:100%" type="object" name="open_popup_app_icon"
+                                                        help="Your app icon as shown on Google Play.Don't use badges or text that suggest sore ranking,
+                                                    price or Google Play categories(such as 'top', 'new', or 'sale').
+                                                "/>
+                                                <label for="app_icon" style="min-width: 150px;"/>
+                                                <field name="app_icon" String="App Icon*" widget="image"
+                                                       style="width:46%" required="1"/>
+                                            </div>
+                                        </group>
+                                        <group>
+                                            <div style="width:100%;margin-left: 25px;margin-top: 9px;">
+                                                <p style="margin-bottom: 5px;color:#7d7d7d">Transparent PNG or JPEG</p>
+                                                <p style="margin-bottom: 5px;color:#7d7d7d">512 px by 512 px</p>
+                                                <p style="margin-bottom: 5px;color:#7d7d7d">Up to 1 MB</p>
+                                            </div>
+                                        </group>
+                                    </group>
+<!--                                    <group col="2">-->
+<!--                                        <group>-->
+<!--                                            <div style="padding-top: 10px; padding-bottom: 10px; display: flex;">-->
+<!--                                                <button class="fa fa-info-circle" style="margin-top:-42px"-->
+<!--                                                        help="This will help promote your app in different places on Google Play.-->
+<!--                                                    In case of cropping, avoid placing text near the edges,and center key visuals.-->
+<!--                                                       "/>-->
+<!--                                                <label for="feature_graphic" style="min-width: 150px;"/>-->
+<!--                                                <field name="feature_graphic" String="Feature Graphic*" widget="image"-->
+<!--                                                       style="width:46%" required="1"/>-->
+<!--                                            </div>-->
+<!--                                        </group>-->
+<!--                                        <group>-->
+<!--                                            <div style="width:100%;margin-left: 25px;margin-top: 9px;">-->
+<!--                                                <p style="margin-bottom: 5px;color:#7d7d7d">PNG or JPEG</p>-->
+<!--                                                <p style="margin-bottom: 5px;color:#7d7d7d">1,024 px by 500 px</p>-->
+<!--                                                <p style="margin-bottom: 5px;color:#7d7d7d">Up to 1 MB</p>-->
+<!--                                            </div>-->
+<!--                                        </group>-->
+<!--                                    </group>-->
+<!--                                    <group col="2">-->
+<!--                                        <group>-->
+<!--                                            <div style="padding-top: 10px; padding-bottom: 10px; display: flex;">-->
+<!--                                                <button class="fa fa-info-circle" style="margin-top:-42px"-->
+<!--                                                        help="(You can upload up to 8 images in Google Console later)."/>-->
+<!--                                                <label for="phone_screenshot" style="min-width: 150px;"/>-->
+<!--                                                <field name="phone_screenshot" String="Phone Screenshot 1*"-->
+<!--                                                       widget="image" style="width:46%" required="1"/>-->
+<!--                                            </div>-->
+<!--                                        </group>-->
+<!--                                        <group>-->
+<!--                                            <div style="width:100%;margin-left: 25px;margin-top: 9px;">-->
+<!--                                                <p style="margin-bottom: 5px;color:#7d7d7d">PNG or JPEG .</p>-->
+<!--                                                <p style="margin-bottom: 5px;color:#7d7d7d">320 px by 180 px.</p>-->
+<!--                                                <p style="margin-bottom: 5px;color:#7d7d7d">16:9 aspect ratio</p>-->
+<!--                                                <p style="margin-bottom: 5px;color:#7d7d7d">Up to 8 MB per screenshot-->
+<!--                                                </p>-->
+<!--                                            </div>-->
+<!--                                        </group>-->
+<!--                                    </group>-->
+<!--                                    <group col="2">-->
+<!--                                        <group>-->
+<!--                                            <div style="padding-top: 10px; padding-bottom: 10px; display: flex;">-->
+<!--                                                <button class="fa fa-info-circle" style="margin-top:-42px"-->
+<!--                                                        help="(You can upload up to 8 images in Google Console later) ."/>-->
+<!--                                                <label for="phone_screenshot_2" style="min-width: 150px;"/>-->
+<!--                                                <field name="phone_screenshot_2" String="Phone Screenshot 2*"-->
+<!--                                                       widget="image" style="width:46%" required="1"/>-->
+<!--                                            </div>-->
+<!--                                        </group>-->
+<!--                                        <group>-->
+<!--                                            <div style="width:100%;margin-left: 25px;margin-top: 9px;">-->
+<!--                                                <p style="margin-bottom: 5px;color:#7d7d7d">PNG or JPEG .</p>-->
+<!--                                                <p style="margin-bottom: 5px;color:#7d7d7d">180 px by 320 px.</p>-->
+<!--                                                <p style="margin-bottom: 5px;color:#7d7d7d">16:9 aspect ratio</p>-->
+<!--                                                <p style="margin-bottom: 5px;color:#7d7d7d">Up to 8 MB per screenshot-->
+<!--                                                </p>-->
+<!--                                            </div>-->
+<!--                                        </group>-->
+<!--                                    </group>-->
+<!--                                    <group col="2">-->
+<!--                                        <group>-->
+<!--                                            <div style="padding-top: 10px; padding-bottom: 10px; display: flex;">-->
+<!--                                                <button class="fa fa-info-circle" style="margin-top:-42px"-->
+<!--                                                        help="(You can upload up to 8 images in Google Console later)."/>-->
+<!--                                                <label for="table_7inch" style="min-width: 150px;"/>-->
+<!--                                                <field name="table_7inch" String="7-inch table screenshot*"-->
+<!--                                                       widget="image" style="width:46%" required="1"/>-->
+<!--                                            </div>-->
+<!--                                        </group>-->
+<!--                                        <group>-->
+<!--                                            <div style="width:100%;margin-left: 25px;margin-top: 9px;">-->
+<!--                                                <p style="margin-bottom: 5px;color:#7d7d7d">PNG or JPEG .</p>-->
+<!--                                                <p style="margin-bottom: 5px;color:#7d7d7d">180 px by 320 px.</p>-->
+<!--                                                <p style="margin-bottom: 5px;color:#7d7d7d">9:16 aspect ratio</p>-->
+<!--                                                <p style="margin-bottom: 5px;color:#7d7d7d">Up to 8 MB per screenshot-->
+<!--                                                </p>-->
+<!--                                            </div>-->
+<!--                                        </group>-->
+<!--                                    </group>-->
+<!--                                    <group col="2">-->
+<!--                                        <group>-->
+<!--                                            <div style="padding-top: 10px; padding-bottom: 10px; display: flex;">-->
+<!--                                                <button class="fa fa-info-circle" style="margin-top:-42px"-->
+<!--                                                        help="(You can upload up to 8 images in Google Console later)."/>-->
+<!--                                                <label for="table_10inch" style="min-width: 150px;"/>-->
+<!--                                                <field name="table_10inch" String="10-inch table screenshot*"-->
+<!--                                                       widget="image" style="width:46%" required="1"/>-->
+<!--                                            </div>-->
+<!--                                        </group>-->
+<!--                                        <group>-->
+<!--                                            <div style="width:100%;margin-left: 25px;margin-top: 9px;">-->
+<!--                                                <p style="margin-bottom: 5px;color:#7d7d7d">PNG or JPEG .</p>-->
+<!--                                                <p style="margin-bottom: 5px;color:#7d7d7d">180 px by 320 px.</p>-->
+<!--                                                <p style="margin-bottom: 5px;color:#7d7d7d">9:16 aspect ratio</p>-->
+<!--                                                <p style="margin-bottom: 5px;color:#7d7d7d">Up to 8 MB per screenshot-->
+<!--                                                </p>-->
+<!--                                            </div>-->
+<!--                                        </group>-->
+<!--                                    </group>-->
+                                    <group>
+                                        <field name="img_url" invisible="1"/>
+                                    </group>
+                                    <!--                                <group  style="color:#7d7d7d;margin-left: 158px">-->
+                                    <!--                                    <field name="icon_url" String="App Icon URL Resize" groups="base.group_system"/>-->
+                                    <!--                                </group>-->
+                                    <group>
+                                        <div style="padding-top: 10px; padding-bottom: 10px; display: flex;">
+                                            <button class="fa fa-info-circle" style="margin-top:-8px"
+                                                    help="Please enter your correct privacy policy link.
+                                                 Wrong information may block the launch of your app."/>
+                                            <label for="privacy_policy" style="min-width: 150px;"/>
+                                            <field name="privacy_policy" String="Privacy Policy URL*" required="1"/>
+                                        </div>
+
+                                    </group>
+                                    <group>
+                                        <div style="padding-top: 10px; padding-bottom: 10px; display: flex;">
+                                            <button class="fa fa-info-circle" style="margin-top:-8px"
+                                                    help="This URL will be visible in stores to let your users know how to reach you in case of a support need.
+                                                    It can be the URL of the 'contact' page of your website."/>
+                                            <label for="support" style="min-width: 150px;"/>
+                                            <field name="support" String="Support URL*" required="1"/>
+                                        </div>
+                                    </group>
+                                    <group>
+                                        <div style="padding-top: 10px; padding-bottom: 10px; display: flex;">
+                                            <button class="fa fa-info-circle" style="margin-top:-5px"
+                                                    help="This URL includes a piece of marketing information about your app.
+                                                        It can be your website URL if you don't have another specific page for marketing."/>
+                                            <label for="marketing" style="min-width: 150px;"/>
+                                            <field name="marketing" String="Marketing URL"/>
+                                        </div>
+                                    </group>
+                                    <div>
+                                        <div style="display:flex">
+                                            <div style="width: 4%;margin-left: 10px;">
+                                                <field name="term_condition" nolabel="1"/>
+                                            </div>
+                                            <div>
+                                                <div>
+                                                    <p>I agree to the
+                                                        <a href="https://allfetch.com/eula/" style="color:#4795eb">Terms and
+                                                            Conditions
+                                                        </a>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div style="width:100%; margin-left:10px">
+                                            <p style="color:#e45050">You must accept the terms of service before you can
+                                                proceed
+                                            </p>
+                                        </div>
+                                        <div>
+                                            <div class="float-left" style="margin-left:8px; font-weight:800">(*): is required field
+                                                <div>
+                                                    <button name="open_form_publish_app" string="Publish App" type="object" class="oe_highlight af-mobile-app-style-button" attrs="{'invisible': [('is_publish', '=', True)]}" style="margin:15px 0;"/>
+                                                    <p style="font-weight:100" attrs="{'invisible': [('is_publish', '=', True)]}">Please sign up for a plan before start publishing your app</p>
+                                                </div>
+                                            </div>
+                                            <div class="float-right">
+                                                <field name="is_publish" invisible="1"/>
+                                                <button name="open_form_update_publish_app" string="Update App Listing" type="object" class="oe_highlight af-mobile-app-style-button" attrs="{'invisible': [('is_publish', '=', False)]}"/>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <group>
+                                        <field name="icon_url" String="Icon URL" groups="base.group_system"/>
+                                        <field name="feature_graphic_url" String="Feature URL"
+                                               groups="base.group_system"/>
+                                        <field name="phone_screenshot_1_url" String="Phone Screenshot 1 URL"
+                                               groups="base.group_system"/>
+                                        <field name="phone_screenshot_2_url" String="Phone Screenshot 2 URL"
+                                               groups="base.group_system"/>
+                                        <field name="table_7inch_url" String="7inch table URL"
+                                               groups="base.group_system"/>
+                                        <field name="table_10inch_url" String="10inch table URL"
+                                               groups="base.group_system"/>
+                                    </group>
+
+                                </div>
+                            </div>
+                            <div>
+                                <span style="font-size: 18px; padding: 5px 15px 15px 24px; border-bottom: 1px solid #DFE3E8; display: block;">
+                                    Quick Preview
+                                </span>
+                                <iframe id="app_listing_onboarding_iframe"
+                                        src="/iframe/s_shopify_mobile_app/app_listing"
+                                        style="border:none; width: 100%; height: 700px; margin-top: 25px;">
+                                </iframe>
+                            </div>
+                        </group>
+                    </sheet>
+
+                </form>
+            </field>
+        </record>
+
+        <record id="open_s_shopify_mobile_app_dashboard_form_1" model="ir.actions.server">
+            <field name="name">Dashboard</field>
+            <field name="model_id" ref="s_shopify_mobile_app.model_s_shopify_mobile_app_custom_design"/>
+            <field name="state">code</field>
+            <field name="code">action = model.action_open_dashboard()</field>
+        </record>
+
+
+        <menuitem name="Shopify Mobile App" id="s_shopify_mobile_app.menu_shopify_mobile_app_root"/>
+        <menuitem name="Mobile App" id="s_shopify_mobile_app.menu_shopify_mobile_app_setting" sequence="10"
+                  action="open_s_shopify_mobile_app_dashboard_form_1"
+                  parent="menu_shopify_mobile_app_root"/>
+        <menuitem name="App Listing" id="s_shopify_mobile_app.menu_shopify_mobile_app_store_listing" sequence="20"
+                  action="open_s_shopify_mobile_app_dashboard_form_1"
+                  parent="menu_shopify_mobile_app_root"/>
+
+        <record id="action_put_shopify_theme" model="ir.actions.server">
+            <field name="name">Confirm Change</field>
+            <field name="model_id" ref="s_shopify_mobile_app.model_s_shopify_mobile_app_custom_design"/>
+            <field name="binding_model_id" ref="s_shopify_mobile_app.model_s_shopify_mobile_app_custom_design"/>
+            <field name="state">code</field>
+            <field name="code">action = records.put_theme_to_shopify()</field>
+            <field name="groups_id" eval="[(4, ref('base.group_system'))]"/>
+        </record>
+
+        <!--        <record id="action_open_link_access_token" model="ir.actions.server">-->
+        <!--            <field name="name">Link Access</field>-->
+        <!--            <field name="model_id" ref="s_shopify_mobile_app.model_s_shopify_mobile_app_custom_design"/>-->
+        <!--            <field name="binding_model_id" ref="s_shopify_mobile_app.model_s_shopify_mobile_app_custom_design"/>-->
+        <!--            <field name="state">code</field>-->
+        <!--            <field name="binding_view_types">form</field>-->
+        <!--            <field name="code">action = record.open_form_link_access()</field>-->
+        <!--            <field name="groups_id" eval="[(4, ref('base.group_system'))]"/>-->
+        <!--        </record>-->
+
+        <!--        <record id="action_open_request_submisstion" model="ir.actions.server">-->
+        <!--            <field name="name">Request Store Submission</field>-->
+        <!--            <field name="model_id" ref="s_shopify_mobile_app.model_s_shopify_mobile_app_custom_design"/>-->
+        <!--            <field name="binding_model_id" ref="s_shopify_mobile_app.model_s_shopify_mobile_app_custom_design"/>-->
+        <!--            <field name="state">code</field>-->
+        <!--            <field name="binding_view_types">form</field>-->
+        <!--            <field name="code">action = record.open_form_request_submission()</field>-->
+        <!--            <field name="groups_id" eval="[(4, ref('base.group_system'))]"/>-->
+        <!--        </record>-->
+
+    </data>
+</odoo>

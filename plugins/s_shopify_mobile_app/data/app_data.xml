@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="0">
+        <record forcecreate="True" id="s_shopify_mobile_app" model="s.app">
+            <field name="name">s_shopify_mobile_app</field>
+            <field name="base_url">https://app.thexseed.com</field>
+            <field name="webhook_base_url">https://app.thexseed.com</field>
+            <field name="sp_api_version">2021-10</field>
+            <field name="sp_api_key">1d5fd510507d7b4ba81febc16475bc09</field>
+            <field name="sp_api_secret_key">eb348de4e7e1b52a047eefba6f952514</field>
+            <field name="gg_api_version">v2.1</field>
+            <field name="gg_scope">https://www.googleapis.com/auth/content email</field>
+            <field name="gg_service">content</field>
+        </record>
+    </data>
+
+    <data noupdate="1">
+        <record forcecreate="True" id="s_shopify_mobile_app_notification" model="s.shopify.mobile.app.notification">
+            <field name="title">BUY MORE GET MORE</field>
+            <field name="message">New products are available now. Pick one for you!</field>
+        </record>
+    </data>
+</odoo>

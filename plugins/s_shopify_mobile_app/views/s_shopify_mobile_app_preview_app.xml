@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <record id="s_shopify_mobile_app_preview_app_view_form" model="ir.ui.view">
+            <field name="name">s_shopify_mobile_app_preview_app_view_form</field>
+            <field name="model">s.shopify.mobile.app.preview.app</field>
+            <field name="arch" type="xml">
+                <form string="Mobile App Builder" name="s_shopify_mobile_app" duplicate="0" create="0" edit="0"
+                      delete="false">
+                    <sheet>
+                        <group>
+                            <field name="s_sp_shop_id" invisible="1"/>
+                            <field name="s_sp_app_id" invisible="1"/>
+                            <field name="custom_design_id" invisible="1"/>
+                        </group>
+                        <div class="row">
+                            <div class="col-xl-7 col-lg-6">
+                                <div class="pt-3 pb-3">
+                                    <b>Note:</b>
+                                    <span>Please customize your navigation bar before previewing your app.
+                                        <button class="af-mobile-app-button-customize" name="open_customize_bar_form"
+                                                type="object">Customize now!
+                                        </button>
+                                    </span>
+                                </div>
+                                <div class="pt-3 pb-3">
+                                    <span>Follow these below steps to preview your mobile app before setting it live.
+                                    </span>
+                                </div>
+                                <div class="pt-3 pb-3">
+                                    <p>
+                                        <b>Step 1: Download the AllFetch Preview App</b>
+                                    </p>
+                                    <p>Simply reach out to Google Play store or Apple App store and search the app
+                                        "AllFetch Shopify Preview" or click on the button below.
+                                    </p>
+                                    <div style="width:50%">
+                                     <div class="d-flex">
+                                        <div class="o_setting_right_pane" style="padding-top:10px;margin-right:10px">
+                                            <a class="d-block mx-auto" href="https://play.google.com/store/apps/details?id=com.allfetch.shopify.mobile" target="blank">
+                                                <img alt="On Google Play" class="d-block mx-auto img img-fluid" src="/base_setup/static/src/img/google_play.png"/>
+                                            </a>
+                                        </div>
+                                        <div style="padding-top:10px;">
+                                            <a class='d-block mx-auto' href="https://apps.apple.com/app/allfetch-shopify-preview/id1552657088" target="blank">
+                                                <img alt="On Apple Store" class="d-block mx-auto img img-fluid" src="/base_setup/static/src/img/app_store.png"/>
+                                            </a>
+                                        </div>
+                                    </div>
+                                        </div>
+                                </div>
+                                <div class="pt-3 pb-3">
+                                    <p>
+                                        <b>Step 2: Open the app after installing</b>
+                                    </p>
+                                    <div>
+                                        <img src="s_shopify_mobile_app/static/src/img/AllFetch-Shopify-app.png"/>
+                                    </div>
+                                </div>
+                                <div class="pt-3 pb-3">
+                                    <p>
+                                        <b>Step 3: Scan the QR Code</b>
+                                    </p>
+                                    <p>Scan the QR on the right side and start testing your app inaction.</p>
+                                </div>
+                                <div class="pt-3 pb-3">
+                                    <b>Note:</b>
+                                    <p>If you cannot scan the QR code, please copy the url under the QR code abd paste
+                                        into the "Preview URL" field in the app and submit.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-xl-5 col-lg-6 text-center">
+                                <h1>QRCode</h1>
+                                <field name="otp_qrcode" class="pt-3 pb-3" widget="image" readonly="1" nolabel="1"/>
+                                <field style="line-height:25px;text-overflow:ellipsis;white-space:nowrap;overflow:hidden;padding-left:10px"
+                                       name="link_access" widget="CopyClipboardText" readonly="1" nolabel="1"/>
+                            </div>
+                        </div>
+
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record id="open_s_shopify_mobile_app_preview_app" model="ir.actions.server">
+            <field name="name">Open Form</field>
+            <field name="model_id" ref="model_s_shopify_mobile_app_preview_app"/>
+            <field name="state">code</field>
+            <field name="code">action = model._open_preview_app()</field>
+        </record>
+
+        <menuitem name="Preview App" id="s_shopify_mobile_app.menu_shopify_mobile_app_preview_app" sequence="100"
+                  action="open_s_shopify_mobile_app_preview_app"
+                  parent="s_shopify_mobile_app.menu_shopify_mobile_app_root"/>
+
+    </data>
+</odoo>

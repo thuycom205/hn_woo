@@ -1,0 +1,206 @@
+.s_mobile_app_notification_form_send_date_field td:nth-child(2){
+    width: 20% !important;
+}
+.link_access {
+    margin-left:47px
+}
+.s_mobile_wrapper{
+  font-size: 15px;
+}
+.s_mobile_wrapper .s_mobile_title{
+    font-size: 18px;
+}
+.s_mobile_wrapper .s_mobile_list{
+    margin-left: 10px;
+    list-style: none;
+}
+.s_mobile_wrapper .s_mobile_list .s_mobile_li_sub{
+    margin-left: 20px;
+}
+.s_mobile_star {
+    margin-right: 5px;
+}
+.s_mobile_app_plan_button_upgrade {
+    background-color: #3a7ad8;
+    width: 100%;
+    border: none;
+    color: white;
+    padding: 10px 25px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 15px;
+    height: auto;
+}
+.af-mobile-app-style-button {
+    border: none;
+    border-radius: 5px;
+    box-shadow: 3px 3px 15px -3px rgba(61,61,61,0.5);
+    font-weight: bold;
+}
+
+.af-mobile-app-button-customize {
+    border: none;
+    font-family: sans-serif;
+    font-size: 14.4px;
+    padding: inherit;
+    position: relative;
+    top: -1px;
+    color: #446ac4;
+    text-decoration: underline;
+}
+
+.af-mobile-app-button-customize:hover {
+    background-color: transparent;
+    color: #446ac4;
+}
+
+/* mobile app plan */
+.s_bundle_plan_columns {
+    width: 100%;
+}
+
+.s_bundle_plan_all_wrapper {
+    width: 100%;
+    margin: auto;
+    max-width: 100%
+}
+
+.s_bundle_plan_wrapper {
+    /*width: 25%;*/
+    margin: 0 0 10px auto;
+    height: 100%;
+}
+
+.s_plan_col {
+    margin-top: 10px;
+}
+
+.s_bundle_plan_wrapper .s_bundle_plan_content {
+    list-style-type: none;
+    border-radius: 5px;
+    padding: 0;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    height: 100%;
+    width: 86%;
+    background-color: #fff;
+    margin: auto;
+    position: relative;
+}
+
+.s_bundle_plan_current {
+    border: 2px solid #5a85e9;
+}
+
+.s_bundle_plan_box {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.s_bundle_plan_content li {
+    padding: 10px;
+
+}
+
+.s_bundle_plan_content .s_bundle_plan_name {
+    font-size: 16px;
+}
+
+.s_bundle_plan_content .s_bundle_plan_price {
+    font-size: 22px;
+    color: #000;
+}
+
+.s_bundle_plan_content .s_bundle_plan_text {
+    text-align: left;
+    font-size: 13px;
+    padding-left: 20px
+}
+
+.s_bundle_plan_text_empty {
+    height: 80px;
+}
+
+.s_bundle_plan_price {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+}
+
+.s_bundle_plan_price .header {
+    background-color: #4CAF50;
+    color: white;
+    font-size: 25px;
+}
+
+.s_bundle_plan_price li {
+
+    font-size: 15px;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+}
+
+
+.s_bundle_plan_price .grey {
+    background-color: #eee;
+    font-size: 20px;
+}
+.plan-button{
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+}
+
+.s_bundle_plan_button_disable {
+    background-color: #bfbfbf;
+    width: 100%;
+    border: none;
+    color: #6b6b6b;
+    padding: 10px 25px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 15px;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.s_bundle_plan_button_upgrade {
+    background-color: #3a7ad8;
+    width: 100%;
+    border: none;
+    color: white;
+    padding: 10px 25px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 15px;
+    height: auto;
+}
+
+.s_bundle_plan_form .o_form_sheet_bg {
+    border: none;
+}
+
+.s_bundle_plan_form div.row:nth-child(3) {
+    border-top: 1px solid #DFE3E8;
+    border-radius: 5px;
+    padding-top: 30px;
+}
+
+.s_bundle_plan_form_header_label {
+    margin-left: 20px;
+    /*line-height: 38px;*/
+    /*height: 38px;*/
+    font-size: 20px;
+    color: #090808;
+    font-weight: bold;
+    float: left;
+
+}
+
+.s_bundle_plan_form_header_label span {
+    font-size: 14px;
+    color: #5c646b;
+}

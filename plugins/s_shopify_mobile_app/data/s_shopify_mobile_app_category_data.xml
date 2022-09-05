@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="s_shopify_mobile_app_category_1" model="s.shopify.mobile.app.category">
+            <field name="name">Books</field>
+            <field name="ios_name">Books</field>
+            <field name="chplay_name">Books</field>
+        </record>
+    </data>
+</odoo>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="mobile_app_allfetch_submit_form" model="ir.ui.view">
+        <field name="name">Allfetch Submit Form</field>
+        <field name="model">s.shopify.mobile.app.getting.started</field>
+        <field name="arch" type="xml">
+            <form string="Mobile App Builder" name="s_shopify_mobile_app">
+                <sheet>
+                    <div class="s_mobile_wrapper">
+                        <span class="s_mobile_title">Getting Started</span>
+                        <hr/>
+                        <strong>Step 1: Create your Google Developer account (Ignore this step if you have had an account already)</strong>
+                        <ul class="s_mobile_list">
+                            <li>1. Sign up for a Google Play Developer account (you must be at least 18 years of age to sign up for a Google Play Developer
+                                account)
+                            </li>
+                            <li class="s_mobile_li_sub">- Using your Google Account, sign up for a Developer account. Once you have a Developer account, you can use the Play Console to
+                                publish and manage your apps.
+                            </li>
+                            <li>2. Accept the Developer Distribution Agreement</li>
+                            <li class="s_mobile_li_sub">- During the signup process, you'll need to review and accept the Google Play Developer Distribution Agreement.</li>
+                            <li>3. Pay registration fee</li>
+                            <li class="s_mobile_li_sub">- There is a $25 USD one-time registration fee that you can pay with credit/debit cards.</li>
+                            <li>4. Complete your account details</li>
+                            <li class="s_mobile_li_sub">- Type your account details. Your "Developer name" is displayed to customers on Google Play. (You can add more account information
+                                after you've created your account)
+                            </li>
+                        </ul>
+                        <strong>Step 2: Give the Permission Access to AllFetch</strong>
+                        <ul class="s_mobile_list">
+                            <li>To invite us to your Google Developer Account, you will have to invite us as a Release Manager.</li>
+                            <li>1. Go to
+                                <strong>Google Play Console</strong>
+                            </li>
+                            <li>2. Go to
+                                <strong>Settings</strong>
+                            </li>
+                            <li>3. Go to
+                                <strong>Users And Permissions</strong>
+                            </li>
+                            <li>4. Click on
+                                <strong>Invite new user</strong>
+                            </li>
+                            <li>5. On the <strong>Invite a new user</strong> screen, insert the following information
+                            </li>
+                            <li class="s_mobile_li_sub">Email: support@allfetch.com</li>
+                            <li class="s_mobile_li_sub">Access expiry date: Never</li>
+                            <li class="s_mobile_li_sub">Role: Select Administrator</li>
+                            <li>6. Click
+                                <strong>Send Invitation</strong>
+                            </li>
+                            <li class="s_mobile_li_sub">
+                                We will accept your invite, and submit the app to Google Play Store within 2 business days.
+                                Due to an unadjusted shift schedule,
+                                Google is taking around 7-10 working days to approve the app.
+                                Make sure you have completed the App Listing section in the app’s dashboard before submitting the request to us!
+                            </li>
+                            <li>
+                                If you have any questions or concerns, feel free to contact us via the live chat widget or email to
+                                <span style="color:#4691E4">support@allfetch.com</span>
+                            </li>
+                        </ul>
+                    </div>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_open_allfetch_getting_started" model="ir.actions.act_window">
+        <field name="name">Getting Started</field>
+        <field name="res_model">s.shopify.mobile.app.getting.started</field>
+        <field name="context">{'name': 'Getting Started'}</field>
+        <field name="view_mode">form</field>
+    </record>
+
+<!--    <menuitem name="Getting Started" id="s_shopify_mobile_app.menu_shopify_mobile_app_getting_started" sequence="11"-->
+<!--              action="action_open_allfetch_getting_started"-->
+<!--              parent="s_shopify_mobile_app.menu_shopify_mobile_app_root"/>-->
+
+</odoo>
