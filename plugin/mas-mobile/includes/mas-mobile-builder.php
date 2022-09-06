@@ -264,8 +264,8 @@ final class MasMobileBuilder
         }
         $encodedShopName = get_post_meta($postId,'shop_name',true);
         //masmb
-        $shopName = $encodedShopName.substr(0,$encodedShopName.length - 5);
-        $output['base_url'] ='https://'.$shopName.'myshopify.com';
+        $shopName = substr($encodedShopName,0,$encodedShopName.length - 5);
+        $output['base_url'] ='https://'.$shopName.'.myshopify.com';
         $output['currencyCode'] ='USD';
         $output['app_state'] =true;
 
