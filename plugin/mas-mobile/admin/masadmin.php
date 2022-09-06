@@ -4,7 +4,7 @@ class MasMobileAdmin
 {
     public function adminMenu()
     {
-        add_menu_page('Mobile app builder', 'Mobile app builder', 'edit_posts', 'edit.php?post_type=mas_mobile_x', '', 'dashicons-wheel', 100);
+       // add_menu_page('Mobile app builder', 'Mobile app builder', 'edit_posts', 'edit.php?post_type=mas_mobile_x', '', 'dashicons-wheel', 100);
         add_menu_page('Mobile app setting', 'Mobile app setting', 'edit_posts', 'masmb_setting', 'MasMobileAdmin::viewSetting', 'dashicons-admin-generic', 100);
         add_menu_page('Mobile app preview', 'Mobile app preview', 'edit_posts', 'masmb_preview', 'MasMobileAdmin::previewApp', 'dashicons-smartphone', 100);
         //  add_submenu_page('edit.php?post_type=mas_mobile_x', 'Gift Registry Detail', 'Gift Registry Detail', 'edit_posts', 'masmb_detail',  'MasMobileAdmin::viewSetting');
@@ -104,6 +104,7 @@ class MasMobileAdmin
             'post_type' => 'mas_mobile_x',
             'posts_per_page' => 1,
             'orderby' => 'post_date',
+            'post_status'=>'private',
             'order' => 'ASC'
         );
 
@@ -222,6 +223,7 @@ class MasMobileAdmin
         }
     }
     public function initFakeData(&$homeData) {
+        if (!is_array($homeData)) $homeData =[];
         if (!isset($homeData['enable'])) {
             $homeData['enable'] = 0;
         }
@@ -281,7 +283,7 @@ class MasMobileAdmin
                 <div class="col-md-8">
                     <div class="card">
                         <div class="card-body">
-                            <button class="btn btn-primary" type="submit"> Submit</button>
+                            <button class="btn btn-primary" onclick="masmbSubmit(this)" type="submit"> Submit</button>
 
                             <button class="btn btn-primary" type="button"> Preview</button>
 
