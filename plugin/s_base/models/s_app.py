@@ -89,6 +89,12 @@ class SApp(models.Model):
     # script version
     script_version = fields.Integer(default=2021)
 
+    #for dev environment
+    base_url_dev = fields.Char()
+    sp_api_key_dev = fields.Char()
+    sp_api_secret_key_dev = fields.Char()
+
+
 
     def get_module_name(self):
         xml_ids = models.Model._get_external_ids(self)

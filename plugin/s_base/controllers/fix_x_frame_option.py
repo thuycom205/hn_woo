@@ -60,6 +60,18 @@ class FixSameSite(Home):
             a = 0
         result = super(FixSameSite, self).web_client(s_action, **kw)
         # result.set_cookie(key='session_id', value=request.session.sid, secure=True, samesite="None")
+        #### by alexandra
+        try:
+            if request.session.uid:
+                user = request.env['res.users'].sudo().browse(request.session.uid)
+                if user.sp_shop_id:
+                    if user.sp_shop_id.base_url:
+                        shopify_url = user.sp_shop_id.base_url
+                        result.headers['Content-Security-Policy'] = 'frame-ancestors https://%s https://admin.shopify.com' %(shopify_url)
+
+        except Exception as ex:
+            a = 0
+        ####
         result.headers['X-Frame-Options'] = 'ALLOWALL'
         request.params['is_s_client'] = True
         if request and request.env and request.env.user:
