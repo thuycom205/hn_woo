@@ -1,0 +1,16 @@
+<odoo>
+    <data noupdate="1">
+        <record forcecreate="True" id="s_trello_app" model="s.app">
+            <field name="name">Trello integration app</field>
+            <field name="base_url">https://app.mobileappseed.com</field>
+            <field name="webhook_base_url">https://app.mobileappseed.com</field>
+            <field name="sp_api_version">2021-10</field>
+            <field name="sp_api_key">bcda23fcfce186afed7ed6f61a8e54e4</field>
+            <field name="sp_api_secret_key">6a14f4420ff83aa3ab326d8ea7d4ed3f</field>
+            <field name="sp_env">production</field>
+            <field name="base_url_dev">https://myodooapp.ngrok.io</field>
+             <field name="sp_api_key_dev">ccaa47e40eb65d22549e0cd21fe7da32</field>
+            <field name="sp_api_secret_key_dev">f65c9002fa8b71938ab59f17d70939b0</field>
+        </record>
+    </data>
+</odoo>

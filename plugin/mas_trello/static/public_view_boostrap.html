@@ -1,0 +1,107 @@
+<body>
+<link rel="stylesheet" href="https://app.mobileappseed.com/s_shopify_registry/static/src/bootstrap-polaris.min.css">
+<link rel="stylesheet" href="https://app.mobileappseed.com/s_shopify_registry/static/src/selectize.css">
+
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+        crossorigin="anonymous"></script>
+<script src="https://app.mobileappseed.com/s_shopify_registry/static/src/selectize.js"></script>
+<script src="https://app.mobileappseed.com/s_shopify_registry/static/src/registry.js"></script>
+<style>
+
+    .row_template {
+        display: none!important;
+    }
+    img.lc-product-img {
+    width: 100px;
+}
+</style>
+<div class="ajax-loader">
+    <img src="https://app.mobileappseed.com/s_shopify_registry/static/src/img/loading-icon.gif" class="img-responsive" />
+</div>
+<main class="container">
+    <header class="page-header">
+        <div class="page-header__content">
+            <h1 class="display-2">Gift Registry</h1>
+        </div>
+
+
+    </header>
+    <div class="banner" tabindex="0" role="status">
+        <div>
+            <h3>Message from registry's owner</h3>
+            <p id="lcgf_public_message">{{public_message}}</p>
+        </div>
+    </div>
+    <div class="lc_rg_container" id="lc_public_registry">
+        <div class="card">
+
+
+            <div class="card-body-section table-responsive-wrapper">
+                <div class="lc_rg_child">
+                    <!--show password-->
+                    <div id="mas_pw_protect_container">
+                        <div class="form-group">
+                        <label for="mas_password"> Enter password to access the gift registry</label>
+                         <input type="password" id="mas_password" />
+                        </div>
+                        <div class="form-group">
+                            <button onclick="mas_submit_password(this)"name="password_submit"  class="button btn">Submit</button>
+                        </div>
+                    </div>
+                    <!--end show password-->
+
+                    <div id="lc_rg_table_wrapper">
+                        <table id="lc_rg_public_view_tbl" class="table table-hover">
+                            <thead>
+                            <tr>
+                                <td scope="col"><a href="#" class="btn btn-link-sort">Product Name</a></td>
+                                <td scope="col"><a href="#" class="btn btn-link-sort">Price </a></td>
+                                 <th scope="col" class="sort">
+                            Product Image
+                        </th>
+                        <th scope="col" class="sort">
+                            Option
+                        </th>
+                                <td scope="col"><a href="#" class="btn btn-link-sort"> Priority</a></td>
+                                <td scope="col"><a href="#" class="btn btn-link-sort">Qty </a></td>
+                                <td scope="col"><a href="#" class="btn btn-link-sort"> Action</a></td>
+                            </tr>
+                            </thead>
+
+                            <tbody>
+                            <tr class="row_template">
+                                <td>{{name}}</td>
+                                <td>{{price}}</td>
+                                <td><img class="lc-product-img" src="{{product_img_url}}" alt="{{name}}"/></td>
+                                <td><div class="lc_s_product_option" data-id="{{id}}" ><select disabled> <option>None</option></select></div></td>
+                                <td> {{priority}}</td>
+                                <td><input type="text" id="public_gr_qt" name="qty" data-productid="{{id}}"y value="{{qty}}"/></td>
+                                <td>
+                                    <button class="btn btn-primary" data-productid="{{id}}" data-variant-id="{{variant_id}}"
+                                            onclick="lc_gc_add_to_cart(this)"> Add to cart
+                                    </button>
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+
+        window.lc_gift_registry_id = '%s';
+        window.lcShopdomain = "{{ shop.domain }}";
+
+    </script>
+</main>
+
+
+</body>

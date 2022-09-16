@@ -1,0 +1,3 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_sp_trello_plan,sp_trello_plan,model_sp_trello_plan,base.group_system,1,1,1,1
+access_sp_trello_order,sp_trello_order,model_sp_trello_order,mas_trello.shopify_trello_data_group,1,1,1,1

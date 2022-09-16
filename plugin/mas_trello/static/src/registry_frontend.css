@@ -1,0 +1,35 @@
+.ul_share {
+  display: flex;
+  flex-direction: row;
+}
+.ul_share >li {
+  padding-right: 15px;
+}
+.ajax-loader {
+  visibility: hidden;
+  background-color: rgba(255,255,255,0.7)!important;
+  position: absolute;
+  z-index: +100 !important;
+  width: 100% !important;
+  height:100% !important;
+}
+
+.ajax-loader img {
+  position: relative !important;
+  top:50% !important;
+  left:50% !important;
+}
+#ajax-loader {
+  visibility: hidden;
+  background-color: rgba(255,255,255,0.7)!important;
+  position: absolute;
+  z-index: +100 !important;
+  width: 100% !important;
+  height:100% !important;
+}
+
+#ajax-loader img {
+  position: relative !important;
+  top:50% !important;
+  left:50% !important;
+}

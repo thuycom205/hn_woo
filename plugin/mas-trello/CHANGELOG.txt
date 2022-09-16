@@ -1,0 +1,114 @@
+/**1.1.10 - 2022.03.29**
+- Updated: Update support file
+
+/**1.1.9 - 2022.03.22**
+- Fixed: Lookbook align option on single product
+- Updated: Compatible with WP 5.9 and WC6.3.0
+- Updated: Update support file
+- Updated: Add hook for Quick view popup
+
+/**1.1.8 - 2021.10.25**/
+- Fixed: Don't show navigation icon
+
+/**1.1.7.3 - 2020.12.18**/
+- Fixed: Check update request
+- Fixed: Notice after add to cart
+- Updated: Compatible with WPML - WooCommerce Multilingual
+
+/**1.1.7.2 - 2020.07.17**/
+- Updated: Facebook API update permission
+
+/**1.1.7.1 - 2020.05.20**/
+- Updated: Compatible with Elementor
+
+/**1.1.7 - 2020.04.20**/
+- Updated: New modal style
+- Updated: Support Style
+
+/**1.1.6 - 2019.12.12**/
+- Fixed: Renew Instagram feature.
+- Fixed: show node in shortcode [woocommerce_lookbook]
+- Updated: change search product role to manage_woocommerce
+
+/**1.1.5 - 2019.05.13**/
+- Fixed: Check SSL
+- Fixed: Tab JS in backend
+- Fixed: Fixed load mini cart when added to cart
+- Update: Change layout shortcode woocommerce_lookbook_slide to 2 layout: carousel & slide
+
+/**1.1.4.6 - 2018.10.22**/
+- Fixed: Slide width and height
+- Fixed: Check Update
+
+/**1.1.4.5 - 2018.10.03**/
+- Fixed: Check is product
+- Fixed: Check update
+- Updated: Auto update key
+- Updated: Class support
+
+/**1.1.4.4 - 2018.09.25**/
+- Fixed: Redirect product affiliate on popup
+- Updated: Class support
+
+/**1.1.4.3 - 2018.08.13**/
+- Fixed: Flex slider library
+- Fixed: Quickview with Link Redirect
+- Added: CSS & JS Minify
+- Updated: Check update class file
+
+/**1.1.4.2 - 2017.07.17**/
+- Compatibled: WoodMart Theme
+
+/**1.1.4.1 - 2018.07.05**/
+- Fixed: Close window JS
+
+/**1.1.4 - 2018.06.29**/
+- Fixed: Add product term Rentable
+- Fixed: Update Instagram via API
+- Fixed: Class Update
+
+/**1.1.3 - 2018.06.15**/
+- Updated: Class support
+- Fixed: On category product
+- Fixed: Auto detect RTL
+- Added: Price node
+
+/**1.1.2.4 - 2018.04.19 **/
+- Updated: Instagram API
+
+/**1.1.2.3 - 2018.04.16 **/
+- Updated: Instagram API
+
+/**1.1.2.2 - 2018.04.02 **/
+- Added: Button Syn
+- Updated: New Instagram API
+
+/**1.1.1.2 - 2018.03.14 **/
+- Fixed: Key auto update
+
+/**1.1.1.1-2018.03.10 **/
+- Fixed: External product
+
+/**1.1.1 - 2018.03.08**/
+- Fixed: Color CSS
+- Fixed: Class support
+- Fixed: Icon in
+- Fixed: Instagram Gallery Responsive
+- Fixed: Instagram username
+- Fixed: Quickview responsive
+- Added: Add to cart redirect
+- Added: Market alphabet
+
+/**1.1.0 - 2018.03.02**/
+- Added: Instagram
+- Changed: Quickview popup
+- Changed: Backend Lookbook manage
+- Fixed: Product variations
+- Fixed: CSS of Add to cart button on quick view
+
+/**1.0.1 - 2018.01.17**/
+- Fixed: Support class
+- Added: RTL support
+
+/**1.0.0 - 2018.01.17**/
+~ The first released

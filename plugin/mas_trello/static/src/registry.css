@@ -1,0 +1,54 @@
+#thuy {
+    color:red;
+}
+#thuy {
+    color:red;
+}
+.grid >div {
+    display: flex;
+    flex-direction: column;
+}
+.grid >div > input {
+    max-width: 300px;
+}
+
+.lc_radiom {
+    display: grid;
+}
+
+/* Style the tab */
+.lctab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+/* Style the buttons inside the tab */
+.lctab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.lctab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.lctab button.lc-active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
