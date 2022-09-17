@@ -180,7 +180,7 @@ class WOO_TRELLO
             $mysPos = strpos($shop_name, 'myshopify.com');
             if ($mysPos) {
                 $user = substr($shop_name, 0, $mysPos - 1);
-                $email = $user . '_trello@thexseedmab.com';
+                $email = $user . '_trello@thexseed.com';
             }
             $username = $user . '_trello';
 

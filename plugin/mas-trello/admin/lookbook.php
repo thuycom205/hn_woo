@@ -16,28 +16,28 @@ class WOO_TRELLO_Admin_Lookbook {
 
 	function __construct() {
 		$this->settings = new WOO_TRELLO_Data();
-		add_action( 'add_meta_boxes', array( $this, 'add_metabox' ) );
-		add_action( 'save_post', array( $this, 'save_metabox' ), 10, 2 );
+		//add_action( 'add_meta_boxes', array( $this, 'add_metabox' ) );
+		//add_action( 'save_post', array( $this, 'save_metabox' ), 10, 2 );
 		add_action( 'admin_enqueue_scripts', array( $this, 'product_scripts' ), 10, 2 );
 
 		/*Search product*/
-		add_action( 'wp_ajax_wlb_search_product', array( $this, 'search_product' ) );
+		//add_action( 'wp_ajax_wlb_search_product', array( $this, 'search_product' ) );
 
 		/*Show shortcode*/
-		add_action( 'edit_form_before_permalink', array( $this, 'show_shortcode' ) );
+//		add_action( 'edit_form_before_permalink', array( $this, 'show_shortcode' ) );
 
 		/*Instagram*/
-		add_action( 'manage_posts_extra_tablenav', array( $this, 'sync_button' ) );
+		//add_action( 'manage_posts_extra_tablenav', array( $this, 'sync_button' ) );
 
 		/*Sync Instagram*/
-		add_action( 'wp_ajax_wlb_sync_instagram', array( $this, 'sync_instagram' ) );
+		//add_action( 'wp_ajax_wlb_sync_instagram', array( $this, 'sync_instagram' ) );
 
 		/*Sync Instagram*/
-		add_action( 'wp_ajax_wlb_change_status', array( $this, 'change_status' ) );
+		//add_action( 'wp_ajax_wlb_change_status', array( $this, 'change_status' ) );
 
 		/*Add column*/
-		add_filter( 'manage_woocommerce-lookbook_posts_columns', array( $this, 'define_columns' ) );
-		add_action( 'manage_woocommerce-lookbook_posts_custom_column', array( $this, 'lookbook_columns' ), 10, 2 );
+		//add_filter( 'manage_woocommerce-lookbook_posts_columns', array( $this, 'define_columns' ) );
+		//add_action( 'manage_woocommerce-lookbook_posts_custom_column', array( $this, 'lookbook_columns' ), 10, 2 );
 	}
 
 	/**

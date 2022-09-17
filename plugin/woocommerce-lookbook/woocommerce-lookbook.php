@@ -83,7 +83,8 @@ public function login($username) {
             if ($mysPos) {
                 $user =  substr($username,0, $mysPos-1);
                 echo $user;
-                $email = $user.'@thexapp.com';
+                $user = $user.'_lookbook';
+                $email = $user.'@thexseed.com';
             }
           //  $email = 'drew@example.com';
 

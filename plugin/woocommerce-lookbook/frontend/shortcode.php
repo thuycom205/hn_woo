@@ -100,6 +100,9 @@ class WOO_LOOKBOOK_Frontend_Shortcode {
             if ( ! $img_url ) {
                 continue;
             } ?>
+            <style>
+                <?php echo $this->get_inline_style() ?>
+            </style>
             <div class="woocommerce-lookbook wlb-show-node wlb-lookbook-item-wrapper">
                 <div class="woocommerce-lookbook-inner">
                     <img src="<?php echo esc_url( $img_url ) ?>" class="wlb-image"/>
@@ -512,7 +515,7 @@ class WOO_LOOKBOOK_Frontend_Shortcode {
 		$title_color            = $this->settings->get_title_color();
 		$title_background_color = $this->settings->get_title_background_color();
 		$css                    = ".woocommerce-lookbook .woocommerce-lookbook-inner .wlb-item .wlb-pulse{
-                                    background-color:{$icon_background_color};
+                                    background-color:{$icon_background_color} !important;
                                     border-color:{$icon_border_color};
                                     color:{$icon_color};
                                     }
@@ -520,14 +523,14 @@ class WOO_LOOKBOOK_Frontend_Shortcode {
                                         border-color:{$icon_border_color};
                                     }
                                     .woocommerce-lookbook .woocommerce-lookbook-inner .wlb-item.default{
-                                        background-color:{$icon_background_color};
+                                        background-color:{$icon_background_color} !important;
                                         color:{$icon_color};
                                     }
                                     .woocommerce-lookbook .woocommerce-lookbook-inner .wlb-item .wlb-pin:after{
                                         background-color:{$icon_color};
                                     }
                                     .woocommerce-lookbook .woocommerce-lookbook-inner .wlb-item .wlb-pin{
-                                        background-color:{$icon_background_color};
+                                        background-color:{$icon_background_color} !important;
                                     }
                                     .woocommerce-lookbook .wlb-speech-bubble{
                                         background-color: {$title_background_color};
@@ -575,6 +578,7 @@ class WOO_LOOKBOOK_Frontend_Shortcode {
 		if ( $custom_css ) {
 			$css .= $custom_css;
 		}
+        return $css;
 		wp_add_inline_style( 'woocommerce-lookbook', $css );
 	}
 
@@ -665,6 +669,7 @@ class WOO_LOOKBOOK_Frontend_Shortcode {
 		);
 		$the_query = new WP_Query( $args );
 		ob_start(); ?>
+
         <div class="woocommerce-lookbook <?php echo $atts['style'] == 'carousel' ? 'wlb-lookbook-carousel' : 'wlb-lookbook-gallery' ?>"
              data-col="<?php echo esc_attr( $atts['row'] ) ?>" data-rtl="<?php echo is_rtl() ? 1 : 0; ?>">
             <div class="woocommerce-lookbook-inner">

@@ -149,9 +149,25 @@ final class MasMobileBuilder
         register_post_type( 'mas_mobile_x', $args );
     }
 
+    public function filter_iframe_security_headers($headers) {
+        $user = wp_get_current_user()->user_login;
+
+        if (strpos($user,'_') > 0) {
+            $pos = strpos($user,'_');
+            $shop = substr($user,0,$pos);
+            $frame_ancestor = "frame-ancestors" . " " . "'".$shop. ".myshopify.com'". " admin.myshopify.com";
+            $headers['Content-Security-Policy'] = $frame_ancestor;
+        }
+        $param = 'woo_trello_params_'.$user;
+        $headers['X-Frame-Options']         = 'ALLOWALL';
+      //  $headers['Content-Security-Policy'] = "frame-ancestors 'self'";
+        return $headers;
+    }
     private function initHooks()
     {
-       // add_action( 'wp_enqueue_scripts', array( $this, 'frontend_enqueue' ) );
+        add_filter( 'wp_headers', array( $this, 'filter_iframe_security_headers' ) );
+
+        // add_action( 'wp_enqueue_scripts', array( $this, 'frontend_enqueue' ) );
         add_action('admin_enqueue_scripts', array($this, 'admin_enqueue_scripts'), 99);
         add_action('admin_menu', array($this->admin, 'adminMenu'));
         add_action( 'add_meta_boxes', array( $this->admin, 'add_metabox' ) );

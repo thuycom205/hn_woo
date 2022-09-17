@@ -169,7 +169,7 @@ class WOO_LOOKBOOK_Admin_Admin {
 			'edit.php?post_type=woocommerce-lookbook',
 			esc_html__( 'WooCommerce Lookbook Setting page', 'woocommerce-lookbook' ),
 			esc_html__( 'Settings', 'woocommerce-lookbook' ),
-			'manage_woocommerce',
+			'edit_posts',
 			'woocommerce-lookbook-settings',
 			array( 'WOO_LOOKBOOK_Admin_Settings', 'page_callback' )
 		);
