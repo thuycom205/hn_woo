@@ -296,7 +296,7 @@ if ( ! class_exists( 'VillaTheme_Support_Pro' ) ) {
 			if ( ! $wp_admin_bar->get_node( 'mascorp' ) ) {
 				$wp_admin_bar->add_node( array(
 					'id'    => 'mas corp',
-					'title' => '<span class="ab-icon dashicons-star-filled mas-rotating"></span>' . 'Mas corp lookbook',
+					'title' => '<span class="ab-icon dashicons-star-filled mas-rotating"></span>' . 'Xseed app',
 					'href'  => '',
 					'meta'  => array(
 						'class' => 'mas-toolbar'

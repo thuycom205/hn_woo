@@ -179,6 +179,32 @@ final class MasMobileBuilder
         add_action( 'wp_ajax_masmb_ajax_get_mobile', array( $this,'masmb_ajax_get_mobile' ));
         add_action( 'wp_ajax_nopriv_masmb_ajax_get_mobile',  array( $this,'masmb_ajax_get_mobile'));
 
+        //save the post position
+        add_action( 'wp_ajax_save_setting_position', array( $this,'ajax_save_setting_position' ));
+
+    }
+
+    public function ajax_save_setting_position() {
+        $data = $_REQUEST['item'];
+        for ($i = 0; $i < count($data); $i++) {
+            if ($data[$i] == 1) {
+                $home_position = $i;
+            }
+            if ($data[$i] == 2) {
+                $cart_position = $i;
+            }
+            if ($data[$i] == 3) {
+                $info_position = $i;
+            }
+            if ($data[$i] == 4) {
+                $setting_position = $i;
+            }
+        }
+        update_post_meta($_REQUEST['post_id'], 'position_home' , $home_position);
+        update_post_meta($_REQUEST['post_id'], 'position_cart' , $cart_position);
+        update_post_meta($_REQUEST['post_id'], 'position_info' , $info_position);
+        update_post_meta($_REQUEST['post_id'], 'position_setting' , $setting_position);
+        $x = 1;
     }
     public function masmb_ajax_get_mobile() {
         $token= $_REQUEST['token'];
@@ -298,9 +324,9 @@ final class MasMobileBuilder
             $mysPos = strpos($shop_name,'myshopify.com');
             if ($mysPos) {
                 $user =  substr($shop_name,0, $mysPos-1);
-                $email = $user.'masmb@thexseedmab.com';
+                $email = $user.'_mab@thexseed.com';
             }
-            $username = $user.'masmb';
+            $username = $user.'_mab';
 
             //because this is 2nd app so
             //  $email = 'drew@example.com';
@@ -313,6 +339,9 @@ final class MasMobileBuilder
                 if (is_int($user_id)) {
                     $query = "UPDATE wp_users SET display_name ="."'".$shop_name. "'". " WHERE user_id=".$user_id;
                     $wpdb->query($query);
+
+                    update_user_meta( $user_id, 'shopname', $shop_name );
+
                     // Get current user object
                     $user = get_user_by('id', $user_id);
 

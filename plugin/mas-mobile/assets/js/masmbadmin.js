@@ -126,3 +126,8 @@ function masmb_copytext(element) {
 function masmbSubmit(element) {
     jQuery('#publish').click();
 }
+
+function masmbPreview(element) {
+    window.open('admin.php?page=masmb_preview');
+
+}

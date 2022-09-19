@@ -237,7 +237,28 @@ class MasMobileAdmin
     }
     public function render_metabox($post)
     {
-       // echo base64_encode($post->ID);
+        global $post;
+        wp_enqueue_style('jquery-ui-style');
+        wp_enqueue_style('jquery-style', 'https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.2/themes/smoothness/jquery-ui.css');
+        wp_enqueue_script('jquery-ui');
+        wp_enqueue_script('jquery-ui-tooltip');
+        global $current_user;
+        $user = $current_user->user_login;
+        $userID = $current_user->ID;
+        $capability = get_user_meta($userID,'wp_capabilities', true);
+        $shop = get_user_meta($userID,'shopname' ,true);
+        if ( (is_array($capability) && isset($capability['author_mobileapp']) && $capability['author_mobileapp'] ) && $shop !='' && $shop ) {
+
+                $postname = $shop . '_mobile_app_setting'
+                ?>
+                <script type="text/javascript" >
+                    window.mobile_post_name = "<?php echo $postname ?>";
+                </script>
+                    <?php
+        }
+
+
+        // echo base64_encode($post->ID);
       //  echo md5($post->ID);
         $app_name = $this->get_data($post->ID, 'app_name');
         $tagline = $this->get_data($post->ID, 'tagline');
@@ -272,6 +293,19 @@ class MasMobileAdmin
 
         // For convenience, see if the array is valid
         $you_have_img = is_array($your_img_src);
+
+        $position_home =  get_post_meta($post->ID,'position_home',true);
+        if (!$position_home || $position_home == null) $position_home = 0;
+
+        $position_cart =  get_post_meta($post->ID,'position_cart',true);
+        if (!$position_cart || $position_cart == null) $position_cart = 1;
+
+        $position_info =  get_post_meta($post->ID,'position_info',true);
+        if (!$position_info || $position_info == null) $position_info = 2;
+
+        $position_setting =  get_post_meta($post->ID,'position_setting',true);
+        if (!$position_setting || $position_setting == null) $position_setting = 3;
+
         ?>
         <link rel="stylesheet" href="https://ablesense.github.io/bootstrap-polaris/demo/bootstrap-polaris.min.css">
 
@@ -279,22 +313,34 @@ class MasMobileAdmin
             <div class="row no-gutters">
                 <div class="col-md-4 card-annotation">
                     <h3>App information</h3>
+                    <span>We supports merchant to submit mobile app to Google Play Store and Apple Store.
+                        Information in this section will be used to submit app.
+                    </span>
                 </div>
+                <style>
+                    .labelt::after {
+                        content: url('<?php echo MASMB_URL?>/assets/info.png');
+                        pointer-events: auto; /* Enable :hover */
+                        margin-left: 5px;
+
+                        font-weight: bold;
+                    }
+                </style>
                 <div class="col-md-8">
                     <div class="card">
                         <div class="card-body">
                             <button class="btn btn-primary" onclick="masmbSubmit(this)" type="submit"> Submit</button>
 
-                            <button class="btn btn-primary" type="button"> Preview</button>
+                            <button class="btn btn-primary" type="button" onclick="masmbPreview(this)" > Preview</button>
 
                             <input type="hidden" name="token" value="<?php echo $token ?>">
-                            <label for="app_name">App name</label>
+                            <label class="labelt" for="app_name" title="This infomation is name of mobile app in Google Play Store and Apple Store"> App name</label>
                             <input type="text" id="app_name" class="form-control" name="masmb_params[app_name]"
                                    value="<?php echo $app_name ?>">
-                            <label for="tagline">Tagline</label>
+                            <label for="tagline"> <span data-tooltip="App name is the name of mobile app" class="tooltip"></span>Tagline</label>
                             <input type="text" id="tagline" class="form-control" name="masmb_params[tagline]"
                                    value="<?php echo $tagline ?>">
-                            <label for="keyword">Keyword</label>
+                            <label class="labelt" for="keyword" title="Adding something like Keywords: keyword1, keyword2, keyword3 to your description is considered keyword spamming by Google, especially if you add the title, or the developer name of a competing app. Instead, try to include your keywords in the description in a natural manner.">Keyword</label>
                             <input type="text" id="keyword" class="form-control" name="masmb_params[keyword]"
                                    value="<?php echo $keyword ?>" aria-describedby="keyword">
                             <small id="passwordHelpBlock" class="polaris-caption">Your keyword is separated by
@@ -303,14 +349,14 @@ class MasMobileAdmin
                             <textarea id="description" class="form-control" name="masmb_params[description]" rows="6"
                                       cols="15"> <?php echo $description ?> </textarea>
 
-                            <label for="url">Privacy Policy URL</label>
+                            <label  class="labelt" title="Adding a privacy policy to your app's store listing helps provide transparency about how you treat sensitive user and device data." for="url">Privacy Policy URL</label>
                             <input type="url" id="privacy_policy_url" class="form-control"
                                    name="masmb_params[privacy_policy_url]" value="<?php echo $privacy_policy_url ?>">
-                            <label for="url">Support URL</label>
+                            <label class="labelt" title="The support URL must lead to actual contact information so that users can reach you regarding app issues, general feedback, and feature enhancement requests. Specify entire URL, including the protocol" for="url">Support URL</label>
                             <input type="url" id="support_url" class="form-control" name="masmb_params[support_url]"
                                    value="<?php echo $support_url ?>">
-                            <label for="url">Marketing URL</label>
-                            <input type="url" id="marketing_url" class="form-control" name="masmb_params[marketing_url]"
+                            <label class="labelt" for="url" title="A URL with information about the app you are adding. If provided, this will be visible to customers on the App Store" >Marketing URL</label>
+                            <input   type="url" id="marketing_url" class="form-control" name="masmb_params[marketing_url]"
                                    value="<?php echo $marketing_url ?>">
 
 
@@ -325,8 +371,10 @@ class MasMobileAdmin
                         </div>
                     </div>
                     <!-- Your add & remove image links -->
-                    <div class="hide-if-no-js">
-                        <p>
+                    <div class="hide-if-no-js" style="margin-top:15px;">
+                        <small id="passwordHelpBlock" class="polaris-caption">Upload your splash screen for mobile app. It can not be larger than 2M </small>
+
+                            <p>
                             <a class="vi-ui button green masmb-upload-img <?php if ($you_have_img) {
                                 echo 'hidden';
                             } ?>" href="<?php echo $upload_link ?>">
@@ -360,7 +408,7 @@ class MasMobileAdmin
 
                         <div class="container">
                             <ul id="sortable">
-                                <li>
+                                <li data-position="<?php echo $position_home ?>" id="item-1" >
                                     <div class="row">
                                         <div class="col-sm">
                                             <span class="ui-icon ui-icon-arrowthick-2-n-s"></span>
@@ -379,14 +427,12 @@ class MasMobileAdmin
                                                     aria-describedby="selectHelp">
                                                 <option value="1" <?php if (isset($homeData['icon'])) { ?> <?php selected( $homeData['icon'], 1 ) ?> <?php } ?> >One</option>
                                                 <option value="2"  <?php if (isset($homeData['icon'])) { ?>  <?php selected( $homeData['icon'], 2 ) ?> <?php } ?> >Two</option>
-                                                <option value="3" <?php if (isset($homeData['icon'])) { ?>  <?php selected( $homeData['icon'], 3 ) ?> <?php } ?> >Three</option>
-                                                <option value="4" <?php if (isset($homeData['icon'])) { ?>  <?php selected( $homeData['icon'], 4 ) ?> <?php } ?> >Four</option>
                                             </select>
                                         </div>
 
                                     </div>
                                 </li>
-                                <li>
+                                <li id="item-2" data-position="<?php echo $position_cart ?>">
                                     <div class="row">
                                         <div class="col-sm">
                                             <div class="micon-name">
@@ -397,7 +443,7 @@ class MasMobileAdmin
                                         </div>
                                         <div class="col-sm">
                                             <label>Title</label>
-                                            <input name="masmb_params[cart][title]" type="text" class="form-control">
+                                            <input name="masmb_params[cart][title]" <?php if (isset($cartData['title'])) { ?>  value="<?php echo $cartData['title'] ?>"  <?php }  ?> type="text" class="form-control">
                                         </div>
                                         <div class="col-sm">
                                             <label>Icon</label>
@@ -405,51 +451,47 @@ class MasMobileAdmin
                                                     aria-describedby="selectHelp">
                                                 <option value="1" <?php selected( $cartData['icon'], 1 ) ?> >One</option>
                                                 <option value="2" <?php selected( $cartData['icon'], 2 ) ?> >Two</option>
-                                                <option value="3" <?php selected( $cartData['icon'], 3 ) ?> >Three</option>
-                                                <option value="4" <?php selected( $cartData['icon'], 4 ) ?> >Four</option>
                                             </select>
                                         </div>
 
                                     </div>
                                 </li>
-                                <li>
+                                <li  id="item-3" data-position="<?php echo $position_info ?>">
                                     <div class="row">
                                         <div class="col-sm">
                                             <div class="micon-name">
                                                 <span class="ui-icon ui-icon-arrowthick-2-n-s"></span>
-                                                <label>Info</label>
+                                                <label>Account</label>
                                                 <input  value="1" <?php checked( $infoData['enable'], 1 ) ?> name="masmb_params[info][enable]" style="height:15px!important;width:15px" type="checkbox">
                                             </div>
                                         </div>
                                         <div class="col-sm">
                                             <label>Title</label>
-                                            <input name="masmb_params[info][title]"type="text" class="form-control">
+                                            <input name="masmb_params[info][title]"  type="text" <?php if (isset($infoData['title'])) { ?>  value="<?php echo $infoData['title'] ?>"  <?php }  ?> class="form-control">
                                         </div>
                                         <div class="col-sm">
                                             <label>Icon</label>
                                             <select name="masmb_params[info][icon]" id="select" class="form-control"
                                                     aria-describedby="selectHelp">
                                                 <option value="1" <?php selected( $infoData['icon'], 1 ) ?> >One</option>
-                                                <option value="2" <?php selected( $infoData['icon'], 1 ) ?> >Two</option>
-                                                <option value="3" <?php selected( $infoData['icon'], 1 ) ?> >Three</option>
-                                                <option value="4"  <?php selected( $infoData['icon'], 1 ) ?> >Four</option>
+                                                <option value="2" <?php selected( $infoData['icon'], 2 ) ?> >Two</option>
                                             </select>
                                         </div>
 
                                     </div>
                                 </li>
-                                <li>
+                                <li id="item-4" data-position="<?php echo $position_setting ?>">
                                     <div class="row">
                                         <div class="col-sm">
                                             <div class="micon-name">
                                                 <span class="ui-icon ui-icon-arrowthick-2-n-s"></span>
                                                 <label>Setting</label>
-                                                <input  value="1" <?php checked( $infoData['enable'], 1 ) ?> name="masmb_params[setting][enable]" style="height:15px!important;width:15px" type="checkbox">
+                                                <input  value="1" <?php checked( $settingData['enable'], 1 ) ?> name="masmb_params[setting][enable]" style="height:15px!important;width:15px" type="checkbox">
                                             </div>
                                         </div>
                                         <div class="col-sm">
                                             <label>Title</label>
-                                            <input name="masmb_params[setting][title]" type="text" class="form-control">
+                                            <input name="masmb_params[setting][title]" type="text" <?php if (isset($settingData['title'])) { ?>  value="<?php echo $settingData['title'] ?>"  <?php }  ?> class="form-control">
                                         </div>
                                         <div class="col-sm">
                                             <label>Icon</label>
@@ -457,8 +499,6 @@ class MasMobileAdmin
                                                     aria-describedby="selectHelp">
                                                 <option value="1" <?php selected( $settingData['icon'], 1 ) ?> >One</option>
                                                 <option value="2" <?php selected( $settingData['icon'], 2 ) ?> >Two</option>
-                                                <option value="3" <?php selected( $settingData['icon'], 3 ) ?> >Three</option>
-                                                <option value="4" <?php selected( $settingData['icon'], 4 ) ?> >Four</option>
                                             </select>
                                         </div>
 
@@ -474,12 +514,37 @@ class MasMobileAdmin
         </main>
         <script>
             jQuery(document).ready(function (jQuery) {
-                jQuery("#sortable").sortable();
+                jQuery("#sortable li").sort(sort_li).appendTo('#sortable');
+                function sort_li(a, b) {
+                    return (jQuery(b).data('position')) < (jQuery(a).data('position')) ? 1 : -1;
+                }
 
+                jQuery('#sortable').sortable({
+                    axis: 'y',
+                    stop: function (event, ui) {
+                        var data = jQuery(this).sortable('serialize');
+                        console.log(data);
+                        jQuery.ajax({
+                            data: data,
+                            type: 'POST',
+                            url: '<?php echo  admin_url( 'admin-ajax.php' ) ?>' + '?action=save_setting_position&post_id=' + '<?php echo $post->ID ?>'
+                        });
+                    }
+                });
                 jQuery('.color_field').each(function () {
                     jQuery(this).wpColorPicker();
                 });
+                if ( window.mobile_post_name  !=undefined ) {
+                    jQuery('#titlediv').hide();
+                    jQuery('#title').val( window.mobile_post_name);
+                }
+                jQuery('#wpfooter').hide();
+                jQuery('#notice').hide();
+                jQuery( document ).tooltip();
+
+
             });
+
         </script>
         <?php
 
