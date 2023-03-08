@@ -1,0 +1,3 @@
+ <p>
+The Gift Registry for WooCommerce plugin enables customers to create wishlists for upcoming events. Customers can share their registry with friends and family, and once a gift is added to the cart, the delivery address of the registrant is automatically added to the checkout. As soon as the order is placed, the item is removed from the registry and the customer is informed about the purchase. Depending on the customer's needs, wishlists can be public, private, or password-protected.
+</p>

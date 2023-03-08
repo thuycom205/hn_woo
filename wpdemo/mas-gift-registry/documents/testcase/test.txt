@@ -1,0 +1,37 @@
+---
+customer not login, click on my gift registry
+--
+kq:login to create registry
+------
+customer login , click on my gift registry
+customer do not have gift registry
+----
+customer have gift registry
+
+---
+loading
+--error--
+-------------
+create gift registry
+save
+validate
+
+----
+delete giftregistry
+--view detail
+
+----
+update gift registry information
+
+-----
+add item to gift registry
+---
+add existing registry item  -add simple -add variation product
+--
+
+
+---view gift registry as public
+--share gift registry
+
+
+
