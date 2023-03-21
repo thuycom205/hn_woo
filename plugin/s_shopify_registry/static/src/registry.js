@@ -1,7 +1,26 @@
-function initJQuery(e) {
-    var x = 1;
-   // var t;
-   // "undefined" == typeof jQuery ? ((t = document.createElement("SCRIPT")).src = "https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js", t.type = "text/javascript", t.onload = e, document.head.appendChild(t)) : e()
+// function initJQuery(e) {
+//     var x = 1;
+//    // var t;
+//    //  "undefined" == typeof jQuery ? ((t = document.createElement("SCRIPT")).src = "https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js", t.type = "text/javascript", t.onload = e, document.head.appendChild(t)) : e()
+//
+//     if (typeof  jQuery == undefined || "undefined" == typeof jQuery) {
+//         var t = document.createElement("SCRIPT");
+//             t.setAttribute("src", "https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js");
+//             t.setAttribute("type", "text/javascript");
+//             document.head.appendChild(t);
+//             t.onload = e;
+//             const myTimeout = setTimeout(  $= jQuery.noConflict(), 5000);
+//
+//     } else {
+//                    $= jQuery.noConflict();
+//
+//     }
+// }
+var BASE_URL = 'https://apps.allfetch.com/';
+// var BASE_URL = 'https://odoo.website/';
+
+var getUrl = (path = '') => {
+    return BASE_URL + path;
 }
 
 function initCss(e) {
@@ -742,7 +761,32 @@ function parseGiftRegistry(data) {
     }
 }
 
-function loadGiftRegistry() {
+function loadScript(url, callback) {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src = url || '';
+    if (script.readyState) {
+        //IE
+        script.onreadystatechange = function () {
+            if (script.readyState == "loaded" || script.readyState == "complete") {
+                script.onreadystatechange = null;
+                callback();
+            }
+        };
+    } else {
+        //Others
+        script.onload = function () {
+            callback();
+        };
+    }
+    document.getElementsByTagName("head")[0].appendChild(script);
+
+};
+function loadGiftRegistry($) {
+    jQuery = $;
+        window.AllFetchURL = 'https://myodooapp.ngrok.io';
+        initCss(window.lcregistry);
+        initCss2();
     ////enable the app
     if ( window.lcShopdomain == undefined) {
       var domain =   allfetchWAPGetShopify();
@@ -1193,7 +1237,7 @@ function lc_gc_add_to_cart(element) {
                             product_id: refineProductId,
                             variant_id: variant_id,
                             registry_id: window.public_registry_id,
-                            shop_domain: window.lcShopdomain,
+                            shop_domain: Shopify.shop,
                             qty: qty
                         }
                     };
@@ -1290,22 +1334,43 @@ function lcGRaddproduct(element) {
 
 }
 
-initJQuery(function () {
-    if (window.AllFetchURL == undefined) {
-        window.AllFetchURL = 'https://app.thexseed.com';
-        initCss(window.lcregistry);
-        initCss2();
-    } else {
-        //console.log('---processed--');
-    }
+// initJQuery(function () {
+//     if (window.AllFetchURL == undefined) {
+//         window.AllFetchURL = 'https://app.thexseed.com';
+//         initCss(window.lcregistry);
+//         initCss2();
+//     } else {
+//         //console.log('---processed--');
+//     }
+//
+// });
+if (typeof jQuery === 'undefined' || parseFloat(jQuery.fn.jquery) < 1.7) {
+    loadScript('//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js', function () {
+        loadScript('//cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.js', function () {
+            var jQuery191 = jQuery.noConflict(true);
+            // var jQuery191 = jQuery;
+            /*append jQuery theme stylesheet */
+            var link_css = '<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css">\n' +
+                '<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">\n' +
+                '<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">\n' +
+                '<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">\n';
+            jQuery191('head').append(link_css);
+            loadGiftRegistry(jQuery191);
+        })
+    });
+} else {
+    loadGiftRegistry(jQuery);
+    var linkSlickCss = '<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css">\n' +
+        '<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">\n' +
+        '<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">\n';
+    jQuery('head').append(linkSlickCss);
 
-});
+}
 
-
-    setTimeout(loadGiftRegistry, 200);
-   setTimeout(loadGiftRegistry, 500);
-   setTimeout(loadGiftRegistry, 1000);
-   setTimeout(loadGiftRegistry, 3000);
+   //  setTimeout(loadGiftRegistry, 200);
+   // setTimeout(loadGiftRegistry, 500);
+   // setTimeout(loadGiftRegistry, 1000);
+   // setTimeout(loadGiftRegistry, 3000);
 
 
 
