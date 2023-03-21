@@ -1,0 +1,326 @@
+<odoo>
+    <data>
+        <!-- explicit list view definition -->
+        <record model="ir.ui.view" id="s_shopify_registry_view_tree">
+            <field name="name">s_shopify_registry list</field>
+            <field name="model">s_shopify_registry.s_shopify_registry</field>
+            <field name="arch" type="xml">
+                <tree js_class="giftregistry_list">
+
+                    <field name="registrant_first_name"/>
+                    <field name="registrant_last_name"/>
+                    <field name="registrant_email"/>
+                    <field name="event_date"/>
+                    <field name="event_location"/>
+                    <field name="is_public"/>
+                </tree>
+            </field>
+        </record>
+
+
+
+        <record id="shopify_registry_view_form" model="ir.ui.view">
+            <field name="name">Shopify Gift Registry Form</field>
+            <field name="model">s_shopify_registry.s_shopify_registry</field>
+            <field name="arch" type="xml">
+                <form string="Gift Registry" name=".s_shopify_registry" create="false" js_class="giftregistry_form" >
+
+                    <div class="row bg_grey">
+                        <div class="col-md-1">
+
+                        </div>
+                        <div class="col-md-3">
+                            <div class="mab_left_title_section">
+                                <h3>Gift Registry Information</h3>
+                                <span>These fields are the most basic component of Gift Registries. Each field defines a parameter, that customer should fill in order to create Gift Registry.</span>
+                            </div>
+                        </div>
+                        <div class="card col-md-6">
+                            <div class="card-body">
+                                <div class="form-group">
+                                    <label class="col-form-label" for="registrant_first_name">Registrant first name
+                                    </label>
+                                    <field class="form-control" name="registrant_first_name"/>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-form-label" for="registrant_last_name">Registrant last name
+                                    </label>
+                                    <field class="form-control" name="registrant_last_name"/>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-form-label" for="registrant_email">Registrant Email name</label>
+                                    <field name="registrant_email" class="form-control"/>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-form-label" for="event_date">Event date</label>
+
+                                    <field name="event_date" class="form-control"/>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-form-label" for="event_location">Registrant first name</label>
+                                    <field name="event_location" class="form-control"/>
+                                </div>
+                                <div class="check-b">
+                                    <label class="polaris-check" for="is_public">Is public</label>
+                                    <field name="is_public" class="form-control"/>
+                                    <span>If gift registry is not public then guest have to enter password to view it</span>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-form-label" for="password">Password</label>
+
+                                    <field name="password" class="form-control"/>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row bg_grey">
+                        <div class="col-md-1">
+
+                        </div>
+                        <div class="col-md-3">
+                            <div class="mab_left_title_section">
+                                <h3>Shipping address</h3>
+                                <span>The address where gifted is shipped to</span>
+                            </div>
+                        </div>
+                        <div class="card col-md-6">
+                            <div class="card-body">
+                                <div class="form-group">
+                                    <label class="col-form-label" for="sa_first_name">First name</label>
+                                    <field name="sa_first_name" class="form-control"/>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-form-label" for="sa_last_name">Last name</label>
+                                    <field name="sa_last_name" class="form-control"/>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-form-label" for="sa_country">Country</label>
+                                    <field name="sa_country" class="form-control"/>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-form-label" for="sa_city">City</label>
+                                    <field name="sa_city" class="form-control"/>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-form-label" for="sa_street">Street</label>
+                                    <field name="sa_street" class="form-control"/>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-form-label" for="sa_zip">Zip</label>
+                                    <field name="sa_zip" class="form-control"/>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-1">
+
+                        </div>
+                            <div class="col-md-3">
+                                <div class="mab_left_title_section">
+                                    <h3>Item</h3>
+                                    <span>List view of products which is added to gift registry</span>
+                                </div>
+                            </div>
+                        <div class="col-md-6">
+
+                            <field name="item_ids">
+
+                                <tree limit="15">
+                                    <field name="name"/>
+                                    <field name="price"/>
+                                    <field name="variant_title"/>
+                                    <field name="qty"/>
+                                </tree>
+
+                            </field>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-1">
+
+                        </div>
+                            <div class="col-md-3">
+                                <div class="mab_left_title_section">
+                                    <h3>Purchased Order</h3>
+                                    <span>The orders which is purchased as gift for the gift registry</span>
+                                </div>
+                            </div>
+                        <div class="col-md-6">
+
+                            <field name="order_ids">
+
+                                <tree limit="15">
+                                    <field name="order_id"/>
+                                    <field name="customer_name"/>
+                                    <field name="total"/>
+                                    <field name="note"/>
+                                </tree>
+
+                            </field>
+                        </div>
+                    </div>
+                </form>
+            </field>
+        </record>
+        <record id="shopify_registry_view_setting_form" model="ir.ui.view">
+            <field name="name">Setting</field>
+            <field name="model">s_shopify_registry.setting</field>
+            <field name="arch" type="xml">
+                <form string="Gift Registry" name=".s_shopify_registry_setting" create="false" js_class="giftregistry_form" >
+
+                    <div class="row bg_grey">
+                        <div class="col-md-1">
+
+                        </div>
+                        <div class="col-md-3">
+                            <div class="mab_left_title_section">
+                                <h3>Gift Registry Setting</h3>
+                                <span>Enable or Disable Gift Registry  on your store</span>
+                            </div>
+                        </div>
+                        <div class="card col-md-6">
+                            <div class="card-body">
+
+                                <div class="check-b">
+                                    <label class="polaris-check" for="is_enable">Enable</label>
+                                    <field name="is_enable" class="form-control"/>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+
+                </form>
+            </field>
+        </record>
+       <record id="shopify_registry_view_item_form" model="ir.ui.view">
+            <field name="name">Items</field>
+            <field name="model">s_shopify_registry.s_shopify_registry_item</field>
+            <field name="arch" type="xml">
+                <form string="Gift Registry" name=".s_shopify_registry_item" create="false" js_class="giftregistry_form" >
+
+                    <div class="row bg_grey">
+                        <div class="col-md-1">
+
+                        </div>
+                        <div class="col-md-3">
+                            <div class="mab_left_title_section">
+                                <h3>Items in gift registry</h3>
+                                <span>Items that added to the gift registry</span>
+                            </div>
+                        </div>
+                        <div class="card col-md-6">
+                            <div class="card-body">
+
+                                <div class="form-group">
+                                    <label class="col-form-label" for="name">Product name</label>
+                                    <field name="name" class="form-control"/>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-form-label" for="variant_title">Variant</label>
+                                    <field name="variant_title" class="form-control"/>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-form-label" for="priority">Priority</label>
+                                    <field name="priority" class="form-control"/>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-form-label" for="qty">Qty</label>
+                                    <field name="qty" class="form-control"/>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-form-label" for="product_type">Product Type</label>
+                                    <field name="product_type" class="form-control"/>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+
+                </form>
+            </field>
+        </record>
+       <record id="shopify_registry_view_order_form" model="ir.ui.view">
+            <field name="name">Orders</field>
+            <field name="model">s_shopify_registry.s_shopify_registry_order</field>
+            <field name="arch" type="xml">
+                <form string="Gift Registry" name=".s_shopify_registry_order" create="false" js_class="giftregistry_form" >
+
+                    <div class="row bg_grey">
+                        <div class="col-md-1">
+
+                        </div>
+                        <div class="col-md-3">
+                            <div class="mab_left_title_section">
+                                <h3>Order that purchased for gift registry</h3>
+                                <span>Order that purchased for gift registry</span>
+                            </div>
+                        </div>
+                        <div class="card col-md-6">
+                            <div class="card-body">
+
+                                <div class="form-group">
+                                    <label class="col-form-label" for="order_id">Product name</label>
+                                    <field name="order_id" class="form-control"/>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-form-label" for="note">Note</label>
+                                    <field name="note" class="form-control"/>
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </div>
+
+
+                </form>
+            </field>
+        </record>
+
+
+        <!-- actions opening views on models -->
+        <record model="ir.actions.act_window" id="s_shopify_registry_view_form">
+            <field name="name">Gift Registry List</field>
+            <field name="res_model">s_shopify_registry.s_shopify_registry</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+        <record model="ir.actions.act_window" id="s_shopify_registry_setting_form">
+            <field name="name">Setting</field>
+            <field name="res_model">s_shopify_registry.setting</field>
+            <field name="view_mode">form</field>
+        </record>
+        <record model="ir.actions.act_window" id="s_shopify_registry_item">
+            <field name="name">Item in gift registry</field>
+            <field name="res_model">s_shopify_registry.s_shopify_registry_item</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+        <record model="ir.actions.act_window" id="s_shopify_registry_order">
+            <field name="name">Order</field>
+            <field name="res_model">s_shopify_registry.s_shopify_registry_order</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+
+        <!-- Top menu item -->
+        <menuitem name="Gift Registry" id="sp_shopify_registry"/>
+        <!-- menu categories -->
+        <!--
+            <menuitem name="Menu 1" id="s_shopify_registry.menu_1" parent="s_shopify_registry.menu_root"/>
+            <menuitem name="Menu 2" id="s_shopify_registry.menu_2" parent="s_shopify_registry.menu_root"/>
+        -->
+        <!-- actions -->
+         <menuitem name="Gift Registry Setting" id="s_shopify_registry_view_setting" parent="sp_shopify_registry"
+                  action="s_shopify_registry_setting_form" sequence="300"/>
+
+        <menuitem name="Gift Registry List" id="s_shopify_registry_view_registry" parent="sp_shopify_registry"
+                  action="s_shopify_registry_view_form" sequence="255"/>
+
+
+    </data>
+</odoo>

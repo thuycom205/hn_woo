@@ -1,0 +1,12 @@
+    border: 1px solid var(--color-border-form);
+    background-color: var(--color-text-field);
+    color: var(--color-text-field-text);
+    /* max-width: 100%; */
+    line-height: 1.2;
+    border-radius: 2px;
+}
+    https://hanetest2.myshopify.com/apps/gift-registry/list
+    https://hanetest2.myshopify.com/apps/gift-registry/view/23
+
+
+     $('input[name="registrant_first_name"]').makeCssInline();
